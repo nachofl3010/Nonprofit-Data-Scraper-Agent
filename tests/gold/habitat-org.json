@@ -1,0 +1,34 @@
+{
+  "note": "Hand-labelled 2026-09-25 by reading the site pages (not pipeline output). EIN/revenue from IRS data (ProPublica) when not on the site. A list = any of these is correct; null = not on the site, so any extracted value counts as wrong; omitted field = not scored.",
+  "website": "https://www.habitat.org/",
+  "fields": {
+    "name": [
+      "Habitat for Humanity",
+      "Habitat for Humanity International"
+    ],
+    "registration_id": [
+      "91-1914868"
+    ],
+    "annual_revenue_usd": {
+      "value": 370010910,
+      "tolerance": 0.25
+    },
+    "executive_name": [
+      "Jonathan Reckford"
+    ],
+    "fundraising_tech": [
+      "Blackbaud Luminate Online"
+    ],
+    "cause_area": [
+      "human_services",
+      "international"
+    ],
+    "country": [
+      "US"
+    ],
+    "hq_city": [
+      "Atlanta",
+      "Americus"
+    ]
+  }
+}

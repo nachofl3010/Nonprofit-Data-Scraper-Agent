@@ -1,0 +1,369 @@
+=== SYSTEM ===
+You extract a structured profile of a nonprofit organisation from pages crawled from its website. The output feeds a sales and research database, so accuracy matters more than completeness.
+
+Rules:
+- Use only facts stated in the documents. No outside knowledge, no guessing. If the documents don't support a field, return null (or an empty list).
+- source_url: copy the url attribute of the <document> the fact came from.
+- confidence: high = stated explicitly; medium = stated but ambiguous, partial or possibly outdated; low = inferred from indirect wording.
+- evidence: copy a short verbatim snippet (max 30 words) from that document. Never paraphrase it.
+- Dates in ISO 8601 (YYYY-MM-DD; YYYY-MM or YYYY if that is all the page gives). Money as a plain number plus ISO 4217 currency code ("$12.5 million" -> 12500000, USD).
+- annual_revenue: total revenue or income for one fiscal year. Not a single gift, campaign goal, program budget or cumulative total.
+- registration_id: the number only, as printed (e.g. "12-3456789" or "207076"). If several are shown, the main one (US EIN, or the first charity number).
+- leadership: named executives, senior staff and board members (max 15). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Board Member", "Trustee"). Add email or LinkedIn only if shown next to that person.
+- general_contact: the organisation's general email, phone and contact page.
+- open_roles: current paid job openings only (no volunteer roles). open_rfps: current requests for proposals, tenders or procurement notices only.
+- recent_news: up to 8 of the newest dated news, press or blog items with their dates. Do not filter by age.
+- funders_and_partners: organisations named as funders, sponsors or partners (max 15).
+- impact_metrics: up to 5 short quantified claims about the organisation's own work, e.g. "Served 12,000 meals in 2024". Not outcomes of its grantees or partners.
+- cause_area: the single best fit from the allowed list. geography_served.scope: local (one city or county), regional (state, province or multi-county area), national or international.
+- looks_like_nonprofit: false if the site is clearly a business, government body or personal site; say why in not_nonprofit_reason.
+
+=== USER ===
+<documents>
+<document url="https://www.communityoutreachgroupinc.com/" type="html" page="homepage">
+Food Pantry | Middletown Township, NJ | 732-671-0550
+
+resources for community members in need
+
+Food Pantry, Thrift Store, and Emergency Assistance | Middletown Township
+
+Support For The Community
+
+Community Outreach Group, Inc. is a nonprofit that provides basic needs assistance to low-income families and individuals in the community. We are a 501(c)(3) organization. Our mission is to help people in need by providing clothing, food, housing, and utility assistance to those who may not have the means to provide for themselves and their families.
+
+Contact Us
+
+a Community United Against Food Insecurity:
+
+Our Pantry's Impact
+
+One of the most important organizations in Middletown Township for combating food insecurity is the Community Outreach Group, Inc. We guarantee that those who are vulnerable have regular access to vital nutrition by providing free, wholesome food to those in need. In addition, the food pantry seeks to address long-term hunger relief by promoting awareness of food insecurity through community collaborations. As a result, it strengthens the community and provides many local people and families with a crucial lifeline. Give today!
+
+Donate Now
+
+Calico Cat
+
+FOOD Pantry
+
+Our pantry provides emergency food, personal care, and cleaning products to those in need.
+
+The Pantry is open the first and third Wednesday of each month from 9:00 until 3:00 and after 3:00 by appointment only.
+﻿
+
+Our Mission
+
+Our mission at the Community Outreach Group (“COG”) is to be an organization that is compassionate, effective, dependable and an innovative part of the local community support system for individuals in need. COG also interfaces with related social service agencies to help provide resources and some financial support. We have many other organizations that assist us in order to expand our ability to effectively serve those in need in our community. Through outreach, we create programs that are needed by our clients.
+
+Make a Difference:
+
+Join Our Volunteer Team
+
+Like many other food pantries, The Community Outreach Group, Inc. depends heavily on volunteer contributions to run efficiently. These volunteers are the unsung heroes who put in countless hours behind the scenes to make sure the food closet functions properly and that those in need get the assistance they need. Volunteers can help with food distribution, contribution organization, shelf stocking, and administrative support. Join us as a volunteer right now to combat food insecurity if you're interested!
+
+Volunteer
+
+Service Agreement
+
+Assistance When You Need It Most
+
+The mission of the emergency assistance fund is to provide one-time assistance to help low-income households with utility and rent/mortgage assistance. The Emergence Assistance Fund assists with one-time aid to residents of the following areas: Aberdeen, Atlantic Highlands, Belford, Cliffwood, Hazlet, Highlands, Holmdel, Keansburg, Keyport, Leonardo, Lincroft, Matawan, Middletown, Port Monmouth, Red Bank, and Union Beach. In some cases, we may help with auto repair, extending into cities beyond those listed above. Please fill out the application to see if you qualify for this assistance.
+
+Download Application
+
+Apply Now
+
+Donate Today
+
+Organizations like Community Outreach Group, Inc. rely heavily on donations to keep things running smoothly. The food pantry could not fight food insecurity in the community and provide the necessary resources and support without your kind donations. Both monetary contributions and non-perishable food donations are much appreciated and can have a big impact. The food cupboard is able to help individuals and families in need by providing wholesome food and other necessities, thanks to these donations.
+﻿
+Donations by cash or check are gratefully accepted.
+ Make checks payable to The Community Outreach Group, Inc. (PO Box 4041 Middletown, NJ 07748) Write on the memo line: Pantry and/or Cupboard. We also accept donations via paypal.
+
+Donate Now
+
+Send us a Message
+
+Have a question? We’re here to help. Send us a message and we’ll be in touch. 
+
+Thank you for contacting us.
+We will get back to you as soon as possible
+
+Oops, there was an error sending your message.
+Please try again later
+
+Community Outreach Group, Inc.
+
+PANTRY Gallery
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+Button
+
+View more
+
+Community Outreach Group, Inc.
+
+Frequently Asked Questions
+
+Who are we?
+
+The Community Outreach Group, Inc., (“COG”) is an all-volunteer, non-profit organization that assists families, seniors and individuals within the towns that make up the Northern Monmouth County area. COG is comprised of an interfaith Board of Trustees who volunteer their time and represent the members of their twelve faith-based congregations.
+
+Christ Episcopal Church-Middletown
+Middletown Reformed Church
+Old First Church-Middletown
+Westminster Presbyterian Church-Middletown
+Middletown United Methodist Church
+Lincroft Presbyterian Church
+St. Leo the Great R.C. Church-Lincroft
+Ecumenical Missionaries-St. Augustine’s Monastery, Belford
+Masjid Al Aman Mosque, Middletown
+Holmdel Community United Church of Christ
+Good Shepherd Lutheran Church, Holmdel
+St. Catharine R.C. Church, Holmdel
+
+Why is Community Outreach Group, Inc. so popular?
+
+The Community Outreach Group, Inc. is tackling the issue of food insecurity in Middletown Township, New Jersey, head-on by providing a 
+food pantry
+
+and thrift store for low-income families in the community. Our 
+food pantry
+
+provides emergency food, personal care products, and cleaning products for those in need.
+We are always accepting donations to keep our 
+food pantry
+
+stocked. If you would like to donate non-perishable food items and non-food items that cannot be purchased with food stamps, please contact us today to find out when to drop off donations. We also accept 
+donations
+ of cash, check, or PayPal if you would like to help but don't have physical items to donate.
+Our 
+food pantry
+
+only exists with the help of people like you. We could not operate without donations and volunteers. If you are interested in volunteering at our 
+food pantry
+
+or thrift store, please call us today to learn more.
+
+How does “COG” Work?
+
+The items that are donated to us are sold at reasonable prices in the Calico Cat Thrift Shop. Donated items come from various sources such as “COG” participating congregations, other organizations and individuals. The proceeds from the sale of the items enables us to provide food, clothing, personal hygiene items and financial assistance to families, seniors and individuals as well as other non-profit organizations. When you purchase items from our Thrift Shop or bring in donations, you are also becoming a partner with us to bring support and hope to those who find their way to us in times of crisis and need. 
+We are always looking to expand our Board membership with additional faith based and civic organizations.
+Individual Volunteers are always needed in the Thrift Shop, Pantry and Emergency Assistance Fund. Please contact us!
+
+What is the Emergency Assistance Fund?
+
+The Emergency Assistance Fund (“EAF”) is generally a one-time -a-year financial aid. It is designed to help families and individuals avoid homelessness, and to alleviate crises related to low income and poverty. EAF also oversees an Auto Repair Program for income-qualified working persons.
+
+What is the Calico Cat Thrift Shop?
+
+The Calico Cat Thrift Shop is located adjacent to the Calico Cat Food Pantry and Cupboard at 96 Kings Highway, Middletown, NJ 07748. The Thrift Shop sells new and gently used merchandise. The money raised through our sales directly supports the Emergency Assistance Fund (EAF), the Calico Cat Food Pantry and Cupboard as well as other non-profit organizations which expand our mission in the community.
+Partial List of other Non-Profits receiving our support:
+
+Aslan Youth
+Backpack Crew
+Bayshore Lunch Program
+Blessing Bag Brigade
+HABcore
+Habitat for Humanity
+Keyport Food Pantry
+Love Thy Neighbor
+Monmouth Day Care
+No Limits Café
+St. Marks Center for Renewal
+St. Ann’s Day Care
+Stephy’s Place
+Family Promise of Monmouth County
+Parker Family Health Clinic
+Center for Human Development
+
+What items does the Thrift Shop accept?
+
+New or gently used:
+
+Men/Women/Children’s clothing 
+Blankets
+Sheets
+Curtains
+Throw Pillows
+Linens 
+Jewelry and accessories
+Purses
+Small accent pieces and bric-a-brac
+Children's Books
+Lamps
+Houseware Items
+Shoes
+Small appliances must be in working order & good condition
+Toasters
+Microwaves 
+Coffee Pots
+
+We cannot accept the following itms due to storage limitation, safety and health reasons:
+Stuffed animals, toys with small pieces, baby equipment such as strollers, cars seats, pack and play items, large furniture pieces, TVs, computers, gym equipment, stereos, and cosmetics
+
+What is the Calico Cat Food Pantry and Cupboard?
+
+The Food Pantry & the Cupboard is open ONLY on the first and third Wednesday of each month from 9:00 until 3:00.
+A combination of fresh food, non-perishables and bread are some of the items which are given out.
+
+What items does the Food Pantry accept?
+
+We gratefully welcome, encourage and accept donations.
+We accept donations of non-perishable food items from individuals or from organized food drives in order to restock our food pantry. Food items are always in need 365 days a year. Please speak to our Coordinator on how you or your organization might help.
+We also accept donations for the Cupboard such as clothing for men, women and children, blankets, sheets and small appliances, utensils, plates, cups, etc. 
+We only ask that thedonated items are clean and in working order.
+
+How do to contact Community Outreach Group, Inc.?
+
+You can call us at the following numbers:
+Thrift Store: 
+732-671-0550
+
+Calico Cat Food Pantry & Cupboard: 
+732-671-2304 
+Emergency Assistance Fund: 
+732-671-8775
+Or email us at 
+monmouthcog@yahoo.com
+.
+You can also use the form on our 
+Contact Us
+ page.
+
+Food Pantry
+
+Contact US
+
+EMERGENCY Assistance Fund
+
+Fax
+
+732-671-8775
+
+732-671-8772
+
+Hours
+EAF are by Appointment
+﻿
+Contact
+Ms. Jane Chou
+EAF Coordinator
+
+thrift shop
+
+732-671-0550
+
+Hours
+Monday, Tuesday, Thursday and Friday: 9:30 AM - 2:30 PM
+Wednesday: 9:30 AM - 6:00 PM
+Saturday: 10:30 AM - 2:30 PM
+﻿
+
+Food Pantry
+
+Hours
+Ist and 3rd Wednesdays Only: 9:00 AM - 3:00 PM
+After 3 by appointment only
+
+Contact
+ Christine Stockhausen, Vice President
+Christinecalicocat@gmail.com
+
+monmouthcog@yahoo.com
+
+96 Kings Hwy, Middletown Twp, NJ 07748, United States of America
+
+© 2026 
+
+All Rights Reserved | Community Outreach Group, Inc.
+
+ Share by:
+
+[Contact links in page HTML]
+phone: 732-671-0550
+phone: 732-671-2304
+email: monmouthcog@yahoo.com
+phone: 732-671-8775
+</document>
+</documents>
+
+Extract the organisation profile from these documents.

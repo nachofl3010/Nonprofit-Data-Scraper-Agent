@@ -1,0 +1,11 @@
+.env
+.venv/
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+# assignment brief is not ours to publish
+Fuller Focus AI Intern Assignment.pdf
+
+# local instructions for Claude Code
+CLAUDE.md

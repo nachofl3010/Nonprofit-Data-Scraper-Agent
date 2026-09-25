@@ -1,0 +1,204 @@
+=== SYSTEM ===
+You extract a structured profile of a nonprofit organisation from pages crawled from its website. The output feeds a sales and research database, so accuracy matters more than completeness.
+
+Rules:
+- Use only facts stated in the documents. No outside knowledge, no guessing. If the documents don't support a field, return null (or an empty list).
+- source_url: copy the url attribute of the <document> the fact came from.
+- confidence: high = stated explicitly; medium = stated but ambiguous, partial or possibly outdated; low = inferred from indirect wording.
+- evidence: copy a short verbatim snippet (max 30 words) from that document. Never paraphrase it.
+- Dates in ISO 8601 (YYYY-MM-DD; YYYY-MM or YYYY if that is all the page gives). Money as a plain number plus ISO 4217 currency code ("$12.5 million" -> 12500000, USD).
+- annual_revenue: total revenue or income for one fiscal year. Not a single gift, campaign goal, program budget or cumulative total.
+- registration_id: the number only, as printed (e.g. "12-3456789" or "207076"). If several are shown, the main one (US EIN, or the first charity number).
+- leadership: named executives, senior staff and board members (max 15). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Board Member", "Trustee"). Add email or LinkedIn only if shown next to that person.
+- general_contact: the organisation's general email, phone and contact page.
+- open_roles: current paid job openings only (no volunteer roles). open_rfps: current requests for proposals, tenders or procurement notices only.
+- recent_news: up to 8 of the newest dated news, press or blog items with their dates. Do not filter by age.
+- funders_and_partners: organisations named as funders, sponsors or partners (max 15).
+- impact_metrics: up to 5 short quantified claims about the organisation's own work, e.g. "Served 12,000 meals in 2024". Not outcomes of its grantees or partners.
+- cause_area: the single best fit from the allowed list. geography_served.scope: local (one city or county), regional (state, province or multi-county area), national or international.
+- looks_like_nonprofit: false if the site is clearly a business, government body or personal site; say why in not_nonprofit_reason.
+
+=== USER ===
+<documents>
+<document url="https://www.rspb.org.uk/about-us/how-we-are-run" type="html" page="about">
+How we are run
+
+ Hub
+
+How we are run
+Find out about our Council, our legal framework and some of our core policies.
+Rules of thumb can help birdwatchers
+ Advice
+
+Charter and Statutes
+The RSPB’s Charter and Statutes, known as the Constitution, describe the fundamental principles by which the RSPB is governed. 
+RSPB Council
+RSPB Council is the governing body of the RSPB. It is responsible for ensuring the Society conducts ...
+RSPB Youth Council
+Young people should have a say on the issues affecting our lives. As the Youth Council, we want to e...
+The RSPB’s Annual Report 2025–26
+ Discover how, together, we’re creating a world richer in nature.
+ Advice
+
+How we listen and respond: complaints policy
+To help us build our relationship with our supporters, learn from your suggestions and provide opportunities for you to ...
+ Advice
+
+What you need to know about Country Advisory Committees
+Learn how they support, guide and champion the RSPB’s work. Each UK nation has a dedicated advisory committee.
+ Advice
+
+Key management policies
+Find out more about key management policies here, including detailed and downloadable policy statements.
+ Advice
+
+RSPB Campaigns: Our Approach
+The RSPB has been campaigning for more than 125 years and today we're still determined to stand up for nature, both here...
+Approach to environmental impacts
+The RSPB works to save birds and other wildlife here in the UK and abroad. Nature is in trouble and we recognise that th...
+Partnering with
+ The RSPB is a member of BirdLife International.
+More
+
+[Contact links in page HTML]
+email: membership@rspb.org.uk
+</document>
+<document url="https://www.rspb.org.uk/about-us/annual-report/rspb-annual-report-top-ten" type="html" page="financials">
+News
+Hen Harriers celebrate successful breeding season in Wales
+There’s encouraging news for one of Wales’ most threatened birds of prey, following a successful breeding season at RSPB...
+23rd Sep 2026
+Read on for 10 stand-out achievements from the RSPB Annual Report 2023-24. Find out how, together with more than one million RSPB members, volunteers and supporters, we’re working to tackle the nature and climate crisis.
+5 min read
+Here at the RSPB, we’re determined to realise our vision of a shared world where wildlife, wild spaces and all people thrive. To do this we need to take action for nature with a bird’s eye view. This means we look at how we can have the biggest impact possible, while also having a detailed understanding of how to tackle the threats affecting our birds and other wildlife. The Annual Report details the many ways in which we are working, from saving species on nature reserves to carrying out conservation that is visible from space! Read on for a snapshot of what’s been achieved.
+It’s thanks to our million plus members, and many volunteers, funders, partners and supporters that we can do what we do. Thank you! We hope you feel inspired and proud as you read through our Annual Report top 10.
+In spring 2023, more than 10 million viewers tuned into Wild Isles, the stunning BBC series we co-produced with Silverback Films, WWF-UK and the Open University, and narrated by Sir David Attenborough. One of the many legacies of this epic series is the Save Our Wild Isles Community Fund. This award-winning fund has resulted in £2.5 million being awarded to 250 community projects across the UK. These range from community gardens and planting trees to saving marine wildlife by collecting discarded fishing nets.
+We’ve also seen people come together in direct response to environmental disasters, such as in Scotland when supporters rallied to restore our Corrimony nature reserve after wildfires in May 2023. Following an appeal for help, RSPB members, supporters and philanthropists sprang into action and thanks to their generous gifts of over £200,000, as well as support from Barratt Homes and Trees for Life, we have been able to set about restoring the habitat. While there remains a lot to do, the return of birds to breed there in spring 2024, heralded a remarkable recovery.
+In January 2024, Puffins, Kittiwakes, Razorbills and other threatened seabirds were thrown a lifeline, after decades of campaigning finally saw the UK and Scottish Governments close sandeel fisheries in the English waters of the North Sea and all Scottish waters. This marks the single greatest act that will help save our seabirds. Many, including Puffins, rely on sandeels to feed their chicks. But climate change and overfishing have vastly depleted sandeel populations, having a devastating knock-on effect on seabirds. Although the European Union is now challenging this curb on sandeel fishing, we are continuing to support the ban.
+In March, the Scottish Parliament passed a raft of measures set to herald the end of persecution of birds of prey in the country and improve the condition of upland habitats. The Wildlife Management and Muirburn Act aims to put a stop to the illegal persecution of birds of prey, such as Golden Eagles and Hen Harriers, through the stronger regulation of grouse shooting. This new legislation follows decades of campaigning, with the RSPB at the forefront of those calling for urgent change, and it is hoped that the new laws could herald the end of the persecution of birds of prey in Scotland, as well as improve the conditions of upland habitats.
+Stretching from the Arctic to southern Africa, the African-Eurasian Flyway is one of four great global pathways used by hundreds of billions of migratory birds every year, many of which stop off in the UK, such as Barnacle Geese, Dunlins and Wigeons. Thanks to a £3 million partnership with the Ecological Restoration Fund and Birdlife International, we have begun work to protect landscapes and billions of birds along the flyway. This will enable us to tackle threats such as habitat destruction and degradation, illegal hunting and climate change.
+December 2023 saw the highest ever number of waterbirds at RSPB Wallasea Island in Essex, with 38,000 birds, including Teals, Shovelers and Wigeons, recorded. The habitats here were created through the Wallasea Island Wild Coast Project. This landmark conservation and engineering project remains one of the largest of its type in Europe and there are now over 650 hectares of lagoons, mudflats, saltmarsh and coastal grassland providing much needed food and shelter for wildlife.
+Seabirds on Northern Ireland’s Rathlin Island, including Puffins, Guillemots and Razorbills, are one step closer to a more secure future thanks to LIFE Raft. Non-native invasive Ferrets and Brown Rats are driving declines in many seabirds, as well as in other small mammals, invertebrates and plants. The multi-partner LIFE Raft project aims to eradicate Ferrets and Rats from the island and decrease the likelihood of their return. Since October 2023 over 600 Ferret traps have been activated and it is estimated that only a few Ferrets remain. The project is set to run until 2026, by which time it is hoped that all Ferrets and Rats will have been removed.
+Choughs, Curlews, Water Voles and many more species are set to benefit from Natur am Byth, a flagship Green Recovery project for Wales. RSPB Cymru are leading on the Pen Llŷn ac Ynys Môn project within the wider Natur am Byth programme. Both the Llŷn Peninsula and Anglesey (Ynys Môn) have an impressive suite of habitats and wildlife. RSPB South Stack on Ynys Môn, for example, supports rare Choughs, Adders and Spatulate Fleawort, a plant found nowhere else. Over the next four years, the project aims to halt the extinction of 42 species in Wales
+Since 2020 we’ve been working to prevent the first global bird extinction on British soil for over 60 years. Wilkins’ Buntings are a critically endangered bird only found on Nightingale Island, part of Tristan da Cunha, a remote group of islands in the South Atlantic Ocean and a UK Overseas Territory. Wilkins’ Buntings rely on the island’s native tree, Phylica arborea, for food. But the accidental introduction of an invasive insect has devastated these trees. The insects infest the trees and by secreting honeydew, they encourage the growth of a sooty mould which can completely smother and kill the trees. In 2019 storms hit, destroying the already weakened trees and causing an estimated loss of 80% of the island’s forest.
+We’ve been working to develop a suitable biocontrol agent and thanks to the introduction of this tiny wasp species, the trees are beginning to recover. Although the birds remain at risk, their future is looking brighter. A survey in February 2024 estimated there to be up to 90 pairs of breeding Wilkins’ Buntings.
+Hundreds of UK farmers, landowners and volunteers are working with Operation Turtle Dove to provide better nesting and feeding habitat for these migratory birds across southern and eastern England. 2023 proved a record year with over 260 farm holdings – covering over 68,500 hectares – a further 107 land managers and an army of dedicated volunteers helping to create the perfect conditions for Turtle Doves. Meanwhile, Turtle Dove hunting in France, Spain and Portugal was banned in 2023, following on from bans in 2021 and 2022. Each year of the ban is estimated to have saved the lives of one million birds. By understanding what’s driving the declines in Turtle Doves, we’ve been able to help them both on their breeding grounds in the UK and along their migratory routes.
+
+[Contact links in page HTML]
+email: 
+email: membership@rspb.org.uk
+</document>
+<document url="https://www.rspb.org.uk/about-us/annual-report/annual-report-archive" type="html" page="financials">
+Annual Report Archive
+
+ Feature
+
+Annual Report Archive
+Find our archive of the RSPB's annual reports 2001-2026.
+Read the full 2025-2026 report
+5 min read
+On this page
+Our annual reports
+Annual Report 2025-2026
+Our annual reports
+As well as providing an overview of key RSPB activities in the UK, the annual reports offer a wide-ranging snapshot of what we achieved in a particular year and report on our progress overseas.
+
+You'll also find a financial summary, approved by the RSPB's auditors.
+
+Annual Report 2025-2026
+
+Read the full report
+
+Download the 2025-2026 grants list
+
+Downloads
+2024-2025
+
+RSPB Annual Report
+
+RSPB Grants List
+
+2023-2024
+
+RSPB Annual Report
+
+RSPB Grants List
+
+ 2022-2023
+
+RSPB Annual Report
+
+RSPB Grants List
+
+2021-2022
+
+RSPB Annual Report
+
+RSPB Grants List
+
+2020-2021
+
+RSPB Annual Report
+
+RSPB Grants List
+
+2019-2020
+
+RSPB Annual Report
+
+RSPB Grants List
+
+2001-2019
+
+2018-2019 Annual Review
+
+2017-2018 Annual Review
+
+2016-2017 Annual Review
+
+2015-2016 Annual Review
+
+2014-2015 Annual Review
+
+2013-2014 Annual Review
+
+2012-2013 Annual Review
+
+2011-2012 Annual Review
+
+2010-2011 Annual Review 
+
+2009-2010 Annual Review
+
+2008-2009 Annual Review
+
+2007-2008 Annual Review
+
+2006-2007 Annual Review
+
+2005-2006 Annual Review
+
+2004-2005 Annual Review
+
+2003-2004 Annual Review
+
+2002-2003 Annual Review
+
+2001-2002 Annual Review
+
+Share this article
+Facebook
+Bluesky
+Send via Email
+Copy Link
+Partnering with
+ The RSPB is a member of BirdLife International.
+More
+
+[Contact links in page HTML]
+email: 
+email: membership@rspb.org.uk
+</document>
+</documents>
+
+Extract ONLY these fields: leadership, annual_revenue. Leave the other fields null or empty.

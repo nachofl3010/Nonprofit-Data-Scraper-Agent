@@ -1,0 +1,47 @@
+=== SYSTEM ===
+You help a web crawler decide which pages to fetch next. You get the fields still missing from a nonprofit's profile and a list of unfetched links from its site. Choose at most 3 URLs most likely to contain those fields, copied exactly from the list. If none look promising, return an empty list.
+
+=== USER ===
+Missing fields: leadership, annual_revenue
+
+Unfetched links (url | anchor | guess):
+- https://www.rspb.org.uk/about-us/our-history | Our history | about
+- https://www.rspb.org.uk/whats-happening/news/all-about-nightjars | - | about
+- https://www.rspb.org.uk/whats-happening/news/black-history-month | - | about
+- https://www.rspb.org.uk/whats-happening/news/celebrating-black-history-month | - | about
+- https://www.rspb.org.uk/whats-happening/news/people-power-for-nature | - | team
+- https://www.rspb.org.uk/careers | Careers | careers
+- https://www.rspb.org.uk/legal-and-policy | About our site | about
+- https://www.rspb.org.uk/about-us/how-we-are-run/rspb-youth-council/meet-the-team | - | team
+- https://www.rspb.org.uk/about-us/annual-report/annual-report-archive | - | financials
+- https://www.rspb.org.uk/about-us/how-we-are-run/rspb-youth-council-vacancies | - | careers
+- https://www.rspb.org.uk/media-centre | Press releases | news
+- https://www.rspb.org.uk/helping-nature/what-you-can-do/inspiring-young-people-to-take-action-for-nature | Young people | team
+- https://www.rspb.org.uk/about-us/how-we-are-run/approach-to-environmental-impacts | - | programs
+- https://www.rspb.org.uk/whats-happening/news/peoples-plan-for-nature-report | - | team
+- https://www.rspb.org.uk/whats-happening/news/the-dawn-chorus-all-you-need-to-know-about-natures-big-show | - | about
+- https://www.rspb.org.uk/whats-happening/news/ten-success-stories-you-need-to-know-about | - | about
+- https://www.rspb.org.uk/whats-happening/news/save-our-wild-isles-meet-the-people-taking-action-to-save-nature-in-their-communities | - | team
+- https://www.rspb.org.uk/whats-happening/news/hatch-of-the-day-the-football-teams-with-feathery-nicknames | - | team
+- https://www.rspb.org.uk/whats-happening/news/lets-get-englands-planning-system-working-for-people-and-nature | - | team
+- https://www.rspb.org.uk/whats-happening/news/stone-curlew-projects-anniversary | - | programs
+- https://www.rspb.org.uk/whats-happening/news/making-the-world-a-better-place-for-wildlife-and-for-people | - | team
+- https://www.rspb.org.uk/whats-happening/news/rspb-reserves-featured-in-film-about-protected-sites | - | about
+- https://www.rspb.org.uk/whats-happening/news/stone-curlews-a-mission-backed-by-members | - | about
+- https://www.rspb.org.uk/whats-happening/news/people-power-three-ways-our-community-raised-funds-for-nature | - | team
+- https://www.rspb.org.uk/whats-happening/news/new-report-shows-people-dont-want-new-homes-to-be-built-at-natures-expense | - | team
+- https://www.rspb.org.uk/whats-happening/news/we-cant-save-nature-without-involving-people-from-all-backgrounds | - | team
+- https://www.rspb.org.uk/whats-happening/news/impact-at-scale | - | programs
+- https://www.rspb.org.uk/days-out/reserves | or see all our locations | contact
+- https://www.rspb.org.uk/about-us/how-we-are-run | How we are run | about
+- https://www.rspb.org.uk/birds-and-wildlife/if-you-find-an-injured-bird | Who should I call if I am concerned about a bird? | about
+- https://www.rspb.org.uk/about-us/fair-work-first-statement | Fair Work statement | about
+- https://www.rspb.org.uk/about-us/our-ethical-principles | - | about
+- https://www.rspb.org.uk/about-us/the-rspb-group | - | about
+- https://www.rspb.org.uk/about-us/annual-report/rspb-annual-report-top-ten | - | financials
+- https://www.rspb.org.uk/about-us/annual-report/five-good-news-stories | - | news
+- https://www.rspb.org.uk/about-us/grant-funding | - | about
+- https://www.rspb.org.uk/about-us/management-policies-and-procedures | - | about
+- https://www.rspb.org.uk/about-us/policies-and-procedures | - | about
+- https://www.rspb.org.uk/whats-happening/news/state-of-nature-report/the-peoples-plan-for-nature-we-have-responded-now-others-must-do-the-same | - | team
+- https://www.rspb.org.uk/whats-happening/news/climate-change-news-piece | - | news

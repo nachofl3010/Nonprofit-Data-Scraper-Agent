@@ -1,0 +1,168 @@
+{
+  "name": {
+    "value": "charity: water",
+    "source_url": "https://www.charitywater.org/",
+    "confidence": "high"
+  },
+  "legal_name": {
+    "value": "Charity Global, Inc.",
+    "source_url": "https://www.charitywater.org/donate/water-project-sponsorship",
+    "confidence": "high"
+  },
+  "registration_id": {
+    "value": "22-3936753",
+    "source_url": "https://www.charitywater.org/",
+    "confidence": "high",
+    "evidence": "EIN: 22-3936753"
+  },
+  "country": {
+    "value": "US",
+    "source_url": "https://www.charitywater.org/",
+    "confidence": "high"
+  },
+  "hq_location": {
+    "value": "Franklin, TN",
+    "source_url": "https://www.charitywater.org/",
+    "confidence": "high"
+  },
+  "mission": {
+    "value": "charity: water is a nonprofit organization bringing clean and safe water to people around the world.",
+    "source_url": "https://www.charitywater.org/about",
+    "confidence": "high"
+  },
+  "programs": [
+    {
+      "name": "Water Project Sponsorship",
+      "description": "By sponsoring a project, you can provide clean water for a community, school, or health clinic. 100% of your donation will fund clean water."
+    }
+  ],
+  "cause_area": {
+    "value": "human_services",
+    "source_url": "https://www.charitywater.org/about",
+    "confidence": "high"
+  },
+  "geography_served": {
+    "value": {
+      "scope": "international",
+      "places": [
+        "29 countries"
+      ]
+    },
+    "source_url": "https://www.charitywater.org/about",
+    "confidence": "high"
+  },
+  "tax_status": {
+    "value": "501(c)(3)",
+    "source_url": "https://www.charitywater.org/",
+    "confidence": "high"
+  },
+  "annual_revenue": null,
+  "staff_count": null,
+  "impact_metrics": [
+    {
+      "value": "209,241 water projects funded",
+      "source_url": "https://www.charitywater.org/about",
+      "confidence": "high"
+    },
+    {
+      "value": "29 countries served",
+      "source_url": "https://www.charitywater.org/about",
+      "confidence": "high"
+    },
+    {
+      "value": "21,641,908 people will be served",
+      "source_url": "https://www.charitywater.org/about",
+      "confidence": "high"
+    },
+    {
+      "value": "In fiscal year 2025, clean water brought to 1.41 million people for the very first time",
+      "source_url": "https://www.charitywater.org/about/financials",
+      "confidence": "high"
+    }
+  ],
+  "leadership": [
+    {
+      "name": "Scott Harrison",
+      "title": "Founder & Chief executive officer",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.charitywater.org/about/executive-team",
+      "confidence": "high",
+      "evidence": "Founder & Chief executive officer Scott Harrison"
+    },
+    {
+      "name": "Melissa Russell",
+      "title": "President",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.charitywater.org/about/executive-team",
+      "confidence": "high",
+      "evidence": "President Melissa Russell"
+    },
+    {
+      "name": "Ben Greene",
+      "title": "Chief Revenue Officer",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.charitywater.org/about/executive-team",
+      "confidence": "high",
+      "evidence": "Chief Revenue Officer Ben Greene"
+    },
+    {
+      "name": "Brian Hoyer",
+      "title": "Chief Water Programs Officer",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.charitywater.org/about/executive-team",
+      "confidence": "high",
+      "evidence": "Chief Water Programs Officer Brian Hoyer"
+    },
+    {
+      "name": "Christa Stelzmuller",
+      "title": "Chief Technology Officer",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.charitywater.org/about/executive-team",
+      "confidence": "high",
+      "evidence": "Chief Technology Officer Christa Stelzmuller"
+    },
+    {
+      "name": "John Passauer",
+      "title": "Chief Financial Officer",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.charitywater.org/about/executive-team",
+      "confidence": "high",
+      "evidence": "Chief Financial Officer John Passauer"
+    },
+    {
+      "name": "Ceena Johnson",
+      "title": "General Counsel",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.charitywater.org/about/executive-team",
+      "confidence": "high",
+      "evidence": "General Counsel Ceena Johnson"
+    }
+  ],
+  "general_contact": {
+    "email": "info@charitywater.org",
+    "phone": "1 (646) 688-2323",
+    "contact_page_url": "https://www.charitywater.org/contact",
+    "source_url": "https://www.charitywater.org/contact"
+  },
+  "open_rfps": [],
+  "open_roles": [],
+  "recent_news": [
+    {
+      "headline": "Bringing you alongside one specific local partner team, GOAL Sierra Leone, for real-time impact updates",
+      "date": null,
+      "url": "https://www.charitywater.org/updates/sierra-leone",
+      "summary": "Live updates from local partner GOAL Sierra Leone and stories from the field.",
+      "source_url": "https://www.charitywater.org/updates/sierra-leone"
+    }
+  ],
+  "funders_and_partners": [],
+  "looks_like_nonprofit": true,
+  "not_nonprofit_reason": null
+}

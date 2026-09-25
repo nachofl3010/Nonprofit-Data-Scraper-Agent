@@ -1,0 +1,145 @@
+{
+  "name": {
+    "value": "RSPB",
+    "source_url": "https://www.rspb.org.uk/",
+    "confidence": "high"
+  },
+  "legal_name": null,
+  "registration_id": {
+    "value": "207076",
+    "source_url": "https://www.rspb.org.uk/",
+    "confidence": "high",
+    "evidence": "The Royal Society for the Protection of Birds (RSPB) is a registered charity: England and Wales no. 207076"
+  },
+  "country": {
+    "value": "GB",
+    "source_url": "https://www.rspb.org.uk/",
+    "confidence": "high"
+  },
+  "hq_location": {
+    "value": "Sandy, SG19 2DL",
+    "source_url": "https://www.rspb.org.uk/contact-us",
+    "confidence": "high"
+  },
+  "mission": {
+    "value": "The RSPB is a charity for the conservation of birds and nature. We bring people together who love birds and other wildlife, and who want to take action to restore the health and diversity of the natural world.",
+    "source_url": "https://www.rspb.org.uk/about-us/who-we-are",
+    "confidence": "high"
+  },
+  "programs": [
+    {
+      "name": "Nature Prescriptions",
+      "description": "Connecting with nature to improve health and wellbeing."
+    }
+  ],
+  "cause_area": {
+    "value": "environment",
+    "source_url": "https://www.rspb.org.uk/about-us/who-we-are",
+    "confidence": "high"
+  },
+  "geography_served": {
+    "value": {
+      "scope": "national",
+      "places": [
+        "United Kingdom"
+      ]
+    },
+    "source_url": "https://www.rspb.org.uk/about-us/who-we-are",
+    "confidence": "high"
+  },
+  "tax_status": {
+    "value": "registered charity: England and Wales no. 207076, Scotland no. SC037654",
+    "source_url": "https://www.rspb.org.uk/",
+    "confidence": "high"
+  },
+  "annual_revenue": null,
+  "staff_count": null,
+  "impact_metrics": [
+    {
+      "value": "Nearly 1.2 million members helping to protect wildlife and wild places",
+      "source_url": "https://www.rspb.org.uk/",
+      "confidence": "high"
+    }
+  ],
+  "leadership": [],
+  "general_contact": {
+    "email": "membership@rspb.org.uk",
+    "phone": "01767 669700",
+    "contact_page_url": "https://www.rspb.org.uk/contact-us",
+    "source_url": "https://www.rspb.org.uk/contact-us"
+  },
+  "open_rfps": [],
+  "open_roles": [],
+  "recent_news": [
+    {
+      "headline": "Hen Harriers celebrate successful breeding season in Wales",
+      "date": "2026-09-23",
+      "url": "https://www.rspb.org.uk/whats-happening/news",
+      "summary": null,
+      "source_url": "https://www.rspb.org.uk/whats-happening/news"
+    },
+    {
+      "headline": "How can our love of nature influence the political landscape?",
+      "date": "2026-09-21",
+      "url": "https://www.rspb.org.uk/whats-happening/news",
+      "summary": null,
+      "source_url": "https://www.rspb.org.uk/whats-happening/news"
+    },
+    {
+      "headline": "Cautious optimism as record year for Hen Harrier chicks at RSPB Geltsdale",
+      "date": "2026-09-18",
+      "url": "https://www.rspb.org.uk/whats-happening/news",
+      "summary": null,
+      "source_url": "https://www.rspb.org.uk/whats-happening/news"
+    },
+    {
+      "headline": "Feeding garden birds – how to keep our feathered friends healthy",
+      "date": "2026-09-17",
+      "url": "https://www.rspb.org.uk/whats-happening/news",
+      "summary": null,
+      "source_url": "https://www.rspb.org.uk/whats-happening/news"
+    },
+    {
+      "headline": "The ‘The Book of Birds’ wins the 2026 Wainwright Prize Book of the Year!",
+      "date": "2026-09-17",
+      "url": "https://www.rspb.org.uk/whats-happening/news",
+      "summary": null,
+      "source_url": "https://www.rspb.org.uk/whats-happening/news"
+    },
+    {
+      "headline": "Operation Orchid: giving 200 wild orchids a new home at RSPB Saltholme",
+      "date": "2026-09-15",
+      "url": "https://www.rspb.org.uk/whats-happening/news",
+      "summary": null,
+      "source_url": "https://www.rspb.org.uk/whats-happening/news"
+    },
+    {
+      "headline": "Visitor centre work starts ahead of nature park opening",
+      "date": "2026-09-14",
+      "url": "https://www.rspb.org.uk/whats-happening/news",
+      "summary": null,
+      "source_url": "https://www.rspb.org.uk/whats-happening/news"
+    },
+    {
+      "headline": "New drone images show hope for Dove Stone after unprecedented wildfires",
+      "date": "2026-09-10",
+      "url": "https://www.rspb.org.uk/whats-happening/news",
+      "summary": null,
+      "source_url": "https://www.rspb.org.uk/whats-happening/news"
+    }
+  ],
+  "funders_and_partners": [
+    {
+      "name": "People's Postcode Lottery",
+      "type": "other",
+      "source_url": "https://www.rspb.org.uk/whats-happening/news/peoples-postcode-lottery"
+    },
+    {
+      "name": "BirdLife International",
+      "type": "other",
+      "source_url": "https://www.rspb.org.uk/"
+    }
+  ],
+  "looks_like_nonprofit": true,
+  "not_nonprofit_reason": null
+}

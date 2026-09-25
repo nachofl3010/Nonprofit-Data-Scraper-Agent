@@ -1,0 +1,393 @@
+{
+  "profile": {
+    "schema_version": "1.0",
+    "taxonomy_version": "ntee-major-v1",
+    "input": "https://basecamp.com",
+    "resolved_url": "https://basecamp.com/",
+    "extracted_at": "2026-09-25T15:02:52.580187Z",
+    "status": "partial",
+    "flags": [
+      "not_a_nonprofit?"
+    ],
+    "identity": {
+      "last_checked": "2026-09-25T15:02:52.580187Z",
+      "name": {
+        "value": "Basecamp",
+        "source_url": "https://basecamp.com/",
+        "confidence": "high"
+      },
+      "legal_name": null,
+      "website": "https://basecamp.com/",
+      "registration_id": null,
+      "country": null,
+      "hq_location": null,
+      "mission": {
+        "value": "Basecamp is project management without all the nonsense. Rock solid and famously easy to use.",
+        "source_url": "https://basecamp.com/",
+        "confidence": "high"
+      },
+      "programs": [
+        {
+          "name": "Hill Charts",
+          "description": "A Basecamp exclusive way to track progress, showing a 10,000-foot view of project status called the Hill Chart."
+        }
+      ],
+      "cause_area": null,
+      "geography_served": {
+        "value": {
+          "scope": "international",
+          "places": [
+            "over 100 countries",
+            "every populated continent"
+          ]
+        },
+        "source_url": "https://basecamp.com/live",
+        "confidence": "high"
+      },
+      "impact_metrics": [
+        {
+          "value": "Thousands of people are working in Basecamp now",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "Used across every industry, and nearly a million people, teams, companies, and non-profits worldwide rely on it daily",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "84 million accounts",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "60 million projects",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "72 million check-in answers",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "350 million messages",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "1.7 billion to-dos",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "2.7 billion comments",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "2.2 billion files",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "2.3 billion pings",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "675 million boosts",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "5 petabytes of data",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "200 million scheduled events",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "180 million to-do lists",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "1 billion @mentions",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "545 million to-dos completed",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "15 billion notifications",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high"
+        }
+      ],
+      "looks_like_nonprofit": false
+    },
+    "financials": {
+      "last_checked": "2026-09-25T15:02:52.580187Z",
+      "annual_revenue": null,
+      "staff_count": null,
+      "size_band": "unknown",
+      "financial_history": null,
+      "tax_status": null
+    },
+    "contacts": {
+      "last_checked": "2026-09-25T15:02:52.580187Z",
+      "leadership": [
+        {
+          "name": "Jason Fried",
+          "title": "Co-founder & CEO",
+          "email": "jason@basecamp.com",
+          "linkedin": null,
+          "source_url": "https://basecamp.com/",
+          "confidence": "high",
+          "evidence": "Jason Fried, jason@basecamp.com Co-founder & CEO",
+          "buyer_role": "executive"
+        }
+      ],
+      "general_contact": {
+        "email": "jason@basecamp.com",
+        "phone": null,
+        "contact_page_url": null,
+        "source_url": "https://basecamp.com/"
+      }
+    },
+    "signals": {
+      "last_checked": "2026-09-25T15:02:52.580187Z",
+      "open_rfps": [],
+      "open_roles": [],
+      "recent_news": [],
+      "funders_and_partners": []
+    },
+    "technology": {
+      "last_checked": "2026-09-25T15:02:52.580187Z",
+      "tech_stack": [
+        {
+          "tool": "Mailchimp",
+          "category": "email_marketing",
+          "source_url": "https://basecamp.com/",
+          "matched": "https://basecamp.us2.list-manage.com/subscribe/post-json?u=2a145c60b16248b65e46a799a&id=476312b66e&c=?"
+        }
+      ]
+    },
+    "pages_crawled": [
+      {
+        "url": "https://basecamp.com/",
+        "page_type": "homepage",
+        "kind": "html",
+        "status": 200,
+        "tokens": 2003,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://basecamp.com/about",
+        "page_type": "about",
+        "kind": "html",
+        "status": 200,
+        "tokens": 863,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://basecamp.com/live",
+        "page_type": "team",
+        "kind": "html",
+        "status": 200,
+        "tokens": 559,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://basecamp.com/hill-charts",
+        "page_type": "programs",
+        "kind": "html",
+        "status": 200,
+        "tokens": 1041,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://basecamp.com/gettingreal/13.3-ride-the-blog-wave",
+        "page_type": "news",
+        "kind": "html",
+        "status": 200,
+        "tokens": 320,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://basecamp.com/managers/giving-feedback",
+        "page_type": "donate",
+        "kind": "html",
+        "status": 200,
+        "tokens": 1468,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://basecamp.com/gettingreal/01.2-about-basecamp",
+        "page_type": "about",
+        "kind": "html",
+        "status": 200,
+        "tokens": 461,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://basecamp.com/gettingreal/11.1-theres-nothing-functional-about-afunctional-spec",
+        "page_type": "about",
+        "kind": "html",
+        "status": 200,
+        "tokens": 1020,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://basecamp.com/paths",
+        "page_type": "team",
+        "kind": "html",
+        "status": 200,
+        "tokens": 3482,
+        "error": null,
+        "via": "crawl"
+      }
+    ],
+    "errors": [
+      "site may not be a nonprofit: Basecamp is a software company offering a commercial project management product, operated by 37signals LLC, a for-profit business.",
+      "registry: no confident registry match for 'Basecamp': no name match",
+      "news filter: dropped 1 item(s) older than 12 months or undated"
+    ],
+    "gapfill": {
+      "triggered": false,
+      "missing": [
+        "annual_revenue"
+      ],
+      "urls": [],
+      "filled": [],
+      "note": "key fields missing but no unfetched links left"
+    },
+    "cost": {
+      "calls": [
+        {
+          "purpose": "extract",
+          "model": "gpt-4.1-mini",
+          "input_tokens": 3759,
+          "output_tokens": 806,
+          "cache_read_tokens": 9088,
+          "cache_write_tokens": 0,
+          "cached_locally": false,
+          "usd": 0.003702,
+          "usd_list": 0.003702
+        }
+      ],
+      "input_tokens": 12847,
+      "output_tokens": 806,
+      "usd": 0.003702,
+      "usd_list": 0.003702
+    }
+  },
+  "views": {
+    "sales": {
+      "name": "Basecamp",
+      "website": "https://basecamp.com/",
+      "status": "partial",
+      "flags": [
+        "not_a_nonprofit?"
+      ],
+      "cause_area": null,
+      "size_band": "unknown",
+      "annual_revenue": null,
+      "hq_location": null,
+      "lead_score": 1,
+      "score_breakdown": [
+        {
+          "signal": "reachable_decision_maker",
+          "points": 1,
+          "detail": "direct email for Jason Fried (Co-founder & CEO)",
+          "timing": false
+        }
+      ],
+      "why_now": "No active timing signals; nurture. Fit: direct email for Jason Fried (Co-founder & CEO).",
+      "tech_stack": [
+        "Mailchimp (email_marketing)"
+      ],
+      "contacts_by_role": {
+        "executive": [
+          {
+            "name": "Jason Fried",
+            "title": "Co-founder & CEO",
+            "email": "jason@basecamp.com",
+            "linkedin": null
+          }
+        ]
+      },
+      "general_contact": {
+        "email": "jason@basecamp.com",
+        "phone": null,
+        "contact_page_url": null,
+        "source_url": "https://basecamp.com/"
+      },
+      "open_rfps": [],
+      "buying_signal_roles": [],
+      "recent_news": []
+    },
+    "funder": {
+      "name": "Basecamp",
+      "website": "https://basecamp.com/",
+      "mission": "Basecamp is project management without all the nonsense. Rock solid and famously easy to use.",
+      "cause_area": null,
+      "geography_served": {
+        "scope": "international",
+        "places": [
+          "over 100 countries",
+          "every populated continent"
+        ]
+      },
+      "programs": [
+        {
+          "name": "Hill Charts",
+          "description": "A Basecamp exclusive way to track progress, showing a 10,000-foot view of project status called the Hill Chart."
+        }
+      ],
+      "registration_id": null,
+      "tax_status": null,
+      "financial_health": {
+        "annual_revenue": null,
+        "size_band": "unknown",
+        "trend": "unknown",
+        "history": []
+      },
+      "impact_metrics": [
+        "Thousands of people are working in Basecamp now",
+        "Used across every industry, and nearly a million people, teams, companies, and non-profits worldwide rely on it daily",
+        "84 million accounts",
+        "60 million projects",
+        "72 million check-in answers",
+        "350 million messages",
+        "1.7 billion to-dos",
+        "2.7 billion comments",
+        "2.2 billion files",
+        "2.3 billion pings",
+        "675 million boosts",
+        "5 petabytes of data",
+        "200 million scheduled events",
+        "180 million to-do lists",
+        "1 billion @mentions",
+        "545 million to-dos completed",
+        "15 billion notifications"
+      ],
+      "existing_funders": []
+    }
+  }
+}

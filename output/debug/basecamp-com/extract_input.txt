@@ -1,0 +1,1352 @@
+=== SYSTEM ===
+You extract a structured profile of a nonprofit organisation from pages crawled from its website. The output feeds a sales and research database, so accuracy matters more than completeness.
+
+Rules:
+- Use only facts stated in the documents. No outside knowledge, no guessing. If the documents don't support a field, return null (or an empty list).
+- source_url: copy the url attribute of the <document> the fact came from.
+- confidence: high = stated explicitly; medium = stated but ambiguous, partial or possibly outdated; low = inferred from indirect wording.
+- evidence: copy a short verbatim snippet (max 30 words) from that document. Never paraphrase it.
+- Dates in ISO 8601 (YYYY-MM-DD; YYYY-MM or YYYY if that is all the page gives). Money as a plain number plus ISO 4217 currency code ("$12.5 million" -> 12500000, USD).
+- annual_revenue: total revenue or income for one fiscal year. Not a single gift, campaign goal, program budget or cumulative total.
+- registration_id: the number only, as printed (e.g. "12-3456789" or "207076"). If several are shown, the main one (US EIN, or the first charity number).
+- leadership: named executives, senior staff and board members (max 15). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Board Member", "Trustee"). Add email or LinkedIn only if shown next to that person.
+- general_contact: the organisation's general email, phone and contact page.
+- open_roles: current paid job openings only (no volunteer roles). open_rfps: current requests for proposals, tenders or procurement notices only.
+- recent_news: up to 8 of the newest dated news, press or blog items with their dates. Do not filter by age.
+- funders_and_partners: organisations named as funders, sponsors or partners (max 15).
+- impact_metrics: up to 5 short quantified claims about the organisation's own work, e.g. "Served 12,000 meals in 2024". Not outcomes of its grantees or partners.
+- cause_area: the single best fit from the allowed list. geography_served.scope: local (one city or county), regional (state, province or multi-county area), national or international.
+- looks_like_nonprofit: false if the site is clearly a business, government body or personal site; say why in not_nonprofit_reason.
+
+=== USER ===
+<documents>
+<document url="https://basecamp.com/" type="html" page="homepage">
+Basecamp
+
+We’d like to use cookies to help understand if our ads are working or not.
+
+No, thanks
+
+Yes, that’s fine
+
+Pricing & sign up
+
+Basecamp 5 is here
+
+Features
+
+Paths
+
+API, CLI, Skills
+
+Reliable to the core
+
+Thousands of people
+ in Basecamp now
+
+Have an account? Sign in
+
+Want an account? Sign up free
+
+Pricing & sign up
+ — A free plan + paid upgrades
+
+Basecamp 5 is here
+ — A massive upgrade for 2026
+
+Features
+ — Remarkably simple, surprisingly capable
+
+Paths
+ — Why so many switch to Basecamp
+
+API, CLI, Skills
+ — Developer tools, AI Agent-ready
+
+Reliable to the core
+ — A multi-decade track record
+
+Thousands of people
+ are working in Basecamp right now
+
+Try Basecamp Free
+
+or
+
+Take a 3-minute tour
+
+See how Basecamp works
+
+Basecamp is project management without all the nonsense. Rock solid and famously easy to use.
+
+←
+Back
+
+Hey there—
+
+Tell me if this sounds about right.
+
+Every day you’re juggling people, projects, and expectations. There are tasks to do, discussions to have, decisions to make, files to share, deadlines to hit, relationships to manage, and work to deliver.
+
+This all has to happen 
+somewhere
+. But you’ve discovered that spreading everything across different apps, browser tabs, emails, and chats doesn’t work. You need a system.
+
+Unfortunately, most project management systems are bloated, complicated, and confusing. And software that’s hard to use doesn’t get used.
+
+20 years ago we were in the same boat. We needed something capable, but also straightforward, easy, and 
+reliable
+. Nothing fit. So we invented Basecamp, and have been improving it ever since. In software, longevity like this isn’t luck — it’s proof it works. And 
+in 2026 we released the all-new Basecamp 5
+, packing decades of experience into our best version yet.
+
+Today, Basecamp is used across every industry, and nearly a million people, teams, companies, and non-profits worldwide 
+rely on it daily
+.
+
+Thanks for checking us out. We invite you to give Basecamp a try. And ultimately, we’d be honored to have you as a customer.
+
+Jason Fried, 
+jason@basecamp.com
+
+Co-founder & CEO
+
+Take a minute to meet some of our customers
+
+They’re product developers, woodworkers, music industry folks, logistics pros, publishers, event planners, marketers, architects, artists, software designers, brand strategists, educators…
+
+Play this 1-minute video
+
+We asked our customers: “What changed for the better since you switched to Basecamp?”
+
+Simply put, we get more work done, quicker, and better. 
+Productivity is up. Errors are down. Clients are happier.
+
+Patrick Sheffield, Moore Communications Group
+
+Since using Basecamp, our 
+communication is drastically better and deadlines are met without drama.
+
+Shannon Kropf, Full Sail University
+
+Info is flowing like water. A lot more transparency. Everyone is on the same page.
+ No more secrets and blindspots.
+
+Aaron Bingaman, Penn State OEM
+
+I no longer have to wonder whether I’ve asked for something… 
+Every member of my team is more accountable.
+
+John Drover, Roebothan McKay Marshall
+
+Basecamp makes us tighter as a group.
+ Basecamp makes it easy to create shared understanding in our company.
+
+Teddy Zetterlund, Lägenhetsbyte
+
+We don’t have to contact each other about every little thing. 
+When we need to know something, it’s right there.
+
+Kelly Hunter, Chamber Nation
+
+Our church is loving Basecamp. 
+It’s so easy to use even the 80-year-olds on our committee are using it!
+
+Blake Rider, St. Stephen’s Episcopal Church
+
+It eliminated the need for extra communication and 
+reduced a lot of miscommunication between my team.
+
+Anthony Clark, Clark Partners Realty Group
+
+Check out over 1,000 more customer testimonials
+
+How about a quick demonstration?
+
+No slides, no sales pitch. Just a real project, clicked through in real time. A wonderful way to get comfortable with Basecamp.
+
+See how Basecamp works
+
+Big numbers. Highly-trusted. Rugged, reliable, ready.
+
+Thousands of people
+ are working in Basecamp right now.
+
+84 million
+ accounts
+
+60 million
+ projects
+
+72 million
+ check-in answers
+
+350 million
+ messages
+
+1.7 billion
+ to-dos
+
+2.7 billion
+ comments
+
+2.2 billion
+ files
+
+2.3 billion
+ pings
+
+675 million
+ boosts
+
+5 petabytes
+ of data
+
+200 million
+ scheduled events
+
+180 million
+ to-do lists
+
+1 billion
+ @mentions
+
+545 million
+ to-dos completed
+
+15 billion
+ notifications
+
+233
+ countries
+
+52,000
+ cities
+
+99.99%
+ uptime
+
+Remember when companies cared about service?
+
+We still do! Staffed by incredible humans, we’re here for you 24/7/365.
+
+Meet Eron, our Head of Technical Ops
+
+Durable infrastructure
+
+Rather than rent cloud hosting, we own and run our hardware across multiple data centers. We specified the hardware, configured (and sometimes invented) the software, and optimized every detail for speed and reliability. 
+We’ve maintained an industry-leading 
+99.99% uptime
+ record for years.
+
+Meet Chase, our Head of Support
+
+Dependable customer service
+
+At most companies, customer service is treated as an afterthought, something to outsource, a place to cut costs. At Basecamp it’s one of our best features. 
+Our customers consistently rave
+ about our kind, patient, and deeply knowledgeable staff. Everyone on the team can answer any question.
+
+Want to see a live demo and ask some questions first?
+
+We’ll show you how to set up Basecamp in minutes, how to roll it out to your team, and Q&A covering anything else you’d like to ask.
+
+See all upcoming classes
+.
+
+Have 
+a great
+ day!
+
+Join more than 200,000 people who get our email newsletter.
+ We’ll share product updates, thoughts, new releases, and other tidbits we think you’ll find interesting.
+
+Thanks! You’re in.
+ Look out for our latest newsletter in the next few weeks.
+
+Basecamp 5 is here
+
+New!
+
+Bring your AI agents to Basecamp
+
+New!
+
+Where we came from
+
+Features and benefits
+
+Reliable to the core
+
+Friendly folks, standing by
+
+The people’s path to Basecamp
+
+Apps for every platform
+
+Integrations
+
+What changed for the better?
+
+Learn Basecamp
+
+With Basecamp, it’s a Yes!
+
+Come small, come all
+
+We stand with the underdogs
+
+Leaving the Cloud
+
+How we make decisions
+
+Group chat problems
+
+Why we choose profit
+
+Seven shipping principles
+
+How we communicate
+
+Night & day
+
+Bootstrapped, profitable, & proud
+
+Basecamp community
+
+Free live classes
+
+Books we’ve written
+
+Kill overkill
+
+Breakfast with Basecamp
+
+Basecamp help
+
+Discounts
+
+Basecamp accessibility
+
+Keyboard shortcuts
+
+Can we stay in touch?
+
+See where projects really stand
+
+Getting Real
+
+Shape Up
+
+Manager Playbook
+
+Employee Handbook
+
+Basecamp
+™
+
+is designed, built, and backed by
+
+37signals
+™
+
+,
+
+the people behind
+
+HEY
+™
+
+and
+
+Fizzy
+™
+
+Status
+
+Support
+
+Policies
+
+Privacy
+
+Security
+
+Reliability
+
+Sign in
+
+© 37signals LLC. All rights reserved.
+
+Try Basecamp free
+
+[Site footer]
+e who get our email newsletter. We’ll share product updates, thoughts, new releases, and other tidbits we think you’ll find interesting. Subscribe Thanks! You’re in. Look out for our latest newsletter in the next few weeks. Basecamp 5 is here New! Bring your AI agents to Basecamp New! Where we came from Features and benefits Reliable to the core Friendly folks, standing by The people’s path to Basecamp Apps for every platform Integrations What changed for the better? Learn Basecamp With Basecamp, it’s a Yes! Come small, come all We stand with the underdogs Leaving the Cloud How we make decisions Group chat problems Why we choose profit Seven shipping principles How we communicate Night & day Bootstrapped, profitable, & proud Basecamp community Free live classes Books we’ve written Kill overkill Breakfast with Basecamp Basecamp help Discounts Basecamp accessibility Keyboard shortcuts Can we stay in touch? See where projects really stand Getting Real Shape Up Manager Playbook Employee Handbook Basecamp ™ is designed, built, and backed by 37signals ™ , the people behind HEY ™ and Fizzy ™ Status Support Policies Privacy Security Reliability Sign in © 37signals LLC. All rights reserved.
+
+[Contact links in page HTML]
+email: jason@basecamp.com
+</document>
+<document url="https://basecamp.com/about" type="html" page="about">
+Born out of desperate necessity to stop embarrassing ourselves in front of our clients, the story of how Basecamp was born is likely your story, too.
+Where we came from
+Hey there, I’m Jason Fried, one of the co-founders here. I’ve been running 37signals — the business that makes Basecamp — for 27 years.
+People often ask me why we built Basecamp. They’ve never seen anything like it before, so they’re curious where the idea came from.
+I wish I could credit a spark of genius, or some deep insight. But I can’t. Truth is, we built Basecamp out of desperate necessity. We needed it bad. Without it, we were embarrassing ourselves.
+Way back when, we used to be a design firm. As we grew, we kept taking on more and more projects. We thought we could handle it, while still providing the same level of service, but we couldn’t. We were fooling ourselves. Sound familiar?
+It wasn’t that we didn’t have the skills — we just didn’t have the right tools, nor the method, to juggle the additional workload. We were disorganized, we were dropping balls, and stuff was slipping.
+Quality was suffering, and, as is often the case in situations like this, our clients noticed before we noticed. That was the especially painful and uncomfortable part.
+We needed a better way to manage projects, track feedback, and make progress. Email, chat, spreadsheets, calls, scattered documents, information here, there, and everywhere just wasn’t cutting it. Systems like that work for a minute, and then they fall apart fast — especially as you grow and add more people to the mix.
+We looked around and tried a few things, but the popular tools we tried simply didn’t cut it. So we had to build our own project management system from scratch.
+We focused on building a simple, straightforward collection of tools that could track work so everyone knew who was doing what, keep feedback and revisions on the record, centralize communication so no one missed anything, and schedule important milestones.
+We started using the system with our clients. They kept asking “What is this? We could totally use this for our own projects!” And that’s when the lightbulb went on — maybe this is a product for others, and not just for us? If we need it, surely others need it.
+So we tweaked it, tightened it up, polished the rough edges, and put it on the market. It was an instant hit.
+Turns out, tens of thousands of other companies had similar struggles managing their projects, and needed what we needed.
+And about a year or so after we first released it, it was generating more revenue for us than our web design business. So we stopped doing web design and have been focused on building Basecamp ever since.
+Based on feedback, and our own ideas, we’ve made thousands of improvements over the years, with so much more to come. Basecamp defined a category, and continues to constantly push that category forward in innovative ways.
+It’s been an incredible ride so far, and we have so many people to thank. But most of all, we feel a deep sense of responsibility to continue to make the best product we can for companies who desperately seek a better way to work. We’re here for them, 23 years and running.
+Thanks for reading, and for giving Basecamp a try. You can always contact me directly if you have any questions at jason@basecamp.com. I look forward to hearing from you.
+- Jason Fried, jason@basecamp.com
+- Co-founder & CEO
+
+[Contact links in page HTML]
+email: jason@basecamp.com
+</document>
+<document url="https://basecamp.com/live" type="html" page="team">
+Basecamp — Live around the world
+
+We’d like to use cookies to help understand if our ads are working or not.
+
+No, thanks
+
+Yes, that’s fine
+
+Thousands of people
+ are working in Basecamp now
+
+Wherever there’s work, there’s Basecamp
+
+Basecamp is used in over 100 countries, on every populated continent, across every industry imaginable.
+
+From engineering, to marketing, to manufacturing, to design, to software development, to construction, to client services, to PR communications, to publishing, to education, to religious institutions, to governments, to NGOs and non-profits, Basecamp fits any kind of work.
+
+Where there’s tasks to do, discussions to have, decisions to make, files to share, deadlines to hit, relationships to manage, and work to deliver, you’ll find Basecamp in the middle of it all. 
+Give it a try today, for free
+.
+
+*The number above represents unique users accessing Basecamp within the last hour.
+
+Have 
+a great
+ day!
+
+Join more than 200,000 people who get our email newsletter.
+ We’ll share product updates, thoughts, new releases, and other tidbits we think you’ll find interesting.
+
+Thanks! You’re in.
+ Look out for our latest newsletter in the next few weeks.
+
+Basecamp 5 is here
+
+New!
+
+Bring your AI agents to Basecamp
+
+New!
+
+Where we came from
+
+Features and benefits
+
+Reliable to the core
+
+Friendly folks, standing by
+
+The people’s path to Basecamp
+
+Apps for every platform
+
+Integrations
+
+What changed for the better?
+
+Learn Basecamp
+
+With Basecamp, it’s a Yes!
+
+Come small, come all
+
+We stand with the underdogs
+
+Leaving the Cloud
+
+How we make decisions
+
+Group chat problems
+
+Why we choose profit
+
+Seven shipping principles
+
+How we communicate
+
+Night & day
+
+Bootstrapped, profitable, & proud
+
+Basecamp community
+
+Free live classes
+
+Books we’ve written
+
+Kill overkill
+
+Breakfast with Basecamp
+
+Basecamp help
+
+Discounts
+
+Basecamp accessibility
+
+Keyboard shortcuts
+
+Can we stay in touch?
+
+See where projects really stand
+
+Getting Real
+
+Shape Up
+
+Manager Playbook
+
+Employee Handbook
+
+Basecamp
+™
+
+is designed, built, and backed by
+
+37signals
+™
+
+,
+
+the people behind
+
+HEY
+™
+
+and
+
+Fizzy
+™
+
+Status
+
+Support
+
+Policies
+
+Privacy
+
+Security
+
+Reliability
+
+Sign in
+
+© 37signals LLC. All rights reserved.
+
+Try Basecamp free
+</document>
+<document url="https://basecamp.com/hill-charts" type="html" page="programs">
+A Basecamp exclusive way to track progress.
+Hill Charts: See where projects really stand
+For years we’ve used Basecamp To-dos to track our own work here at Basecamp. But for bigger projects with dozens or hundreds of tasks, you need a way to see the bigger picture. Is the project going to be done on time? Are people stuck?
+To solve this problem, we built an entirely new idea into Basecamp To-dos. It’s a 10,000-foot view of projects that answers the hard questions about where things really stand. Introducing the Hill Chart:
+The idea: work is like a hill
+Every piece of work has two phases. First there’s an uphill phase where you figure out your approach. You have a basic idea about the task, but you haven’t figured out what the solution is going to look like or how to solve all the unknowns.
+Eventually you reach a point where there aren’t any more unsolved problems. That’s like standing at the top of the hill. You can see clearly all the way down the other side. Then the downhill phase is just about execution.
+A Hill Chart from a real project
+All of our development projects are made of a set of To-do Lists. We create a To-do List for each piece of work that we can make progress on independently.
+Now to track progress, we turn on Hill Chart tracking for each list. This will reveal a Hill Chart on the top of the To-dos screen with a dot for the list we’re tracking.
+After adding a few more lists, we click Update on the Hill Chart and drag the dots for those lists into position.
+Now anybody who checks on the project can see the status of these three lists. Two of them are over the hill — full of certainty, with just execution left. One is still on the uphill slope, which means there are unsolved problems or open questions.
+Note how that the status is human generated, not computer generated. This reflects a real person’s feeling of the work at this moment. And because the status is attached to lists instead of individual To-dos, we get a big picture view of all the work.
+Checking in on progress over time
+Every time someone updates the Hill Chart, a new snapshot is saved to the project’s history. This gives managers a ton of context about what’s moving on the project and what isn’t without peppering the team with questions.
+Updates can be annotated with commentary, and you can even comment on or Boost someone else’s Hill Chart update. This enables a new level of fast, asynchronous communication about high-level progress on projects.
+More well-defined work
+Sometimes trying to position a list on the Hill Chart helps you to better structure the work. On a recent project we were building a feature to notify people when an Event was rescheduled.
+That dot sat there for a few days without moving. Why weren’t we making progress? After a short talk with the team, we realized that it was unclear where to place the dot because part of the work was figured out and part wasn’t. The back-end work was solved, but there was some design work that we hadn’t figured out. So where should the dot go?
+In a case like this, the hill is telling us to break up the list. We renamed the original list to “Notification: Delivery” and moved it over the hill to show where it really stood. Then we created two separate lists to track the front-end work that was still uphill.
+Redefining the To-do Lists made it easier to see what was actually going on in the project and what needed to be done next.
+Unknown to known, and known to done
+Since we adopted the Hill Chart internally at Basecamp, our teams have been communicating about progress at a level never before possible. Our intuition is the same, but now we have a way to immediately show each other where things stand.
+And because of the Hill Chart history, we don’t need to call meetings to catch up on a project’s status. It’s no longer a challenge to see what’s in motion and what’s stuck. We can have quick, substantial conversations asynchronously about where to focus next or how to break up a problem.
+Try the Hill Chart on your next Basecamp project. To use it, navigate to any To-do List and choose “Track this on the Hill Chart” from the Options menu (•••) in the top-right corner.
+</document>
+<document url="https://basecamp.com/gettingreal/13.3-ride-the-blog-wave" type="html" page="news">
+Blogging can be more effective than advertising (and it’s a hell of a lot cheaper)
+Advertising is expensive. And evaluating the effectiveness of various types of advertising can wind up being even more expensive than the advertising itself. When you don’t have the time or money to go the traditional advertising route, consider the promote-via-blog route instead.
+Start off by creating a blog that not only touts your product but offers helpful advice, tips, tricks, links, etc. Our Signal vs. Noise blog gets thousands of unique readers a week thanks to the helpful, informative, and interesting bits and anecdotes we post on a daily basis.
+So when it came time to promote our first product, Basecamp, we started there. We got the word out on SvN and it started to spread. Folks like Jason Kottke, the BoingBoingers, Jim Coudal, and a variety of other people with popular blogs helped raise the visibility and things took off.
+Ta-da List is another great example of the power of blog-based marketing. We launched Ta-da with a single post on Signal vs. Noise, and a few weeks later it had been mentioned on over 200 blogs and over 12,000 people had signed up for their own Ta-da account. Word about Backpack spread even faster. Within 24 hours of launch, more than 10,000 signed up.
+</document>
+<document url="https://basecamp.com/managers/giving-feedback" type="html" page="donate">
+Giving Feedback
+Performance reviews are once-a-year formal touch points during which managers evaluate and discuss job successes, challenges, and goals with their report. However, between those touch points, managers should be giving regular, reliable feedback.
+Coachability is a defined performance expectation for every role and every level at the company. That means everyone is expected to receive feedback graciously, and everyone is expected to apply that feedback when necessary. As a leader, you’re expected to provide useful, actionable, well-considered feedback to your report and your more junior colleagues.
+First, some definitions:
+- Positive feedback recognizes and reinforces successful behaviors or actions.
+- Negative feedback is sharing your thoughts about your report’s behavior in a disparaging way. Don’t do this!
+- Constructive feedback uses observations and your own expert advice to steer your report towards improvement. Critical, yes, but also helpful.
+This chapter is focused on techniques for giving constructive feedback. But in general, a combination of constructive feedback + positive feedback + continuous feedback throughout all levels and departments results in a healthy feedback culture, in which communication flows freely and with the end goal of improving individual and company performance.
+There are three general areas where your report may need constructive feedback.
+- Approach, or project management.
+- Tactics, or the practical tasks necessary to execute their approach.
+- Engagement, or how they show up to work.
+Approach
+Generally speaking, employees at 37signals enjoy a high degree of control over their own work and desired workflow. This value is ingrained in our company culture and one of the major perks of working here. Encourage your report to find their own way and devise their own strategy once they’ve been assigned a project. Avoid giving unnecessary feedback when their approach is solid and just different than the one you would take. When you start to monitor their preferred strategy for tackling projects or problems, you veer into micromanagement territory.
+On the other hand, when your report’s approach is detrimental to team or individual productivity, work quality, team process, or team morale, it’s your duty to step in and provide specific and actionable feedback so they have the opportunity to correct.
+When you notice work going off track, taking too long, or projects being mismanaged, speak up. Feedback is best when it’s given right when you see the need for it. Provide concrete examples, actionable suggestions, and approach the conversation with a collaborative mindset.
+❌ “Something’s not right.”
+✅ “By this point, I expected [specific progress or deliverable]. What needs to change to get this back on track by [deadline]?”
+Tactics
+Most often, you’ll be called on to provide feedback on your report’s daily work in PRs, to-dos, support or on-call cases, or by request when they have questions. When you’re giving feedback on tasks:
+- Be clear and to the point. Name what you see and what needs to change. Be open to engaging in a conversation about how to accomplish the desired result.
+- Don’t overload your report. Giving too much critique at once can demotivate.
+- Avoid the “compliment sandwich”. Sandwiching constructive feedback in between positive feedback is usually inauthentic so use it sparingly, if ever.
+- Offer suggestions. Don’t just complain that your report did something wrong. Help them understand what went wrong and why, and how to correct in the future.
+❌ “Your tone in this case is all wrong.”
+✅ “I saw this card come across my timeline. I’d have liked to see more investigation on your part before asking for help, and there should be more documentation to come out of cases like this. Here are some examples…”
+Engagement
+Sometimes you’ll have to manage engagement issues in your report. This often looks like an attitude problem, conflict with other employees, or unusual disengagement from their work or team relationships.
+The same basic principles apply when giving feedback on someone’s engagement, but personality or behavioral issues require a more delicate touch. You should still be clear and to the point, and in engagement cases, also:
+- Focus on the behaviors instead of the person. “People say you’ve been hard to work with lately.” is personal. “Your tone in PR feedback is unusually blunt lately [share examples]. Is something going on?” is better.
+- Use specific examples. “You seem uninterested in your work lately” isn’t specific. “I noticed you haven’t spoken up in our team call for the past few weeks, and your check-ins aren’t as detailed as they usually are. Is something wrong?” is better.
+- Avoid becoming a therapist. We’re all human and sometimes outside stress bleeds into how we show up to work. If you’ve built trust with your report, they’ll feel comfortable sharing what ails them and how it’s affecting their work. Be empathetic, but ultimately seek to redirect the conversation to their presence at work. Loop in People Ops if you feel unequipped to handle any personal problems that surface.
+Lastly, don’t forget about positive feedback! Like recognition, noticing what your report is doing well and naming it and its impact is great for morale and encouraging the behaviors and great work you want to see.
+Consider using AI to help you with your feedback for your report. Draft your talking points first and then ask AI to flag anything that sounds vague, focuses on the person rather than the behavior, or lacks specificity. You can feed this playbook document into AI, in fact, to give it context for the qualities expected of your manager feedback. Ask AI to react as if it is your report to see how your feedback might land. Think of it as a way to preview & test your talking points & ideas before the real conversation.
+</document>
+<document url="https://basecamp.com/gettingreal/01.2-about-basecamp" type="html" page="about">
+What we do
+Basecamp is a small team that creates simple, focused software. Our products help you collaborate and get organized. Millions of people and small businesses use our web-apps to get things done. Jeremy Wagstaff, of the Wall Street Journal, wrote, “[Basecamp] products are beautifully simple, elegant and intuitive tools that make an Outlook screen look like the software equivalent of a torture chamber.” Our apps never put you on the rack.
+Our modus operandi
+We believe software is too complex. Too many features, too many buttons, too much to learn. Our products do less than the competition — intentionally. We build products that work smarter, feel better, allow you to do things your way, and are easier to use.
+Our products
+Basecamp turns project management on its head. Instead of Gantt charts, fancy graphs, and stats-heavy spreadsheets, Basecamp offers message boards, to-do lists, simple scheduling, collaborative writing, and file sharing. So far, hundreds of thousands agree it’s a better way. Farhad Manjoo of Salon.com said “Basecamp represents the future of software on the Web.”
+HEY is a ground up reinvention of email. HEY’s fresh approach transforms email into something you want to use instead of something you’re forced to deal with.
+Ruby on Rails, for developers, is a full-stack, open-source web framework in Ruby for writing real-world applications quickly and easily. Rails takes care of the busy work so you can focus on your idea. Nathan Torkington of the O’Reilly publishing empire said “Ruby on Rails is astounding. Using it is like watching a kung-fu movie, where a dozen bad-ass frameworks prepare to beat up the little newcomer only to be handed their asses in a variety of imaginative ways.” Gotta love that quote.
+You can find out more about our products and our company on our web site at basecamp.com.
+</document>
+<document url="https://basecamp.com/gettingreal/11.1-theres-nothing-functional-about-afunctional-spec" type="html" page="about">
+Don’t write a functional specifications document
+These blueprint docs usually wind up having almost nothing to do with the finished product. Here’s why:
+Functional specs are fantasies
+They don’t reflect reality. An app is not real until builders are building it, designers are designing it, and people are using it. Functional specs are just words on paper.
+Functional specs are about appeasement
+They’re about making everyone feel involved and happy which, while warm and fuzzy, isn’t all that helpful. They’re never about making tough choices and exposing costs, things that need to happen to build a great app.
+Functional specs only lead to an illusion of agreement
+A bunch of people agreeing on paragraphs of text isn’t a true agreement. Everyone may be reading the same thing but they’re thinking something different. This inevitably comes out later on: “Wait, that’s not what I had in mind.” “Huh? That’s not how we described it.” “Yes it was and we all agreed on it — you even signed off on it.” You know the drill.
+Functional specs force you to make the most important decisions when you have the least information
+You know the least about something when you begin to build it. The more you build it, the more you use it, the more you know it. That’s when you should be making decisions — when you have more information, not less.
+Functional specs lead to feature overload
+There’s no pushback during spec phase. There’s no cost to writing something down and adding another bullet point. You can please someone who’s a pain by adding their pet feature. And then you wind up designing to those bullet points, not to humans. And that’s how you wind up with an overloaded site that’s got 30 tabs across the top of the screen.
+Functional specs don’t let you evolve, change,and reassess
+A feature is signed off and agreed on. Even if you realize during development that it’s a bad idea, you’re stuck with it. Specs don’t deal with the reality that once you start building something, everything changes.
+So what should you do in place of a spec? Go with a briefer alternative that moves you toward something real. Write a one page story about what the app needs to do. Use plain language and make it quick. If it takes more than a page to explain it, then it’s too complex. This process shouldn’t take more than one day.
+Then begin building the interface — the interface will be the alternative to the functional spec. Draw some quick and simple paper sketches. Then start coding it into html. Unlike paragraphs of text that are open to alternate interpretations, interface designs are common ground that everyone can agree on.
+Confusion disappears when everyone starts using the same screens. Build an interface everyone can start looking at, using, clicking through, and “feeling” before you start worrying about back-end code. Get yourself in front of the customer experience as much as possible.
+Forget about locked-in specs. They force you to make big, key decisions too early in the process. Bypass the spec phase and you’ll keep change cheap and stay flexible.
+Useless Specs
+ A “spec” is close to useless. I have never seen a spec that was both big enough to be useful and accurate.
+And I have seen lots of total crap work that was based on specs. It’s the single worst way to write software, because it by definition means that the software was written to match theory, not reality.
+—Linus Torvalds, creator of Linux (from: Linux: Linus On Specifications)
+Fight the blockers
+ I found the people insisting on extensive requirements documents before starting any design were really ‘blockers’ just trying to slow the process down (and usually people with nothing to contribute on design or innovative thinking).
+All our best work was done with a few concepts in our heads about improving a site, doing a quick prototype (static), changing the design a bit and then building a live prototype with real data. After kicking the tires on this prototype, we usually had a real project in motion and good result.
+—Mark Gallagher, corporate intranet developer (from Signal vs. Noise)
+</document>
+<document url="https://basecamp.com/paths" type="html" page="team">
+Basecamp — The people’s path to Basecamp
+
+We’d like to use cookies to help understand if our ads are working or not.
+
+No, thanks
+
+Yes, that’s fine
+
+The people’s path to Basecamp
+
+For many, tools like Asana, Trello, Notion, Monday, ClickUp, and Slack were underwhelming stops along the road before finally arriving at Basecamp.
+
+Brian Garside
+
+Manage Comics
+
+Brett Robison
+
+Tinnacity
+
+Dan Unger
+
+Straight from the Heart
+
+Johanne Brierre
+
+NYbeautysuites
+
+Fernando Araujo
+
+Sirius
+
+Alex De Simone
+
+Avochato
+
+Ryan Almusawi
+
+Clarion Accounting
+
+Ian Parsons
+
+Matogen Digital
+
+Sebastien Bossi Croci
+
+Uxo
+
+Stefan Straßburger
+
+involve marketing GmbH
+
+Helen Ryan
+
+Flex Design Group
+
+Doug Seidl
+
+Straight-up Digital Marketing
+
+Lucien Odey
+
+Projektt Technologies
+
+←
+
+→
+
+Brian Garside
+
+Manage Comics
+
+Before finally landing on Basecamp, Brian went through tools like Jira, Slack, and plain old email.
+
+First there were 
+Emails + Meetings
+
+Fine for a while, but eventually not enough.
+
+Google Docs
+ didn’t do it
+
+More documents and spreadsheets didn’t make things better.
+
+Next it was 
+Slack
+
+Chat made communication faster than email, but there’s so much more to collaborating than just talking.
+
+Then 
+Jira
+ got a shot
+
+Too technical, too task-oriented.
+
+Finally, Brian found Basecamp
+
+“Basecamp is my second brain,
+ it’s where I go to document upcoming features, build user stories, and track work. 
+I couldn’t get by without Basecamp!”
+
+Start your path with Basecamp
+
+Brett Robison
+
+Tinnacity
+
+Tinnacity’s path is a common one of combining multiple tools only to find more isn’t better. They did try Basecamp early, but left to play the field a bit. But after exploring other tools, they circled back and rediscovered Basecamp. The rest is history.
+
+They tried 
+Trello + Slack
+
+Trello for tracking work and Slack for communications didn’t cut it.
+
+Then switched to 
+Basecamp
+
+Next they gave Basecamp a try but it didn’t stick. 
+Yet.
+
+Next they tried 
+Airtable + Slack
+
+Back to a combo, this time Airtable and Slack. But again, 
+not right.
+
+Notion + Slack
+ came next
+
+They kept Slack and swapped in Notion for Airtable. But still, 
+too many holes.
+
+Finally, back to just Basecamp for good
+
+“Eventually 
+we landed back on Basecamp because we like the peacefulness of it
+ (versus Slack status and getting interrupted all day). We really enjoy To-dos and Automatic Check-ins to keep our company connected.”
+
+Start your path with Basecamp
+
+Dan Unger
+
+Straight from the Heart
+
+A common path from texting and email through a handful of popular tools, only to continually feel like something was lacking. Until they tried Basecamp.
+
+Started with 
+Texts + Emails
+
+“We started with texting and email but it just got too crazy and messy.”
+
+Next, moved to 
+Trillian
+
+“We didn’t use it for long because it was just like emails and texting. We wanted to be able to do more (documents, lists, etc).”
+
+Then over to 
+Slack
+
+Chat was chaotic and inadequate.
+
+Then layered-in 
+Google Drive
+
+“Slack + Google Drive gave us documents with communication, but the project part was lacking.”
+
+Maybe 
+Monday
+ would do it?
+
+Nope. “Just fell short of what we were looking to do.”
+
+Finally, they found Basecamp
+
+“Once we used Basecamp, it had everything we wanted.
+ Thanks for a wonderful product and giving a nonprofit discount. We wouldn’t be able to afford without it, but also wouldn’t be functioning as sufficiently. Forever thankful!”
+
+Start your path with Basecamp
+
+Johanne Brierre
+
+NYbeautysuites
+
+A friend recommended Basecamp to Johanne after her false starts with Slack, Asana, and Google Docs.
+
+First up was 
+Slack
+
+Needed more than chat.
+
+Then it was 
+Asana
+
+Not the right fit.
+
+She tried 
+Google Docs
+
+Wasn’t getting it done.
+
+Then her friend recommended Basecamp
+
+“My friend Andres, who runs a digital agency, recommended Basecamp to me. It’s become a game-changer — 
+one of the best platforms for managing a small team,
+ especially for women founders like myself.”
+
+Start your path with Basecamp
+
+Fernando Araujo
+
+Sirius
+
+After a number of false starts and frustrations — 
+even building their own app
+ — they finally found Basecamp, the perfect hassle-free solution they needed.
+
+They began with 
+WhatsApp
+
+“Our first attempt. We realized that the easier the access to chat, the less we produced.”
+
+Gave 
+Slack
+ a shot
+
+“Too much chat, but we started to understand the value of 
+organized
+ debates.”
+
+Moved over to 
+Notion
+
+“Wow, we could document here! But there were too many features, it was hard to know where to start.”
+
+Even built their own app!
+
+“We built an asynchronous app (a bold move, huh?! lol), but it still lacked balance.”
+
+Tried out 
+Teams
+
+“
+Teams has everything you need,
+ they said. We found the interruptions via chat, video, audio outweighed collaboration.”
+
+Simple, distraction-free, with only the essentials
+
+“A friend introduced me to Basecamp. It was simple and distraction-free. 
+It doesn’t have all the features I might want — and that’s exactly why it’s so good. It focuses only on the essentials.”
+
+Start your path with Basecamp
+
+Alex De Simone
+
+Avochato
+
+Another common path through some big names and popular options, but they kept running into needless complexity and chaos along the way. Basecamp was their simple salvation.
+
+First they tried 
+Trello
+
+Started here in 2017, was simple to use for Kanban-type features but at the time it lacked some features which took us to Monday.
+
+Then came 
+Monday
+
+Started getting chaotic for roadmap and feature planning. Items were lost, the card view was confusing to use.
+
+Slack
+ got a swing
+
+Too many channels (more channels than employees) as it morphed into a task management product. Didn’t work for task management.
+
+Then it was 
+Notion
+
+Style was too free-form, pages took a long time to load, OK for help center & internal documentation but not for collaboration and task management (which is what we needed).
+
+Basecamp just made sense
+
+“
+We landed with Basecamp for simplicity and ease of use. Pricing helped too, fair pricing and scales with us.
+ With Basecamp our team is more focused (less distracted than with Slack) and can get tasks done in their own focused time.”
+
+Start your path with Basecamp
+
+Ryan Almusawi
+
+Clarion Accounting
+
+Like so many others, they bounced around from one tool to the next, never finding the perfect fit — until they discovered Basecamp.
+
+They started out with 
+Texts
+
+“Vital details vanish into the void, leaving us piecing things together like a mystery. It’s too unreliable to trust with our business operations.”
+
+Then they moved on to 
+ClickUp
+
+“A labyrinth of endless features that suffocates simplicity. We spent more time figuring it out than actually getting work done.”
+
+Next up, it was 
+Notion
+
+“Notifications are a lost cause, like shouting into the void. If we can’t rely on it to nudge us, what’s the point?”
+
+And over to 
+Airtable
+
+“Just Google Sheets in fancy clothing, trying too hard to be what it isn’t. We needed solutions, not repackaging.”
+
+Then they gave 
+Slack
+ a try
+
+“Chaos disguised as communication. It’s noisy, overwhelming, and managing external clients was a nightmare — they struggled to learn the platform and rarely used it consistently.”
+
+Finally, they discovered Basecamp
+
+“Overall, Basecamp just gets us — it’s simple, clear, and keeps everything running smoothly without us pulling our hair out.
+ Even our clients love it; no confusion, no hassle, just seamless communication and a sense of calm we didn’t know we needed. 
+It’s been a game-changer.
+”
+
+Start your path with Basecamp
+
+Ian Parsons
+
+Matogen Digital
+
+Fun path! Lots of trials and combinations and trying to stick multiple tools together only to find out that complexity never pays off. That’s why Matogen Digital traded up for the simplicity of Basecamp.
+
+Got started with 
+Email + Todos
+
+The standard one-two punch of email and simple to-dos.
+
+Then layered in 
+Google Sheets
+
+They needed to track some stuff, so here comes the spreadsheet.
+
+Next it was 
+Asana
+
+They needed something more sophisticated, so they gave Asana a try.
+
+Then 
+Monday
+ got a shot
+
+Monday was put in place to replace everything else, but it fell flat.
+
+Then back to 
+Slack + Asana
+
+Asana enters the picture again, this time paired with Slack for chat.
+
+Then 
+Jira + Slack + Asana
+
+Now they added Jira to the mix. Things are getting messy and complicated. Too many tools.
+
+Eventually, they dropped everything and picked up Basecamp
+
+When you can replace Jira, Asana, Slack, Email, and Monday with one product, it’s a very good day. That’s exactly what Ian did when he went with Basecamp. 
+“Thanks for keeping things simple.”
+
+Start your path with Basecamp
+
+Sebastien Bossi Croci
+
+Uxo
+
+Sebastien kept trying Slack plus something else, including Slack + Basecamp together, but in the end, Basecamp alone was the sole survivor. It did everything, simpler.
+
+First was 
+Asana + Slack
+
+A common pairing because each is deficient at what the other offers.
+
+Then 
+Notion + Slack
+
+Slack stayed, but Notion replaced Asana. But it didn’t pan out.
+
+Then a 
+Basecamp + Slack
+ combo
+
+Next, Basecamp entered the picture, but Slack stayed too.
+
+Ultimately, Basecamp replaced them all
+
+In the end, 
+it was better to have everything in one tool, in one place.
+ And since Basecamp offers real-time chat, DMing, and external integrations, Slack was no longer needed at all.
+
+Start your path with Basecamp
+
+Stefan Straßburger
+
+involve marketing GmbH
+
+Starting with emails and tons of meetings, Stefan and team cycled though Slack and Teams, before falling back to email. Then they discovered Basecamp.
+
+They started with 
+Email
+
+Email “and tons of meetings”. A common starting point.
+
+They gave 
+Slack
+ a shot
+
+Ineffective chaos — the worst kind of busy.
+
+Next, it was 
+Microsoft Teams
+
+Similar to Slack, but part of the Microsoft stack. It didn’t work for all the same reasons.
+
+Then back to 
+Email
+ for a bit
+
+Once the tools failed them, they fell back to old habits.
+
+Finally, they found Basecamp
+
+“And here the journey ends. Thank god.”
+
+Start your path with Basecamp
+
+Helen Ryan
+
+Flex Design Group
+
+A bunch of tries lead to a bunch of letdowns. Until she found the right fit in Basecamp.
+
+They started with 
+Trello
+
+“Too basic”.
+
+Then came 
+Notion
+
+“Too heavy”.
+
+ClickUp
+ was next
+
+“Too much”.
+
+Asana
+ got a try
+
+“Not quite right”.
+
+They even tried 
+Moxie
+
+“Not strong enough”.
+
+Finally, Helen found Basecamp
+
+“I was looking for a simple solution
+ that was easy for both me and clients to keep track of work.”
+
+Start your path with Basecamp
+
+Doug Seidl
+
+Straight-up Digital Marketing
+
+Doug’s path rolls through many of the usual suspects like Trello, ClickUp, and Notion, but ultimately after finding frustration and sliding back to email, Doug found Basecamp.
+
+Things started with 
+Email
+
+A common starting spot, especially when just starting out and basic communication is all you need.
+
+Then, they tried 
+Trello
+
+Kanban just wasn’t enough.
+
+Next it was 
+ClickUp’s
+ turn
+
+It had a lot more, but too much more. More isn’t better when it gets in the way.
+
+Then 
+Email
+ again
+
+Back to good old (but messy) email.
+
+Then it was 
+Notion
+
+Was a document-centric approach the right one? No, it wasn’t.
+
+Nope, back to 
+Email
+
+An old standby gets called off the bench once again. But the same weakness emerge.
+
+Finally, they found Basecamp
+
+“Best solution for what I do that I’ve tried…
+ and one clients 
+ACTUALLY
+ participate in when I need that.”
+
+Start your path with Basecamp
+
+Lucien Odey
+
+Projektt Technologies
+
+This one features a relapse to Jira + Confluence, only to realize it didn’t work the second time for the same reasons it didn’t work the first time. Then they found their fit in Basecamp.
+
+First up, it was 
+Jira + Confluence
+
+They used Jira + Confluence together, but “left because they were too fiddly”.
+
+Then they tried 
+Microsoft Azure Boards
+
+Looking for something more Kanban-esque, they went with Azure Boards, but “the UI was cluttered with tons of Microsoft services”.
+
+Then back to 
+Jira
+
+After Azure didn’t pan out, they went back to Jira + Confluence but it “encouraged the wrong engineering mindset”. Like returning to a bad relationship, the second time around didn’t work for the same reasons as the first time.
+
+Finally, Lucien found Basecamp
+
+“I think it’s great. You guys have built a fantastic product.
+ The most interesting ‘feature’ for me is the disciplined thinking it encourages. There’s something about that focused UI view when creating a new message or doc that forces better writing from me. Its value is actually pretty hard to capture in words. Perhaps best say 
+‘it makes me think better.’
+”
+
+Start your path with Basecamp
+
+Have 
+a great
+ day!
+
+Join more than 200,000 people who get our email newsletter.
+ We’ll share product updates, thoughts, new releases, and other tidbits we think you’ll find interesting.
+
+Thanks! You’re in.
+ Look out for our latest newsletter in the next few weeks.
+
+Basecamp 5 is here
+
+New!
+
+Bring your AI agents to Basecamp
+
+New!
+
+Where we came from
+
+Features and benefits
+
+Reliable to the core
+
+Friendly folks, standing by
+
+The people’s path to Basecamp
+
+Apps for every platform
+
+Integrations
+
+What changed for the better?
+
+Learn Basecamp
+
+With Basecamp, it’s a Yes!
+
+Come small, come all
+
+We stand with the underdogs
+
+Leaving the Cloud
+
+How we make decisions
+
+Group chat problems
+
+Why we choose profit
+
+Seven shipping principles
+
+How we communicate
+
+Night & day
+
+Bootstrapped, profitable, & proud
+
+Basecamp community
+
+Free live classes
+
+Books we’ve written
+
+Kill overkill
+
+Breakfast with Basecamp
+
+Basecamp help
+
+Discounts
+
+Basecamp accessibility
+
+Keyboard shortcuts
+
+Can we stay in touch?
+
+See where projects really stand
+
+Getting Real
+
+Shape Up
+
+Manager Playbook
+
+Employee Handbook
+
+Basecamp
+™
+
+is designed, built, and backed by
+
+37signals
+™
+
+,
+
+the people behind
+
+HEY
+™
+
+and
+
+Fizzy
+™
+
+Status
+
+Support
+
+Policies
+
+Privacy
+
+Security
+
+Reliability
+
+Sign in
+
+© 37signals LLC. All rights reserved.
+
+Try Basecamp free
+</document>
+</documents>
+
+Extract the organisation profile from these documents.

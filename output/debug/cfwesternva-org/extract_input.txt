@@ -1,0 +1,1459 @@
+=== SYSTEM ===
+You extract a structured profile of a nonprofit organisation from pages crawled from its website. The output feeds a sales and research database, so accuracy matters more than completeness.
+
+Rules:
+- Use only facts stated in the documents. No outside knowledge, no guessing. If the documents don't support a field, return null (or an empty list).
+- source_url: copy the url attribute of the <document> the fact came from.
+- confidence: high = stated explicitly; medium = stated but ambiguous, partial or possibly outdated; low = inferred from indirect wording.
+- evidence: copy a short verbatim snippet (max 30 words) from that document. Never paraphrase it.
+- Dates in ISO 8601 (YYYY-MM-DD; YYYY-MM or YYYY if that is all the page gives). Money as a plain number plus ISO 4217 currency code ("$12.5 million" -> 12500000, USD).
+- annual_revenue: total revenue or income for one fiscal year. Not a single gift, campaign goal, program budget or cumulative total.
+- registration_id: the number only, as printed (e.g. "12-3456789" or "207076"). If several are shown, the main one (US EIN, or the first charity number).
+- leadership: named executives, senior staff and board members (max 15). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Board Member", "Trustee"). Add email or LinkedIn only if shown next to that person.
+- general_contact: the organisation's general email, phone and contact page.
+- open_roles: current paid job openings only (no volunteer roles). open_rfps: current requests for proposals, tenders or procurement notices only.
+- recent_news: up to 8 of the newest dated news, press or blog items with their dates. Do not filter by age.
+- funders_and_partners: organisations named as funders, sponsors or partners (max 15).
+- impact_metrics: up to 5 short quantified claims about the organisation's own work, e.g. "Served 12,000 meals in 2024". Not outcomes of its grantees or partners.
+- cause_area: the single best fit from the allowed list. geography_served.scope: local (one city or county), regional (state, province or multi-county area), national or international.
+- looks_like_nonprofit: false if the site is clearly a business, government body or personal site; say why in not_nonprofit_reason.
+
+=== USER ===
+<documents>
+<document url="https://www.cfwesternva.org/" type="html" page="homepage">
+We could list a dazzling array of facts and figures here about our strong and continued asset growth and our many years of life-changing grant making, but those can be found elsewhere on this site. In this space, our purpose is to simply say we enable generous people like you to easily give back to the community you love. Whether that community is the Roanoke Valley, the Martinsville-Henry County area, the Alleghany Highlands or other parts of Western Virginia, we stand ready to serve you. You will discover that incorporating the community foundation option into your lifetime charitable giving and your estate plans will prove rewarding while being flexible and effective in its execution, tax-wise in its benefits, and permanent in carrying on your philanthropic legacy.
+Nonprofits are essential to the vitality of our community – the place we all call home. Each organization provides important and very challenging work daily…
+Learn More
+As the Community Foundation has grown over the years, we have increasingly expanded our services to different components of the philanthropic landscape…
+Learn More
+LEAVE A LEGACY
+Many individuals choose to create a charitable legacy through a planned or estate gift. When you make a commitment to strengthen your community, today or in the future…
+LEARN MORE
+Social Feed
+ Please join us in welcoming Talfourd H. Kemper Jr. to the Community Foundation’s Board of Governors!
+Talfourd is a Partner at Woods Rogers and Chair of the firm’s Emerging Growth & Venture Capital practice group. Throughout his distinguished career, he has represented both growing technology companies and investors, including serving for six years as general counsel of a NASDAQ-listed technology company. In addition to his professional accomplishments, Talfourd, a Roanoke native, has served in leadership roles with a number of local organizations and initiatives.
+We are pleased to welcome Talfourd to our Board of Governors and look forward to the experience, insight, and leadership he will bring to our mission. 
+ ... 
+ Please help us welcome Jane Judah to the Community Foundation’s Board of Governors!
+Jane is the owner of Virginia Estate Administration, LLC, a Roanoke-based firm dedicated to helping executors, administrators, trustees, and other fiduciaries navigate the often-complex estate settlement process. Through her work, she has earned a reputation for providing knowledgeable, compassionate guidance and helping clients ensure estates and trusts are administered efficiently, accurately, and in accordance with Virginia law.
+We look forward to the insight and expertise Jane will contribute as a member of our Board of Governors. 
+ ... 
+ Please join us in welcoming Sherry Frantz to the Community Foundation’s Board of Governors!
+Sherry is President of Frantz Diamonds, a family-owned business known throughout the Roanoke Valley for its exceptional craftsmanship, personalized service, and commitment to the community. She has successfully grown the business by combining her engineering background with a lifelong passion for jewelry. Beyond her professional achievements, Sherry is deeply committed to philanthropy and community service, including her involvement with the Roanoke Women’s Foundation and support of numerous charitable organizations.
+We are excited to have Sherry join our Board of Governors and look forward to the valuable insight and dedication she will bring to our mission. 
+ ... 
+ Please join us in welcoming Chris Desimone to the Community Foundation’s Board of Governors!
+Chris serves as President of Anderson, Desimone, Green & Owens, P.C. and is a nationally recognized estate planning attorney. He is known for his commitment to serving individuals and families of all financial backgrounds and has been a strong advocate for protecting older adults from financial exploitation. A former commissioned officer in the U.S. Army JAG Corps, Chris earned multiple commendations, including two Meritorious Service Medals. Throughout his career, he has also been an educator, author, speaker, and advocate, presenting hundreds of seminars and educational programs on estate planning, elder law, and financial protection throughout Virginia and beyond.
+We are excited to have Chris join our Board of Governors and look forward to the leadership, expertise, and perspective he will bring to our organization. 
+ ... 
+ Please join us in welcoming Lindsay Collins to the Community Foundation’s Board of Governors!
+Lindsay currently serves as Vice President of Medicine and Acute Care Services for Carilion Clinic. An accomplished healthcare executive and nursing leader, she brings extensive expertise in hospital operations, nursing leadership, and patient care services. Her commitment to advancing patient care and supporting nursing excellence, combined with her depth of experience, has made her a respected leader within the healthcare community and throughout the region.
+We are excited to have Lindsay join our Board of Governors and look forward to the impact her leadership and expertise will bring. 
+ ... 
+ 🎉 We're excited to announce that the Community Foundation Serving Western Virginia's Nonprofit Directory is now live!
+This new resource makes it easier than ever to discover and connect with the nonprofit organizations serving our region. Whether you're looking for volunteer opportunities, community resources, or ways to support causes you care about, the Directory can help you find organizations by name or service category.
+Serving Botetourt, Craig, Franklin, Henry, Patrick, and Roanoke counties, as well as the cities of Martinsville, Roanoke, and Salem, the Directory highlights the incredible work nonprofits are doing every day to strengthen our communities.
+Explore the Directory today and discover ways to get involved, give back, and support local impact!
+Visit the Nonprofit Directory here: cfswv.fcsuite.com/erp/donate/list/directory 
+ ... 
+ NPO Connect: Fall Half Day of Learning
+Join us on Thursday, October 8 from 9:00 AM – 12:45 PM
+Where: Roanoke Higher Education Center
+Registration Fee: $20.00
+Space is limited so register today!
+Event Details:
+-Registration required and is limited to two participants per organization.
+-Light breakfast, snacks, and beverages will be provided for attendees.
+-Participants are responsible for arranging and paying for their own parking.
+-Registration fees are non-refundable. Refunds will not be issued if a participant cancels registration or is unable to attend.
+Program Overview
+Session 1: Donor Retention 
+Retaining donors is one of the most cost-effective strategies for sustainable fundraising. This session will provide nonprofit development professionals with practical tools and strategies to deepen donor relationships, improve retention rates, and build a loyal base of supporters committed to the organization's mission.
+Session 2: Grant Writing Essentials
+This session provides nonprofit professionals with foundational grant writing knowledge and practical strategies to develop compelling proposals that secure funding for programs and services. Participants will learn the grant writing process from start to finish, from identifying potential funders to submitting strong proposals, and gain practical tools they can apply immediately to their organization's grant efforts.
+To learn more visit: lp.constantcontactpages.com/ev/reg/zwwmfeb 
+ ... 
+ Hosted by The Community Foundation Serving Western Virginia in partnership with Kobia Consulting
+January–March 2027
+This three-month, application-based program includes:
+-Two virtual sessions per month
+-One in-person session per month
+💲 Participant Fee: Accepted applicants will be fully funded by the Foundation.
+As part of our commitment to strengthen local nonprofit organizations, the Foundation is inviting a small group of nonprofit leaders to participate in a pilot learning community, focused on fundraising strategy and leadership development.
+Please review the Information Page for eligibility requirements and important program details: www.cfwesternva.org/npo-connect/npo-connect-fearless-fundraising-studio/
+📝 Application period:
+Opens: October 1, 2026
+Closes: October 22, 2026
+Applications will be submitted through Foundant Grant Lifecycle Manager. If you do not already have an account, you will need to create one to access and complete the application. 
+ ... 
+ What a great morning at yesterday's first NPO CONNECT event of the year!
+Thank you to Sarah Milston from The Spark Mill for an engaging session on strategic planning. Her expertise and thoughtful guidance provided attendees with valuable tools and fresh perspectives to help drive their organizations forward.
+We loved seeing the collaboration, discussion, and shared learning throughout the event.
+Be sure to mark your calendars for our next NPO CONNECT gathering on October 8th. More information will be available soon! 
+ ... 
+ We are deeply saddened to learn of the passing of Glenn Thornhill Jr., a devoted member of the Foundation. During his service on our Board from 1990-1992, he provided exceptional leadership, generosity, and commitment to our mission.
+We are grateful for Glenn's many contributions and the lasting impact he made on our organization and community. Our thoughts and heartfelt condolences are with his family, friends, and all who were touched by his remarkable life and legacy.
+
+ ... 
+Glenn Thornhill Obituary (1941 - 2026) - Salem, VA - Roanoke Times
+View Glenn Thornhill Jr.'s obituary, send flowers and sign the guestbook.
+
+[Site footer]
+Facebook Twitter Site Map © 2026 Community Foundation PO Box 1159 Roanoke, VA 24006 540.985.0204
+
+[Contact links in page HTML]
+email: carly@cfwesternva.org
+email:
+</document>
+<document url="https://www.cfwesternva.org/who-we-are/" type="html" page="about">
+Who We Are – Community Foundation
+
+Donate
+
+Fund Advisor Portal
+
+Nonprofit Directory
+
+Who We Are
+
+Our Team
+
+Board of Governors
+
+Regional Advisory Board
+
+Governors and Advisory Board Emeriti
+
+Financials & Accountability
+
+Ways to Give
+
+Job Opportunities
+
+Our Communities
+
+Greater Roanoke Valley
+
+Martinsville City, Henry and Patrick Counties
+
+Women In Philanthropy
+
+Community Partnerships
+
+Southwest Virginia
+
+For Nonprofits
+
+Grant Opportunities
+
+How to Apply
+
+Grantseekers FAQs
+
+Promotional Guidelines
+
+NPO Connect
+
+Access Online Grants Account
+
+Sign Up for Our Email List
+
+For Donors
+
+Fund Advisor Portal
+
+Open a Fund Today
+
+Leave a Legacy
+
+Legacy Society
+
+Tell Your Donor Story
+
+Community Foundation vs. A Private Foundation
+
+Become a Friend of the Foundation
+
+Corporate and Private Foundation Services
+
+Private Foundation Services
+
+For Students
+
+Scholarship Listings
+
+Scholarship Application Instructions
+
+Scholarship Frequently Asked Questions
+
+Access Online Scholarship Account
+
+For Professional Advisors
+
+Sample Bequest Language
+
+Forms & Resources for Professional Advisors
+
+Meet Our Team!
+
+Who We Are
+
+Community foundations began nationally in 1914 and are publicly-supported, 501(c)(3) philanthropic organizations that hold, administer, invest and make grants from both endowed and non-endowed funds established by individuals, families and others. They were designed to be simple, flexible, convenient, tax-wise, cost-effective and perpetual charitable vehicles. 
+
+Our Community Foundation was established in Roanoke in 1988. With our growth, we expanded into the Martinsville/Henry County area in 2005. Today, we administer many hundreds of named endowment funds ranging in size from a minimum of $10,000 to millions of dollars. To date, donors have also committed very significant resources to the Foundation through future estate gifts.
+
+Our Mission
+
+Enabling people who love their community to easily give back.
+
+Summary of Our Daily Work
+
+On your behalf, we work diligently to carry out YOUR charitable intent through endowment funds; we provide long-term professional oversight for funds YOU entrust to us; we make creative grants for current and future community needs and opportunities; we offer comprehensive services to encourage and advance effective philanthropy; we provide opportunities to strengthen local non-profits; and, we promote and participate in collaborative efforts to shape a healthy, caring community.
+
+What is a Community Foundation?
+
+Community foundations are public charities that guide philanthropy and improve the quality of life in a specific geographic area. They are governed by volunteer boards of leading citizens and run by professionals who are experts in community need. Typically, community foundations serve and champion their communities by:
+
+Partnering with individuals, families and organizations to make giving easy and effective.
+
+Strengthening nonprofit organizations through grants, training and other supports.
+
+Providing leadership and insight to important community issues.
+
+Promoting a local or regional culture of philanthropy and service.
+
+There are more than 800 community foundations in the United States, including 30 in Virginia. Community Foundation Serving Western Virginia serves the cities of Martinsville, Roanoke, and Salem and the counties of Botetourt, Craig, Franklin, Henry, Patrick, and Roanoke.
+
+Our Values
+
+Integrity
+
+To always strive for honesty, truthfulness, and accuracy in all of our actions.
+
+Trustworthiness
+
+To always seek to inspire reliability when responding to your needs or questions.
+
+Stewardship
+
+To always embody responsible planning and management of resources.
+
+Confidentiality
+
+To earn the trust of our donors and always honor and respect their desire for privacy in their philanthropic work.
+
+Efficiency
+
+To always display high-level competency in our daily performance.
+
+Effectiveness
+
+To fervently understand how to do the right thing to achieve the best results.
+
+Facebook
+
+Twitter
+
+Site Map
+
+ © 2026 Community Foundation
+
+PO Box 1159
+
+Roanoke, VA 24006
+
+540.985.0204
+
+Back to top
+
+ ×
+
+[Contact links in page HTML]
+email: carly@cfwesternva.org
+</document>
+<document url="https://www.cfwesternva.org/team/" type="html" page="team">
+Team Members – Community Foundation
+
+Donate
+
+Fund Advisor Portal
+
+Nonprofit Directory
+
+Our Team
+
+Email
+
+Bio
+
+Carly C. Oliver
+
+President/CEO
+
+Email
+
+Bio
+
+April Haynes
+
+Chief Operating Officer
+
+Email
+
+Bio
+
+Michelle Eberly
+
+Director, Grants & Donor Engagement
+
+Email
+
+Bio
+
+Beth Kelley
+
+Chief Financial Officer
+
+Email
+
+Bio
+
+Alyssa W. Rorrer
+
+Program Officer
+
+Email
+
+Bio
+
+Chrissy Hannabass
+
+Program Associate
+
+Email
+
+Bio
+
+Samantha Hayes
+
+Grants Associate
+
+Founding President and CEO
+
+Bio
+
+Alan E. Ronk
+
+Retired
+
+Facebook
+
+Twitter
+
+Site Map
+
+ © 2026 Community Foundation
+
+PO Box 1159
+
+Roanoke, VA 24006
+
+540.985.0204
+
+Back to top
+
+ ×
+
+[Contact links in page HTML]
+email: carly@cfwesternva.org
+email: april@cfwesternva.org
+email: michelle@cfwesternva.org
+email: beth@cfwesternva.org
+email: alyssa@cfwesternva.org
+email: chrissy@cfwesternva.org
+email: samantha@cfwesternva.org
+</document>
+<document url="https://www.cfwesternva.org/who-we-are/financials-accountability/" type="html" page="financials">
+Community Foundation Serving Western Virginia is committed to transparency and accountability. We take seriously our responsibility to operate with the highest standards of integrity and stewardship to ensure donor funds are effectively reinvested in improving the economic and social well-being of our community. In this section, you will find our financial statements and other documents that help you learn more about our operations.
+Financial Documents
+Audited Financial Statement 2025
+Audited Financial Statement 2024
+Audited Financial Statement 2023
+Audited Financial Statement 2022
+Accountability & Policies
+Annual Reports
+Annual Administrative Assessments
+To support the Foundation’s extensive and comprehensive programs that benefit the many communities we serve on a daily basis, we annually apply a board-approved assessment on an endowed Fund’s average market value, using a three-year rolling average, as follows:
+| Donor Advised Funds | 1% | 
+| Unrestricted Funds | 1% | 
+| Agency Funds | 1% | 
+| Designated Funds | 1.25% | 
+| Field-of-Interest Funds | 1.5% | 
+| Scholarship Funds | 1.75% | 
+Currently, the above support covers 88% of our operational expense. Our Friends of the Foundation program and other direct administrative gifts to the Community Foundation help close the gap and are always deeply appreciated.
+Notes:
+- For cases in which a donor requests significant extra activities for a Fund, additional charges may be assessed based on the concurrence of both the Community Foundation and the donor
+- The above schedule applies to Funds up to $5 million in assets. For larger Funds, please contact Carly Oliver, President & CEO to discuss a declining schedule.
+- For non-endowed (pass-through) Funds, please refer to the Non-Permanent Fund Policy.
+Charitable Relationship Policy
+Donor Initiated Fundraising Policy
+Corporate Information & Forms
+The Community Foundation’s Federal Tax ID: 54-1959458
+Request a W-9 Form
+Gift Transmission Instructions
+Request a copy of our sales tax-exempt certificate
+
+[Contact links in page HTML]
+email: carly@cfwesternva.org
+email: beth@cfwesternva.org
+</document>
+<document url="https://www.cfwesternva.org/who-we-are/job-opportunities/" type="html" page="careers">
+Do you want to join an amazing team of passionate people, committed to making life better for all citizens across our region?
+At the Community Foundation, our team is passionate about serving the diverse communities that make up our region. We work collaboratively to strengthen these cities and counties—every day and for generations to come.
+Integrity, trust, efficiency, confidentiality, and effectiveness are the core values that guide us. As trusted stewards of the charitable resources placed in our care, we are committed to honoring the vision of our fund donors and turning their hopes into lasting impact.
+We’re known for our ability to get things done—and done well. While our work is serious, meaningful, and transformative, we also believe in creating a positive, enjoyable workplace.
+If this sounds like the kind of environment where you’d thrive, explore our current job openings below:
+There are currently no available positions.
+
+[Contact links in page HTML]
+email: carly@cfwesternva.org
+</document>
+<document url="https://www.cfwesternva.org/private-foundation-services/" type="html" page="programs">
+We specialize in working with individuals and families to achieve their charitable goals. The Community Foundation works closely with the trustees and advisors of private foundations to customize services that meet their needs. Private Foundations may choose one or more services from the following list to assist them in their charitable administrative responsibilities.
+If your private foundation has been affected by any of these factors, the Community Foundation can assist.
+- Preference to focus on charitable giving rather than investments and administration
+- Rising operational and investment management costs
+- Keeping up with new and changing government regulations
+- Difficulty in meeting the annual 5% payout requirement
+Donor Advised Fund Option
+Create tax advantages and open a whole new set of charitable options by establishing a Donor Advised Fund with us. Use a Donor Advised Fund to complement an existing private foundation and gain access to all of our donor services. Plus leverage a number of other benefits, including:
+Excise Tax Planning. Contribute additional qualifying distributions to a Donor Advised Fund, and reduce excise taxes on realized gains and earned investment income.
+5% Payout Solution. Gain flexibility in your grant-making plans by making your 5% IRS payout requirement to a Donor Advised Fund.
+Keep Grant-Making Private. Information about private foundations is readily available for public inspection. Use a Donor Advised Fund to anonymously achieve a charitable goal.
+Conversion Option
+Give your family’s philanthropy the gift of time by converting your private foundation to a Donor Advised Fund. We will take care of the time-consuming administration and legal responsibilities while you enjoy all the flexibility of a private foundation, access to a suite of donor services and the added benefits of:
+Reduced Costs. Tap into expert resources that streamline investing, grant-making, accounting, and tax filings over hundreds of family philanthropies for economies of scale.
+Greater Tax Benefits. Receive greater tax incentives on future gifts, such as fair market value deduction of closely held stock contributions and higher AGI deductibility thresholds for cash and publicly traded security gifts.
+More Giving Time. Enjoy the time you save by focusing on your philanthropy and making a difference in the organizations, issues, and communities that are personally most important to you and your family.
+To learn more about transferring a private foundation click here.
+Consulting & Management Options
+Focus more on your charitable vision, and less on administrative tasks and regulations with a suite of services designed to give valuable time back to the creators, families, and directors of private foundations. Through our customized services, our professional staff offers you strategic grantmaking and philanthropic planning services, purpose and structure consultations, due diligence, and administration services crucial to day-to-day foundation work. A Memorandum of Understanding will be created between each client and the Community Foundation outlining specific services to be provided and the associated fees.
+For more information contact:
+Carly Oliver 
+Chief Executive Officer
+Roanoke Corporate Office
+540.985.0204
+April Haynes
+Chief Operating Officer
+Martinsville Regional Office
+276.656.6223
+
+[Contact links in page HTML]
+email: carly@cfwesternva.org
+phone: 540.985.0204
+phone: 276.656.6223
+</document>
+<document url="https://www.cfwesternva.org/community-partnerships/" type="html" page="partners">
+Community Partnerships – Community Foundation
+
+Donate
+
+Fund Advisor Portal
+
+Nonprofit Directory
+
+Who We Are
+
+Our Team
+
+Board of Governors
+
+Regional Advisory Board
+
+Governors and Advisory Board Emeriti
+
+Financials & Accountability
+
+Ways to Give
+
+Job Opportunities
+
+Our Communities
+
+Greater Roanoke Valley
+
+Martinsville City, Henry and Patrick Counties
+
+Women In Philanthropy
+
+Community Partnerships
+
+Southwest Virginia
+
+For Nonprofits
+
+Grant Opportunities
+
+How to Apply
+
+Grantseekers FAQs
+
+Promotional Guidelines
+
+NPO Connect
+
+Access Online Grants Account
+
+Sign Up for Our Email List
+
+For Donors
+
+Fund Advisor Portal
+
+Open a Fund Today
+
+Leave a Legacy
+
+Legacy Society
+
+Tell Your Donor Story
+
+Community Foundation vs. A Private Foundation
+
+Become a Friend of the Foundation
+
+Corporate and Private Foundation Services
+
+Private Foundation Services
+
+For Students
+
+Scholarship Listings
+
+Scholarship Application Instructions
+
+Scholarship Frequently Asked Questions
+
+Access Online Scholarship Account
+
+For Professional Advisors
+
+Sample Bequest Language
+
+Forms & Resources for Professional Advisors
+
+Community Partnerships
+
+Community Foundation Serving Western Virginia’s Martinsville Regional Office is committed to strengthening the capacity of local non-profits and building strong relationships. Part of our mission is to promote and participate in collaborative efforts to shape a healthy, caring community. The Community Foundation actively seeks opportunities to build community partnerships. 
+
+Community Matters: Nonprofit Tools for Success 
+
+Your Community Foundation also partners with the Nonprofit Leaders Network in its monthly “Community Matters: Nonprofit Tools for Success”. Agencies have the opportunity to receive monthly professional trainings and programs on a topic of practical relevance to the day-to-day administration of nonprofits. Be sure to check out our events page for the latest information on these trainings. 
+
+Facebook
+
+Twitter
+
+Site Map
+
+ © 2026 Community Foundation
+
+PO Box 1159
+
+Roanoke, VA 24006
+
+540.985.0204
+
+Back to top
+
+ ×
+
+[Contact links in page HTML]
+email: carly@cfwesternva.org
+</document>
+<document url="https://www.cfwesternva.org/donate/" type="html" page="donate">
+<span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span>
+
+[Contact links in page HTML]
+email: carly@cfwesternva.org
+</document>
+<document url="https://www.cfwesternva.org/feed/" type="xml" page="news_feed">
+XML root: rss
+title: Community Foundation
+link: https://www.cfwesternva.org
+lastBuildDate: Tue, 22 Sep 2026 18:51:32 +0000
+language: en-US
+updatePeriod: hourly
+updateFrequency: 1
+generator: https://wordpress.org/?v=6.9.9
+url: https://www.cfwesternva.org/wp-content/uploads/2018/11/cropped-android-chrome-512x512-32x32.png
+title: Community Foundation
+link: https://www.cfwesternva.org
+width: 32
+height: 32
+</document>
+<document url="https://www.cfwesternva.org/advisory-board/" type="html" page="team">
+Advisory Board Members – Community Foundation
+
+Donate
+
+Fund Advisor Portal
+
+Nonprofit Directory
+
+Advisory Board
+
+Lynanne L. Newman
+
+Chair
+
+Deepak D. Banerjee, M.D.
+
+Marsha E. Frith
+
+Japhet Divad LeGrant
+
+O. Randolph Rollins
+
+Facebook
+
+Twitter
+
+Site Map
+
+ © 2026 Community Foundation
+
+PO Box 1159
+
+Roanoke, VA 24006
+
+540.985.0204
+
+Back to top
+
+ ×
+
+[Contact links in page HTML]
+email: carly@cfwesternva.org
+</document>
+<document url="https://www.cfwesternva.org/wp-content/uploads/2025/12/CFSWV_AnnualReport_2025_FNL.pdf" type="pdf" page="financials_pdf">
+[page 1]
+ANNUAL REPORT 2025
+
+ A
+ Y
+E
+A R
+ O
+F 
+G
+R O
+W
+T H
+, 
+T R
+A N
+S I
+T I
+O
+N 
+A
+N
+D 
+I M
+P
+A
+C
+T
+FORWARD
+LIGHTING
+
+ A
+ Y
+E
+A R
+ O
+F 
+G
+R O
+W
+T H
+, 
+T R
+A N
+S I
+T I
+O
+N 
+A
+N
+D 
+I M
+P
+A
+C
+T
+FORWARD
+LIGHTING
+the way
+the way
+
+[page 2]
+ROANOKE 
+CORPORATE OFFICE
+611 S. Jefferson Street | Suite 8
+Roanoke, VA 24011
+Phone: 540.985.0204
+MARTINSVILLE 
+REGIONAL OFFICE
+Mailing Address:
+P.O. Box 1124 | Martinsville, VA 24114
+Location:
+300 Franklin Street | Suite 230
+Martinsville, VA 24112
+Phone: 276.656.6223
+REPORT OF ACTIVITIES FOR THE FISCAL YEAR ENDED JUNE 30, 2025
+GEOGRAPHIC SERVICE AREA 
+We are honored to work with individuals and families 
+on their charitable estate plans throughout much of 
+western and southwestern Virginia.
+Community Foundation Serving Western Virginia 
+is registered with The Virginia Office of Consumer 
+Affairs, a member of Council on Foundations, and 
+is a member of both Roanoke Regional Chamber of 
+Commerce and Martinsville-Henry County 
+Chamber of Commerce.
+Carly C. Oliver
+President & CEO
+April M. Haynes
+Chief Operating Officer
+Martinsville Regional Office
+Beth Kelley
+Chief Financial Officer
+Michelle M. Eberly
+Director, Grants & 
+Donor Engagement
+Alyssa W. Rorrer
+Program Officer
+Martinsville Regional Office
+cfwesternva.org
+YOUR COMMUNITY FOUNDATION TEAM
+
+[page 7]
+7
+The Martinsville-Henry County 
+Family YMCA provides programs 
+that promote youth development, 
+healthy living, and social 
+responsibility across Martinsville 
+and Henry County. Among its most 
+critical services are afterschool 
+care and summer day camp for 
+children ages 4–12 in the Henry 
+County and Martinsville City 
+School Districts.
+These programs focus on working 
+families who do not qualify for 
+social services and cannot afford 
+typical fees, ensuring that children 
+are safe and supported during the 
+afterschool hours of 3:00–6:00 
+p.m. — a time when unsupervised 
+children are at higher risk for 
+accidents, behavioral challenges, 
+and academic setbacks. High-
+quality programs like the YMCA’s 
+MARTINSVILLE-HENRY CO. FAMILY YMCA
+is the largest 
+childcare provider 
+in the nation
+Children come from
+16
+area schools
+Afterschool and 
+summer camp serves 
+children ages 
+4–12
+Roughly
+1-in-5
+children in the U.S. 
+spend time unsupervised 
+after school
+offer academic support, social skill 
+development, physical activity, 
+and exposure to caring adults and 
+positive role models, while helping 
+parents maintain employment and 
+work toward financial stability.
+In 2024-2025, the YMCA served 
+approximately 202 elementary 
+students through five afterschool 
+sites and 87 children in its 11-week 
+summer day camp. With rising 
+childcare costs, many families 
+struggle to pay standard rates. To 
+ensure no child is turned away, the 
+YMCA offers reduced “scholarship” 
+rates through its Afterschool and 
+Summer Day Camp Scholarship 
+Fund.
+Thanks to a $15,000 grant from 
+the Hermes Family Fund and the 
+Dr. John D. French Legacy Fund, 
+the YMCA can continue providing 
+these scholarships, giving children 
+access to safe, enriching programs 
+and giving parents the support 
+they need to thrive.
+Through this investment, the YMCA 
+strengthens children, families, 
+and the community, ensuring that 
+every child has the opportunity to 
+grow, learn, and succeed.
+Child care 
+is expensive 
+but also vital 
+for working 
+families. 
+The grant we 
+received from 
+the Community 
+Foundation 
+allowed us 
+to lighten 
+the financial 
+burden for 
+those families. 
+The children 
+were in a safe 
+and nurturing 
+environment, 
+and the parents 
+can feel 
+comfortable 
+going to work.
+– Brad Kinkema 
+ CEO/Executive Director
+
+[page 9]
+9
+ROANOKE VALLEY SPCA
+100+ Years
+in operation
+Assisted 
+40+ families
+with emergency 
+veterinary costs 
+RVSPCA received
+1,585 
+calls for help 
+this year
+RVSPCA helped
+1,000+
+animals find new homes
+The Community 
+Foundation has 
+been a lifeline 
+to our 
+organization, 
+allowing us 
+to achieve 
+our mission 
+of providing 
+high quality 
+healthcare 
+and medicine 
+to uninsured 
+residents of 
+Franklin County.
+Emily Waller, DMSC, PA
+President, Board of Directors
+Free Clinic of Franklin County
+The Roanoke Valley SPCA 
+(RVSPCA) serves as a vital 
+community resource providing 
+pet adoption, retention, and 
+education services throughout 
+Virginia’s Blue Ridge. As a full-
+service animal welfare agency, the 
+RVSPCA focuses on prevention, 
+intervention, and adoption to 
+strengthen the bond between 
+people and their pets.
+Prevention services include a 
+robust spay/neuter program, 
+microchipping, and extensive 
+humane education and 
+community engagement initiatives. 
+Intervention programs provide 
+critical support such as a pet food 
+pantry, veterinary care assistance, 
+temporary housing for pets in 
+times of crisis, behavioral support, 
+and pet deposit assistance. These 
+programs are designed to address 
+barriers that can prevent families 
+from keeping their pets, ensuring 
+animals remain safe, healthy, 
+and in loving homes. Adoption 
+services ensure that every animal 
+receives comprehensive veterinary 
+care, including vaccinations, 
+microchipping, and spay/neuter 
+surgery, before finding a 
+permanent home.
+The C.A.Re Fund (Companion 
+Animal Relief Fund) of the 
+RVSPCA was established to 
+help economically challenged 
+pet owners struggling with 
+extraordinary veterinary expenses, 
+ensuring pets remain healthy 
+and at home. The RVSPCA is 
+committed to keeping pets and 
+people together, and the C.A.Re 
+Fund helps to do just that. This 
+support program is available to 
+residents of Roanoke City, Vinton, 
+and Salem, as well as Botetourt, 
+Bedford, Craig, Floyd, Franklin, 
+Montgomery, and Roanoke 
+Counties, and to any animals 
+adopted from the SPCA, regardless 
+of geographic location.
+Through these programs, the 
+RVSPCA not only provides direct 
+care for pets but also educates 
+and empowers the community to 
+be responsible, compassionate 
+guardians. Thanks to a $6,100 
+grant from the Phalia M. and Guy 
+M. Kinder Fund, the C.A.Re Fund 
+ensures that pets stay healthy, 
+loved, and close to the people who 
+cherish them.
+The C.A.Re or 
+Companion 
+Animal Relief Fund 
+of the Roanoke 
+Valley SPCA was 
+set up to help 
+economically 
+challenged pet 
+owners struggling 
+with extraordinary 
+veterinary 
+expenses to keep 
+their pets healthy 
+and at home with 
+them. In FY25, 
+we received 
+194 requests 
+for C.A.Re 
+Fund assistance 
+and were able 
+to award 108 
+of those with 
+funding thanks 
+to generous 
+donors like the 
+Community 
+Foundation.
+– Julie Rickmond, 
+ Marketing and 
+ Communications Director
+
+[page 11]
+11
+The Southside Survivor Response Center (SSRC) 
+provides crisis intervention, advocacy, safety services, 
+and education to empower individuals affected by 
+domestic violence, sexual assault, and trauma-induced 
+crises. Serving Martinsville City, Henry, and Patrick 
+Counties, SSRC is the only emergency shelter in the 
+region for women and children fleeing domestic 
+violence and sexual assault.
+SSRC offers a comprehensive array of services, 
+including 24-hour crisis intervention and hotline 
+support, emergency shelter, safety planning, hospital 
+and court accompaniment, counseling, life skills, 
+case management, and financial assistance. Through 
+strong partnerships and culturally competent care, 
+SSRC addresses both immediate needs and long-term 
+recovery, ensuring women and children can rebuild 
+their lives safely and confidently. Special attention is 
+given to Latin-X communities, supporting families who 
+face language and cultural barriers.
+Founded in 1981, SSRC combines evidence-based, 
+equity-driven practices with a trauma-informed 
+approach. Seventeen dedicated staff members, 
+alongside culturally diverse volunteers and community 
+partners, provide wraparound services that promote 
+resiliency, self-sufficiency, and healing. Programs focus 
+not only on crisis response but also on education, 
+advocacy, and challenging cultural norms that 
+perpetuate violence.
+SSRC’s shelter creates a safe, supportive environment 
+where survivors are treated with respect and dignity. 
+Financial assistance and life skills programs help women 
+and children regain stability, while counseling and case 
+management address emotional and practical needs.
+Thanks to a $12,000 grant from the Earl D. and Carrie 
+Leigh Doran Fund, SSRC can continue to provide 
+these essential services, helping survivors break free 
+from cycles of abuse, restore safety, and move toward 
+empowered, independent lives.
+Full Spanish speaking 
+services were added in
+2016
+Provide 24/7
+Crisis Helpline
+Only regional shelter 
+for women and children 
+fleeing abuse
+The Community 
+Foundation’s 
+generous 
+support of 
+MARC’s Founders 
+Scholarship 
+Fund provided 
+an opportunity 
+for individuals 
+without the 
+resources to 
+access our day 
+program to 
+assist them with 
+development 
+of skills sets 
+necessary to 
+successfully 
+integrate into 
+their community.
+Melody Justice 
+Executive Director
+SOUTHSIDE SURVIVOR RESPONSE CENTER
+This 
+grant has 
+strengthened 
+the capacity 
+of our 
+Emergency 
+Shelter 
+Services, 
+helping us 
+to meet 
+critical needs 
+and offer 
+a lifeline 
+to those 
+seeking 
+refuge and a 
+path forward. 
+We thank 
+you! 
+– Tamika Whitfield, 
+ Executive Director
+Founded in 
+1981
+24/7
+
+[page 16]
+*New Fund
+16
+families, and programs that provide educational 
+and career services from low to moderate 
+income families. 
+Charles and Pat Houghton Fund 
+Established by Dr. Charles W. and Pat H. Houghton, 
+this fund supports organizations that improve the 
+lives of needy elderly citizens of the community.
+The Hope Fund 
+Established by anonymous donors, this fund’s 
+primary purpose is to support organizations 
+that serve individuals and families in need of 
+food, shelter or medical assistance, as well as 
+battered women and children; also to support 
+organizations that serve our Wounded Warriors 
+that have been injured as a direct result of a 
+military deployment, along with other non-profit 
+organizations of interest to the donors.
+Hospice Fund 
+Provides assistance and services to any needy 
+resident of the Martinsville community with end-
+of-life medical needs and expenses.
+Rita Knox Hutts Memorial Fund 
+Established through the estate of Rita Knox 
+Hutts, this fund supports organizations that 
+teach people how to be self-reliant and self-
+sufficient, help the needy obtain prescription 
+medications, address the basic human needs 
+of children, and provide financial assistance to 
+Catholic seminarians.
+Melva P. Jones Fund for Music and Art 
+Established through the estate of Melva P. Jones, 
+this fund supports music and arts programs, 
+preferenced for the Town of Vinton.
+Phalia M. and Guy M. Kinder Fund 
+Established through the estate of Phalia Miles 
+Kinder and Guy Millard Kinder, this fund 
+supports agencies and organizations which are 
+effective and efficient in preventing cruelty to 
+animals; research and medical advancement for 
+the cure of the diseases in animals; professional 
+education of animal caretakers; and programs 
+which promote the positive relationship 
+between humans and animals.
+Emil and Emma Lang Fund for the 
+Visually Impaired 
+Established by the late Emil and Emma Lang, this 
+fund provides support to programs and agencies 
+that address the needs of the visually impaired in 
+Roanoke City, City of Salem, Botetourt County, 
+Craig County, and Roanoke County.
+The Camille M. Lownds Charitable Fund 
+Established through the estate of Camille 
+Lownds, this fund supports the needs of children 
+with cancer or cancer research.
+Martinsville Area Endowment Fund 
+Provides health services to needy residents of 
+the Martinsville community, supports health-
+related teaching, educational and research 
+programs and generally provides for the medical 
+care of the Martinsville community.
+Medical Education Fund 
+Supports continuing medical education for 
+students in the Martinsville community and 
+healthcare professionals who practice in the 
+Martinsville community.
+Mary Lou and Mickey Moore Memorial Fund* 
+Established by Michael J. Moore, this fund 
+supports vocational trade programs in the 
+Roanoke Valley.
+Sandra Lee Overstreet Fund 
+Established by the late Sandra Lee Overstreet, 
+this fund supports organizations providing 
+dental, medical or surgical services to children 
+or adults in the Roanoke Valley who cannot 
+afford them and organizations in the Roanoke 
+Valley which provide, rescue, care and adoption 
+services for lost, sick or neglected animals. 
+Thomas P. and Lewise S. Parsley Fund 
+Established by the late Lewise Parsley, this fund 
+places a premium on the preservation of dignity, 
+hope and personal independence for the elderly 
+and needy. The fund addresses three specific 
+community concerns: to help the elderly and 
+needy afford prescription medications; to fight 
+substance abuse; and to help elderly and needy 
+obtain home health services when they cannot 
+manage alone.
+Marion K. Ramsey Fund 
+Established by Dr. and Mrs. Douglas E. Pierce, the 
+fund supports elderly citizens in the community.
+Ravenel Oncology Center Fund 
+Established by Dr. Nigel Goodchild, this fund 
+provides a broad range of support and care to 
+needy patients who have been treated at the 
+Ravenel Oncology Center.
+Roanoke Valley Academy of Medicine Fund 
+Established by the Roanoke Valley Academy of 
+Medicine, this fund supports the broad medical 
+needs in the community.
+Roanoke Valley Children’s Fund 
+Established by the B. Wilson Porterfield, Jr. 
+Foundation, this fund addresses the broad needs 
+of children in the Valley from prenatal care until 
+their sixth birthday.
+Romero Family Fund 
+Established by Betty LaPrade Romero, this 
+fund provides medical assistance to the elderly 
+and disabled population in Henry and Franklin 
+Counties and the City of Martinsville. 
+Ann and Bill Scheer Fund 
+Established by the late Ann and Bill Scheer, this 
+fund provides broad support for the elderly 
+citizens of the Roanoke Valley.
+Dr. Charles L. Shedd Endowment Fund 
+Established by the Shedd School Foundation, 
+this fund honors and commemorates the life of 
+Charles Livingston Shedd, Ph.D. and supports 
+educational needs.
+Jacqueline S. (Jackie) and 
+Shelborn L. (S.L.) Spangler Fund 
+Established by the late Shelborn L. Spangler, 
+this fund supports a wide variety of important 
+community needs and opportunities in the 
+communities of Poages Mill, Bent Mountain, 
+Copper Hill and Check, Virginia.
+Robert Harrison Smith Memorial Fund 
+Established by N. Frank Smith, this fund supports 
+organizations that assist handicapped or 
+disabled persons. 
+Dr. Robert Manton Wilson Memorial Fund 
+to Eradicate Leprosy 
+Established by the late Samuel B. McGhee, this 
+fund supports worldwide efforts to eradicate the 
+scourge of leprosy.
+Larry Woodrow Vest Fund 
+Established through the estate of Larry 
+Woodrow Vest, this fund supports a wide 
+range of community needs with particular 
+consideration being given to charitable 
+organizations providing services to Floyd 
+County, Virginia residents.
+Pamela M. Wright Fund 
+Established by the late Joseph B. Wright, this 
+fund supports local and national organizations 
+devoted to the welfare of animals.
+Byron and Nancy Yost Fund 
+Established by Byron L. and Nancy T. Yost, 
+this fund supports efforts to alleviate 
+childhood hunger.
+
+[page 23]
+*New Fund
+23
+Administrative Endowment Fund
+Supported by numerous donors, this fund helps 
+support the daily administrative needs of the 
+Foundation.
+Gail H. Albert Charitable Fund 
+Established by the late Gail H. Albert, this fund 
+supports St. Jude Children’s Research Hospital, 
+Shriners Children’s Hospital, and Wounded 
+Warrior Project.
+James R. Alvis Jr. Children’s Hospice Fund
+Established by the late Roger Hodnett, Dr. William 
+Baker, the late Al Tignor, family and friends, this 
+fund supports Good Samaritan Hospice.
+Anonymous Fund
+Established by an anonymous donor, this fund 
+supports Grace Network of MHC.
+The Anne Armistead Fund
+Established by the late Anne Armistead, this fund 
+focuses on selected social service and cultural 
+organizations.
+Dorothy Back and Nathaniel Back 
+Charitable Fund
+Established by the late Nathaniel and Dorothy 
+Back, this fund is designated to support a 
+local agency.
+Margaret I. Camplejohn Charitable Gift Annuity
+Established by Margaret I. Camplejohn, this fund 
+will support The Rescue Mission of Roanoke, Inc.
+David “Crockett” Chatham Memorial Fund
+Established by the late Mrs. Hugh H. Chatham and 
+family members, this fund provides assistance 
+and services to needy residents of the Martinsville 
+community with end-of-life medical needs and 
+expenses.
+Earl L. and Ethel Y. Childers Fund
+Established through the estate of Earl L. Childers, 
+this fund supports nonprofit organizations of 
+interest to the donor and his family.
+Elizabeth Teague Coglitore Memorial Fund 
+Established by Robert Dean Teague and Julia 
+Teague Van Nutt, this fund supports Christa 
+McAuliffe Elementary School.
+DESIGNATED FUNDS
+Nancy Drew Charitable Gift Annuity
+Established by Nancy Drew, this fund will support 
+the Warm Hearth Foundation.
+Francis and Helen Ewald Family 
+Charitable Fund
+Established by the Ewald family, this fund 
+supports selected arts and cultural organizations 
+and other charitable interests of the family.
+Reba K. and Sidney Falkenstein Fund
+Established by the late Joan F. Brenner and 
+David S. Falkenstein, this fund supports Temple 
+Emanuel.
+Howard Feiertag Charitable Gift Annuity
+Established by Howard Feiertag, this fund 
+supports the Warm Hearth Foundation Fund.
+Fund for Educating Ministers and Missionaries 
+Established by the late Samuel B. McGhee, this 
+fund provides higher education scholarship 
+assistance to students at Union Theological 
+Seminary and Presbyterian School of Christian 
+Education to pursue a career as an ordained 
+minister or as a missionary.
+Fund for Garth Newel Music Center
+Established by Edward A. and Susan R. O’Neal, this 
+fund benefits Garth Newel Music Center.
+Anthony Giesen Endowment Fund
+Established through the estate of Anthony Geisen, 
+this fund supports Ferrum College and St. John’s 
+Episcopal Church in Roanoke, VA. 
+Greene Memorial United Methodist 
+Church Fund
+Established by a church member, this fund 
+supports Greene Memorial United Methodist 
+Church.
+The Zelda and Julius Halpern Fund
+Established through the estates of Zelda and 
+Julius Halpern, this fund supports six nonprofit 
+organizations.
+The Samuel Charles and Neva Carol Baker Hill 
+Charitable Fund
+Established through the estate of Samuel C. Hill, 
+this fund benefits Bradley Free Clinic and The 
+Salvation Army.
+Rita Knox Hutts Memorial Fund
+Established through the estate of Rita Knox Hutts, 
+this fund supports many of her favorite charities 
+and organizations helping those in need.
+Gene A. Hylton Administrative 
+Endowment Fund
+Established through the estate of Gene A. Hylton, 
+this fund supports the Foundation’s work in the 
+community.
+John A. Jamison Fund
+Established by the Jamison family and by Blue 
+Ridge Community Services, this fund helps 
+selected clients of Blue Ridge Behavioral 
+Healthcare pursue educational opportunities.
+V. Diane Kelly Fund for Forgotten Victims
+Established by Elizabeth (Ibby) Greer, this fund 
+supports the Super Hero Kids Program of Total 
+Action for Progress.
+Bill and Irene Kennedy Fund
+Established by the late Bill and Irene Kennedy, this 
+fund supports nonprofit organizations of interest 
+to the donors and their family.
+Sandy Mac Campership Fund
+Established in honor of W. Alexander McEachern, 
+this fund provides camp experiences for youth at 
+UUC youth camps.
+The Conrad and Clara Avril Maier Fund
+Established by the late Mary C. Maier, this fund 
+benefits the scholarship program of Hollins 
+University and may also benefit The Nature 
+Conservancy, Christendom College, 
+and a hospice in the Roanoke Valley.
+Dr. Norman G. and Doris M. Marriott 
+Charitable Gift Annuities
+Established by Norman and Doris Marriott, 
+these funds will support The Rescue Mission of 
+Roanoke, Inc. and Warm Hearth Foundation.
+Connie Stephens May Scholarship Fund
+Established by Teresa M. Stowasser, this fund 
+honors and memorializes her mother’s long 
+interest in education by helping worthy students 
+who are resuming or beginning their higher 
+
+[page 26]
+*New Fund
+26
+H. Clay Gravely IV Memorial Fund 
+Established by family and friends of the late 
+H. Clay Gravely IV and advised by an advisory 
+committee.
+Catherine J. Griffin Charitable Fund 
+Established and advised by Catherine Griffin.
+Lucian Y. and June B. Grove Fund 
+Established by the late Lu and June Grove and 
+advised by family members.
+Hart of the Entrepreneur Fund 
+Established by family and friends of the late 
+Bonsall “Bonz” Hart and advised by an advisory 
+committee.
+Rodney M. Haynes Memorial Fund 
+Established by family and friends in memory of 
+Rodney M. Haynes.
+Hudson-Williams Fund 
+Established and advised by an anonymous donor 
+to honor the families of Raymond S. and Mary 
+Hudson Williams.
+A. Anson and Theresa G. Jamison Fund 
+Established through the estate of Theresa G. 
+Jamison.
+Jessee Family Fund* 
+Established and advised by John and Shea Jessee.
+Peggy Johnson Hope for Children Fund 
+Established by Rudolph and Maureen Johnson 
+and advised by Rudolph, Maureen and family 
+members.
+Dan and Nancy Karnes Fund 
+Established by Nancy and the late Daniel L. Karnes 
+and advised by Nancy.
+Jennifer Kirby Memorial Fund 
+Established and advised by The Kroger Company, 
+this fund perpetuates the charitable interests 
+of The Kroger Company and its late employee, 
+Jennifer Kirby.
+Philip C. Kistler and Mary Kistler Bickford Fund 
+Established by the late Mary Kistler Bickford and 
+advised her children Ashley Kistler, Gene Kistler, 
+Kathy Craft and Elly Cote.
+The Stan and Elise Lanford Family Fund 
+Established and advised by Stan and Elise Lanford.
+William Jacob and Barbara Inez Boyle 
+Lemon Fund 
+Established by William J. and the late Barbara 
+B. Lemon, this fund supports a wide range of 
+important community needs with a special 
+emphasis on cultural activities, conservation and 
+preservation, social services and education as 
+advised by Bill Lemon.
+Cap’t Til Lester Fund (In memory of G.T. 
+“Cap’t Til” and Lottie Shelton Lester) 
+Established by the late George W. Lester II and 
+advised by family members.
+Rachel Alice Lewis Memorial Fund 
+Established and advised by Charlotte Lewis 
+Parsons.
+Mr. and Mrs. Samuel B. Long Fund 
+Established and advised by Sam and Sylvia Long.
+MadLea Fund 
+Established and advised by Blaine and 
+Robin Lewis. 
+The McClain Family Charitable Fund 
+Established and advised by Mark McClain.
+The McClung Family Fund 
+Established and advised by Cathy Z. Ford and 
+James T. McClung, Jr.
+Tom and Deborah McDonald Fund 
+Established and advised by Tom and Deborah 
+McDonald.
+Sara L. and Samuel H. McGhee, III Fund 
+Established by the late Sara L. and Samuel H. 
+McGhee, III and is advised by Samuel H. 
+McGhee, IV.
+Robert F. McMillan Memorial Fund 
+Established and advised by Jackie McMillan. 
+Debra C. Meade Family Fund 
+Established and advised by Debra C. Meade.
+Barton W. and Margaret J. Morris Fund 
+Established by the late Margaret and Barton 
+Morris and advised by B. Wistar Morris, III and 
+Ann J. Morris.
+Marshall and Monika Mundy Fund 
+Established by Monika F. and the late Marshall 
+Mundy and advised by Monika.
+Music Education Fund 
+Established by Willy Pierre Jacoebee and Richard 
+C. Henderson, this fund supports programs that 
+bring the joy of music to needy children in the 
+community.
+My Hometown Fund 
+Established and advised by The Ramsey Foundation.
+S. Kime Patsel Fund 
+Established and advised by S. Kime Patsel. 
+Lily Belle Patterson Memorial Fund 
+Established and advised by Clayton and 
+Amber Patterson.
+Nancy and Ballard Pinkard Fund 
+Established by Nancy B. and the late Ballard F. 
+Pinkard and advised by Nancy.
+Doris and Roy R. Pollard, Jr. Fund 
+Established by the late Doris and Roy Pollard, 
+this fund supports a wide range of important 
+community needs with a special emphasis on
+[...truncated]
+</document>
+</documents>
+
+Extract the organisation profile from these documents.

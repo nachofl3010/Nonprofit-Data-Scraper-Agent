@@ -1,0 +1,36 @@
+{
+  "note": "Hand-labelled 2026-09-25 by reading the site pages (not pipeline output). EIN/revenue from IRS data (ProPublica) when not on the site. A list = any of these is correct; null = not on the site, so any extracted value counts as wrong; omitted field = not scored.",
+  "website": "https://www.charitywater.org/",
+  "fields": {
+    "name": [
+      "charity: water"
+    ],
+    "registration_id": [
+      "22-3936753"
+    ],
+    "annual_revenue_usd": {
+      "value": 82267852,
+      "tolerance": 0.25
+    },
+    "executive_name": [
+      "Scott Harrison",
+      "Melissa Russell"
+    ],
+    "contact_email": [
+      "info@charitywater.org",
+      "team@charitywater.org"
+    ],
+    "has_careers_page": true,
+    "fundraising_tech": [],
+    "cause_area": [
+      "international"
+    ],
+    "country": [
+      "US"
+    ],
+    "hq_city": [
+      "New York",
+      "Franklin"
+    ]
+  }
+}

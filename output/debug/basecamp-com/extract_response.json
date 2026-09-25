@@ -1,0 +1,155 @@
+{
+  "name": {
+    "value": "Basecamp",
+    "source_url": "https://basecamp.com/",
+    "confidence": "high"
+  },
+  "legal_name": null,
+  "registration_id": null,
+  "country": null,
+  "hq_location": null,
+  "mission": {
+    "value": "Basecamp is project management without all the nonsense. Rock solid and famously easy to use.",
+    "source_url": "https://basecamp.com/",
+    "confidence": "high"
+  },
+  "programs": [
+    {
+      "name": "Hill Charts",
+      "description": "A Basecamp exclusive way to track progress, showing a 10,000-foot view of project status called the Hill Chart."
+    }
+  ],
+  "cause_area": null,
+  "geography_served": {
+    "value": {
+      "scope": "international",
+      "places": [
+        "over 100 countries",
+        "every populated continent"
+      ]
+    },
+    "source_url": "https://basecamp.com/live",
+    "confidence": "high"
+  },
+  "tax_status": null,
+  "annual_revenue": null,
+  "staff_count": null,
+  "impact_metrics": [
+    {
+      "value": "Thousands of people are working in Basecamp now",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "Used across every industry, and nearly a million people, teams, companies, and non-profits worldwide rely on it daily",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "84 million accounts",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "60 million projects",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "72 million check-in answers",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "350 million messages",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "1.7 billion to-dos",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "2.7 billion comments",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "2.2 billion files",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "2.3 billion pings",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "675 million boosts",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "5 petabytes of data",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "200 million scheduled events",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "180 million to-do lists",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "1 billion @mentions",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "545 million to-dos completed",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "15 billion notifications",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high"
+    }
+  ],
+  "leadership": [
+    {
+      "name": "Jason Fried",
+      "title": "Co-founder & CEO",
+      "email": "jason@basecamp.com",
+      "linkedin": null,
+      "source_url": "https://basecamp.com/",
+      "confidence": "high",
+      "evidence": "Jason Fried, jason@basecamp.com Co-founder & CEO"
+    }
+  ],
+  "general_contact": {
+    "email": "jason@basecamp.com",
+    "phone": null,
+    "contact_page_url": null,
+    "source_url": "https://basecamp.com/"
+  },
+  "open_rfps": [],
+  "open_roles": [],
+  "recent_news": [
+    {
+      "headline": "Blogging can be more effective than advertising (and it’s a hell of a lot cheaper)",
+      "date": null,
+      "url": "https://basecamp.com/gettingreal/13.3-ride-the-blog-wave",
+      "summary": "Explains advantage of blog-based marketing for Basecamp and other products.",
+      "source_url": "https://basecamp.com/gettingreal/13.3-ride-the-blog-wave"
+    }
+  ],
+  "funders_and_partners": [],
+  "looks_like_nonprofit": false,
+  "not_nonprofit_reason": "Basecamp is a software company offering a commercial project management product, operated by 37signals LLC, a for-profit business."
+}

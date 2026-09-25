@@ -1,0 +1,246 @@
+{
+  "name": {
+    "value": "Habitat for Humanity International",
+    "source_url": "https://www.habitat.org/",
+    "confidence": "high"
+  },
+  "legal_name": null,
+  "registration_id": {
+    "value": "91-1914868",
+    "source_url": "https://www.habitat.org/",
+    "confidence": "high",
+    "evidence": "Habitat for Humanity International’s tax ID number is 91-1914868."
+  },
+  "country": {
+    "value": "US",
+    "source_url": "https://www.habitat.org/",
+    "confidence": "high"
+  },
+  "hq_location": {
+    "value": "Americus, GA",
+    "source_url": "https://www.habitat.org/contact",
+    "confidence": "high"
+  },
+  "mission": {
+    "value": "Habitat for Humanity is a global nonprofit housing organization working in local communities across all 50 states in the U.S. and in approximately 70 countries. Habitat’s vision is of a world where everyone has a decent place to live.",
+    "source_url": "https://www.habitat.org/about",
+    "confidence": "high"
+  },
+  "programs": [
+    {
+      "name": "Habitat AmeriCorps",
+      "description": "A year of service with Habitat AmeriCorps to strengthen communities in the U.S."
+    },
+    {
+      "name": "International Volunteer Program",
+      "description": "Opportunities to volunteer abroad with Habitat for Humanity."
+    },
+    {
+      "name": "U.S. Long-term Volunteer Program",
+      "description": "Volunteer placements for people with construction, professional or retail experience."
+    }
+  ],
+  "cause_area": {
+    "value": "community_development",
+    "source_url": "https://www.habitat.org/about",
+    "confidence": "high"
+  },
+  "geography_served": {
+    "value": {
+      "scope": "international",
+      "places": [
+        "United States",
+        "approximately 70 countries"
+      ]
+    },
+    "source_url": "https://www.habitat.org/about",
+    "confidence": "high"
+  },
+  "tax_status": {
+    "value": "501(C)(3)",
+    "source_url": "https://www.habitat.org/",
+    "confidence": "high"
+  },
+  "annual_revenue": null,
+  "staff_count": null,
+  "impact_metrics": [
+    {
+      "value": "Helped more than 3 million people build or improve a place to call home in fiscal year 2025",
+      "source_url": "https://www.habitat.org/about/annual-reports-990s",
+      "confidence": "high"
+    },
+    {
+      "value": "Helped 3 million people build or improve a place to call home in fiscal year 2024",
+      "source_url": "https://www.habitat.org/about/annual-reports-990s",
+      "confidence": "high"
+    },
+    {
+      "value": "Helped 13.4 million people build or improve a place to call home in fiscal year 2023",
+      "source_url": "https://www.habitat.org/about/annual-reports-990s",
+      "confidence": "high"
+    }
+  ],
+  "leadership": [
+    {
+      "name": "Jonathan Reckford",
+      "title": "CEO",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.habitat.org/you-thought-leadership-series",
+      "confidence": "high",
+      "evidence": "Jonathan Reckford, CEO, Habitat for Humanity International"
+    },
+    {
+      "name": "Johann Fernando",
+      "title": "Chief Operating Officer",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.habitat.org/newsroom",
+      "confidence": "high",
+      "evidence": "Habitat for Humanity International announces appointment of Johann Fernando as chief operating officer"
+    },
+    {
+      "name": "Liz Satow",
+      "title": "Senior Vice President, International Operations",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.habitat.org/newsroom",
+      "confidence": "high",
+      "evidence": "Liz Satow as senior vice president, International Operations"
+    },
+    {
+      "name": "Craig Molyneaux",
+      "title": "Chief Financial and Administration Officer",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.habitat.org/newsroom",
+      "confidence": "high",
+      "evidence": "Habitat for Humanity International announces appointment of Craig Molyneaux as chief financial and administration officer"
+    }
+  ],
+  "general_contact": {
+    "email": "campaign@habitat.org",
+    "phone": "(800) 422-4828",
+    "contact_page_url": "https://www.habitat.org/contact",
+    "source_url": "https://www.habitat.org/contact"
+  },
+  "open_rfps": [],
+  "open_roles": [],
+  "recent_news": [
+    {
+      "headline": "Habitat for Humanity International announces appointment of Johann Fernando as chief operating officer",
+      "date": "2026-06",
+      "url": null,
+      "summary": null,
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "Habitat for Humanity International announces appointment of Liz Satow as senior vice president, International Operations",
+      "date": "2026-06",
+      "url": null,
+      "summary": null,
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "ADS Foundation announces $1 million partnership with Habitat for Humanity International to help expand access to affordable housing",
+      "date": "2026-06",
+      "url": null,
+      "summary": null,
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "Habitat for Humanity’s corporate partners to support building more prosperous and vibrant communities during 2025 holiday season",
+      "date": "2026-06",
+      "url": null,
+      "summary": null,
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "Habitat for Humanity helped more than 3 million people build or improve a place to call home during past year",
+      "date": "2026-06",
+      "url": null,
+      "summary": null,
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "Wesco International continues partnership with Habitat for Humanity to support 100,000 Floors to Play On initiative",
+      "date": "2026-06",
+      "url": null,
+      "summary": null,
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "Habitat for Humanity mourns the death of former U.S. President Jimmy Carter",
+      "date": "2026-06",
+      "url": null,
+      "summary": null,
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "Habitat for Humanity International announces appointment of Craig Molyneaux as chief financial and administration officer",
+      "date": "2026-06",
+      "url": null,
+      "summary": null,
+      "source_url": "https://www.habitat.org/newsroom"
+    }
+  ],
+  "funders_and_partners": [
+    {
+      "name": "Wells Fargo",
+      "type": "corporate",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "name": "State Farm",
+      "type": "corporate",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "name": "Nissan",
+      "type": "corporate",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "name": "Henkel",
+      "type": "corporate",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "name": "Wells Fargo Foundation",
+      "type": "foundation",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "name": "ADS Foundation",
+      "type": "foundation",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "name": "J.M. Huber Corporation",
+      "type": "corporate",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "name": "MaxLite",
+      "type": "corporate",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "name": "NewAge Products Inc.",
+      "type": "corporate",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "name": "Wesco International",
+      "type": "corporate",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "name": "J.M. Huber Corporation",
+      "type": "corporate",
+      "source_url": "https://www.habitat.org/newsroom"
+    }
+  ],
+  "looks_like_nonprofit": true,
+  "not_nonprofit_reason": null
+}

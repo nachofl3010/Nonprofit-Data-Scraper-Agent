@@ -1,0 +1,36 @@
+{
+  "note": "Hand-labelled 2026-09-25 by reading the site pages (not pipeline output). EIN/revenue from IRS data (ProPublica) when not on the site. A list = any of these is correct; null = not on the site, so any extracted value counts as wrong; omitted field = not scored.",
+  "website": "https://www.cfwesternva.org/",
+  "fields": {
+    "name": [
+      "Community Foundation Serving Western Virginia",
+      "Community Foundation of Western Virginia"
+    ],
+    "registration_id": [
+      "54-1959458"
+    ],
+    "annual_revenue_usd": {
+      "value": 13341807,
+      "tolerance": 0.3
+    },
+    "executive_name": [
+      "Carly C. Oliver",
+      "Carly Oliver"
+    ],
+    "contact_email": [
+      "carly@cfwesternva.org"
+    ],
+    "has_careers_page": true,
+    "open_roles_count": 0,
+    "fundraising_tech": [],
+    "cause_area": [
+      "philanthropy"
+    ],
+    "country": [
+      "US"
+    ],
+    "hq_city": [
+      "Roanoke"
+    ]
+  }
+}

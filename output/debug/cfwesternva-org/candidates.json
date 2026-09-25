@@ -1,0 +1,170 @@
+[
+  {
+    "url": "https://www.cfwesternva.org/who-we-are/",
+    "anchor": "Who We Are",
+    "score": 10.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "http://www.cfwesternva.org/team/",
+    "anchor": "Our Team",
+    "score": 10.0,
+    "category": "team",
+    "source": "homepage"
+  },
+  {
+    "url": "http://www.cfwesternva.org/advisory-board/",
+    "anchor": "Regional Advisory Board",
+    "score": 10.0,
+    "category": "team",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.cfwesternva.org/who-we-are/our-board/",
+    "anchor": "",
+    "score": 10.0,
+    "category": "team",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/who-we-are/our-team/",
+    "anchor": "",
+    "score": 10.0,
+    "category": "team",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/team/new-staff/",
+    "anchor": "",
+    "score": 10.0,
+    "category": "team",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/team/new-staff-2/",
+    "anchor": "",
+    "score": 10.0,
+    "category": "team",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/who-we-are/financials-accountability/",
+    "anchor": "Financials & Accountability",
+    "score": 9.0,
+    "category": "financials",
+    "source": "homepage"
+  },
+  {
+    "url": "http://www.cfwesternva.org/governors/",
+    "anchor": "Board of Governors",
+    "score": 8.0,
+    "category": "team",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.cfwesternva.org/who-we-are/job-opportunities/",
+    "anchor": "Job Opportunities",
+    "score": 8.0,
+    "category": "careers",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.cfwesternva.org/grant-opportunities/",
+    "anchor": "Grant Opportunities",
+    "score": 8.0,
+    "category": "careers",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.cfwesternva.org/governors-and-advisory-board-emeriti/",
+    "anchor": "Governors and Advisory Board Emeriti",
+    "score": 7.0,
+    "category": "team",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.cfwesternva.org/private-foundation-services/",
+    "anchor": "",
+    "score": 7.0,
+    "category": "programs",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/community-partnerships/",
+    "anchor": "",
+    "score": 6.0,
+    "category": "partners",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/feed/",
+    "anchor": "RSS feed",
+    "score": 5.0,
+    "category": "news_feed",
+    "source": "feed"
+  },
+  {
+    "url": "https://www.cfwesternva.org/donate/",
+    "anchor": "",
+    "score": 5.0,
+    "category": "donate",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/team/alan-e-ronk/",
+    "anchor": "",
+    "score": 5.0,
+    "category": "team",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/team/carly-c-oliver/",
+    "anchor": "",
+    "score": 5.0,
+    "category": "team",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/team/beth-kelly/",
+    "anchor": "",
+    "score": 5.0,
+    "category": "team",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/team/april-haynes/",
+    "anchor": "",
+    "score": 5.0,
+    "category": "team",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/team/michelle-eberly/",
+    "anchor": "",
+    "score": 5.0,
+    "category": "team",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/team/alyssa-rorrer/",
+    "anchor": "",
+    "score": 5.0,
+    "category": "team",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.cfwesternva.org/corporate-and-private-foundation-services-2/",
+    "anchor": "Corporate and Private Foundation Services",
+    "score": 4.0,
+    "category": "programs",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.cfwesternva.org/corporate-and-private-foundation-services/",
+    "anchor": "",
+    "score": 4.0,
+    "category": "programs",
+    "source": "sitemap"
+  }
+]

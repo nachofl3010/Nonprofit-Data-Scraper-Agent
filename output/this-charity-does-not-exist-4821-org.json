@@ -1,0 +1,117 @@
+{
+  "profile": {
+    "schema_version": "1.0",
+    "taxonomy_version": "ntee-major-v1",
+    "input": "https://www.this-charity-does-not-exist-4821.org",
+    "resolved_url": "https://www.this-charity-does-not-exist-4821.org/",
+    "extracted_at": "2026-09-25T15:02:43.361683Z",
+    "status": "failed",
+    "flags": [],
+    "identity": {
+      "last_checked": null,
+      "name": null,
+      "legal_name": null,
+      "website": null,
+      "registration_id": null,
+      "country": null,
+      "hq_location": null,
+      "mission": null,
+      "programs": [],
+      "cause_area": null,
+      "geography_served": null,
+      "impact_metrics": [],
+      "looks_like_nonprofit": null
+    },
+    "financials": {
+      "last_checked": null,
+      "annual_revenue": null,
+      "staff_count": null,
+      "size_band": "unknown",
+      "financial_history": null,
+      "tax_status": null
+    },
+    "contacts": {
+      "last_checked": null,
+      "leadership": [],
+      "general_contact": null
+    },
+    "signals": {
+      "last_checked": null,
+      "open_rfps": [],
+      "open_roles": [],
+      "recent_news": [],
+      "funders_and_partners": []
+    },
+    "technology": {
+      "last_checked": null,
+      "tech_stack": []
+    },
+    "pages_crawled": [
+      {
+        "url": "https://www.this-charity-does-not-exist-4821.org/",
+        "page_type": "homepage",
+        "kind": null,
+        "status": null,
+        "tokens": 0,
+        "error": "could not connect (DNS or connection failure): [Errno -2] Name or service not known",
+        "via": "crawl"
+      }
+    ],
+    "errors": [
+      "could not load https://www.this-charity-does-not-exist-4821.org/: could not connect (DNS or connection failure): [Errno -2] Name or service not known"
+    ],
+    "gapfill": {
+      "triggered": false,
+      "missing": [],
+      "urls": [],
+      "filled": [],
+      "note": null
+    },
+    "cost": {
+      "calls": [],
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "usd": 0.0,
+      "usd_list": 0.0
+    }
+  },
+  "views": {
+    "sales": {
+      "name": null,
+      "website": null,
+      "status": "failed",
+      "flags": [],
+      "cause_area": null,
+      "size_band": "unknown",
+      "annual_revenue": null,
+      "hq_location": null,
+      "lead_score": 0,
+      "score_breakdown": [],
+      "why_now": "No active timing signals; nurture.",
+      "tech_stack": [],
+      "contacts_by_role": {},
+      "general_contact": null,
+      "open_rfps": [],
+      "buying_signal_roles": [],
+      "recent_news": []
+    },
+    "funder": {
+      "name": null,
+      "website": null,
+      "mission": null,
+      "cause_area": null,
+      "geography_served": null,
+      "programs": [],
+      "registration_id": null,
+      "tax_status": null,
+      "financial_health": {
+        "annual_revenue": null,
+        "size_band": "unknown",
+        "trend": "unknown",
+        "history": []
+      },
+      "impact_metrics": [],
+      "existing_funders": []
+    }
+  }
+}

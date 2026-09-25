@@ -1,0 +1,39 @@
+{
+  "note": "Hand-labelled 2026-09-25 by reading the site pages (not pipeline output). EIN/revenue from IRS data (ProPublica) when not on the site. A list = any of these is correct; null = not on the site, so any extracted value counts as wrong; omitted field = not scored.",
+  "website": "https://www.communityoutreachgroupinc.com/",
+  "fields": {
+    "name": [
+      "Community Outreach Group",
+      "Community Outreach Group, Inc.",
+      "The Community Outreach Group, Inc."
+    ],
+    "registration_id": [
+      "22-3689974"
+    ],
+    "annual_revenue_usd": {
+      "value": 242847,
+      "tolerance": 0.4
+    },
+    "executive_name": null,
+    "contact_email": [
+      "monmouthcog@yahoo.com"
+    ],
+    "contact_phone": [
+      "732-671-0550"
+    ],
+    "has_careers_page": false,
+    "open_roles_count": 0,
+    "fundraising_tech": [
+      "PayPal Giving"
+    ],
+    "cause_area": [
+      "human_services"
+    ],
+    "country": [
+      "US"
+    ],
+    "hq_city": [
+      "Middletown"
+    ]
+  }
+}

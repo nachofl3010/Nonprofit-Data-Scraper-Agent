@@ -1,0 +1,12 @@
+# Deliberately difficult batch. Run: python run.py --batch tests/messy_inputs.txt
+# Expected behaviour per line is in the README ("Messy inputs").
+https://www.charitywater.org                          # large, well-structured charity
+https://www.communityoutreachgroupinc.com/            # tiny local org, one-page site
+https://www.rspb.org.uk                               # non-US (UK charity number on site, no IRS data)
+https://lfcfp.org/                                    # JS-rendered React site: near-empty HTML
+https://www.cfwesternva.org                           # annual-report PDF one hop from the financials page
+Habitat for Humantiy                                  # typo'd name: search + verify, or ask for a URL
+https://www.this-charity-does-not-exist-4821.org      # dead domain
+https://basecamp.com                                  # not a nonprofit
+habitat.org/?utm_source=newsletter&utm_medium=email   # no scheme + tracking params
+https://alleganfoundation.org                         # bot protection (HTTP 403)

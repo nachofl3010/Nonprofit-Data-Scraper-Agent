@@ -1,0 +1,238 @@
+{
+  "profile": {
+    "schema_version": "1.0",
+    "taxonomy_version": "ntee-major-v1",
+    "input": "https://lfcfp.org/",
+    "resolved_url": "https://lfcfp.org/",
+    "extracted_at": "2026-09-25T15:01:53.846618Z",
+    "status": "partial",
+    "flags": [
+      "registry_match:name"
+    ],
+    "identity": {
+      "last_checked": "2026-09-25T15:01:53.846618Z",
+      "name": {
+        "value": "Loaves and Fishes Community Food Pantry",
+        "source_url": "https://lfcfp.org/",
+        "confidence": "high"
+      },
+      "legal_name": {
+        "value": "Loaves And Fishes Community Food Pantry Inc",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/833823198",
+        "confidence": "high"
+      },
+      "website": "https://lfcfp.org/",
+      "registration_id": {
+        "value": "83-3823198",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/833823198",
+        "confidence": "high",
+        "evidence": "IRS record: Loaves And Fishes Community Food Pantry Inc, EIN 83-3823198"
+      },
+      "country": null,
+      "hq_location": null,
+      "mission": null,
+      "programs": [],
+      "cause_area": {
+        "value": "human_services",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/833823198",
+        "confidence": "high"
+      },
+      "geography_served": null,
+      "impact_metrics": [],
+      "looks_like_nonprofit": true
+    },
+    "financials": {
+      "last_checked": "2026-09-25T15:01:53.846618Z",
+      "annual_revenue": {
+        "value": {
+          "amount": 116218.0,
+          "currency": "USD",
+          "fiscal_year": 2025
+        },
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/833823198",
+        "confidence": "high",
+        "evidence": "IRS Form 990 total revenue, fiscal year 2025"
+      },
+      "staff_count": null,
+      "size_band": "<$500k",
+      "financial_history": [
+        {
+          "fiscal_year": 2025,
+          "revenue": 116218.0,
+          "expenses": null,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/833823198"
+        },
+        {
+          "fiscal_year": 2023,
+          "revenue": 56802.0,
+          "expenses": 67441.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/833823198"
+        },
+        {
+          "fiscal_year": 2022,
+          "revenue": 68494.0,
+          "expenses": 71445.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/833823198"
+        },
+        {
+          "fiscal_year": 2021,
+          "revenue": 57138.0,
+          "expenses": 65969.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/833823198"
+        },
+        {
+          "fiscal_year": 2020,
+          "revenue": 98047.0,
+          "expenses": 25624.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/833823198"
+        }
+      ],
+      "tax_status": {
+        "value": "501(c)(3)",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/833823198",
+        "confidence": "high"
+      }
+    },
+    "contacts": {
+      "last_checked": "2026-09-25T15:01:53.846618Z",
+      "leadership": [],
+      "general_contact": null
+    },
+    "signals": {
+      "last_checked": "2026-09-25T15:01:53.846618Z",
+      "open_rfps": [],
+      "open_roles": [],
+      "recent_news": [],
+      "funders_and_partners": []
+    },
+    "technology": {
+      "last_checked": "2026-09-25T15:01:53.846618Z",
+      "tech_stack": []
+    },
+    "pages_crawled": [
+      {
+        "url": "https://lfcfp.org/",
+        "page_type": "homepage",
+        "kind": "html",
+        "status": 200,
+        "tokens": 9,
+        "error": null,
+        "via": "crawl"
+      }
+    ],
+    "errors": [
+      "homepage has almost no visible text (likely rendered by JavaScript); results will be thin. Headless rendering is a listed future improvement."
+    ],
+    "gapfill": {
+      "triggered": false,
+      "missing": [
+        "leadership",
+        "general_contact"
+      ],
+      "urls": [],
+      "filled": [],
+      "note": "key fields missing but no unfetched links left"
+    },
+    "cost": {
+      "calls": [
+        {
+          "purpose": "extract",
+          "model": "gpt-4.1-mini",
+          "input_tokens": 850,
+          "output_tokens": 132,
+          "cache_read_tokens": 1920,
+          "cache_write_tokens": 0,
+          "cached_locally": true,
+          "usd": 0.0,
+          "usd_list": 0.000743
+        }
+      ],
+      "input_tokens": 2770,
+      "output_tokens": 132,
+      "usd": 0.0,
+      "usd_list": 0.000743
+    }
+  },
+  "views": {
+    "sales": {
+      "name": "Loaves and Fishes Community Food Pantry",
+      "website": "https://lfcfp.org/",
+      "status": "partial",
+      "flags": [
+        "registry_match:name"
+      ],
+      "cause_area": "human_services",
+      "size_band": "<$500k",
+      "annual_revenue": {
+        "amount": 116218.0,
+        "currency": "USD",
+        "fiscal_year": 2025
+      },
+      "hq_location": null,
+      "lead_score": -1,
+      "score_breakdown": [
+        {
+          "signal": "size_too_small",
+          "points": -1,
+          "detail": "revenue under $500k (limited budget)",
+          "timing": false
+        }
+      ],
+      "why_now": "No active timing signals; nurture. Fit: revenue under $500k (limited budget).",
+      "tech_stack": [],
+      "contacts_by_role": {},
+      "general_contact": null,
+      "open_rfps": [],
+      "buying_signal_roles": [],
+      "recent_news": []
+    },
+    "funder": {
+      "name": "Loaves and Fishes Community Food Pantry",
+      "website": "https://lfcfp.org/",
+      "mission": null,
+      "cause_area": "human_services",
+      "geography_served": null,
+      "programs": [],
+      "registration_id": "83-3823198",
+      "tax_status": "501(c)(3)",
+      "financial_health": {
+        "annual_revenue": {
+          "amount": 116218.0,
+          "currency": "USD",
+          "fiscal_year": 2025
+        },
+        "size_band": "<$500k",
+        "trend": "growing (+70% 2022->2025)",
+        "history": [
+          {
+            "fiscal_year": 2025,
+            "revenue": 116218.0,
+            "expenses": null
+          },
+          {
+            "fiscal_year": 2023,
+            "revenue": 56802.0,
+            "expenses": 67441.0
+          },
+          {
+            "fiscal_year": 2022,
+            "revenue": 68494.0,
+            "expenses": 71445.0
+          },
+          {
+            "fiscal_year": 2021,
+            "revenue": 57138.0,
+            "expenses": 65969.0
+          },
+          {
+            "fiscal_year": 2020,
+            "revenue": 98047.0,
+            "expenses": 25624.0
+          }
+        ]
+      },
+      "impact_metrics": [],
+      "existing_funders": []
+    }
+  }
+}

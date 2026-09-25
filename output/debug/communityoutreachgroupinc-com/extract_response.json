@@ -1,0 +1,179 @@
+{
+  "name": {
+    "value": "Community Outreach Group, Inc.",
+    "source_url": "https://www.communityoutreachgroupinc.com/",
+    "confidence": "high"
+  },
+  "legal_name": {
+    "value": "Community Outreach Group, Inc.",
+    "source_url": "https://www.communityoutreachgroupinc.com/",
+    "confidence": "high"
+  },
+  "registration_id": null,
+  "country": {
+    "value": "US",
+    "source_url": "https://www.communityoutreachgroupinc.com/",
+    "confidence": "high"
+  },
+  "hq_location": {
+    "value": "Middletown Township, NJ",
+    "source_url": "https://www.communityoutreachgroupinc.com/",
+    "confidence": "high"
+  },
+  "mission": {
+    "value": "Our mission is to help people in need by providing clothing, food, housing, and utility assistance to those who may not have the means to provide for themselves and their families.",
+    "source_url": "https://www.communityoutreachgroupinc.com/",
+    "confidence": "high"
+  },
+  "programs": [
+    {
+      "name": "Food Pantry",
+      "description": "Provides emergency food, personal care, and cleaning products to those in need."
+    },
+    {
+      "name": "Emergency Assistance Fund",
+      "description": "Provides one-time assistance to low-income households with utility and rent/mortgage assistance."
+    },
+    {
+      "name": "Calico Cat Thrift Shop",
+      "description": "Sells new and gently used merchandise to support the Emergency Assistance Fund, Food Pantry, and other nonprofits."
+    }
+  ],
+  "cause_area": {
+    "value": "human_services",
+    "source_url": "https://www.communityoutreachgroupinc.com/",
+    "confidence": "high"
+  },
+  "geography_served": {
+    "value": {
+      "scope": "regional",
+      "places": [
+        "Middletown Township",
+        "Aberdeen",
+        "Atlantic Highlands",
+        "Belford",
+        "Cliffwood",
+        "Hazlet",
+        "Highlands",
+        "Holmdel",
+        "Keansburg",
+        "Keyport",
+        "Leonardo",
+        "Lincroft",
+        "Matawan",
+        "Port Monmouth",
+        "Red Bank",
+        "Union Beach"
+      ]
+    },
+    "source_url": "https://www.communityoutreachgroupinc.com/",
+    "confidence": "high"
+  },
+  "tax_status": {
+    "value": "501(c)(3)",
+    "source_url": "https://www.communityoutreachgroupinc.com/",
+    "confidence": "high"
+  },
+  "annual_revenue": null,
+  "staff_count": null,
+  "impact_metrics": [
+    {
+      "value": "Food Pantry open first and third Wednesday each month providing food and essentials",
+      "source_url": "https://www.communityoutreachgroupinc.com/",
+      "confidence": "high"
+    }
+  ],
+  "leadership": [
+    {
+      "name": "Christine Stockhausen",
+      "title": "Vice President",
+      "email": "Christinecalicocat@gmail.com",
+      "linkedin": null,
+      "source_url": "https://www.communityoutreachgroupinc.com/",
+      "confidence": "high",
+      "evidence": "Contact \\n Christine Stockhausen, Vice President \\n Christinecalicocat@gmail.com"
+    },
+    {
+      "name": "Jane Chou",
+      "title": "EAF Coordinator",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.communityoutreachgroupinc.com/",
+      "confidence": "high",
+      "evidence": "Contact \\n Ms. Jane Chou \\n EAF Coordinator"
+    }
+  ],
+  "general_contact": {
+    "email": "monmouthcog@yahoo.com",
+    "phone": "732-671-0550",
+    "contact_page_url": "https://www.communityoutreachgroupinc.com/",
+    "source_url": "https://www.communityoutreachgroupinc.com/"
+  },
+  "open_rfps": [],
+  "open_roles": [],
+  "recent_news": [],
+  "funders_and_partners": [
+    {
+      "name": "Christ Episcopal Church-Middletown",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "Middletown Reformed Church",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "Old First Church-Middletown",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "Westminster Presbyterian Church-Middletown",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "Middletown United Methodist Church",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "Lincroft Presbyterian Church",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "St. Leo the Great R.C. Church-Lincroft",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "Ecumenical Missionaries-St. Augustine’s Monastery, Belford",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "Masjid Al Aman Mosque, Middletown",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "Holmdel Community United Church of Christ",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "Good Shepherd Lutheran Church, Holmdel",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "St. Catharine R.C. Church, Holmdel",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    }
+  ],
+  "looks_like_nonprofit": true,
+  "not_nonprofit_reason": null
+}

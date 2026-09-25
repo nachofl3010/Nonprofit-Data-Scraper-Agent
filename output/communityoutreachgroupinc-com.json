@@ -1,0 +1,487 @@
+{
+  "profile": {
+    "schema_version": "1.0",
+    "taxonomy_version": "ntee-major-v1",
+    "input": "https://www.communityoutreachgroupinc.com/",
+    "resolved_url": "https://www.communityoutreachgroupinc.com/",
+    "extracted_at": "2026-09-25T15:01:26.572700Z",
+    "status": "ok",
+    "flags": [
+      "registry_match:name"
+    ],
+    "identity": {
+      "last_checked": "2026-09-25T15:01:26.572700Z",
+      "name": {
+        "value": "Community Outreach Group, Inc.",
+        "source_url": "https://www.communityoutreachgroupinc.com/",
+        "confidence": "high"
+      },
+      "legal_name": {
+        "value": "Community Outreach Group, Inc.",
+        "source_url": "https://www.communityoutreachgroupinc.com/",
+        "confidence": "high"
+      },
+      "website": "https://www.communityoutreachgroupinc.com/",
+      "registration_id": {
+        "value": "22-3689974",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/223689974",
+        "confidence": "high",
+        "evidence": "IRS record: Community Outreach Group Inc, EIN 22-3689974"
+      },
+      "country": {
+        "value": "US",
+        "source_url": "https://www.communityoutreachgroupinc.com/",
+        "confidence": "high"
+      },
+      "hq_location": {
+        "value": "Middletown Township, NJ",
+        "source_url": "https://www.communityoutreachgroupinc.com/",
+        "confidence": "high"
+      },
+      "mission": {
+        "value": "Our mission is to help people in need by providing clothing, food, housing, and utility assistance to those who may not have the means to provide for themselves and their families.",
+        "source_url": "https://www.communityoutreachgroupinc.com/",
+        "confidence": "high"
+      },
+      "programs": [
+        {
+          "name": "Food Pantry",
+          "description": "Provides emergency food, personal care, and cleaning products to those in need."
+        },
+        {
+          "name": "Emergency Assistance Fund",
+          "description": "Provides one-time assistance to low-income households with utility and rent/mortgage assistance."
+        },
+        {
+          "name": "Calico Cat Thrift Shop",
+          "description": "Sells new and gently used merchandise to support the Emergency Assistance Fund, Food Pantry, and other nonprofits."
+        }
+      ],
+      "cause_area": {
+        "value": "human_services",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/223689974",
+        "confidence": "high"
+      },
+      "geography_served": {
+        "value": {
+          "scope": "regional",
+          "places": [
+            "Middletown Township",
+            "Aberdeen",
+            "Atlantic Highlands",
+            "Belford",
+            "Cliffwood",
+            "Hazlet",
+            "Highlands",
+            "Holmdel",
+            "Keansburg",
+            "Keyport",
+            "Leonardo",
+            "Lincroft",
+            "Matawan",
+            "Port Monmouth",
+            "Red Bank",
+            "Union Beach"
+          ]
+        },
+        "source_url": "https://www.communityoutreachgroupinc.com/",
+        "confidence": "high"
+      },
+      "impact_metrics": [
+        {
+          "value": "Food Pantry open first and third Wednesday each month providing food and essentials",
+          "source_url": "https://www.communityoutreachgroupinc.com/",
+          "confidence": "high"
+        }
+      ],
+      "looks_like_nonprofit": true
+    },
+    "financials": {
+      "last_checked": "2026-09-25T15:01:26.572700Z",
+      "annual_revenue": {
+        "value": {
+          "amount": 242847.0,
+          "currency": "USD",
+          "fiscal_year": 2025
+        },
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/223689974",
+        "confidence": "high",
+        "evidence": "IRS Form 990 total revenue, fiscal year 2025"
+      },
+      "staff_count": null,
+      "size_band": "<$500k",
+      "financial_history": [
+        {
+          "fiscal_year": 2025,
+          "revenue": 242847.0,
+          "expenses": null,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223689974"
+        },
+        {
+          "fiscal_year": 2023,
+          "revenue": 329812.0,
+          "expenses": 294077.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223689974"
+        },
+        {
+          "fiscal_year": 2022,
+          "revenue": 233841.0,
+          "expenses": 244106.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223689974"
+        },
+        {
+          "fiscal_year": 2021,
+          "revenue": 166124.0,
+          "expenses": 149408.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223689974"
+        },
+        {
+          "fiscal_year": 2020,
+          "revenue": 135342.0,
+          "expenses": 129897.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223689974"
+        },
+        {
+          "fiscal_year": 2018,
+          "revenue": 171879.0,
+          "expenses": 165788.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223689974"
+        },
+        {
+          "fiscal_year": 2017,
+          "revenue": 182811.0,
+          "expenses": 175893.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223689974"
+        },
+        {
+          "fiscal_year": 2016,
+          "revenue": 180645.0,
+          "expenses": 173904.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223689974"
+        }
+      ],
+      "tax_status": {
+        "value": "501(c)(3)",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/223689974",
+        "confidence": "high"
+      }
+    },
+    "contacts": {
+      "last_checked": "2026-09-25T15:01:26.572700Z",
+      "leadership": [
+        {
+          "name": "Christine Stockhausen",
+          "title": "Vice President",
+          "email": "Christinecalicocat@gmail.com",
+          "linkedin": null,
+          "source_url": "https://www.communityoutreachgroupinc.com/",
+          "confidence": "high",
+          "evidence": "Contact \\n Christine Stockhausen, Vice President \\n Christinecalicocat@gmail.com",
+          "buyer_role": "other"
+        },
+        {
+          "name": "Jane Chou",
+          "title": "EAF Coordinator",
+          "email": null,
+          "linkedin": null,
+          "source_url": "https://www.communityoutreachgroupinc.com/",
+          "confidence": "low",
+          "evidence": "Contact \\n Ms. Jane Chou \\n EAF Coordinator",
+          "buyer_role": "other"
+        }
+      ],
+      "general_contact": {
+        "email": "monmouthcog@yahoo.com",
+        "phone": "732-671-0550",
+        "contact_page_url": "https://www.communityoutreachgroupinc.com/",
+        "source_url": "https://www.communityoutreachgroupinc.com/"
+      }
+    },
+    "signals": {
+      "last_checked": "2026-09-25T15:01:26.572700Z",
+      "open_rfps": [],
+      "open_roles": [],
+      "recent_news": [],
+      "funders_and_partners": [
+        {
+          "name": "Christ Episcopal Church-Middletown",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "Middletown Reformed Church",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "Old First Church-Middletown",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "Westminster Presbyterian Church-Middletown",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "Middletown United Methodist Church",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "Lincroft Presbyterian Church",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "St. Leo the Great R.C. Church-Lincroft",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "Ecumenical Missionaries-St. Augustine’s Monastery, Belford",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "Masjid Al Aman Mosque, Middletown",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "Holmdel Community United Church of Christ",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "Good Shepherd Lutheran Church, Holmdel",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "St. Catharine R.C. Church, Holmdel",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        }
+      ]
+    },
+    "technology": {
+      "last_checked": "2026-09-25T15:01:26.572700Z",
+      "tech_stack": [
+        {
+          "tool": "PayPal Giving",
+          "category": "donation_platform",
+          "source_url": "https://www.communityoutreachgroupinc.com/",
+          "matched": "https://www.paypal.com/donate/?hosted_button_id=HY6X33LRL2NFA"
+        }
+      ]
+    },
+    "pages_crawled": [
+      {
+        "url": "https://www.communityoutreachgroupinc.com/",
+        "page_type": "homepage",
+        "kind": "html",
+        "status": 200,
+        "tokens": 2743,
+        "error": null,
+        "via": "crawl"
+      }
+    ],
+    "errors": [
+      "grounding: leadership evidence not found in source, confidence set to low"
+    ],
+    "gapfill": {
+      "triggered": false,
+      "missing": [],
+      "urls": [],
+      "filled": [],
+      "note": "not needed"
+    },
+    "cost": {
+      "calls": [
+        {
+          "purpose": "extract",
+          "model": "gpt-4.1-mini",
+          "input_tokens": 3267,
+          "output_tokens": 1033,
+          "cache_read_tokens": 1920,
+          "cache_write_tokens": 0,
+          "cached_locally": true,
+          "usd": 0.0,
+          "usd_list": 0.003152
+        }
+      ],
+      "input_tokens": 5187,
+      "output_tokens": 1033,
+      "usd": 0.0,
+      "usd_list": 0.003152
+    }
+  },
+  "views": {
+    "sales": {
+      "name": "Community Outreach Group, Inc.",
+      "website": "https://www.communityoutreachgroupinc.com/",
+      "status": "ok",
+      "flags": [
+        "registry_match:name"
+      ],
+      "cause_area": "human_services",
+      "size_band": "<$500k",
+      "annual_revenue": {
+        "amount": 242847.0,
+        "currency": "USD",
+        "fiscal_year": 2025
+      },
+      "hq_location": "Middletown Township, NJ",
+      "lead_score": -1,
+      "score_breakdown": [
+        {
+          "signal": "size_too_small",
+          "points": -1,
+          "detail": "revenue under $500k (limited budget)",
+          "timing": false
+        }
+      ],
+      "why_now": "No active timing signals; nurture. Fit: revenue under $500k (limited budget).",
+      "tech_stack": [
+        "PayPal Giving (donation_platform)"
+      ],
+      "contacts_by_role": {
+        "other": [
+          {
+            "name": "Christine Stockhausen",
+            "title": "Vice President",
+            "email": "Christinecalicocat@gmail.com",
+            "linkedin": null
+          },
+          {
+            "name": "Jane Chou",
+            "title": "EAF Coordinator",
+            "email": null,
+            "linkedin": null
+          }
+        ]
+      },
+      "general_contact": {
+        "email": "monmouthcog@yahoo.com",
+        "phone": "732-671-0550",
+        "contact_page_url": "https://www.communityoutreachgroupinc.com/",
+        "source_url": "https://www.communityoutreachgroupinc.com/"
+      },
+      "open_rfps": [],
+      "buying_signal_roles": [],
+      "recent_news": []
+    },
+    "funder": {
+      "name": "Community Outreach Group, Inc.",
+      "website": "https://www.communityoutreachgroupinc.com/",
+      "mission": "Our mission is to help people in need by providing clothing, food, housing, and utility assistance to those who may not have the means to provide for themselves and their families.",
+      "cause_area": "human_services",
+      "geography_served": {
+        "scope": "regional",
+        "places": [
+          "Middletown Township",
+          "Aberdeen",
+          "Atlantic Highlands",
+          "Belford",
+          "Cliffwood",
+          "Hazlet",
+          "Highlands",
+          "Holmdel",
+          "Keansburg",
+          "Keyport",
+          "Leonardo",
+          "Lincroft",
+          "Matawan",
+          "Port Monmouth",
+          "Red Bank",
+          "Union Beach"
+        ]
+      },
+      "programs": [
+        {
+          "name": "Food Pantry",
+          "description": "Provides emergency food, personal care, and cleaning products to those in need."
+        },
+        {
+          "name": "Emergency Assistance Fund",
+          "description": "Provides one-time assistance to low-income households with utility and rent/mortgage assistance."
+        },
+        {
+          "name": "Calico Cat Thrift Shop",
+          "description": "Sells new and gently used merchandise to support the Emergency Assistance Fund, Food Pantry, and other nonprofits."
+        }
+      ],
+      "registration_id": "22-3689974",
+      "tax_status": "501(c)(3)",
+      "financial_health": {
+        "annual_revenue": {
+          "amount": 242847.0,
+          "currency": "USD",
+          "fiscal_year": 2025
+        },
+        "size_band": "<$500k",
+        "trend": "stable (+4% 2022->2025)",
+        "history": [
+          {
+            "fiscal_year": 2025,
+            "revenue": 242847.0,
+            "expenses": null
+          },
+          {
+            "fiscal_year": 2023,
+            "revenue": 329812.0,
+            "expenses": 294077.0
+          },
+          {
+            "fiscal_year": 2022,
+            "revenue": 233841.0,
+            "expenses": 244106.0
+          },
+          {
+            "fiscal_year": 2021,
+            "revenue": 166124.0,
+            "expenses": 149408.0
+          },
+          {
+            "fiscal_year": 2020,
+            "revenue": 135342.0,
+            "expenses": 129897.0
+          },
+          {
+            "fiscal_year": 2018,
+            "revenue": 171879.0,
+            "expenses": 165788.0
+          },
+          {
+            "fiscal_year": 2017,
+            "revenue": 182811.0,
+            "expenses": 175893.0
+          },
+          {
+            "fiscal_year": 2016,
+            "revenue": 180645.0,
+            "expenses": 173904.0
+          }
+        ]
+      },
+      "impact_metrics": [
+        "Food Pantry open first and third Wednesday each month providing food and essentials"
+      ],
+      "existing_funders": [
+        "Christ Episcopal Church-Middletown (other)",
+        "Middletown Reformed Church (other)",
+        "Old First Church-Middletown (other)",
+        "Westminster Presbyterian Church-Middletown (other)",
+        "Middletown United Methodist Church (other)",
+        "Lincroft Presbyterian Church (other)",
+        "St. Leo the Great R.C. Church-Lincroft (other)",
+        "Ecumenical Missionaries-St. Augustine’s Monastery, Belford (other)",
+        "Masjid Al Aman Mosque, Middletown (other)",
+        "Holmdel Community United Church of Christ (other)",
+        "Good Shepherd Lutheran Church, Holmdel (other)",
+        "St. Catharine R.C. Church, Holmdel (other)"
+      ]
+    }
+  }
+}

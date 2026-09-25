@@ -1,0 +1,538 @@
+{
+  "profile": {
+    "schema_version": "1.0",
+    "taxonomy_version": "ntee-major-v1",
+    "input": "https://www.charitywater.org",
+    "resolved_url": "https://www.charitywater.org/",
+    "extracted_at": "2026-09-25T15:01:01.223132Z",
+    "status": "ok",
+    "flags": [
+      "registry_match:ein"
+    ],
+    "identity": {
+      "last_checked": "2026-09-25T15:01:01.223132Z",
+      "name": {
+        "value": "charity: water",
+        "source_url": "https://www.charitywater.org/",
+        "confidence": "high"
+      },
+      "legal_name": {
+        "value": "Charity Global, Inc.",
+        "source_url": "https://www.charitywater.org/donate/water-project-sponsorship",
+        "confidence": "high"
+      },
+      "website": "https://www.charitywater.org/",
+      "registration_id": {
+        "value": "22-3936753",
+        "source_url": "https://www.charitywater.org/",
+        "confidence": "high",
+        "evidence": "EIN: 22-3936753"
+      },
+      "country": {
+        "value": "US",
+        "source_url": "https://www.charitywater.org/",
+        "confidence": "high"
+      },
+      "hq_location": {
+        "value": "Franklin, TN",
+        "source_url": "https://www.charitywater.org/",
+        "confidence": "high"
+      },
+      "mission": {
+        "value": "charity: water is a nonprofit organization bringing clean and safe water to people around the world.",
+        "source_url": "https://www.charitywater.org/about",
+        "confidence": "high"
+      },
+      "programs": [
+        {
+          "name": "Water Project Sponsorship",
+          "description": "By sponsoring a project, you can provide clean water for a community, school, or health clinic. 100% of your donation will fund clean water."
+        }
+      ],
+      "cause_area": {
+        "value": "human_services",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/223936753",
+        "confidence": "high"
+      },
+      "geography_served": {
+        "value": {
+          "scope": "international",
+          "places": [
+            "29 countries"
+          ]
+        },
+        "source_url": "https://www.charitywater.org/about",
+        "confidence": "high"
+      },
+      "impact_metrics": [
+        {
+          "value": "209,241 water projects funded",
+          "source_url": "https://www.charitywater.org/about",
+          "confidence": "high"
+        },
+        {
+          "value": "29 countries served",
+          "source_url": "https://www.charitywater.org/about",
+          "confidence": "high"
+        },
+        {
+          "value": "21,641,908 people will be served",
+          "source_url": "https://www.charitywater.org/about",
+          "confidence": "high"
+        },
+        {
+          "value": "In fiscal year 2025, clean water brought to 1.41 million people for the very first time",
+          "source_url": "https://www.charitywater.org/about/financials",
+          "confidence": "high"
+        }
+      ],
+      "looks_like_nonprofit": true
+    },
+    "financials": {
+      "last_checked": "2026-09-25T15:01:01.223132Z",
+      "annual_revenue": {
+        "value": {
+          "amount": 82267852.0,
+          "currency": "USD",
+          "fiscal_year": 2025
+        },
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/223936753",
+        "confidence": "high",
+        "evidence": "IRS Form 990 total revenue, fiscal year 2025"
+      },
+      "staff_count": null,
+      "size_band": ">$50M",
+      "financial_history": [
+        {
+          "fiscal_year": 2025,
+          "revenue": 82267852.0,
+          "expenses": null,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223936753"
+        },
+        {
+          "fiscal_year": 2022,
+          "revenue": 96818300.0,
+          "expenses": 101269828.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223936753"
+        },
+        {
+          "fiscal_year": 2021,
+          "revenue": 101611139.0,
+          "expenses": 98791943.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223936753"
+        },
+        {
+          "fiscal_year": 2020,
+          "revenue": 92858715.0,
+          "expenses": 62891317.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223936753"
+        },
+        {
+          "fiscal_year": 2019,
+          "revenue": 90131472.0,
+          "expenses": 74500794.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223936753"
+        },
+        {
+          "fiscal_year": 2018,
+          "revenue": 70090661.0,
+          "expenses": 59265393.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223936753"
+        },
+        {
+          "fiscal_year": 2017,
+          "revenue": 50384295.0,
+          "expenses": 48685378.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223936753"
+        },
+        {
+          "fiscal_year": 2016,
+          "revenue": 36496615.0,
+          "expenses": 35902241.0,
+          "source_url": "https://projects.propublica.org/nonprofits/organizations/223936753"
+        }
+      ],
+      "tax_status": {
+        "value": "501(c)(3)",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/223936753",
+        "confidence": "high"
+      }
+    },
+    "contacts": {
+      "last_checked": "2026-09-25T15:01:01.223132Z",
+      "leadership": [
+        {
+          "name": "Scott Harrison",
+          "title": "Founder & Chief executive officer",
+          "email": null,
+          "linkedin": null,
+          "source_url": "https://www.charitywater.org/about/executive-team",
+          "confidence": "high",
+          "evidence": "Founder & Chief executive officer Scott Harrison",
+          "buyer_role": "executive"
+        },
+        {
+          "name": "Melissa Russell",
+          "title": "President",
+          "email": null,
+          "linkedin": null,
+          "source_url": "https://www.charitywater.org/about/executive-team",
+          "confidence": "high",
+          "evidence": "President Melissa Russell",
+          "buyer_role": "executive"
+        },
+        {
+          "name": "Ben Greene",
+          "title": "Chief Revenue Officer",
+          "email": null,
+          "linkedin": null,
+          "source_url": "https://www.charitywater.org/about/executive-team",
+          "confidence": "high",
+          "evidence": "Chief Revenue Officer Ben Greene",
+          "buyer_role": "fundraising"
+        },
+        {
+          "name": "Brian Hoyer",
+          "title": "Chief Water Programs Officer",
+          "email": null,
+          "linkedin": null,
+          "source_url": "https://www.charitywater.org/about/executive-team",
+          "confidence": "high",
+          "evidence": "Chief Water Programs Officer Brian Hoyer",
+          "buyer_role": "other"
+        },
+        {
+          "name": "Christa Stelzmuller",
+          "title": "Chief Technology Officer",
+          "email": null,
+          "linkedin": null,
+          "source_url": "https://www.charitywater.org/about/executive-team",
+          "confidence": "high",
+          "evidence": "Chief Technology Officer Christa Stelzmuller",
+          "buyer_role": "operations_it"
+        },
+        {
+          "name": "John Passauer",
+          "title": "Chief Financial Officer",
+          "email": null,
+          "linkedin": null,
+          "source_url": "https://www.charitywater.org/about/executive-team",
+          "confidence": "high",
+          "evidence": "Chief Financial Officer John Passauer",
+          "buyer_role": "finance"
+        },
+        {
+          "name": "Ceena Johnson",
+          "title": "General Counsel",
+          "email": null,
+          "linkedin": null,
+          "source_url": "https://www.charitywater.org/about/executive-team",
+          "confidence": "high",
+          "evidence": "General Counsel Ceena Johnson",
+          "buyer_role": "other"
+        }
+      ],
+      "general_contact": {
+        "email": "info@charitywater.org",
+        "phone": "1 (646) 688-2323",
+        "contact_page_url": "https://www.charitywater.org/contact",
+        "source_url": "https://www.charitywater.org/contact"
+      }
+    },
+    "signals": {
+      "last_checked": "2026-09-25T15:01:01.223132Z",
+      "open_rfps": [],
+      "open_roles": [],
+      "recent_news": [],
+      "funders_and_partners": []
+    },
+    "technology": {
+      "last_checked": "2026-09-25T15:01:01.223132Z",
+      "tech_stack": []
+    },
+    "pages_crawled": [
+      {
+        "url": "https://www.charitywater.org/",
+        "page_type": "homepage",
+        "kind": "html",
+        "status": 200,
+        "tokens": 1513,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.charitywater.org/about",
+        "page_type": "about",
+        "kind": "html",
+        "status": 200,
+        "tokens": 954,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.charitywater.org/about/executive-team",
+        "page_type": "team",
+        "kind": "html",
+        "status": 200,
+        "tokens": 2305,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.charitywater.org/about/financials",
+        "page_type": "financials",
+        "kind": "html",
+        "status": 200,
+        "tokens": 729,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.charitywater.org/about/jobs",
+        "page_type": "careers",
+        "kind": "html",
+        "status": 200,
+        "tokens": 540,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.charitywater.org/contact",
+        "page_type": "contact",
+        "kind": "html",
+        "status": 200,
+        "tokens": 407,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.charitywater.org/our-work",
+        "page_type": "programs",
+        "kind": "html",
+        "status": 200,
+        "tokens": 572,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.charitywater.org/updates/sierra-leone",
+        "page_type": "news",
+        "kind": "html",
+        "status": 200,
+        "tokens": 1090,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.charitywater.org/donate/water-project-sponsorship",
+        "page_type": "partners",
+        "kind": "html",
+        "status": 200,
+        "tokens": 2617,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.charitywater.org/donate",
+        "page_type": "donate",
+        "kind": "html",
+        "status": 200,
+        "tokens": 1030,
+        "error": null,
+        "via": "crawl"
+      }
+    ],
+    "errors": [
+      "news filter: dropped 1 item(s) older than 12 months or undated"
+    ],
+    "gapfill": {
+      "triggered": false,
+      "missing": [],
+      "urls": [],
+      "filled": [],
+      "note": "not needed"
+    },
+    "cost": {
+      "calls": [
+        {
+          "purpose": "extract",
+          "model": "gpt-4.1-mini",
+          "input_tokens": 9257,
+          "output_tokens": 976,
+          "cache_read_tokens": 3968,
+          "cache_write_tokens": 0,
+          "cached_locally": false,
+          "usd": 0.005661,
+          "usd_list": 0.005661
+        }
+      ],
+      "input_tokens": 13225,
+      "output_tokens": 976,
+      "usd": 0.005661,
+      "usd_list": 0.005661
+    }
+  },
+  "views": {
+    "sales": {
+      "name": "charity: water",
+      "website": "https://www.charitywater.org/",
+      "status": "ok",
+      "flags": [
+        "registry_match:ein"
+      ],
+      "cause_area": "human_services",
+      "size_band": ">$50M",
+      "annual_revenue": {
+        "amount": 82267852.0,
+        "currency": "USD",
+        "fiscal_year": 2025
+      },
+      "hq_location": "Franklin, TN",
+      "lead_score": 0,
+      "score_breakdown": [],
+      "why_now": "No active timing signals; nurture.",
+      "tech_stack": [],
+      "contacts_by_role": {
+        "executive": [
+          {
+            "name": "Scott Harrison",
+            "title": "Founder & Chief executive officer",
+            "email": null,
+            "linkedin": null
+          },
+          {
+            "name": "Melissa Russell",
+            "title": "President",
+            "email": null,
+            "linkedin": null
+          }
+        ],
+        "fundraising": [
+          {
+            "name": "Ben Greene",
+            "title": "Chief Revenue Officer",
+            "email": null,
+            "linkedin": null
+          }
+        ],
+        "finance": [
+          {
+            "name": "John Passauer",
+            "title": "Chief Financial Officer",
+            "email": null,
+            "linkedin": null
+          }
+        ],
+        "operations_it": [
+          {
+            "name": "Christa Stelzmuller",
+            "title": "Chief Technology Officer",
+            "email": null,
+            "linkedin": null
+          }
+        ],
+        "other": [
+          {
+            "name": "Brian Hoyer",
+            "title": "Chief Water Programs Officer",
+            "email": null,
+            "linkedin": null
+          },
+          {
+            "name": "Ceena Johnson",
+            "title": "General Counsel",
+            "email": null,
+            "linkedin": null
+          }
+        ]
+      },
+      "general_contact": {
+        "email": "info@charitywater.org",
+        "phone": "1 (646) 688-2323",
+        "contact_page_url": "https://www.charitywater.org/contact",
+        "source_url": "https://www.charitywater.org/contact"
+      },
+      "open_rfps": [],
+      "buying_signal_roles": [],
+      "recent_news": []
+    },
+    "funder": {
+      "name": "charity: water",
+      "website": "https://www.charitywater.org/",
+      "mission": "charity: water is a nonprofit organization bringing clean and safe water to people around the world.",
+      "cause_area": "human_services",
+      "geography_served": {
+        "scope": "international",
+        "places": [
+          "29 countries"
+        ]
+      },
+      "programs": [
+        {
+          "name": "Water Project Sponsorship",
+          "description": "By sponsoring a project, you can provide clean water for a community, school, or health clinic. 100% of your donation will fund clean water."
+        }
+      ],
+      "registration_id": "22-3936753",
+      "tax_status": "501(c)(3)",
+      "financial_health": {
+        "annual_revenue": {
+          "amount": 82267852.0,
+          "currency": "USD",
+          "fiscal_year": 2025
+        },
+        "size_band": ">$50M",
+        "trend": "declining (-15% 2022->2025)",
+        "history": [
+          {
+            "fiscal_year": 2025,
+            "revenue": 82267852.0,
+            "expenses": null
+          },
+          {
+            "fiscal_year": 2022,
+            "revenue": 96818300.0,
+            "expenses": 101269828.0
+          },
+          {
+            "fiscal_year": 2021,
+            "revenue": 101611139.0,
+            "expenses": 98791943.0
+          },
+          {
+            "fiscal_year": 2020,
+            "revenue": 92858715.0,
+            "expenses": 62891317.0
+          },
+          {
+            "fiscal_year": 2019,
+            "revenue": 90131472.0,
+            "expenses": 74500794.0
+          },
+          {
+            "fiscal_year": 2018,
+            "revenue": 70090661.0,
+            "expenses": 59265393.0
+          },
+          {
+            "fiscal_year": 2017,
+            "revenue": 50384295.0,
+            "expenses": 48685378.0
+          },
+          {
+            "fiscal_year": 2016,
+            "revenue": 36496615.0,
+            "expenses": 35902241.0
+          }
+        ]
+      },
+      "impact_metrics": [
+        "209,241 water projects funded",
+        "29 countries served",
+        "21,641,908 people will be served",
+        "In fiscal year 2025, clean water brought to 1.41 million people for the very first time"
+      ],
+      "existing_funders": []
+    }
+  }
+}

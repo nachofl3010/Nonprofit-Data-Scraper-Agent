@@ -1,0 +1,1624 @@
+=== SYSTEM ===
+You extract a structured profile of a nonprofit organisation from pages crawled from its website. The output feeds a sales and research database, so accuracy matters more than completeness.
+
+Rules:
+- Use only facts stated in the documents. No outside knowledge, no guessing. If the documents don't support a field, return null (or an empty list).
+- source_url: copy the url attribute of the <document> the fact came from.
+- confidence: high = stated explicitly; medium = stated but ambiguous, partial or possibly outdated; low = inferred from indirect wording.
+- evidence: copy a short verbatim snippet (max 30 words) from that document. Never paraphrase it.
+- Dates in ISO 8601 (YYYY-MM-DD; YYYY-MM or YYYY if that is all the page gives). Money as a plain number plus ISO 4217 currency code ("$12.5 million" -> 12500000, USD).
+- annual_revenue: total revenue or income for one fiscal year. Not a single gift, campaign goal, program budget or cumulative total.
+- registration_id: the number only, as printed (e.g. "12-3456789" or "207076"). If several are shown, the main one (US EIN, or the first charity number).
+- leadership: named executives, senior staff and board members (max 15). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Board Member", "Trustee"). Add email or LinkedIn only if shown next to that person.
+- general_contact: the organisation's general email, phone and contact page.
+- open_roles: current paid job openings only (no volunteer roles). open_rfps: current requests for proposals, tenders or procurement notices only.
+- recent_news: up to 8 of the newest dated news, press or blog items with their dates. Do not filter by age.
+- funders_and_partners: organisations named as funders, sponsors or partners (max 15).
+- impact_metrics: up to 5 short quantified claims about the organisation's own work, e.g. "Served 12,000 meals in 2024". Not outcomes of its grantees or partners.
+- cause_area: the single best fit from the allowed list. geography_served.scope: local (one city or county), regional (state, province or multi-county area), national or international.
+- looks_like_nonprofit: false if the site is clearly a business, government body or personal site; say why in not_nonprofit_reason.
+
+=== USER ===
+<documents>
+<document url="https://www.charitywater.org/" type="html" page="homepage">
+charity: water | Help Bring Clean and Safe Water to Communities
+
+696 million people need their Day One of clean water. 
+Give now, matched 2x →
+
+Other Ways to Give
+
+Donate by Check
+
+Make checks payable to charity: water. If you're donating in honor of someone, sponsoring a water project or want to direct your donation to our operating costs, please write that in the memo of your check.
+
+Unfortunately, we cannot accept donations to The Spring via check.
+
+Tax receipts will be mailed within four to six weeks after the donation has been processed.
+
+International Giving
+
+charity: water is a registered charity in the UK. To make a tax-efficient donation in GBP, visit 
+charitywateruk.org
+. For other international donations, we accept bank issued money orders in USD. Money orders should be made payable to charity: water and can be mailed to the address below. For donations over $6,000, we also accept wire transfers; email 
+info@charitywater.org
+ for more information.
+
+Please note, only donations made by eligible US taxpayers may be tax-deductible.
+
+Donate Stock
+
+We're able to accept donations in the form of stock, government (including municipal) debt and corporate debt through the Depository Trust Company (DTC). For security, settlement and reduced paperwork, electronic transfer through the DTC is preferred. This can be arranged from most brokerage accounts.
+
+Unfortunately, we cannot accept donations to The Spring via stock.
+
+Please contact 
+info@charitywater.org
+ for more information on making a stock donation.
+
+charity: water
+
+Donation Processing Center, 230 Franklin Rd., Ste. 11-II
+
+Franklin, TN 37064
+
+EIN: 22-3936753
+
+charity: water is a 501 (c)(3)
+
+people served
+This number represents the total number of people who will gain access to clean water as reported by our implementing partners. This number is dynamic and updates as we receive new information from our partners in the field.
+
+water projects funded
+This number represents all water projects funded by charity: water, including completed projects and those under construction. This number is dynamic and updates as we receive new information from our partners in the field.
+
+countries
+This number includes all countries where we have funded projects.
+
+why water?
+Because clean water changes everything
+
+Health
+
+Education
+Women
+Economic Growth
+Our work to end the water crisis needs your support. You can help open the door to education, income, dignity, and health — especially for women and children.
+GIVE TODAY
+
+GIVE TODAY
+
+Thanks to generous private donors who fund our operational expenses, 
+100% of your donation
+ directly funds clean water projects.
+
+Know that your donation is making a difference
+
+charity: water uses 100% of your donation to fund clean water around the world and then proves every single project you fund, complete with GPS coordinates and photos. Give water. Get proof. Every single time.
+
+CHARITY: WATER'S impact to date
+
+209,241
+WATER PROJECTS FUNDED
+29
+countries
+21,641,908
+people will be served
+the details
+This number represents all water projects funded by charity: water, including completed projects and those under construction. This number is dynamic and updates as we receive new information from our partners in the field.
+the details
+This number includes all countries where we have funded projects.
+the details
+This number represents the total number of people who will gain access to clean water as reported by our implementing partners. This number is dynamic and updates as we receive new information from our partners in the field.
+Ready to take action?
+
+There are lots of great ways to help us end the global water crisis. 
+Take action today, and change lives. 
+
+Give clean water every month
+
+A gift of just $20 a month is enough to bring six people — an entire family — clean water each year.
+Join Today
+
+Sponsor a water project
+By sponsoring a project, you can provide clean water for a community, school, or health clinic.
+Sponsor Now
+
+Start a fundraiser
+
+Support clean water projects by raising funds for people in need.
+
+Get Started
+
+Give to a fundraiser
+
+Support a fundraiser that captures your heart, and you'll show your support for the fundraiser and clean water projects around the world.
+Browse Fundraisers
+
+Plan for legacy giving
+Make a lasting gift to help bring clean water to every person on the planet.
+Learn more
+
+Become a brand partner
+Work closely with our team to develop initiatives with undeniable impact.
+Partner with us
+
+Honor someone special
+Honor or remember someone special by making a gift in their name.
+
+Give Today
+
+Join Tiny Heroes
+Explore how children can make a difference in the lives of kids around the world with the gift of clean water.
+Get inspired
+
+Add Impact To Your Inbox
+ Get our emails to stay in the know. 
+
+Add Impact To Your Inbox
+
+Get our emails to stay in the know.
+
+Take Action
+
+Give
+
+Join the Spring
+
+Give to a Fundraiser
+
+Give in Someone's Honor
+
+Sponsor a community
+
+ Legacy & Asset Giving
+
+Get Involved
+
+Create an account
+
+Fundraise
+
+Tiny Heroes
+
+ Students & Teachers
+
+Advisors
+
+Experience Lab
+
+Get to know us
+
+Our Work
+
+100% Model
+
+See Our Financials
+
+Meet the founder
+
+Meet the executive team
+
+Careers
+
+Connect
+
+Contact Us
+
+Help center
+
+Request a Speaker
+
+Brand Partnerships
+
+Shop our store
+
+Twitter
+
+Facebook
+
+Instagram
+
+Snapchat
+
+Youtube
+
+Linkedin
+
+Privacy policy
+
+responsible disclosure process
+
+charity: water is a 501(c)(3) nonprofit organization.
+
+100% of public donations go directly to fund clean water projects.
+
+Get our emails
+
+© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
+
+[Contact links in page HTML]
+email: info@charitywater.org
+</document>
+<document url="https://www.charitywater.org/about" type="html" page="about">
+charity: water | Nonprofit Organization for Clean and Safe Water
+
+696 million people need their Day One of clean water. 
+Give now, matched 2x →
+
+ABOUT US
+charity: water is a nonprofit organization bringing clean and safe water to people around the world.
+
+Together, we can end the water crisis
+
+ Since charity: water was founded in 2006, we’ve been chasing one ambitious goal: ending the global water crisis. And while the water crisis is huge, we’re optimistic. We know how to solve the problem, and we make progress every day thanks to the help of local partners and generous supporters. If we work together, we believe everyone will have access to life’s most basic need within our lifetime. 
+
+CHARITY: WATER'S impact to date
+
+209,241
+WATER PROJECTS FUNDED
+29
+countries
+21,641,908
+people will be served
+the details
+This number represents all water projects funded by charity: water, including completed projects and those under construction. This number is dynamic and updates as we receive new information from our partners in the field.
+the details
+This number includes all countries where we have funded projects.
+the details
+This number represents the total number of people who will gain access to clean water as reported by our implementing partners. This number is dynamic and updates as we receive new information from our partners in the field.
+
+You have our word—and more
+
+ When charity: water began, we made a bold promise: 100% of public donations would go directly to fund clean water projects. Private donors cover our operating costs so 100% of your money can fund water projects. 
+
+learn about our model
+How we work
+ We want you to know exactly how and where your donation is being used. So from the beginning, we’ve kept a few promises. 
+
+We prove every project
+ We track every dollar you raise and show the projects you helped fund with photos and GPS coordinates. 
+
+see proof
+
+We’re an open book
+We’ve consistently received the highest grades available for accountability and transparency.
+view all financials
+
+We work with local partnerships
+We partner with experienced local partners to build sustainable, community-owned water projects.
+Learn more
+Ready to give the gift of clean water?
+
+ Every $40 can end a walk for water, and 100% of your donation will fund clean water projects.
+
+ GIVE TODAY 
+
+THE EXECUTIVE TEAM
+Leadership that drives impact
+
+Our executive team brings a wealth of experience, passion, and vision to guide our work and ensure we stay true to our values.
+
+Meet the Team
+
+OPPORTUNITIES
+
+Change the world with us
+
+Explore our openings and join the team.
+careers
+
+Add Impact To Your Inbox
+
+Get our emails to stay in the know.
+
+Take Action
+
+Give
+
+Join the Spring
+
+Give to a Fundraiser
+
+Give in Someone's Honor
+
+Sponsor a community
+
+ Legacy & Asset Giving
+
+Get Involved
+
+Create an account
+
+Fundraise
+
+Tiny Heroes
+
+ Students & Teachers
+
+Advisors
+
+Experience Lab
+
+Get to know us
+
+Our Work
+
+100% Model
+
+See Our Financials
+
+Meet the founder
+
+Meet the executive team
+
+Careers
+
+Connect
+
+Contact Us
+
+Help center
+
+Request a Speaker
+
+Brand Partnerships
+
+Shop our store
+
+Twitter
+
+Facebook
+
+Instagram
+
+Snapchat
+
+Youtube
+
+Linkedin
+
+Privacy policy
+
+responsible disclosure process
+
+charity: water is a 501(c)(3) nonprofit organization.
+
+100% of public donations go directly to fund clean water projects.
+
+Get our emails
+
+© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
+</document>
+<document url="https://www.charitywater.org/about/executive-team" type="html" page="team">
+Meet The Executive Team | charity: water
+
+Meet the Executive Team
+
+charity: water’s executive team brings together decades of experience in global development, nonprofit leadership, and strategic partnerships — all united by a shared commitment to ending the global water crisis. With integrity, vision, and a deep sense of responsibility, they guide our mission to bring clean and safe water to every person on the planet.
+
+Founder & Chief executive officer
+Scott Harrison
+Scott spent almost 10 years as a nightclub promoter in New York City before leaving to volunteer on a hospital ship off the coast of Liberia, West Africa as a photojournalist. Returning home to New York City two years later, he founded the nonprofit organization charity: water in 2006. In 18 years, with the help of more than 1 million donors worldwide, charity: water has raised $1 billion and funded over 186,000 water projects in 29 countries.
+HEAR SCOTT'S STORY
+President
+Melissa Russell
+Melissa Russell is the President of charity: water and a globally respected nonprofit executive with over 20 years of experience leading and scaling mission-driven organizations. She has helped drive more than $1.5 billion in philanthropic capital and led global teams around the world. Melissa is known for aligning bold vision with measurable outcomes, cultivating trusted partnerships, and building high-performing teams committed to solving the global water crisis in our lifetime.
+
+Chief Revenue Officer
+Ben Greene
+Ben Greene is the Chief Revenue Officer at charity: water, driving the brand, marketing, and fundraising teams. With over 20 years in the nonprofit sector, including leadership roles at World Vision, Feed the Children, and Food for the Hungry, he is known for driving sustainable impact and leading multi-million dollar campaigns. Ben lives in Nashville, Tennessee, with his wife, Melissa, and their two children, Hutch and Haven.
+Chief Water Programs Officer
+Brian Hoyer
+Brian Hoyer is the Chief Programs Officer at charity: water, leading its programmatic work across 58 local partners in 22 countries. His experience in global health, emergency response and recovery, and rural WASH over the past 20 years informs his current work at charity: water. He has specialized in convening strong and locally led teams to work on a range of public health issues, from large-scale cholera response to ebola treatment and prevention.
+
+Chief Technology Officer
+Christa Stelzmuller
+Christa Stelzmuller is the Chief Technology Officer at charity: water where she is focused on building innovative and impactful digital experiences, driven by the organization’s mission. Throughout her career, she has consistently taken a multidisciplinary approach to leveraging data and technology, which has enabled better decisions, stronger products, and more effective delivery. Christa is known for her ability to translate vision into strategy and turn that strategy into action. Her strengths in communication and team leadership are key to her success, fostering a culture of productivity and collaboration through a service-oriented, participative leadership style.
+
+Chief Financial Officer
+John Passauer
+John Passauer is the Chief Financial Officer at charity: water, bringing decades of financial leadership across the nonprofit, alternative energy, software, and telecommunications sectors. His career has taken him around the world, with leadership roles and board service spanning Brazil, the UK, South Africa, Chile, Kenya, Malaysia, India, and China, giving him a uniquely global perspective on building finance teams and systems that support growing organizations. Known for navigating complex financial challenges, John is equally passionate about the people side of the work, developing strong teams and implementing the infrastructure that allows mission-driven organizations to thrive.
+
+General Counsel
+Ceena Johnson
+Ceena Johnson is the General Counsel at charity: water, providing practical, solution-oriented legal counsel that enables partnerships, protects trust, and helps teams move with clarity and confidence. With a career shaped by a commitment to law in service of global impact, she brings experience advising on the legal and operational work that allows mission-driven organizations to scale. At charity: water, she leads across data privacy, enterprise risk, and governance, integrating legal judgment into decision-making in a way that strengthens both momentum and trust.
+
+Stay connected to the team
+
+Our leadership team is actively engaged in shaping the global conversation around clean water access, sustainability, and nonprofit innovation. Explore the latest insights and media featuring our team — and see how their voices are helping to drive change on a global scale.
+
+ARTICLE
+Data to Connect Donors
+Learn how charity: water is engaging donors through empathy, data, and immersive experiences to inspire deeper connection and enduring results.
+
+READ NOW
+
+PODCAST
+
+Leading with Purpose
+Melissa Russell shares how her faith, purpose, and compassion shape her leadership in the fight against the global water crisis.
+LISTEN NOW
+
+ARTICLE
+The Future of Fundraising
+Uncover the future of fundraising through charity: water's immersive experiences that forge connections between donors and the communities impacted.
+
+READ NOW
+
+PODCAST
+
+Data, Tech, and Impact
+Christa Stelzmuller reflects on her journey, highlighting the evolution of technology and the vital role of thoughtful data collection and governance.
+
+LISTEN NOW
+
+ARTICLE
+Startups for Social Good
+Discover how charity: water uses social media, visual storytelling, and donor accountability to build a movement that resonates with a digital world.
+READ NOW
+
+ARTICLE
+Mission, Impact, and Clean Water
+Melissa Russell shares how she found her calling in the nonprofit sector, embracing imperfection while championing purpose-driven leadership and lasting impact.
+READ NOW
+
+ARTICLE
+Data to Connect Donors
+Learn how charity: water is engaging donors through empathy, data, and immersive experiences to inspire deeper connection and enduring results.
+
+READ NOW
+
+PODCAST
+
+Leading with Purpose
+Melissa Russell shares how her faith, purpose, and compassion shape her leadership in the fight against the global water crisis.
+LISTEN NOW
+
+ARTICLE
+The Future of Fundraising
+Uncover the future of fundraising through charity: water's immersive experiences that forge connections between donors and the communities impacted.
+
+READ NOW
+
+PODCAST
+
+Data, Tech, and Impact
+Christa Stelzmuller reflects on her journey, highlighting the evolution of technology and the vital role of thoughtful data collection and governance.
+
+LISTEN NOW
+
+ARTICLE
+Startups for Social Good
+Discover how charity: water uses social media, visual storytelling, and donor accountability to build a movement that resonates with a digital world.
+READ NOW
+
+ARTICLE
+Mission, Impact, and Clean Water
+Melissa Russell shares how she found her calling in the nonprofit sector, embracing imperfection while championing purpose-driven leadership and lasting impact.
+READ NOW
+
+ARTICLE
+Data to Connect Donors
+Learn how charity: water is engaging donors through empathy, data, and immersive experiences to inspire deeper connection and enduring results.
+
+READ NOW
+
+1
+2
+3
+4
+5
+6
+
+Board of Directors
+
+Brook Hazelton
+
+Ije Nwokorie
+
+Michael Wilkerson
+
+Angela Ahrendts
+
+Brant Cryder
+
+Chi-Hua Chien
+
+Chidi Achara
+
+Ryan Graves
+
+Shannon Sedgwick Davis
+
+Valerie Donati 
+
+Nancy Duarte
+
+Eniola Aluko
+
+Luke Beauchamp
+
+Rachel Thompson Manktelow
+
+Sam Lawson Johnston
+
+Pierre Mercier
+
+Brook Hazelton
+
+Brook Hazelton is the president and co-CEO of Digital Reasoning, an artificial intelligence company. Previously, he served as the president for North and South America of the world's leading art company, Christie's. Hazelton began his career in finance while working internationally with Goldman Sachs and The Carlyle Group, and he remains a private investor and co-founder of St. James Partners, an investment business.
+
+Add Impact To Your Inbox
+
+Get our emails to stay in the know.
+
+Take Action
+
+Give
+
+Join the Spring
+
+Give to a Fundraiser
+
+Give in Someone's Honor
+
+Sponsor a community
+
+ Legacy & Asset Giving
+
+Get Involved
+
+Create an account
+
+Fundraise
+
+Tiny Heroes
+
+ Students & Teachers
+
+Advisors
+
+Experience Lab
+
+Get to know us
+
+Our Work
+
+100% Model
+
+See Our Financials
+
+Meet the founder
+
+Meet the executive team
+
+Careers
+
+Connect
+
+Contact Us
+
+Help center
+
+Request a Speaker
+
+Brand Partnerships
+
+Shop our store
+
+Twitter
+
+Facebook
+
+Instagram
+
+Snapchat
+
+Youtube
+
+Linkedin
+
+Privacy policy
+
+responsible disclosure process
+
+charity: water is a 501(c)(3) nonprofit organization.
+
+100% of public donations go directly to fund clean water projects.
+
+Get our emails
+
+© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
+</document>
+<document url="https://www.charitywater.org/about/financials" type="html" page="financials">
+Financials | charity: water
+
+ Financials
+
+ We know it's important to you that your donation is being used effectively. It's important to us, too. That's why we work hard to receive the highest grades available for accountability and transparency.
+
+ The Fiscal Year 2025 Annual Report is here.
+
+ The charity: water team has always operated with two core beliefs: every dollar you give should do as much good as possible, and you deserve to see exactly how it’s used.
+
+In fiscal year 2025, those beliefs drove everything we accomplished together. Public donations funded more than 22,000 water projects across 20 countries, bringing clean and safe water to 1.41 million people for the very first time.
+
+Our Fiscal Year 2025 Annual Report highlights the successes and innovations of our work, provides an overview of our financial position, and offers a high-level look at our impact in every nation where we work.
+
+We received a clean opinion from auditors at KPMG, and if you’d like to read their detailed audit report, you may also view it below.
+
+Read our 2025 Annual Report
+
+ 2025
+
+2025 Annual Report
+
+2025 Audit Report
+
+2025 100% Model Audit
+
+2025 Form 990
+
+ 2024
+
+2024 Annual Report
+
+2024 Audit Report
+
+2024 100% Model Audit
+
+2024 Form 990
+
+ 2023
+
+2023 Annual Report
+
+2023 Audit Report
+
+2023 100% Model Audit
+
+2023 Form 990
+
+ 2022
+
+2022 Annual Report
+
+2022 Audit Report
+
+2022 100% Model Audit
+
+2022 Form 990
+
+ 2021
+
+2021 Annual Report
+
+2021 Audit Report
+
+2021 100% Model Audit
+
+2021 Form 990
+
+ 2020
+
+2020 Annual Report
+
+2020 Audit Report
+
+2020 100% Model Audit
+
+2020 Form 990
+
+ Other documents
+
+501(c)(3) Ruling
+
+Netherlands ANBI Certificate
+
+*Additional financial reports are available upon request.
+
+Add Impact To Your Inbox
+
+Get our emails to stay in the know.
+
+Take Action
+
+Give
+
+Join the Spring
+
+Give to a Fundraiser
+
+Give in Someone's Honor
+
+Sponsor a community
+
+ Legacy & Asset Giving
+
+Get Involved
+
+Create an account
+
+Fundraise
+
+Tiny Heroes
+
+ Students & Teachers
+
+Advisors
+
+Experience Lab
+
+Get to know us
+
+Our Work
+
+100% Model
+
+See Our Financials
+
+Meet the founder
+
+Meet the executive team
+
+Careers
+
+Connect
+
+Contact Us
+
+Help center
+
+Request a Speaker
+
+Brand Partnerships
+
+Shop our store
+
+Twitter
+
+Facebook
+
+Instagram
+
+Snapchat
+
+Youtube
+
+Linkedin
+
+Privacy policy
+
+responsible disclosure process
+
+charity: water is a 501(c)(3) nonprofit organization.
+
+100% of public donations go directly to fund clean water projects.
+
+Get our emails
+
+© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
+</document>
+<document url="https://www.charitywater.org/about/jobs" type="html" page="careers">
+Careers | charity: water
+
+Careers
+Quit your day job and come change the world
+See open positions
+
+A mission like ours needs a perspective like yours
+At charity: water, we value every background, identity, and experience. We believe that a diverse team, informed by different cultures and perspectives, makes us stronger.
+
+We are committed to doing the work and challenging each other to be an organization in which everyone is respected and heard. We commit to providing genuine opportunities for all people to thrive. And we will continue to embed diversity, inclusion, belonging, and equality in everything we do.
+
+Benefits and Perks
+Changing the world is a whole lot of work, so we take good care of our team.
+
+First-of-its-kind bonus program
+Thanks to our giving community, The Pool, full-time employees have the opportunity to receive cash bonuses from the proceeds of IPOs and other liquidity events.
+
+Learn more
+
+Explore roles
+Open positions
+
+Add Impact To Your Inbox
+
+Get our emails to stay in the know.
+
+Take Action
+
+Give
+
+Join the Spring
+
+Give to a Fundraiser
+
+Give in Someone's Honor
+
+Sponsor a community
+
+ Legacy & Asset Giving
+
+Get Involved
+
+Create an account
+
+Fundraise
+
+Tiny Heroes
+
+ Students & Teachers
+
+Advisors
+
+Experience Lab
+
+Get to know us
+
+Our Work
+
+100% Model
+
+See Our Financials
+
+Meet the founder
+
+Meet the executive team
+
+Careers
+
+Connect
+
+Contact Us
+
+Help center
+
+Request a Speaker
+
+Brand Partnerships
+
+Shop our store
+
+Twitter
+
+Facebook
+
+Instagram
+
+Snapchat
+
+Youtube
+
+Linkedin
+
+Privacy policy
+
+responsible disclosure process
+
+charity: water is a 501(c)(3) nonprofit organization.
+
+100% of public donations go directly to fund clean water projects.
+
+Get our emails
+
+© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
+</document>
+<document url="https://www.charitywater.org/contact" type="html" page="contact">
+Contact Us | charity: water
+
+Contact Us
+
+ Get in touch with us. We'd love to hear from you.
+
+ Please note, charity: water does not accept unsolicited requests for funding.
+
+Tel: 1 (646) 688-2323
+Fax: 1 (929) 367-4827
+
+Donation Processing Center
+230 Franklin Rd., Ste. 11-II
+Franklin, TN
+37064
+
+Need assistance? Check out our 
+Help Center
+ or send us an 
+email
+
+Add Impact To Your Inbox
+
+Get our emails to stay in the know.
+
+Take Action
+
+Give
+
+Join the Spring
+
+Give to a Fundraiser
+
+Give in Someone's Honor
+
+Sponsor a community
+
+ Legacy & Asset Giving
+
+Get Involved
+
+Create an account
+
+Fundraise
+
+Tiny Heroes
+
+ Students & Teachers
+
+Advisors
+
+Experience Lab
+
+Get to know us
+
+Our Work
+
+100% Model
+
+See Our Financials
+
+Meet the founder
+
+Meet the executive team
+
+Careers
+
+Connect
+
+Contact Us
+
+Help center
+
+Request a Speaker
+
+Brand Partnerships
+
+Shop our store
+
+Twitter
+
+Facebook
+
+Instagram
+
+Snapchat
+
+Youtube
+
+Linkedin
+
+Privacy policy
+
+responsible disclosure process
+
+charity: water is a 501(c)(3) nonprofit organization.
+
+100% of public donations go directly to fund clean water projects.
+
+Get our emails
+
+© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
+
+[Contact links in page HTML]
+email: team@charitywater.org
+</document>
+<document url="https://www.charitywater.org/our-work" type="html" page="programs">
+Our Work | charity: water
+
+696 million people need their Day One of clean water. 
+Give now, matched 2x →
+
+Our Work
+
+How We Work
+We partner with experienced local organizations who build sustainable, community-owned water projects around the world.
+Learn more
+
+Proving Our Impact
+From the start, we’ve publicly shared photos and GPS coordinates for every single charity: water project. You can find all of our funded projects on the map above.
+see proof
+Stories From the Field
+The communities we serve are filled with some of the most inspiring people you’d ever want to meet. Their stories of ingenuity and perseverance are examples for us all.
+Between Heaven and Earth
+read their story
+Waiting for clean water in one of the harshest places on Earth
+read their story
+What Helen Taught Us
+read their story
+The Next Step In Sustainability
+Working with local leaders to keep water flowing is critical to our mission. In November 2015, charity: water started deploying cutting-edge sensors and cloud computing technology to equip local leaders with real-time data.
+see our sensors
+
+Add Impact To Your Inbox
+
+Get our emails to stay in the know.
+
+Take Action
+
+Give
+
+Join the Spring
+
+Give to a Fundraiser
+
+Give in Someone's Honor
+
+Sponsor a community
+
+ Legacy & Asset Giving
+
+Get Involved
+
+Create an account
+
+Fundraise
+
+Tiny Heroes
+
+ Students & Teachers
+
+Advisors
+
+Experience Lab
+
+Get to know us
+
+Our Work
+
+100% Model
+
+See Our Financials
+
+Meet the founder
+
+Meet the executive team
+
+Careers
+
+Connect
+
+Contact Us
+
+Help center
+
+Request a Speaker
+
+Brand Partnerships
+
+Shop our store
+
+Twitter
+
+Facebook
+
+Instagram
+
+Snapchat
+
+Youtube
+
+Linkedin
+
+Privacy policy
+
+responsible disclosure process
+
+charity: water is a 501(c)(3) nonprofit organization.
+
+100% of public donations go directly to fund clean water projects.
+
+Get our emails
+
+© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
+</document>
+<document url="https://www.charitywater.org/updates/sierra-leone" type="html" page="news">
+This year, we’re bringing you alongside one specific local partner team, GOAL Sierra Leone, so you can get to know some of the people you’re investing in, go deeper into their work, and see the impact of your monthly donation in real-time. Speaking of real-time... scroll down for live updates!
+In April, our creative team traveled to Sierra Leone to gather the stories, photos, and videos that we’ll share with you throughout the year. Senior copywriter Bailey Jurgens also kept a daily journal so that supporters like you could come along for the ride.
+by Bailey Jurgens
+I am not, by nature, a procrastinator. But if there’s one thing that I will delay, drag out, and dread for days, it’s packing.
+It doesn’t matter where I’m going, how long I’m gone, or who I’ll see — packing has always been my kryptonite...
+Lack of control. I think that’s what bothers people the most about traveling. There’s only so much you can do — you are ultimately at the mercy of the weather, the gate agent, the pilot, the kindness of your fellow passengers, the inner workings of the mechanical bits of the airplane that...
+I am on flight 4 of 4 and just 45 minutes from the final destination.
+I’ll admit, the four-flight marathon that didn’t sound so bad at first is starting to catch up to me. And no matter how many methods I try, I can’t seem to get real sleep while...
+The boat rocks enthusiastically in the waves as two men try to offer stability. They stand on either side of the ferry’s entry — a hinged half-door that is currently swung open. A relay of people and luggage makes its way aboard. We arrived here from the...
+After four flights, a ferry, and two car rides, I will admit that my thoughts currently mirror the view I had from the passenger seat of today’s Land Cruiser: swirling, whirling, and a blurry blend of colors, language, and names. I would detail it all for you, but...
+I love when a group of women get together. You can sense the camaraderie and the understanding. When it comes to collecting water, they all know exactly what one another is going through. You can also tell how strong they are. How smart. How...
+The boat rocks enthusiastically in the waves as two men try and offer stability. They stand on either side of the ferry’s entry — a hinged half-door that is currently swung open. A relay of people and luggage makes its way aboard. As I step off of...
+On most days, we arrive relatively early to the communities. (Tomorrow’s call-time is 6:30 a.m., for example.) But today, we opted to arrive later than usual — and for good reason. This morning, our local partner...
+When Mamie gets access to clean water, she will no longer have to let the water settle before drinking it. She and her son will have water free from sediment, germs, critters, and disease. When Kadie gets clean water, she will take a long drink...
+There’s something about the horn honking as the rig pulls into town that makes us all start crying. The sound is joyous, rhythmic — an announcement that things are about to change. With only the horn, the rig’s...
+“The solution to any problem is not to run away from it.” - James Riak, Country Director for GOAL Sierra Leone
+One day with GOAL and you’ll see that they’re living and breathing this advice...
+As we make our way north, jungle starts to give way to farmland. The lush greenery fades into brown, baked earth and dehydrated palms fall limp in the harsh sunshine. It feels like a fitting scene for a...
+Friends (if you’ve read this far, we’re friends now), I’m going to be honest with you …Due to a combination of cockroaches, 90+ degree heat, a bug net that turned into a personal sauna, and thin walls, I got very...
+Solving the water crisis starts with building new water points. But let me emphasize the word starts. Building is only the beginning. Maintaining and rehabbing water points is how we’ll solve the problem long-term...
+Were we here for two weeks, two seconds, or two years? Somehow, it seems appropriate to answer “yes” to all of the above. There’s a part of me that isn’t ready — I don’t want to say any more goodbyes...
+Did you miss previous updates? You can check out the blog Field Notes: Volume 1 to read Mercy's interview with Water Programs Manager, Megan Renfro, or Field Notes: Volume 3 to read Mercy's interview with Content Lead, Cubby Graham, and Senior Copywriter, Bailey Jurgens.
+</document>
+<document url="https://www.charitywater.org/donate/water-project-sponsorship" type="html" page="partners">
+Sponsor a Water Project | charity: water
+
+Water Project Sponsorship
+By sponsoring a project, you can provide clean water for a community, school, or health clinic. 100% of your donation will fund clean water.
+
+You can also give by:
+
+ Check 
+
+ Stock or Wire 
+
+ Crypto 
+
+ DAF 
+
+How sponsoring a project works
+
+While building a water project is no simple task, we think sponsoring one should be. Here are three steps you can expect:
+
+We send your gift where it’s needed most
+
+After you donate, we allocate 100% of your gift to clean water projects. We’ve funded projects in 29 countries around the world. 
+
+ Covered Costs 
+
+We share on-the-ground updates
+
+While work is underway, we’ll share updates from The Current, a news feed of inspiring stories and progress reports from our local partners.
+
+ Example Projects 
+
+You see your impact
+Once your project is complete, we send a custom Impact Report dedicated in your honor – with photos and GPS coordinates – typically within 12 to 24 months.
+
+Learn More
+
+A tailored approach
+No two communities are the same, and neither are their water solutions. That’s why our local partners carefully consider factors like geography, water availability, and culture before proposing the right solution.
+
+Spring protections
+A system captures and safely stores pure water from a natural spring.
+
+ Learn More 
+
+Drilled wells
+A drilling team drills deep into the earth to reach fresh aquifers.
+
+ Learn More 
+
+Piped systems
+
+Networks of pipes supply clean water to community, school, or household tap stands.
+
+ Learn More 
+
+BioSand Filters
+Layers of sand, gravel, and biological film remove contaminants.
+
+ Learn More 
+
+Rehabilitations
+
+A team repairs broken projects to restore clean water to a community.
+
+ Learn More 
+
+Rainwater harvesting
+Gutters on rooftops direct the flow of rainfall into a sanitary holding bank
+
+ Learn More 
+
+Spring protections
+A system captures and safely stores pure water from a natural spring.
+
+ Learn More 
+
+Drilled wells
+A drilling team drills deep into the earth to reach fresh aquifers.
+
+ Learn More 
+
+Piped systems
+
+Networks of pipes supply clean water to community, school, or household tap stands.
+
+ Learn More 
+
+BioSand Filters
+Layers of sand, gravel, and biological film remove contaminants.
+
+ Learn More 
+
+Rehabilitations
+
+A team repairs broken projects to restore clean water to a community.
+
+ Learn More 
+
+Rainwater harvesting
+Gutters on rooftops direct the flow of rainfall into a sanitary holding bank
+
+ Learn More 
+
+Spring protections
+A system captures and safely stores pure water from a natural spring.
+
+ Learn More 
+
+1
+2
+3
+4
+5
+6
+
+We prove every project
+Once completed, you'll receive a customized Impact Report, which will include project photos, GPS coordinates, and specific information about the difference you've made. Your virtual recognition will be featured on our Completed Projects Map.
+See Proof
+Featured programs
+charity: water has funded projects in 29 countries worldwide. The featured four highlight the variety of solutions, programs, and costs across our portfolio.
+
+India
+
+Malawi
+
+Nepal
+
+Uganda
+India
+India is the seventh-largest country by land area and the second-most populous in the world. Although the national government is committed to improving sanitation and water access, their ambitious goals need outside partnerships to create widespread change. Our local partners are supporting these efforts.
+Meet a local partner 
+We began working with Gram Vikas in 2008. After a 4-year pause due to a capacity-building period at Gram Vikas, we resumed our partnership in 2018. Gram Vikas specializes in piped water systems in the state of Odisha, where access to improved water and sanitation services remains low. While they are a social-technical partner to the government, they are fully funded by humanitarian organizations.
+We’re funding 
+piped systems with household tap stands
+ in India. 
+
+Frequently asked questions
+How does charity: water determine the cost of sponsoring a project?
+How do you choose which communities will receive a water project?
+How do you choose your local partners?
+Is the community involved in building a charity: water project?
+How long do water projects last?
+Can I visit the project I sponsored?
+TALK TO A
+Team member
+
+If you have additional questions, please reach out. We’d love to tell you more about Water Project Sponsorship opportunities.
+
+Giving as
+
+An individual or family?
+
+Email Kara
+
+A business or corporate foundation?
+
+Email Chelsea
+
+Ready to change everything?
+
+When a community, school, or health clinic receives access to clean water, everything changes. Health improves. Girls don’t miss school. Parents have time to earn extra income.
+It is truly one of the best investments you can make. We hope you’ll make it with us.
+Sponsor a water project
+
+Interested in making clean water part of your lasting legacy?
+
+Learn more about The Tributary
+DAF
+
+When granting through your donor-advised fund, please use the following information:
+
+Our legal name
+: Charity Global, Inc.
+
+Tax ID:
+ #22-3936753
+
+Mailing address:
+ 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064
+
+Check donations
+Kindly make checks payable to charity: water and use “Water Project Sponsorship” on any references or memos. Our mailing address is:
+
+charity: water
+
+230 Franklin Rd., Ste. 11-II
+
+Franklin, TN 37064
+
+Stock or Wire
+If you’d like to give a gift via wire or stock, please reach out to 
+connect@charitywater.org
+ for our account information.
+We're able to accept donations in the form of stock, government (including municipal) debt, and corporate debt through the Depository Trust Company (DTC). For security, settlement, and reduced paperwork, electronic transfer through the DTC is preferred. This can be arranged from most brokerage accounts
+.
+Crypto
+When you donate crypto directly to charity: water, we immediately convert your coins into fiat. Please visit 
+charitywater.org/crypto
+ to learn more.
+Where your money goes
+
+Project costs include physical project construction, sanitation and hygiene programs, and sustainability initiatives.
+
+PERSONNEL: 
+Program management, engineers, technicians, hydrogeologists, drillers, welders, drivers, community trainers, and hygiene specialists. 
+
+LOCAL PROGRAM SUPPORT: 
+Accountants, grant managers, facilities and office admin, computers, phones, space rental, maintenance, utilities, and insurance.
+MATERIALS:
+
+Cement, pipes, pumps, solar panels, construction supplies, spare parts, training manuals, digital cameras, and GPS devices.
+MOBILIZATION:
+
+Vehicle rental, vehicle repairs, fuel, meals, and lodging.
+SUSTAINABILITY:
+
+Needs assessments, establishment of water point management groups, technical training, and routine monitoring.
+
+Drilled wells
+Drilled wells are used when groundwater is available and reachable by either mechanical or manual drilling methods. A borehole is drilled, lined, and tested for water quality to ensure it can supply enough safe water for the community. If necessary, the well is also disinfected. Finally, the well is fitted with a pump that will bring clean water to the surface.
+
+Piped systems with tap stands
+Piped systems are good options if a water source has a high enough yield to sustain multiple water distribution points or is too far away for a community to access. These interconnected pipelines use gravity, electricity, solar power, or a combination of these methods to bring clean water directly to distribution points. The system’s size and structure is tailored to the geography, amount of water available, and financial and technical resources. In some cases, partners can use existing infrastructure. They may rehabilitate non-functional parts or add extensions to existing systems to bring water to more people.
+
+BioSand Filters
+BioSand Filters kill 99% of bacteria in dirty water. It is a simple, low-cost solution that cleans water quickly by filtering dirty water through a biological film, coarse sand, fine sand, and gravel. A spout is installed to access the filtered water.
+
+Rehabilitations
+Sometimes, existing water points need repairs that exceed the financial or technical capacity of the local government and community. Rehabilitating a well or piped system can cost almost as much as building a new one because rehabilitation may require heavy machinery, replacement of hardware and concrete, or the reformation of Water User Committees. Still, it’s an efficient solution because it avoids drilling a new well.
+
+Spring protections
+For communities already using nearby and naturally occurring springs as their water source, a spring protection system is sometimes preferred. As the name suggests, this system protects naturally clean spring water from outside contaminants — like livestock and bathing — and provides safe access points for the community to collect it.
+
+Rainwater harvesting
+Rainwater harvesting is a preferred solution for areas that receive significant annual rainfall. These projects are often large enough to harvest and safely store the water for use throughout the dry season. They’re also an ideal alternative for regions where safe groundwater and public water services are unavailable, unreliable, or too expensive to access.
+
+Add Impact To Your Inbox
+
+Get our emails to stay in the know.
+
+Take Action
+
+Give
+
+Join the Spring
+
+Give to a Fundraiser
+
+Give in Someone's Honor
+
+Sponsor a community
+
+ Legacy & Asset Giving
+
+Get Involved
+
+Create an account
+
+Fundraise
+
+Tiny Heroes
+
+ Students & Teachers
+
+Advisors
+
+Experience Lab
+
+Get to know us
+
+Our Work
+
+100% Model
+
+See Our Financials
+
+Meet the founder
+
+Meet the executive team
+
+Careers
+
+Connect
+
+Contact Us
+
+Help center
+
+Request a Speaker
+
+Brand Partnerships
+
+Shop our store
+
+Twitter
+
+Facebook
+
+Instagram
+
+Snapchat
+
+Youtube
+
+Linkedin
+
+Privacy policy
+
+responsible disclosure process
+
+charity: water is a 501(c)(3) nonprofit organization.
+
+100% of public donations go directly to fund clean water projects.
+
+Get our emails
+
+© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
+
+[Contact links in page HTML]
+email: sponsoraproject@charitywater.org
+</document>
+<document url="https://www.charitywater.org/donate" type="html" page="donate">
+Donate for Clean Water | charity: water
+
+696 million people need their Day One of clean water. 
+Give now, matched 2x →
+
+Help bring clean and safe water to every person on the planet.
+
+You deserve to give with confidence
+
+All of our operational expenses are funded by a private community of donors, so you can trust 100% of your donation will go directly to water solutions, every cent, every time. But we don’t stop there. We’re setting new standards for transparency and innovation. These companies and organizations agree.
+
+Join The Spring to invest in clean water and sustainability
+
+Give monthly, and you’ll become a part of The Spring, a passionate community invested in a world where everyone has clean water.
+
+JOIN TODAY
+Sponsor a water project
+Transform a community, school, or health clinic with a gift of $10,000 or more.
+Learn more
+
+More ways to give
+
+Honor someone special
+Honor or remember someone special by making a gift in their name.
+give in honor of someone
+
+Legacy giving
+Join us in shaping the future and making clean water a part of your lasting legacy.
+learn more
+
+Donate with cryptocurrency
+We currently accept bitcoin, ether, litecoin, bitcoin cash, Zcash, filecoin, and dogecoin.
+GIVE CRYPTO
+
+Give by check or stock
+We also accept donations by check, stock, money order, and wire transfer.
+GET THE DETAILS
+
+Other Ways to Give
+Donate by Check
+Make checks payable to charity: water. If you're donating in honor of someone, sponsoring a water project or want to direct your donation to our operating costs, please write that in the memo of your check.
+Unfortunately, we cannot accept donations to The Spring via check.
+Tax receipts will be mailed within four to six weeks after the donation has been processed.
+International Giving
+charity: water is a registered charity in the UK. To make a tax-efficient donation in GBP, visit 
+charitywateruk.org
+. For other international donations, we accept bank issued money orders in USD. Money orders should be made payable to charity: water and can be mailed to the address below. For donations over $6,000, we also accept wire transfers; email 
+info@charitywater.org
+ for more information.
+Please note, only donations made by eligible US taxpayers may be tax-deductible.
+Donate Stock
+We're able to accept donations in the form of stock, government (including municipal) debt and corporate debt through the Depository Trust Company (DTC). For security, settlement and reduced paperwork, electronic transfer through the DTC is preferred. This can be arranged from most brokerage accounts.
+Unfortunately, we cannot accept donations to The Spring via stock.
+Please contact 
+info@charitywater.org
+ for more information on making a stock donation.
+charity: water
+
+Donation Processing Center, 230 Franklin Rd., Ste. 11-II
+
+Franklin, TN 37064
+
+EIN: 22-3936753
+
+charity: water is a 501 (c)(3)
+
+Add Impact To Your Inbox
+
+Get our emails to stay in the know.
+
+Take Action
+
+Give
+
+Join the Spring
+
+Give to a Fundraiser
+
+Give in Someone's Honor
+
+Sponsor a community
+
+ Legacy & Asset Giving
+
+Get Involved
+
+Create an account
+
+Fundraise
+
+Tiny Heroes
+
+ Students & Teachers
+
+Advisors
+
+Experience Lab
+
+Get to know us
+
+Our Work
+
+100% Model
+
+See Our Financials
+
+Meet the founder
+
+Meet the executive team
+
+Careers
+
+Connect
+
+Contact Us
+
+Help center
+
+Request a Speaker
+
+Brand Partnerships
+
+Shop our store
+
+Twitter
+
+Facebook
+
+Instagram
+
+Snapchat
+
+Youtube
+
+Linkedin
+
+Privacy policy
+
+responsible disclosure process
+
+charity: water is a 501(c)(3) nonprofit organization.
+
+100% of public donations go directly to fund clean water projects.
+
+Get our emails
+
+© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
+
+[Contact links in page HTML]
+email: info@charitywater.org
+</document>
+</documents>
+
+Extract the organisation profile from these documents.

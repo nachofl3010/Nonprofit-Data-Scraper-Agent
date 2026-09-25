@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://basecamp.com/about",
+    "anchor": "Where we came from",
+    "score": 10.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://basecamp.com/gettingreal/01.2-about-basecamp",
+    "anchor": "",
+    "score": 10.0,
+    "category": "about",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://basecamp.com/gettingreal/11.1-theres-nothing-functional-about-afunctional-spec",
+    "anchor": "",
+    "score": 10.0,
+    "category": "about",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://basecamp.com/live",
+    "anchor": "Thousands of people in Basecamp now",
+    "score": 8.0,
+    "category": "team",
+    "source": "homepage"
+  },
+  {
+    "url": "https://basecamp.com/paths",
+    "anchor": "The people’s path to Basecamp",
+    "score": 8.0,
+    "category": "team",
+    "source": "homepage"
+  },
+  {
+    "url": "https://basecamp.com/gettingreal/13.3-ride-the-blog-wave",
+    "anchor": "",
+    "score": 6.0,
+    "category": "news",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://basecamp.com/hill-charts",
+    "anchor": "See where projects really stand",
+    "score": 5.6000000000000005,
+    "category": "programs",
+    "source": "homepage"
+  },
+  {
+    "url": "https://basecamp.com/managers/giving-feedback",
+    "anchor": "",
+    "score": 5.0,
+    "category": "donate",
+    "source": "sitemap"
+  }
+]

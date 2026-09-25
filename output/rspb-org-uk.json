@@ -1,0 +1,454 @@
+{
+  "profile": {
+    "schema_version": "1.0",
+    "taxonomy_version": "ntee-major-v1",
+    "input": "https://www.rspb.org.uk",
+    "resolved_url": "https://www.rspb.org.uk/",
+    "extracted_at": "2026-09-25T15:01:29.976691Z",
+    "status": "ok",
+    "flags": [],
+    "identity": {
+      "last_checked": "2026-09-25T15:01:29.976691Z",
+      "name": {
+        "value": "RSPB",
+        "source_url": "https://www.rspb.org.uk/",
+        "confidence": "high"
+      },
+      "legal_name": null,
+      "website": "https://www.rspb.org.uk/",
+      "registration_id": {
+        "value": "207076",
+        "source_url": "https://www.rspb.org.uk/",
+        "confidence": "high",
+        "evidence": "The Royal Society for the Protection of Birds (RSPB) is a registered charity: England and Wales no. 207076"
+      },
+      "country": {
+        "value": "GB",
+        "source_url": "https://www.rspb.org.uk/",
+        "confidence": "high"
+      },
+      "hq_location": {
+        "value": "Sandy, SG19 2DL",
+        "source_url": "https://www.rspb.org.uk/contact-us",
+        "confidence": "high"
+      },
+      "mission": {
+        "value": "The RSPB is a charity for the conservation of birds and nature. We bring people together who love birds and other wildlife, and who want to take action to restore the health and diversity of the natural world.",
+        "source_url": "https://www.rspb.org.uk/about-us/who-we-are",
+        "confidence": "high"
+      },
+      "programs": [
+        {
+          "name": "Nature Prescriptions",
+          "description": "Connecting with nature to improve health and wellbeing."
+        }
+      ],
+      "cause_area": {
+        "value": "environment",
+        "source_url": "https://www.rspb.org.uk/about-us/who-we-are",
+        "confidence": "high"
+      },
+      "geography_served": {
+        "value": {
+          "scope": "national",
+          "places": [
+            "United Kingdom"
+          ]
+        },
+        "source_url": "https://www.rspb.org.uk/about-us/who-we-are",
+        "confidence": "high"
+      },
+      "impact_metrics": [
+        {
+          "value": "Nearly 1.2 million members helping to protect wildlife and wild places",
+          "source_url": "https://www.rspb.org.uk/",
+          "confidence": "high"
+        }
+      ],
+      "looks_like_nonprofit": true
+    },
+    "financials": {
+      "last_checked": "2026-09-25T15:01:29.976691Z",
+      "annual_revenue": null,
+      "staff_count": null,
+      "size_band": "unknown",
+      "financial_history": null,
+      "tax_status": {
+        "value": "registered charity: England and Wales no. 207076, Scotland no. SC037654",
+        "source_url": "https://www.rspb.org.uk/",
+        "confidence": "high"
+      }
+    },
+    "contacts": {
+      "last_checked": "2026-09-25T15:01:29.976691Z",
+      "leadership": [],
+      "general_contact": {
+        "email": "membership@rspb.org.uk",
+        "phone": "01767 669700",
+        "contact_page_url": "https://www.rspb.org.uk/contact-us",
+        "source_url": "https://www.rspb.org.uk/contact-us"
+      }
+    },
+    "signals": {
+      "last_checked": "2026-09-25T15:01:29.976691Z",
+      "open_rfps": [],
+      "open_roles": [],
+      "recent_news": [
+        {
+          "headline": "Hen Harriers celebrate successful breeding season in Wales",
+          "date": "2026-09-23",
+          "url": "https://www.rspb.org.uk/whats-happening/news",
+          "summary": null,
+          "source_url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "headline": "How can our love of nature influence the political landscape?",
+          "date": "2026-09-21",
+          "url": "https://www.rspb.org.uk/whats-happening/news",
+          "summary": null,
+          "source_url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "headline": "Cautious optimism as record year for Hen Harrier chicks at RSPB Geltsdale",
+          "date": "2026-09-18",
+          "url": "https://www.rspb.org.uk/whats-happening/news",
+          "summary": null,
+          "source_url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "headline": "Feeding garden birds – how to keep our feathered friends healthy",
+          "date": "2026-09-17",
+          "url": "https://www.rspb.org.uk/whats-happening/news",
+          "summary": null,
+          "source_url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "headline": "The ‘The Book of Birds’ wins the 2026 Wainwright Prize Book of the Year!",
+          "date": "2026-09-17",
+          "url": "https://www.rspb.org.uk/whats-happening/news",
+          "summary": null,
+          "source_url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "headline": "Operation Orchid: giving 200 wild orchids a new home at RSPB Saltholme",
+          "date": "2026-09-15",
+          "url": "https://www.rspb.org.uk/whats-happening/news",
+          "summary": null,
+          "source_url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "headline": "Visitor centre work starts ahead of nature park opening",
+          "date": "2026-09-14",
+          "url": "https://www.rspb.org.uk/whats-happening/news",
+          "summary": null,
+          "source_url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "headline": "New drone images show hope for Dove Stone after unprecedented wildfires",
+          "date": "2026-09-10",
+          "url": "https://www.rspb.org.uk/whats-happening/news",
+          "summary": null,
+          "source_url": "https://www.rspb.org.uk/whats-happening/news"
+        }
+      ],
+      "funders_and_partners": [
+        {
+          "name": "People's Postcode Lottery",
+          "type": "other",
+          "source_url": "https://www.rspb.org.uk/whats-happening/news/peoples-postcode-lottery"
+        },
+        {
+          "name": "BirdLife International",
+          "type": "other",
+          "source_url": "https://www.rspb.org.uk/"
+        }
+      ]
+    },
+    "technology": {
+      "last_checked": "2026-09-25T15:01:29.976691Z",
+      "tech_stack": []
+    },
+    "pages_crawled": [
+      {
+        "url": "https://www.rspb.org.uk/",
+        "page_type": "homepage",
+        "kind": "html",
+        "status": 200,
+        "tokens": 1074,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.rspb.org.uk/about-us",
+        "page_type": "about",
+        "kind": "html",
+        "status": 200,
+        "tokens": 625,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.rspb.org.uk/whats-happening/news/peoples-postcode-lottery",
+        "page_type": "team",
+        "kind": "html",
+        "status": 200,
+        "tokens": 1453,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.rspb.org.uk/about-us/annual-report",
+        "page_type": "financials",
+        "kind": "html",
+        "status": 200,
+        "tokens": 279,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.rspb.org.uk/helping-nature/work-with-us",
+        "page_type": "careers",
+        "kind": "html",
+        "status": 200,
+        "tokens": 849,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.rspb.org.uk/contact-us",
+        "page_type": "contact",
+        "kind": "html",
+        "status": 200,
+        "tokens": 1193,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.rspb.org.uk/helping-nature/what-we-do",
+        "page_type": "programs",
+        "kind": "html",
+        "status": 200,
+        "tokens": 376,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.rspb.org.uk/whats-happening/news",
+        "page_type": "news",
+        "kind": "html",
+        "status": 200,
+        "tokens": 874,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.rspb.org.uk/donate",
+        "page_type": "donate",
+        "kind": "html",
+        "status": 200,
+        "tokens": 840,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.rspb.org.uk/about-us/who-we-are",
+        "page_type": "about",
+        "kind": "html",
+        "status": 200,
+        "tokens": 882,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.rspb.org.uk/about-us/how-we-are-run",
+        "page_type": "about",
+        "kind": "html",
+        "status": 200,
+        "tokens": 397,
+        "error": null,
+        "via": "gapfill"
+      },
+      {
+        "url": "https://www.rspb.org.uk/about-us/annual-report/rspb-annual-report-top-ten",
+        "page_type": "financials",
+        "kind": "html",
+        "status": 200,
+        "tokens": 1935,
+        "error": null,
+        "via": "gapfill"
+      },
+      {
+        "url": "https://www.rspb.org.uk/about-us/annual-report/annual-report-archive",
+        "page_type": "financials",
+        "kind": "html",
+        "status": 200,
+        "tokens": 386,
+        "error": null,
+        "via": "gapfill"
+      }
+    ],
+    "errors": [],
+    "gapfill": {
+      "triggered": true,
+      "missing": [
+        "leadership",
+        "annual_revenue"
+      ],
+      "urls": [
+        "https://www.rspb.org.uk/about-us/how-we-are-run",
+        "https://www.rspb.org.uk/about-us/annual-report/rspb-annual-report-top-ten",
+        "https://www.rspb.org.uk/about-us/annual-report/annual-report-archive"
+      ],
+      "filled": [],
+      "note": "filled 0/2"
+    },
+    "cost": {
+      "calls": [
+        {
+          "purpose": "extract",
+          "model": "gpt-4.1-mini",
+          "input_tokens": 6651,
+          "output_tokens": 1091,
+          "cache_read_tokens": 3968,
+          "cache_write_tokens": 0,
+          "cached_locally": false,
+          "usd": 0.004803,
+          "usd_list": 0.004803
+        },
+        {
+          "purpose": "gapfill_pick",
+          "model": "gpt-4.1-mini",
+          "input_tokens": 1339,
+          "output_tokens": 107,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_locally": true,
+          "usd": 0.0,
+          "usd_list": 0.000707
+        },
+        {
+          "purpose": "gapfill_extract",
+          "model": "gpt-4.1-mini",
+          "input_tokens": 3742,
+          "output_tokens": 16,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_locally": true,
+          "usd": 0.0,
+          "usd_list": 0.001522
+        }
+      ],
+      "input_tokens": 15700,
+      "output_tokens": 1214,
+      "usd": 0.004803,
+      "usd_list": 0.007032
+    }
+  },
+  "views": {
+    "sales": {
+      "name": "RSPB",
+      "website": "https://www.rspb.org.uk/",
+      "status": "ok",
+      "flags": [],
+      "cause_area": "environment",
+      "size_band": "unknown",
+      "annual_revenue": null,
+      "hq_location": "Sandy, SG19 2DL",
+      "lead_score": 1,
+      "score_breakdown": [
+        {
+          "signal": "recent_news",
+          "points": 1,
+          "detail": "in the news 2026-09-23: 'Hen Harriers celebrate successful breeding season in Wales'",
+          "timing": true
+        }
+      ],
+      "why_now": "Why now: in the news 2026-09-23: 'Hen Harriers celebrate successful breeding season in Wales'.",
+      "tech_stack": [],
+      "contacts_by_role": {},
+      "general_contact": {
+        "email": "membership@rspb.org.uk",
+        "phone": "01767 669700",
+        "contact_page_url": "https://www.rspb.org.uk/contact-us",
+        "source_url": "https://www.rspb.org.uk/contact-us"
+      },
+      "open_rfps": [],
+      "buying_signal_roles": [],
+      "recent_news": [
+        {
+          "date": "2026-09-23",
+          "headline": "Hen Harriers celebrate successful breeding season in Wales",
+          "url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "date": "2026-09-21",
+          "headline": "How can our love of nature influence the political landscape?",
+          "url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "date": "2026-09-18",
+          "headline": "Cautious optimism as record year for Hen Harrier chicks at RSPB Geltsdale",
+          "url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "date": "2026-09-17",
+          "headline": "Feeding garden birds – how to keep our feathered friends healthy",
+          "url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "date": "2026-09-17",
+          "headline": "The ‘The Book of Birds’ wins the 2026 Wainwright Prize Book of the Year!",
+          "url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "date": "2026-09-15",
+          "headline": "Operation Orchid: giving 200 wild orchids a new home at RSPB Saltholme",
+          "url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "date": "2026-09-14",
+          "headline": "Visitor centre work starts ahead of nature park opening",
+          "url": "https://www.rspb.org.uk/whats-happening/news"
+        },
+        {
+          "date": "2026-09-10",
+          "headline": "New drone images show hope for Dove Stone after unprecedented wildfires",
+          "url": "https://www.rspb.org.uk/whats-happening/news"
+        }
+      ]
+    },
+    "funder": {
+      "name": "RSPB",
+      "website": "https://www.rspb.org.uk/",
+      "mission": "The RSPB is a charity for the conservation of birds and nature. We bring people together who love birds and other wildlife, and who want to take action to restore the health and diversity of the natural world.",
+      "cause_area": "environment",
+      "geography_served": {
+        "scope": "national",
+        "places": [
+          "United Kingdom"
+        ]
+      },
+      "programs": [
+        {
+          "name": "Nature Prescriptions",
+          "description": "Connecting with nature to improve health and wellbeing."
+        }
+      ],
+      "registration_id": "207076",
+      "tax_status": "registered charity: England and Wales no. 207076, Scotland no. SC037654",
+      "financial_health": {
+        "annual_revenue": null,
+        "size_band": "unknown",
+        "trend": "unknown",
+        "history": []
+      },
+      "impact_metrics": [
+        "Nearly 1.2 million members helping to protect wildlife and wild places"
+      ],
+      "existing_funders": [
+        "People's Postcode Lottery (other)",
+        "BirdLife International (other)"
+      ]
+    }
+  }
+}

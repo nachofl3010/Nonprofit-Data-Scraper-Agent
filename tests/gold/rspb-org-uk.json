@@ -1,0 +1,31 @@
+{
+  "note": "Hand-labelled 2026-09-25 by reading the site pages (not pipeline output). EIN/revenue from IRS data (ProPublica) when not on the site. A list = any of these is correct; null = not on the site, so any extracted value counts as wrong; omitted field = not scored.",
+  "website": "https://www.rspb.org.uk/",
+  "fields": {
+    "name": [
+      "RSPB",
+      "The Royal Society for the Protection of Birds",
+      "Royal Society for the Protection of Birds"
+    ],
+    "registration_id": [
+      "207076",
+      "SC037654"
+    ],
+    "contact_email": [
+      "membership@rspb.org.uk",
+      "wildlife@rspb.org.uk"
+    ],
+    "has_careers_page": true,
+    "fundraising_tech": [],
+    "cause_area": [
+      "environment",
+      "animals"
+    ],
+    "country": [
+      "GB"
+    ],
+    "hq_city": [
+      "Sandy"
+    ]
+  }
+}

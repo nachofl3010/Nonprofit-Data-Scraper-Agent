@@ -1,0 +1,457 @@
+[
+  {
+    "url": "https://www.habitat.org/you-thought-leadership-series",
+    "anchor": "Live stream events",
+    "score": 10.0,
+    "category": "team",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about",
+    "anchor": "About",
+    "score": 10.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/mission-and-vision",
+    "anchor": "Mission and vision",
+    "score": 10.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/who-we-are",
+    "anchor": "Who we are",
+    "score": 10.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/history",
+    "anchor": "History",
+    "score": 10.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/habitat-for-humanity-leadership",
+    "anchor": "Leadership",
+    "score": 10.0,
+    "category": "team",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/annual-reports-990s",
+    "anchor": "Annual Reports and 990s",
+    "score": 9.0,
+    "category": "financials",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/volunteer/long-term-opportunities",
+    "anchor": "Long-term service",
+    "score": 8.0,
+    "category": "careers",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/volunteer/group-opportunities",
+    "anchor": "Group opportunities",
+    "score": 8.0,
+    "category": "careers",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/our-work",
+    "anchor": "Overview",
+    "score": 8.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/housing-help",
+    "anchor": "Housing help overview",
+    "score": 8.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/careers",
+    "anchor": "Careers",
+    "score": 8.0,
+    "category": "careers",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/our-work/impact",
+    "anchor": "Impact and stories",
+    "score": 7.0,
+    "category": "programs",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/what-we-do",
+    "anchor": "What we do",
+    "score": 7.0,
+    "category": "programs",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/contact",
+    "anchor": "Contact Us",
+    "score": 7.0,
+    "category": "contact",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/open-door?keyword=brand-button",
+    "anchor": "Join us in celebrating 50 years",
+    "score": 6.4,
+    "category": "careers",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/volunteer/near-you/youth-programs",
+    "anchor": "Youth Programs",
+    "score": 6.0,
+    "category": "programs",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/support/partnerships",
+    "anchor": "Partnerships",
+    "score": 6.0,
+    "category": "partners",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/partners",
+    "anchor": "Partners",
+    "score": 6.0,
+    "category": "partners",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/newsroom",
+    "anchor": "Newsroom",
+    "score": 6.0,
+    "category": "news",
+    "source": "homepage"
+  },
+  {
+    "url": "https://secure.habitat.org/site/Donation2?df_id=8896&8896.donation=form1&s_src=DNAW26083167500&keyword=promo1-home&s_subsrc=promo1-home",
+    "anchor": "Double your impact until Sept. 30!",
+    "score": 5.6000000000000005,
+    "category": "programs",
+    "source": "homepage"
+  },
+  {
+    "url": "https://secure.habitat.org/site/Donation2?df_id=8298&8298.donation=form1&s_src=DNAW25113167600&keyword=interstitial",
+    "anchor": "",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/volunteer/group-opportunities/business-partners",
+    "anchor": "Business partners",
+    "score": 5.0,
+    "category": "partners",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/volunteer/group-opportunities/faith-partners",
+    "anchor": "Faith partners",
+    "score": 5.0,
+    "category": "partners",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/advocacy",
+    "anchor": "Advocate",
+    "score": 5.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/donate/?keyword=menu-top",
+    "anchor": "Donate now",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/donate/?keyword=menu-one-time",
+    "anchor": "One time donations",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/support/monthly-recurring-donation",
+    "anchor": "Monthly donations",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/support/donate-items",
+    "anchor": "Donate items",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/restores/donate-goods",
+    "anchor": "Goods and materials",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/support/donate-your-car",
+    "anchor": "Donate your car",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/support/workplace-giving",
+    "anchor": "Workplace giving",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/support/corporate-giving",
+    "anchor": "Corporate giving",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/support/planned-giving",
+    "anchor": "Planned giving",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/support/donate-stock",
+    "anchor": "Stock donations",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/faq",
+    "anchor": "Frequently asked questions",
+    "score": 5.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/resources",
+    "anchor": "Resources",
+    "score": 5.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/habitat-learns",
+    "anchor": "Habitat Learns",
+    "score": 5.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/state-support-organizations",
+    "anchor": "State support organizations",
+    "score": 5.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/raising-concerns",
+    "anchor": "Raising concerns",
+    "score": 5.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://secure.habitat.org/site/Donation2?df_id=7753&mfc_pref=T&7753.donation=form1&keyword=button-header-single&s_subsrc=button-header-single",
+    "anchor": "Donate Now",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://secure.habitat.org/site/Donation2?df_id=7754&mfc_pref=T&7754.donation=form1&keyword=button-header-hopebuilder&s_subsrc=button-header-hopebuilder",
+    "anchor": "Donate Monthly",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://secure.habitat.org/site/Donation2?df_id=8896&8896.donation=form1&s_src=DNAW26083167400&keyword=hero-homepage&s_subsrc=hero-homepage",
+    "anchor": "",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://secure.habitat.org/site/Donation2?df_id=8134&mfc_pref=T&7753.donation=form1&keyword=promo-homepage&s_subsrc=promo-homepage",
+    "anchor": "Donate",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://secure.habitat.org/site/Donation2?df_id=7753&mfc_pref=T&7753.donation=form1&keyword=button-footer-menu-single&s_subsrc=button-footer-menu-single",
+    "anchor": "donate",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://secure.habitat.org/site/Donation2?df_id=7753&mfc_pref=T&7753.donation=form1&keyword=footer-menu-single-text&s_subsrc=footer-menu-single-text",
+    "anchor": "Donate one time",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://secure.habitat.org/site/Donation2?df_id=7754&mfc_pref=T&7754.donation=form1&keyword=footer-menu-monthly-text&s_subsrc=footer-menu-monthly-text",
+    "anchor": "Donate monthly",
+    "score": 5.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/in/richmond/good-news-habitat-humanity",
+    "anchor": "",
+    "score": 5.0,
+    "category": "news",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.habitat.org/support/gifts-in-kind",
+    "anchor": "Gifts-in-kind partnerships",
+    "score": 4.800000000000001,
+    "category": "partners",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/about/partners/cause-marketing",
+    "anchor": "Cause marketing",
+    "score": 4.0,
+    "category": "about",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/our-work/home-construction",
+    "anchor": "Home construction",
+    "score": 3.5,
+    "category": "programs",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/our-work/aging-in-place",
+    "anchor": "Older adults' home repair",
+    "score": 3.5,
+    "category": "programs",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/our-work/neighborhood-revitalization",
+    "anchor": "Revitalizing communities",
+    "score": 3.5,
+    "category": "programs",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/volunteer/long-term-opportunities/international",
+    "anchor": "International",
+    "score": 3.0,
+    "category": "careers",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/volunteer/long-term-opportunities/united-states",
+    "anchor": "United States",
+    "score": 3.0,
+    "category": "careers",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/volunteer/long-term-opportunities/americorps",
+    "anchor": "AmeriCorps",
+    "score": 3.0,
+    "category": "careers",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/volunteer/group-opportunities/community-organizations",
+    "anchor": "Community organizations",
+    "score": 3.0,
+    "category": "careers",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/donate/link/2694?keyword=promo2-home&s_subsrc=promo2-home",
+    "anchor": "Give now",
+    "score": 3.0,
+    "category": "donate",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/stories/making-meaningful-change",
+    "anchor": "",
+    "score": 3.0,
+    "category": "news",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/impact/our-work/disaster-response",
+    "anchor": "Disaster response",
+    "score": 2.5,
+    "category": "programs",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/our-work/impact/research-series-housing-health",
+    "anchor": "",
+    "score": 2.5,
+    "category": "programs",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/media/47181/view",
+    "anchor": "",
+    "score": 2.0,
+    "category": "news",
+    "source": "homepage"
+  },
+  {
+    "url": "https://www.habitat.org/mt/libby/kootenai-valley-partners-habitat-humanity",
+    "anchor": "",
+    "score": 2.0,
+    "category": "partners",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.habitat.org/wa/clarkston/lewiston-clarkston-partners-habitat-humanity",
+    "anchor": "",
+    "score": 2.0,
+    "category": "partners",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.habitat.org/our-work/terwilliger-center-innovation-in-shelter",
+    "anchor": "Innovation",
+    "score": 0.5,
+    "category": "programs",
+    "source": "homepage"
+  }
+]
