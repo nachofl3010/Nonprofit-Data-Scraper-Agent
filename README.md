@@ -48,7 +48,7 @@ Evidence isn't on every field because output tokens cost 4–6× input tokens wi
 
 ### Collected
 
-| Field | Who needs it | Why | Source | Refresh |
+| Field | Who needs it | Why | Source | Planned refresh |
 |---|---|---|---|---|
 | `name`, `legal_name`, `website` | both | Join key for CRM records and for deduplication | site, IRS | yearly |
 | `registration_id` (EIN or charity no.) | both | Join key to registries; legitimacy check | footer or about page; IRS | yearly |
@@ -191,8 +191,6 @@ From the final batch, run on gpt-4.1-mini. Averages cover the 5 orgs with a full
 | LLM cost | **$0.0055** on average ($0.0037–0.0072), including OpenAI's automatic prompt-cache discount |
 | Wall time | about 35 s, almost all of it the 1 s politeness delay between requests |
 
-Before building, I budgeted 3–5k output tokens. The actual 1.3k comes from three choices: evidence on only 5 fields, capped lists, and keeping fields that code can derive out of the LLM schema.
-
 ### Formula
 
 ```
@@ -218,7 +216,7 @@ Measured tokens (13.4k in, 1.3k out) × list prices × 500,000. This is conserva
 
 The first pass costs about **$2k in LLM spend** with a small model and the Batch API, and roughly 13× that with a frontier model. "Under a cent per org" holds for gpt-4.1-mini-class models, but not for Haiku 4.5, which is about 2¢.
 
-### Staying fresh (steady state)
+### Staying fresh (steady state; design, not built, see §12)
 | Cadence | What runs | LLM $/month (gpt-4.1-mini, Batch API) |
 |---|---|---|
 | Monthly | Re-fetch careers, news and RFP pages (about 3 requests per org) and compare content hashes. Re-extract signals only where a page changed. Assumes 30% change a month, so 150k orgs × about 4k in / 0.4k out | about $170 |
@@ -234,13 +232,15 @@ That's about **$300–350 a month** to keep 500k profiles current, compared with
 - **The expensive extras** would be headless rendering for JS sites (about 10× the CPU per page) and proxies for bot-protected sites. Both are best used only on sites flagged `partial`.
 
 ### What I'd change to keep the bill down at 500k
-1. **Change detection first.** Store `ETag`/`Last-Modified` (already captured on every fetch) and a content hash per page. Re-extract only when a page changed. Most nonprofit sites change rarely, so this is the biggest lever for staying fresh.
-2. **Tiered refresh using the per-section `last_checked`.** Signals (careers, news, RFP pages) are rechecked monthly, re-extracting only those pages with a smaller signals-only schema. Identity, leadership and programs are rechecked yearly. The registry is refreshed when the IRS publishes new data.
-3. **Batch API** for bulk runs: 50% off, and latency doesn't matter here.
-4. **Registry first.** For US orgs the IRS data already gives EIN, revenue, NTEE and tax status for free, so PDFs aren't parsed just to find revenue.
-5. **Fewer output tokens.** Output tokens cost 4–6× input tokens and are already about 30% of the bill, so evidence stays on only 5 fields, lists are capped (8 programs, 15 leaders, 8 news items), and fields code can derive are kept out of the LLM schema.
-6. **Prompt caching** of the static system prompt and schema, about 3.4k tokens. It's a smaller lever than it sounds. OpenAI caches long repeated prefixes automatically; Anthropic's Haiku 4.5 only caches prefixes of at least 4,096 tokens, so ours doesn't qualify. Either way, the per-org documents are what cost money, and they're unique.
-7. **Cheapest model that holds quality on the eval set.** A small model handles routine extraction; only orgs where extraction fails or confidence is low go to a stronger model. Switching model is one line in `.env` (`LLM_MODEL`), and `eval.py` decides whether the cheaper one is good enough.
+Items marked **(done)** are in V1; **(not built)** are next steps.
+
+1. **(not built) Change detection first.** Store `ETag`/`Last-Modified` (already captured on every fetch) and a content hash per page. Re-extract only when a page changed. Most nonprofit sites change rarely, so this is the biggest lever for staying fresh.
+2. **(not built) Tiered refresh using the per-section `last_checked`.** Signals (careers, news, RFP pages) are rechecked monthly, re-extracting only those pages with a smaller signals-only schema. Identity, leadership and programs are rechecked yearly. The registry is refreshed when the IRS publishes new data.
+3. **(not built) Batch API** for bulk runs: 50% off, and latency doesn't matter here.
+4. **(done) Registry first.** For US orgs the IRS data already gives EIN, revenue, NTEE and tax status for free, so PDFs aren't parsed just to find revenue.
+5. **(done) Fewer output tokens.** Output tokens cost 4–6× input tokens and are already about 30% of the bill, so evidence stays on only 5 fields, lists are capped (8 programs, 15 leaders, 8 news items), and fields code can derive are kept out of the LLM schema.
+6. **(done) Prompt caching** of the static system prompt and schema, about 3.4k tokens. It's a smaller lever than it sounds. OpenAI caches long repeated prefixes automatically; Anthropic's Haiku 4.5 only caches prefixes of at least 4,096 tokens, so ours doesn't qualify. Either way, the per-org documents are what cost money, and they're unique.
+7. **(partly done) Cheapest model that holds quality on the eval set.** A small model handles routine extraction; sending only orgs where extraction fails or confidence is low to a stronger model is not built. Switching model is one line in `.env` (`LLM_MODEL`), and `eval.py` decides whether the cheaper one is good enough.
 
 ---
 
@@ -277,11 +277,11 @@ Lead scores are low across this sample (−1 to 3). That's expected: none of the
 - **`buyer_role`, `is_buying_signal`**: ordered keyword rules. "Board Chair" is checked before "executive", and "Youth Development Manager" is excluded from fundraising.
 
 Keeping it consistent over time:
-1. Fixed lists plus a versioned taxonomy, so a list change triggers a re-map of stored profiles instead of silent drift.
+1. Fixed lists plus a versioned taxonomy. Every profile records its `taxonomy_version`, so a list change can trigger a re-map of stored profiles instead of silent drift (the re-map itself is not built).
 2. Registry codes preferred wherever they exist.
-3. A growing hand-labelled sample. `eval.py` is the seed; it reruns on every prompt or model change.
+3. A growing hand-labelled sample. `eval.py` is the seed; I rerun it by hand after every prompt or model change.
 4. Disagreements between the registry code and the site-based pick are already flagged (`cause_area_disagreement:…`, e.g. Habitat: site says community_development, IRS says international). That flag is a ready-made spot-check queue.
-5. Spot-checks at scale: embed mission + programs and flag orgs whose category disagrees with their nearest neighbours.
+5. (Not built) Spot-checks at scale: embed mission + programs and flag orgs whose category disagrees with their nearest neighbours.
 
 ---
 
@@ -353,6 +353,7 @@ Found in the live LLM runs (the debug folder shows whether each was a crawl or a
 
 ## 12. Limitations
 
+- **Refresh is designed, not built.** Re-running an org re-crawls it fully; only the local LLM response cache avoids paying twice for identical content. ETags and per-section `last_checked` are already recorded, so change detection and tiered refresh (§7) can be added without schema changes.
 - **JS-rendered sites** (like lfcfp.org) give near-empty HTML. They're detected and marked `partial`; headless rendering isn't in V1.
 - **Bot-protected sites** (403) fail cleanly. The crawler doesn't evade protection.
 - **Name inputs** need a search API key and fail safely without one. The search path is unit-tested but hasn't been run live (no Serper key during development).
@@ -364,6 +365,8 @@ Found in the live LLM runs (the debug folder shows whether each was a crawl or a
 - The size band for non-USD revenue uses **approximate** FX rates.
 - **About 35 s per org**, mostly the politeness delay. That's fine in bulk, since sites are crawled in parallel, but slow for one interactive lookup.
 - **Only 5 hand-labelled orgs.** The eval catches regressions; it doesn't prove accuracy at 500k.
+- **Personal data.** Contacts are limited to named executives, senior staff and board members listed by the org itself. Emails and phones are kept only if they appear verbatim on a fetched page (the grounding check removes the rest), and addresses are never guessed from naming patterns. There is no opt-out or deletion process, and EU/UK orgs (GDPR) would need a proper legal basis before this data is resold.
+- **Prompt injection.** Scraped text goes into the prompt, so a page could try to instruct the model. The damage is limited: output is a fixed schema, values not found on the fetched pages are dropped or downgraded, and registry data overrides EIN and revenue. The prompt doesn't yet explicitly tell the model to treat page text as untrusted data.
 
 ---
 
