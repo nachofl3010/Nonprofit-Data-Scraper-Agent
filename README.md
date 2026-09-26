@@ -1,5 +1,7 @@
 # Nonprofit Profile Agent
 
+**Video walkthrough (under 5 min):** https://www.loom.com/share/042678650fa34f148dceab8f24a6e28f
+
 Give it a nonprofit's name or website. It returns a structured profile with a source on every fact, plus a **sales view** built on **buyer signals** (strategic plans, capital campaigns, new leaders, technology investment, RFPs, revenue growth): a lead score, a one-line "why now", and a flat CSV row ready for CRM import.
 
 ```bash
