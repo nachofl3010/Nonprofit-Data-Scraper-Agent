@@ -1,16 +1,16 @@
 {
   "profile": {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "taxonomy_version": "ntee-major-v1",
     "input": "https://lfcfp.org/",
     "resolved_url": "https://lfcfp.org/",
-    "extracted_at": "2026-09-25T15:01:53.846618Z",
+    "extracted_at": "2026-09-25T22:00:40.768214Z",
     "status": "partial",
     "flags": [
       "registry_match:name"
     ],
     "identity": {
-      "last_checked": "2026-09-25T15:01:53.846618Z",
+      "last_checked": "2026-09-25T22:00:40.768214Z",
       "name": {
         "value": "Loaves and Fishes Community Food Pantry",
         "source_url": "https://lfcfp.org/",
@@ -42,7 +42,7 @@
       "looks_like_nonprofit": true
     },
     "financials": {
-      "last_checked": "2026-09-25T15:01:53.846618Z",
+      "last_checked": "2026-09-25T22:00:40.768214Z",
       "annual_revenue": {
         "value": {
           "amount": 116218.0,
@@ -94,19 +94,20 @@
       }
     },
     "contacts": {
-      "last_checked": "2026-09-25T15:01:53.846618Z",
+      "last_checked": "2026-09-25T22:00:40.768214Z",
       "leadership": [],
       "general_contact": null
     },
     "signals": {
-      "last_checked": "2026-09-25T15:01:53.846618Z",
+      "last_checked": "2026-09-25T22:00:40.768214Z",
+      "buyer_signals": [],
       "open_rfps": [],
       "open_roles": [],
       "recent_news": [],
       "funders_and_partners": []
     },
     "technology": {
-      "last_checked": "2026-09-25T15:01:53.846618Z",
+      "last_checked": "2026-09-25T22:00:40.768214Z",
       "tech_stack": []
     },
     "pages_crawled": [
@@ -138,19 +139,19 @@
         {
           "purpose": "extract",
           "model": "gpt-4.1-mini",
-          "input_tokens": 850,
-          "output_tokens": 132,
-          "cache_read_tokens": 1920,
+          "input_tokens": 360,
+          "output_tokens": 137,
+          "cache_read_tokens": 2944,
           "cache_write_tokens": 0,
-          "cached_locally": true,
-          "usd": 0.0,
-          "usd_list": 0.000743
+          "cached_locally": false,
+          "usd": 0.000658,
+          "usd_list": 0.000658
         }
       ],
-      "input_tokens": 2770,
-      "output_tokens": 132,
-      "usd": 0.0,
-      "usd_list": 0.000743
+      "input_tokens": 3304,
+      "output_tokens": 137,
+      "usd": 0.000658,
+      "usd_list": 0.000658
     }
   },
   "views": {
@@ -169,8 +170,14 @@
         "fiscal_year": 2025
       },
       "hq_location": null,
-      "lead_score": -1,
+      "lead_score": 0,
       "score_breakdown": [
+        {
+          "signal": "revenue_growth",
+          "points": 1,
+          "detail": "revenue +70% (2022->2025, IRS filings)",
+          "timing": true
+        },
         {
           "signal": "size_too_small",
           "points": -1,
@@ -178,7 +185,9 @@
           "timing": false
         }
       ],
-      "why_now": "No active timing signals; nurture. Fit: revenue under $500k (limited budget).",
+      "why_now": "Why now: revenue +70% (2022->2025, IRS filings). Fit: revenue under $500k (limited budget).",
+      "buyer_signals": [],
+      "revenue_trend": "growing (+70% 2022->2025)",
       "tech_stack": [],
       "contacts_by_role": {},
       "general_contact": null,

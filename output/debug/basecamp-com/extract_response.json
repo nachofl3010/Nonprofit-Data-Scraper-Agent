@@ -16,7 +16,7 @@
   "programs": [
     {
       "name": "Hill Charts",
-      "description": "A Basecamp exclusive way to track progress, showing a 10,000-foot view of project status called the Hill Chart."
+      "description": "A Basecamp exclusive way to track progress."
     }
   ],
   "cause_area": null,
@@ -24,8 +24,7 @@
     "value": {
       "scope": "international",
       "places": [
-        "over 100 countries",
-        "every populated continent"
+        "100+ countries"
       ]
     },
     "source_url": "https://basecamp.com/live",
@@ -36,12 +35,12 @@
   "staff_count": null,
   "impact_metrics": [
     {
-      "value": "Thousands of people are working in Basecamp now",
+      "value": "Nearly a million people, teams, companies, and non-profits worldwide rely on it daily",
       "source_url": "https://basecamp.com/",
       "confidence": "high"
     },
     {
-      "value": "Used across every industry, and nearly a million people, teams, companies, and non-profits worldwide rely on it daily",
+      "value": "Thousands of people are working in Basecamp now",
       "source_url": "https://basecamp.com/",
       "confidence": "high"
     },
@@ -74,51 +73,6 @@
       "value": "2.7 billion comments",
       "source_url": "https://basecamp.com/",
       "confidence": "high"
-    },
-    {
-      "value": "2.2 billion files",
-      "source_url": "https://basecamp.com/",
-      "confidence": "high"
-    },
-    {
-      "value": "2.3 billion pings",
-      "source_url": "https://basecamp.com/",
-      "confidence": "high"
-    },
-    {
-      "value": "675 million boosts",
-      "source_url": "https://basecamp.com/",
-      "confidence": "high"
-    },
-    {
-      "value": "5 petabytes of data",
-      "source_url": "https://basecamp.com/",
-      "confidence": "high"
-    },
-    {
-      "value": "200 million scheduled events",
-      "source_url": "https://basecamp.com/",
-      "confidence": "high"
-    },
-    {
-      "value": "180 million to-do lists",
-      "source_url": "https://basecamp.com/",
-      "confidence": "high"
-    },
-    {
-      "value": "1 billion @mentions",
-      "source_url": "https://basecamp.com/",
-      "confidence": "high"
-    },
-    {
-      "value": "545 million to-dos completed",
-      "source_url": "https://basecamp.com/",
-      "confidence": "high"
-    },
-    {
-      "value": "15 billion notifications",
-      "source_url": "https://basecamp.com/",
-      "confidence": "high"
     }
   ],
   "leadership": [
@@ -127,9 +81,24 @@
       "title": "Co-founder & CEO",
       "email": "jason@basecamp.com",
       "linkedin": null,
+      "source_url": "https://basecamp.com/about",
+      "confidence": "high"
+    },
+    {
+      "name": "Eron",
+      "title": "Head of Technical Ops",
+      "email": null,
+      "linkedin": null,
       "source_url": "https://basecamp.com/",
-      "confidence": "high",
-      "evidence": "Jason Fried, jason@basecamp.com Co-founder & CEO"
+      "confidence": "medium"
+    },
+    {
+      "name": "Chase",
+      "title": "Head of Support",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://basecamp.com/",
+      "confidence": "medium"
     }
   ],
   "general_contact": {
@@ -138,18 +107,28 @@
     "contact_page_url": null,
     "source_url": "https://basecamp.com/"
   },
-  "open_rfps": [],
-  "open_roles": [],
-  "recent_news": [
+  "buyer_signals": [
     {
-      "headline": "Blogging can be more effective than advertising (and it’s a hell of a lot cheaper)",
+      "type": "technology_investment",
+      "description": "Release of Basecamp 5 in 2026, a major upgrade with new features and improvements.",
+      "date": "2026",
+      "source_url": "https://basecamp.com/",
+      "confidence": "high",
+      "evidence": "in 2026 we released the all-new Basecamp 5, packing decades of experience into our best version yet."
+    },
+    {
+      "type": "technology_investment",
+      "description": "Basecamp is bringing AI agents to their platform.",
       "date": null,
-      "url": "https://basecamp.com/gettingreal/13.3-ride-the-blog-wave",
-      "summary": "Explains advantage of blog-based marketing for Basecamp and other products.",
-      "source_url": "https://basecamp.com/gettingreal/13.3-ride-the-blog-wave"
+      "source_url": "https://basecamp.com/",
+      "confidence": "high",
+      "evidence": "Basecamp 5 is here New! Bring your AI agents to Basecamp"
     }
   ],
+  "open_rfps": [],
+  "open_roles": [],
+  "recent_news": [],
   "funders_and_partners": [],
   "looks_like_nonprofit": false,
-  "not_nonprofit_reason": "Basecamp is a software company offering a commercial project management product, operated by 37signals LLC, a for-profit business."
+  "not_nonprofit_reason": "Basecamp is a commercial software company offering project management tools with paid plans, not a nonprofit."
 }

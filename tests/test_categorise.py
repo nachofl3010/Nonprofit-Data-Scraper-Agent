@@ -100,3 +100,20 @@ def test_rfp_filter_keeps_open_and_undated():
 
 def test_chief_revenue_officer_is_fundraising():
     assert buyer_role("Chief Revenue Officer") == "fundraising"
+
+
+def test_board_appointments_are_not_leadership_changes():
+    from src.categorise import drop_board_appointments
+    from src.schema import BuyerSignal
+
+    def sig(t, desc):
+        return BuyerSignal(type=t, description=desc, date="2026-09", source_url="u", confidence="high", evidence=desc)
+
+    kept, dropped = drop_board_appointments([
+        sig("leadership_change", "New members welcomed to the Board of Governors"),
+        sig("leadership_change", "Appointment of a new Chief Financial Officer"),
+        sig("strategic_plan", "Board approves the 2026-2030 strategic plan"),
+    ])
+    assert dropped == 1
+    assert [s.description for s in kept] == ["Appointment of a new Chief Financial Officer",
+                                             "Board approves the 2026-2030 strategic plan"]

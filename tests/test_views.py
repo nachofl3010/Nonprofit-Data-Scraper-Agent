@@ -2,7 +2,7 @@ from datetime import date, datetime, timezone
 
 from src.categorise import apply_rules
 from src.schema import (
-    RFP, Contacts, Evidenced, FinancialYear, Financials, GeneralContact, Identity, NewsItem,
+    RFP, BuyerSignal, Contacts, Evidenced, FinancialYear, Financials, GeneralContact, Identity, NewsItem,
     NonprofitProfile, OpenRole, Person, Revenue, Signals, Sourced, SourcedCauseArea, Technology, Tool,
 )
 from src.views import CSV_COLUMNS, funder_view, lead_score, revenue_trend, sales_view, to_csv_row, why_now
@@ -39,6 +39,14 @@ def make_profile() -> NonprofitProfile:
                            confidence="high", evidence="RFP")],
             open_roles=[OpenRole(title="Database Manager", url=None, source_url=U, confidence="high", evidence=None),
                         OpenRole(title="Warehouse Associate", url=None, source_url=U, confidence="high", evidence=None)],
+            buyer_signals=[
+                BuyerSignal(type="strategic_plan", description="New 2026-2030 strategic plan doubles distribution",
+                            date="2026-03", source_url=U, confidence="high", evidence="our 2026-2030 strategic plan"),
+                BuyerSignal(type="technology_investment", description="Plans a new donor database",
+                            date=None, source_url=U, confidence="low", evidence="not found in source"),
+                BuyerSignal(type="capital_campaign", description="Campaign for a new warehouse",
+                            date="2023-05", source_url=U, confidence="high", evidence="capital campaign"),
+            ],
             recent_news=[NewsItem(headline="New mobile market opens", date="2026-09-01", url=None, summary=None, source_url=U),
                          NewsItem(headline="Old story", date="2026-02-01", url=None, summary=None, source_url=U)],
         ),
@@ -52,10 +60,40 @@ def make_profile() -> NonprofitProfile:
 def test_lead_score_arithmetic():
     score, items = lead_score(make_profile(), TODAY)
     assert {i.signal: i.points for i in items} == {
-        "open_rfp": 3, "buying_signal_role": 2, "recent_news": 1,
+        "open_rfp": 3, "buying_signal_role": 2, "strategic_plan": 2, "revenue_growth": 1,
         "competitor_tool": 1, "size_fit": 1, "reachable_decision_maker": 1,
     }
-    assert score == 9
+    assert score == 11
+
+
+def test_low_confidence_and_stale_signals_do_not_score():
+    p = make_profile()
+    # the 2023 capital campaign is older than 2 years: dropped by the rules
+    assert [b.type for b in p.signals.buyer_signals] == ["strategic_plan", "technology_investment"]
+    # the technology_investment signal is low confidence (evidence not found): kept, but not scored
+    _, items = lead_score(p, TODAY)
+    assert "technology_investment" not in {i.signal for i in items}
+
+
+def test_news_alone_does_not_score():
+    p = make_profile()
+    p.signals = Signals(recent_news=p.signals.recent_news)
+    _, items = lead_score(p, TODAY)
+    assert "recent_news" not in {i.signal for i in items}
+
+
+def test_non_nonprofits_are_not_scored():
+    p = make_profile()
+    p.identity.looks_like_nonprofit = False
+    score, items = lead_score(p, TODAY)
+    assert score == 0 and why_now(items).startswith("Not scored")
+
+
+def test_revenue_decline_counts_against():
+    p = make_profile()
+    p.financials.financial_history[0].revenue = 2_000_000
+    _, items = lead_score(p, TODAY)
+    assert {i.signal: i.points for i in items}["revenue_decline"] == -1
 
 
 def test_small_org_without_signals_scores_low():
@@ -63,6 +101,7 @@ def test_small_org_without_signals_scores_low():
     p.signals = Signals()
     p.technology = Technology()
     p.financials.annual_revenue.value.amount = 200_000
+    p.financials.financial_history = None
     apply_rules(p, TODAY)
     score, items = lead_score(p, TODAY)
     assert score == 0  # -1 too small, +1 reachable
@@ -73,7 +112,8 @@ def test_why_now_template():
     _, items = lead_score(make_profile(), TODAY)
     text = why_now(items)
     assert text.startswith("Why now: open RFP 'Donor CRM replacement' (due 2026-10-15); hiring: Database Manager; "
-                           "in the news 2026-09-01: 'New mobile market opens'.")
+                           "strategic plan (2026-03): New 2026-2030 strategic plan doubles distribution; "
+                           "revenue +53% (2022->2025, IRS filings).")
     assert "Fit: uses Blackbaud eTapestry (migration target); revenue $4.6M in target band" in text
 
 
@@ -100,3 +140,5 @@ def test_csv_row_is_flat_and_clean():
     assert row["tech_stack"] == "Blackbaud eTapestry; Mailchimp"
     assert row["donor_crm"] == "Blackbaud eTapestry"
     assert row["n_open_rfps"] == "1" and row["annual_revenue"] == "4600000"
+    assert row["n_buyer_signals"] == "2" and row["buyer_signals"].startswith("strategic_plan: New 2026-2030")
+    assert row["revenue_trend"] == "growing (+53% 2022->2025)"

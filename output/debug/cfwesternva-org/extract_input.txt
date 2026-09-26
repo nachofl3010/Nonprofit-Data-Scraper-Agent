@@ -9,8 +9,9 @@ Rules:
 - Dates in ISO 8601 (YYYY-MM-DD; YYYY-MM or YYYY if that is all the page gives). Money as a plain number plus ISO 4217 currency code ("$12.5 million" -> 12500000, USD).
 - annual_revenue: total revenue or income for one fiscal year. Not a single gift, campaign goal, program budget or cumulative total.
 - registration_id: the number only, as printed (e.g. "12-3456789" or "207076"). If several are shown, the main one (US EIN, or the first charity number).
-- leadership: named executives, senior staff and board members (max 15). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Board Member", "Trustee"). Add email or LinkedIn only if shown next to that person.
+- leadership: up to 8 named leaders, most senior first: the chief executive, then heads of fundraising/development, finance and operations/IT, then at most 2 board officers (e.g. chair, treasurer). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Trustee"). Add email or LinkedIn only if shown next to that person.
 - general_contact: the organisation's general email, phone and contact page.
+- buyer_signals: up to 8 recent or planned events that suggest the organisation will spend on new tools, systems or services. Look hardest in annual reports, strategic plans, news and CEO/board letters. Types: technology_investment (the organisation is adopting, replacing or building its own CRM, database, website, digital or data systems); capital_campaign (a named campaign to raise capital or endowment for the organisation); strategic_plan (the organisation has adopted or is developing its own new multi-year strategic plan; an annual report, policy, code of practice, programme or event is not a strategic plan); leadership_change (a new chief executive, or a new head of development/fundraising, finance, operations or IT; board appointments do not count); merger (merger, acquisition or affiliation); expansion (new sites, regions or services of its own, or significant staff growth); major_grant (a large grant or gift to the organisation, e.g. $1M+ or a large share of its budget, especially for capacity building); funding_growth (stated growth in the organisation's own revenue, donors or budget); other. Only events the documents state, each with evidence. A signal must be about the organisation itself: its own systems, leadership, strategy, structure or funding. Not programmes, events, products or services it delivers to others (e.g. a workshop it hosts for other nonprofits, a directory or app it launches for the public, a product release), and not fundraising events or donation appeals. date: when it was announced or starts.
 - open_roles: current paid job openings only (no volunteer roles). open_rfps: current requests for proposals, tenders or procurement notices only.
 - recent_news: up to 8 of the newest dated news, press or blog items with their dates. Do not filter by age.
 - funders_and_partners: organisations named as funders, sponsors or partners (max 15).
@@ -271,6 +272,57 @@ Back to top
 [Contact links in page HTML]
 email: carly@cfwesternva.org
 </document>
+<document url="https://www.cfwesternva.org/who-we-are/financials-accountability/" type="html" page="financials">
+Community Foundation Serving Western Virginia is committed to transparency and accountability. We take seriously our responsibility to operate with the highest standards of integrity and stewardship to ensure donor funds are effectively reinvested in improving the economic and social well-being of our community. In this section, you will find our financial statements and other documents that help you learn more about our operations.
+Financial Documents
+Audited Financial Statement 2025
+Audited Financial Statement 2024
+Audited Financial Statement 2023
+Audited Financial Statement 2022
+Accountability & Policies
+Annual Reports
+Annual Administrative Assessments
+To support the Foundation’s extensive and comprehensive programs that benefit the many communities we serve on a daily basis, we annually apply a board-approved assessment on an endowed Fund’s average market value, using a three-year rolling average, as follows:
+| Donor Advised Funds | 1% | 
+| Unrestricted Funds | 1% | 
+| Agency Funds | 1% | 
+| Designated Funds | 1.25% | 
+| Field-of-Interest Funds | 1.5% | 
+| Scholarship Funds | 1.75% | 
+Currently, the above support covers 88% of our operational expense. Our Friends of the Foundation program and other direct administrative gifts to the Community Foundation help close the gap and are always deeply appreciated.
+Notes:
+- For cases in which a donor requests significant extra activities for a Fund, additional charges may be assessed based on the concurrence of both the Community Foundation and the donor
+- The above schedule applies to Funds up to $5 million in assets. For larger Funds, please contact Carly Oliver, President & CEO to discuss a declining schedule.
+- For non-endowed (pass-through) Funds, please refer to the Non-Permanent Fund Policy.
+Charitable Relationship Policy
+Donor Initiated Fundraising Policy
+Corporate Information & Forms
+The Community Foundation’s Federal Tax ID: 54-1959458
+Request a W-9 Form
+Gift Transmission Instructions
+Request a copy of our sales tax-exempt certificate
+
+[Contact links in page HTML]
+email: carly@cfwesternva.org
+email: beth@cfwesternva.org
+</document>
+<document url="https://www.cfwesternva.org/who-we-are/job-opportunities/" type="html" page="careers">
+Do you want to join an amazing team of passionate people, committed to making life better for all citizens across our region?
+At the Community Foundation, our team is passionate about serving the diverse communities that make up our region. We work collaboratively to strengthen these cities and counties—every day and for generations to come.
+Integrity, trust, efficiency, confidentiality, and effectiveness are the core values that guide us. As trusted stewards of the charitable resources placed in our care, we are committed to honoring the vision of our fund donors and turning their hopes into lasting impact.
+We’re known for our ability to get things done—and done well. While our work is serious, meaningful, and transformative, we also believe in creating a positive, enjoyable workplace.
+If this sounds like the kind of environment where you’d thrive, explore our current job openings below:
+There are currently no available positions.
+
+[Contact links in page HTML]
+email: carly@cfwesternva.org
+</document>
+<document url="https://www.cfwesternva.org/donate/" type="html" page="donate">
+<span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span>
+
+[Contact links in page HTML]
+email: carly@cfwesternva.org
+</document>
 <document url="https://www.cfwesternva.org/team/" type="html" page="team">
 Team Members – Community Foundation
 
@@ -373,51 +425,6 @@ email: alyssa@cfwesternva.org
 email: chrissy@cfwesternva.org
 email: samantha@cfwesternva.org
 </document>
-<document url="https://www.cfwesternva.org/who-we-are/financials-accountability/" type="html" page="financials">
-Community Foundation Serving Western Virginia is committed to transparency and accountability. We take seriously our responsibility to operate with the highest standards of integrity and stewardship to ensure donor funds are effectively reinvested in improving the economic and social well-being of our community. In this section, you will find our financial statements and other documents that help you learn more about our operations.
-Financial Documents
-Audited Financial Statement 2025
-Audited Financial Statement 2024
-Audited Financial Statement 2023
-Audited Financial Statement 2022
-Accountability & Policies
-Annual Reports
-Annual Administrative Assessments
-To support the Foundation’s extensive and comprehensive programs that benefit the many communities we serve on a daily basis, we annually apply a board-approved assessment on an endowed Fund’s average market value, using a three-year rolling average, as follows:
-| Donor Advised Funds | 1% | 
-| Unrestricted Funds | 1% | 
-| Agency Funds | 1% | 
-| Designated Funds | 1.25% | 
-| Field-of-Interest Funds | 1.5% | 
-| Scholarship Funds | 1.75% | 
-Currently, the above support covers 88% of our operational expense. Our Friends of the Foundation program and other direct administrative gifts to the Community Foundation help close the gap and are always deeply appreciated.
-Notes:
-- For cases in which a donor requests significant extra activities for a Fund, additional charges may be assessed based on the concurrence of both the Community Foundation and the donor
-- The above schedule applies to Funds up to $5 million in assets. For larger Funds, please contact Carly Oliver, President & CEO to discuss a declining schedule.
-- For non-endowed (pass-through) Funds, please refer to the Non-Permanent Fund Policy.
-Charitable Relationship Policy
-Donor Initiated Fundraising Policy
-Corporate Information & Forms
-The Community Foundation’s Federal Tax ID: 54-1959458
-Request a W-9 Form
-Gift Transmission Instructions
-Request a copy of our sales tax-exempt certificate
-
-[Contact links in page HTML]
-email: carly@cfwesternva.org
-email: beth@cfwesternva.org
-</document>
-<document url="https://www.cfwesternva.org/who-we-are/job-opportunities/" type="html" page="careers">
-Do you want to join an amazing team of passionate people, committed to making life better for all citizens across our region?
-At the Community Foundation, our team is passionate about serving the diverse communities that make up our region. We work collaboratively to strengthen these cities and counties—every day and for generations to come.
-Integrity, trust, efficiency, confidentiality, and effectiveness are the core values that guide us. As trusted stewards of the charitable resources placed in our care, we are committed to honoring the vision of our fund donors and turning their hopes into lasting impact.
-We’re known for our ability to get things done—and done well. While our work is serious, meaningful, and transformative, we also believe in creating a positive, enjoyable workplace.
-If this sounds like the kind of environment where you’d thrive, explore our current job openings below:
-There are currently no available positions.
-
-[Contact links in page HTML]
-email: carly@cfwesternva.org
-</document>
 <document url="https://www.cfwesternva.org/private-foundation-services/" type="html" page="programs">
 We specialize in working with individuals and families to achieve their charitable goals. The Community Foundation works closely with the trustees and advisors of private foundations to customize services that meet their needs. Private Foundations may choose one or more services from the following list to assist them in their charitable administrative responsibilities.
 If your private foundation has been affected by any of these factors, the Community Foundation can assist.
@@ -452,6 +459,21 @@ Martinsville Regional Office
 email: carly@cfwesternva.org
 phone: 540.985.0204
 phone: 276.656.6223
+</document>
+<document url="https://www.cfwesternva.org/feed/" type="xml" page="news_feed">
+XML root: rss
+title: Community Foundation
+link: https://www.cfwesternva.org
+lastBuildDate: Tue, 22 Sep 2026 18:51:32 +0000
+language: en-US
+updatePeriod: hourly
+updateFrequency: 1
+generator: https://wordpress.org/?v=6.9.9
+url: https://www.cfwesternva.org/wp-content/uploads/2018/11/cropped-android-chrome-512x512-32x32.png
+title: Community Foundation
+link: https://www.cfwesternva.org
+width: 32
+height: 32
 </document>
 <document url="https://www.cfwesternva.org/community-partnerships/" type="html" page="partners">
 Community Partnerships – Community Foundation
@@ -570,27 +592,6 @@ Back to top
 
 [Contact links in page HTML]
 email: carly@cfwesternva.org
-</document>
-<document url="https://www.cfwesternva.org/donate/" type="html" page="donate">
-<span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span>
-
-[Contact links in page HTML]
-email: carly@cfwesternva.org
-</document>
-<document url="https://www.cfwesternva.org/feed/" type="xml" page="news_feed">
-XML root: rss
-title: Community Foundation
-link: https://www.cfwesternva.org
-lastBuildDate: Tue, 22 Sep 2026 18:51:32 +0000
-language: en-US
-updatePeriod: hourly
-updateFrequency: 1
-generator: https://wordpress.org/?v=6.9.9
-url: https://www.cfwesternva.org/wp-content/uploads/2018/11/cropped-android-chrome-512x512-32x32.png
-title: Community Foundation
-link: https://www.cfwesternva.org
-width: 32
-height: 32
 </document>
 <document url="https://www.cfwesternva.org/advisory-board/" type="html" page="team">
 Advisory Board Members – Community Foundation

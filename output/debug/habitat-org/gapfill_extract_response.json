@@ -1,0 +1,38 @@
+{
+  "leadership": [
+    {
+      "name": "Jonathan Reckford",
+      "title": "Chief Executive Officer",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.habitat.org/about/habitat-for-humanity-leadership",
+      "confidence": "high"
+    },
+    {
+      "name": "Tolli Love",
+      "title": "Chief Development Officer",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.habitat.org/about/habitat-for-humanity-leadership",
+      "confidence": "high"
+    },
+    {
+      "name": "Craig Molyneaux",
+      "title": "Chief Financial and Administration Officer",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.habitat.org/about/habitat-for-humanity-leadership",
+      "confidence": "high"
+    },
+    {
+      "name": "Valerie Norton",
+      "title": "Chief People Officer",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.habitat.org/about/habitat-for-humanity-leadership",
+      "confidence": "high"
+    }
+  ],
+  "general_contact": null,
+  "annual_revenue": null
+}

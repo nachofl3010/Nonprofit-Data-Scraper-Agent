@@ -1,10 +1,10 @@
 {
   "profile": {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "taxonomy_version": "ntee-major-v1",
     "input": "Habitat for Humantiy",
     "resolved_url": null,
-    "extracted_at": "2026-09-25T15:02:43.355565Z",
+    "extracted_at": "2026-09-25T22:01:36.947404Z",
     "status": "failed",
     "flags": [],
     "identity": {
@@ -37,6 +37,7 @@
     },
     "signals": {
       "last_checked": null,
+      "buyer_signals": [],
       "open_rfps": [],
       "open_roles": [],
       "recent_news": [],
@@ -78,6 +79,8 @@
       "lead_score": 0,
       "score_breakdown": [],
       "why_now": "No active timing signals; nurture.",
+      "buyer_signals": [],
+      "revenue_trend": "unknown",
       "tech_stack": [],
       "contacts_by_role": {},
       "general_contact": null,

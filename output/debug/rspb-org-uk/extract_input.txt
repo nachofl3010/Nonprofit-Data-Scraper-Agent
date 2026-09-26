@@ -9,8 +9,9 @@ Rules:
 - Dates in ISO 8601 (YYYY-MM-DD; YYYY-MM or YYYY if that is all the page gives). Money as a plain number plus ISO 4217 currency code ("$12.5 million" -> 12500000, USD).
 - annual_revenue: total revenue or income for one fiscal year. Not a single gift, campaign goal, program budget or cumulative total.
 - registration_id: the number only, as printed (e.g. "12-3456789" or "207076"). If several are shown, the main one (US EIN, or the first charity number).
-- leadership: named executives, senior staff and board members (max 15). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Board Member", "Trustee"). Add email or LinkedIn only if shown next to that person.
+- leadership: up to 8 named leaders, most senior first: the chief executive, then heads of fundraising/development, finance and operations/IT, then at most 2 board officers (e.g. chair, treasurer). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Trustee"). Add email or LinkedIn only if shown next to that person.
 - general_contact: the organisation's general email, phone and contact page.
+- buyer_signals: up to 8 recent or planned events that suggest the organisation will spend on new tools, systems or services. Look hardest in annual reports, strategic plans, news and CEO/board letters. Types: technology_investment (the organisation is adopting, replacing or building its own CRM, database, website, digital or data systems); capital_campaign (a named campaign to raise capital or endowment for the organisation); strategic_plan (the organisation has adopted or is developing its own new multi-year strategic plan; an annual report, policy, code of practice, programme or event is not a strategic plan); leadership_change (a new chief executive, or a new head of development/fundraising, finance, operations or IT; board appointments do not count); merger (merger, acquisition or affiliation); expansion (new sites, regions or services of its own, or significant staff growth); major_grant (a large grant or gift to the organisation, e.g. $1M+ or a large share of its budget, especially for capacity building); funding_growth (stated growth in the organisation's own revenue, donors or budget); other. Only events the documents state, each with evidence. A signal must be about the organisation itself: its own systems, leadership, strategy, structure or funding. Not programmes, events, products or services it delivers to others (e.g. a workshop it hosts for other nonprofits, a directory or app it launches for the public, a product release), and not fundraising events or donation appeals. date: when it was announced or starts.
 - open_roles: current paid job openings only (no volunteer roles). open_rfps: current requests for proposals, tenders or procurement notices only.
 - recent_news: up to 8 of the newest dated news, press or blog items with their dates. Do not filter by age.
 - funders_and_partners: organisations named as funders, sponsors or partners (max 15).
@@ -48,6 +49,11 @@ Stay updated with the latest nature news, stories and insights. Discover how we�
 
  News
 
+Celebrating 20 years of restoring chalk wildlife in Wiltshire
+The reserve was purchased in 2006 to safeguard the local Stone-curlew population, and to protect an important landscape ...
+25th Sep 2026
+ News
+
 Hen Harriers celebrate successful breeding season in Wales
 There’s encouraging news for one of Wales’ most threatened birds of prey, following a successful breeding season at RSPB...
 23rd Sep 2026
@@ -62,11 +68,6 @@ As party conference season begins, new research shows nature is now a defining p
 Cautious optimism as record year for Hen Harrier chicks at RSPB Geltsdale
  A record-breaking 13 Hen Harrier chicks fledge at RSPB Geltsdale in Cumbria.
 18th Sep 2026
- Spotlight
-
-Feeding garden birds – how to keep our feathered friends healthy 
-What does it mean to Feed Seasonally, Feed Safely? RSPB staff share their experiences. 
-17th Sep 2026
 See all news
 20% off boxes of 50 Super suet fat balls
 Rich in energy, high in protein, and available in three delicious varieties, our Super suet fat balls are a tasty and nutritious treat for birds, perfect for feeding all year round.
@@ -104,73 +105,381 @@ Quick links Sign up to hear from us Volunteer with us Careers RSPB news About th
 email: membership@rspb.org.uk
 </document>
 <document url="https://www.rspb.org.uk/about-us" type="html" page="about">
-About the RSPB
-
- Hub
-
 About us
-Learn about the RSPB’s history and milestones, how it’s run, what it does and where it works. 
-Highlights
- Advice
-
-RSPB Council
-RSPB Council is the governing body of the RSPB. It is responsible for ensuring the Society conducts its affairs in accordance with its constitution and within the law. 
-Our ethical principles
-The RSPB’s ethical principles underpin all our decision making. 
+Back
+About us
+Who we are
+How we are run
+How we are funded
 The RSPB’s Annual Report 2025–26
- Discover how, together, we’re creating a world richer in nature.
-Corporate Governance
- Advice
-
-Charter and Statutes
-The RSPB’s Charter and Statutes, known as the Constitution, describe the fundamental principles by which the RSPB is gov...
- Advice
-
-Policies and procedures
-Find out more about key management policies here, including detailed and downloadable policy statements.
- Feature
-
-The RSPB Group
-We have a number of separate management boards which have a specific area of expertise. 
-How we operate
- Advice
-
-RSPB Youth Council
-Young people should have a say on the issues affecting our lives. As the Youth Council, we want to empower other young p...
- Feature
-
-We’re the RSPB
-The RSPB is a charity for the conservation of birds and nature. We bring people together who love birds and other wildli...
- Advice
-
-RSPB President and Ambassadors
-Our President, Vice-Presidents and Ambassadors are a passionate, dedicated group of volunteers, who help to raise awaren...
-How we campaign
- Advice
-
-RSPB Campaigns: Our Approach
-The RSPB has been campaigning for more than 125 years and today we're still determined to stand up for nature, both here...
- Feature
-
 Our history
-Discover how a campaign against feathers in fashion sparked a global force to save nature with more than a million membe...
+What's happening
+Back
+What's happening
+Nature news
+Our priceless protected areas
+How to Go Birding with the RSPB
+RSPB Autumn Raffle 2026
+Big Schools’ Birdwatch
+Live wildlife cameras
+Helping nature
+Back
+Helping nature
+What we do
+Volunteer with us
+Business partnerships
+Support us
+What you can do
+Birds and wildlife
+Back
+Birds and wildlife
+Bird A-Z
+Identifying birds and wildlife
+Feeding birds near you
+Declines, disease and dangers – the issues facing birds
+Who should I call if I am concerned about a bird?
+How to report crimes against wild birds
+Days out
+Back
+Days out
+Visit a reserve
+Find an event near you
+Search
+Shop
+Membership
+Donate
+Search
+Menu
+Back to
+Home
+About us
+Hub
+About us
+Learn about the RSPB’s history and milestones, how it’s run, what it does and where it works.
+Highlights
+Feature
+Corporate Governance
+Advice
+Feature
+Advice
+How we operate
+Advice
+Advice
+Feature
+How we campaign
+Advice
+Feature
 How we're funded
- Advice
+Advice
+Advice
+Hub
+Hub
 
-Our fundraising promise
-We are members of the fundraising regulator self-regulatory scheme. The Fundraising Regulator works to ensure that organ...
- Advice
+[Contact links in page HTML]
+email: membership@rspb.org.uk
+</document>
+<document url="https://www.rspb.org.uk/about-us/annual-report" type="html" page="financials">
+Discover a handful of the highlights from a year of saving nature, here we’ve picked out just five of the stand-out stories from our latest Annual Report.
+Discover how, together, we’re creating a world richer in nature.
+Each year, we produce an Annual Report that showcases the lasting impact we are having for nature thanks to supporters like you. 
 
-Trusts and Foundations
-The UK is one of the most nature-depleted countries in the world and the earth’s wildlife and natural resources are faci...
+Here, you can download a copy of our latest report for an in-depth look at the RSPB’s work between 2025 and 2026. You’ll find out how we’re turning the tide for Little Terns, discover how we’ve made Rathlin Island a safer place for seabirds, and learn why Scotland’s new Natural Environment Bill is fantastic news for threatened Swifts – plus lots more! 
+Successes to celebrate
+Discover a handful of the highlights from a year of saving nature, here we’ve picked out just five of the stand-out stories from our latest Annual Report.
+Discover our work from previous years To find out more about our work for wildlife, people and the planet, browse our Annual Report archive – it goes all the way back to 2001.
+
+[Contact links in page HTML]
+email: membership@rspb.org.uk
+</document>
+<document url="https://www.rspb.org.uk/whats-happening/news/work-with-the-rspb-to-plan-and-implement-your-biodiversity-net-gain-bng-strategy" type="html" page="plans">
+News
+Celebrating 20 years of restoring chalk wildlife in Wiltshire
+The reserve was purchased in 2006 to safeguard the local Stone-curlew population, and to protect an important landscape ...
+25th Sep 2026
+From November this year, new rules under the Environment Act 2021 mean most new developments will have to deliver Biodiversity Net Gain. This means they need to protect or improve some areas of natural habitat. The RSPB want to make sure this new system delivers as much as possible for wildlife. We can help appropriate developments with their nature plans, including providing Biodiversity Units from high-quality projects.
+5 min read
+The Department for Environment, Food and Rural Affairs (Defra) and Natural England have published a Biodiversity Metric calculation tool for developers to use to work out what they need to do under the new system.
+For a simple introduction to Biodiversity Net Gain by Natural England, click here.
+Natural England said in February 2023 that this new approach to development could contribute more than £130M each year for new nature projects. To be effective and to make sure new developments do deliver for nature, it is critical that existing environmental protections are followed alongside this new requirement.
+The RSPB manages 116 nature reserves in England covering 62,600 hectares. From coastal cliffs to ancient woodland, these wild landscapes are home to thousands of different species. To help your development achieve Biodiversity Net Gain, we have high quality biodiversity units available for sale from a variety of habitats across England, which we can provide for appropriate developments. We can also help you assess the habitat value of your sites and write biodiversity gain plans.
+The new RSPB Conservation Investment team have developed a new code of practice to help shape projects so they work for developers and for wildlife. This includes a set of ten principles that must underpin systems like Biodiversity Net Gain.
+These principles have been created in line with the views of industry experts such as Construction Industry Research and Information Association (CIRIA) and The Chartered Institute of Ecology and Environmental Management (CIEEM). We will use these principles to help make sure any projects we collaborate on will really make a difference to our natural world.
+If you are interested in discussing the purchase or development of RSPB biodiversity units and working together, please get in touch with us for an informal chat to see if we could help.
+The net gain requirement in Scotland is called Biodiversity Enhancement, and the Scottish Government is still developing guidance on how the system will work. If you are interested in working together on Biodiversity Enhancement, please contact: Development.rspb@rspb.org.uk
+Biodiversity is the variety of life on earth, including us. It is the animals, plants and all the other lifeforms which interact and depend on each other to survive.
+
+[Contact links in page HTML]
+email: conservation.invest@rspb.org.uk
+email: Development.rspb@rspb.org.uk
+email: 
+email: membership@rspb.org.uk
+</document>
+<document url="https://www.rspb.org.uk/helping-nature/work-with-us" type="html" page="careers">
+RSPB's Corporate Charity Partnerships | Collaborations
+
+Business partnerships
+We’re helping businesses do amazing things for nature in ways which work for them.
+Contribute to a nature positive future
+The RSPB are leaders in providing insights and guidance on how businesses can be more sustainable and help nature recover in a way which works for them. 
+
+ Feature
+
+Embedding nature into business practice
+Find out about who we are and the broad range of skills, experience and science our teams can bring to both your organis...
+ Feature
+
+How your business can contribute to a nature positive future
+Find out what Nature Positive means and the areas within your business we could focus on to help you reach your goals.
+Contact us
+Learn how we can partner together for nature, and help you to develop more sustainable business practices. Contact 
+corporate.partnerships@rspb.org.uk 
+
+Helping business work with nature
+The Global Biodiversity Framework (GBF) estimates the biodiversity finance gap as £550 billion a year between now and 2030. Work with us to help bridge that gap and achieve your sustainability objectives.
+
+ Feature
+
+Invest in peatland carbon 
+Peatlands cover only 3% of the global land surface but store twice as much carbon as in all the world’s forests. Find ou...
+ Feature
+
+Meet your Biodiversity Net Gain obligations
+Work with the UK’s largest conservation charity to meet BNG requirements. Here you can explore our available BNG units a...
+Long-lasting partnerships
+The RSPB has formed long-lasting partnerships with many different types of businesses, all helping our wildlife and wild places in a variety of ways. Our Business Engagement team works with them every step of the way to develop and deliver bold and ambitious sustainability initiatives at the scale needed to make a real difference.
+
+Explore our corporate sustainability partnerships and find out how we can help you.
+
+Showing 
+1-9
+ of 
+11
+ results
+ Feature
+
+Aldi and the RSPB
+Children in England, Wales and Scotland have enjoyed more than half a million nature experiences, thanks to a four-year ...
+ Feature
+
+Co-op and the RSPB
+As part of a 3-year strategic partnership, the Co-op are working with us to further RSPB’s peatland restoration ambition...
+Needingworth Quarry and the RSPB
+Together, we’re transforming a sand and gravel quarry into Europe’s largest manmade freshwater reedbed. 
+ Feature
+
+Weird Fish and the RSPB
+We are working together to raise vital funds for nature through the sale of witty pun T-shirts
+ Feature
+
+Barratt Redrow and the RSPB
+Together we are on a journey to help build homes in a nature-friendly way and inspire homeowners to help wildlife thrive...
+ Feature
+
+holidaycottages.co.uk and the RSPB
+A staycation is a great way to experience new places and discover nature’s highlights.
+ Feature
+
+Ella’s Kitchen and the RSPB 
+Helping birds, bees, and butterflies by protecting and restoring over 30 million sq. ft. of wildflower meadows by 2030 
+ Feature
+
+Morgan Sindall Group and the RSPB
+Working together to create a bigger, better and more connected habitat at RSPB Lakenheath Fen for the benefit of wildlif...
+ Feature
+
+Summerdown and the RSPB
+We are delighted to that our friends at Summerdown have embraced Fair to Nature certification for their herbal tea range...
+Partnering with
+ The RSPB is a member of BirdLife International.
+More
+
+[Contact links in page HTML]
+email: corporate.partnerships@rspb.org.uk
+email: membership@rspb.org.uk
+</document>
+<document url="https://www.rspb.org.uk/whats-happening/news" type="html" page="news">
+Nature news
+
+Nature news
+Stay updated with the latest nature news, stories and insights. Discover how we’re working to save species and help wildlife thrive.
+Get nature in your inbox
+Featured news and insight
+ Spotlight
+
+Feeding garden birds – how to keep our feathered friends healthy 
+What does it mean to Feed Seasonally, Feed Safely? RSPB staff share their experiences. 
+17th Sep 2026
+The ‘The Book of Birds’ wins the 2026 Wainwright Prize Book of the Year!
+As proud partners with the UK’s leading nature writing competition, we’re delighted to share this ye...
+17th Sep 2026
+New drone images show hope for Dove Stone after unprecedented wildfires
+Early analysis suggests peatland restoration helped reduce wildfire severity, retaining patches of w...
+10th Sep 2026
+Explore topics
+Topic
+Area of Work
+Habitat
+Country
+ Search 
+Showing 
+1-9
+ of 
+629
+ results
+ News
+
+Celebrating 20 years of restoring chalk wildlife in Wiltshire
+The reserve was purchased in 2006 to safeguard the local Stone-curlew population, and to protect an important landscape ...
+25th Sep 2026
+ News
+
+Hen Harriers celebrate successful breeding season in Wales
+There’s encouraging news for one of Wales’ most threatened birds of prey, following a successful breeding season at RSPB...
+23rd Sep 2026
+ Opinion
+
+How can our love of nature influence the political landscape?
+As party conference season begins, new research shows nature is now a defining political issue.
+ Kevin Austin 
+21st Sep 2026
+ News
+
+Cautious optimism as record year for Hen Harrier chicks at RSPB Geltsdale
+ A record-breaking 13 Hen Harrier chicks fledge at RSPB Geltsdale in Cumbria.
+18th Sep 2026
+ Spotlight
+
+Feeding garden birds – how to keep our feathered friends healthy 
+What does it mean to Feed Seasonally, Feed Safely? RSPB staff share their experiences. 
+17th Sep 2026
+ News
+
+The ‘The Book of Birds’ wins the 2026 Wainwright Prize Book of the Year!
+As proud partners with the UK’s leading nature writing competition, we’re delighted to share this year’s winners. 
+17th Sep 2026
+ News
+
+Operation Orchid: giving 200 wild orchids a new home at RSPB Saltholme
+How do you move 200 wild orchids? Answer: very carefully!
+15th Sep 2026
+ News
+
+Visitor centre work starts ahead of nature park opening
+Work is underway on a new RSPB visitor centre, as part of the planned 250-acre Kingsbrook Meadows nature park in Aylesbu...
+14th Sep 2026
+ News
+
+New drone images show hope for Dove Stone after unprecedented wildfires
+Early analysis suggests peatland restoration helped reduce wildfire severity, retaining patches of wet vegetation
+10th Sep 2026
+Your nature newsletter flying in every fortnight
+Want to learn more about wildlife, but unsure where to start? Keen to see the best of UK nature? Join over one million nature lovers and sign up to Notes on Nature. You’ll receive:
+
+Bird and wildlife ID guides  
+
+Your questions answered by experts  
+
+Practical ways you can help save nature   
+
+ Latest news from our nature reserves and conservation projects 
+
+Bearded Tit
+Feeling inspired?
+Donate today 
+We depend on donations to tackle the increasing threats our natural world faces. Every donation makes a difference. Will you help us today?
+Membership 
+Join a flock of nearly 1.2 million people who are helping to protect our wonderful wildlife and wild places.
+Leave a legacy 
+Protect and restore nature for generations to come by leaving a gift in your Will to the RSPB.
+Partnering with
+ The RSPB is a member of BirdLife International.
+More
+
+[Contact links in page HTML]
+email: membership@rspb.org.uk
+</document>
+<document url="https://www.rspb.org.uk/donate" type="html" page="donate">
+Charitable Donations to Wildlife & Nature - Donate to the RSPB
+
  Hub
 
-Who are the RSPB’s grant funders? 
-Thanks to our grant funders, we connect people with wildlife and habitats, empower landowners to give nature a home, and...
- Hub
+Donate
+We depend on donations to tackle the increasing threats our natural world faces. Every donation makes a difference.
+Donate today
+Swift
+Our vision is a world where wildlife, wild places and people thrive. We're a charity and everything we do is for the benefit of nature: when we protect birds, we protect habitats, biodiversity and our natural world as a whole. Thanks to your support we're the UK's largest nature conservation charity taking action for nature across the UK and beyond.
 
-Fundraising
-Every year, the fantastic energy and enthusiasm of supporters like you helps us raise vital funds to help nature.
+Current appeals
+Our appeals raise money for some of our most ambitious, challenging and urgent nature conservation projects. Donate today and 100% of your gift will support your chosen project.
+
+Showing 
+1-8
+ of 
+8
+ results
+ Feature
+
+Minsmere wildfire appeal
+Wildfires struck RSPB Minsmere this summer, causing large amounts of damage. We now need your help to restore the reserv...
+11th Aug 2026
+ Feature
+
+Save our island havens
+Our islands were once safe havens for so many birds. Now entire colonies are disappearing. Help us protect them.
+1st Jul 2026
+ Feature
+
+The breathtaking magic of seabirds 
+Majestic, beautiful and enchanting, seabirds are sadly under threat. 
+7th Apr 2026
+ Feature
+
+Reconnect a precious Welsh landscape
+Help protect 96 hectares of rare habitat and reconnect a vital landscape for threatened wildlife.
+2nd Feb 2026
+ Feature
+
+Give Curlew chicks a chance to fly
+Support our Curlew appeal today and help protect vulnerable chicks, one nest at a time. 
+4th Jul 2025
+ Feature
+
+Protect Scotland's nature
+Scotland is home to some of the UK's rarest and most important wildlife, but it's under threat. Donate today.
+30th Jan 2025
+ Feature
+
+Orkney Native Wildlife Project
+Orkney's wildlife is at risk and this world-first project is at a critical stage. Be part of something special.
+30th Jan 2025
+ Feature
+
+Birds of Prey appeal
+Birds of prey are being shot, trapped and poisoned across the UK. Give a regular gift and help keep them in our skies.
+26th Jan 2025
+Philanthropy and major giving
+By making a significant gift to the RSPB you will help us protect and improve habitats in the UK and beyond, reversing the decline of threatened birds and other species that depend upon these precious places.
+
+Philanthropy & Major Gifts
+In memory
+There are many ways to remember someone special, for those who share a love of nature, a donation to help restore and protect it is a lasting tribute.
+
+Donate in memory
+There are many ways to remember someone special, for those who share a love of nature, a donation to help restore and pr...
+Plant a tree in memory or in celebration
+Memorial trees are a lasting way to celebrate the life of a loved one, or a special occasion, and give back to nature.
+ Advice
+
+Tribute funds
+A Tribute Fund is a place to commemorate a loved one’s life. It’s somewhere family and friends can share stories, photos...
+ Advice
+
+Funeral collections
+Collecting donations at a funeral or memorial service is a wonderful way to honour someone special and help protect the ...
+ Feature
+
+In memory pin badges
+A beautiful range of specially designed pins to provide a lasting tribute to your loved one and a perfect keepsake for y...
 Partnering with
  The RSPB is a member of BirdLife International.
 More
@@ -246,6 +555,11 @@ Copy Link
 Other news
  News
 
+Celebrating 20 years of restoring chalk wildlife in Wiltshire
+The reserve was purchased in 2006 to safeguard the local Stone-curlew population, and to protect an important landscape ...
+25th Sep 2026
+ News
+
 Hen Harriers celebrate successful breeding season in Wales
 There’s encouraging news for one of Wales’ most threatened birds of prey, following a successful breeding season at RSPB...
 23rd Sep 2026
@@ -259,11 +573,6 @@ Cautious optimism as record year for Hen Harrier chicks at RSPB Geltsdale
 The ‘The Book of Birds’ wins the 2026 Wainwright Prize Book of the Year!
 As proud partners with the UK’s leading nature writing competition, we’re delighted to share this year’s winners. 
 17th Sep 2026
- News
-
-Operation Orchid: giving 200 wild orchids a new home at RSPB Saltholme
-How do you move 200 wild orchids? Answer: very carefully!
-15th Sep 2026
 Partnering with
  The RSPB is a member of BirdLife International.
 More
@@ -272,101 +581,40 @@ More
 email: 
 email: membership@rspb.org.uk
 </document>
-<document url="https://www.rspb.org.uk/about-us/annual-report" type="html" page="financials">
-Discover a handful of the highlights from a year of saving nature, here we’ve picked out just five of the stand-out stories from our latest Annual Report.
-Discover how, together, we’re creating a world richer in nature.
-Each year, we produce an Annual Report that showcases the lasting impact we are having for nature thanks to supporters like you. 
+<document url="https://www.rspb.org.uk/helping-nature/what-we-do" type="html" page="programs">
+What we do
 
-Here, you can download a copy of our latest report for an in-depth look at the RSPB’s work between 2025 and 2026. You’ll find out how we’re turning the tide for Little Terns, discover how we’ve made Rathlin Island a safer place for seabirds, and learn why Scotland’s new Natural Environment Bill is fantastic news for threatened Swifts – plus lots more! 
-Successes to celebrate
-Discover a handful of the highlights from a year of saving nature, here we’ve picked out just five of the stand-out stories from our latest Annual Report.
-Discover our work from previous years To find out more about our work for wildlife, people and the planet, browse our Annual Report archive – it goes all the way back to 2001.
+ Hub
 
-[Contact links in page HTML]
-email: membership@rspb.org.uk
-</document>
-<document url="https://www.rspb.org.uk/helping-nature/work-with-us" type="html" page="careers">
-RSPB's Corporate Charity Partnerships | Collaborations
-
-Business partnerships
-We’re helping businesses do amazing things for nature in ways which work for them.
-Contribute to a nature positive future
-The RSPB are leaders in providing insights and guidance on how businesses can be more sustainable and help nature recover in a way which works for them. 
-
+What we do
+Like wildlife, our work takes many shapes and forms. From the smallest seeds in farmers’ fields to flyways that criss-cross the globe, find out more about how we’re fighting for nature’s future. 
+Donate to support our work
+Scientists taking a water sample
+These pages are all about the work we’re doing and how we’re doing it. Keep up with our conservationists, see how science keeps us on the cutting edge, discover our volunteer-powered projects, and learn how we’re pushing for change across the UK and around the world.
  Feature
 
-Embedding nature into business practice
-Find out about who we are and the broad range of skills, experience and science our teams can bring to both your organis...
- Feature
+Science and nature 
+Find out why science is essential to the work we do and how we use it to guide our conservation efforts. 
+ Hub
 
-How your business can contribute to a nature positive future
-Find out what Nature Positive means and the areas within your business we could focus on to help you reach your goals.
-Contact us
-Learn how we can partner together for nature, and help you to develop more sustainable business practices. Contact 
-corporate.partnerships@rspb.org.uk 
+Influencing government and business
+Find out more about the RSPB’s work across the UK and beyond to advocate for policies that protect and restore nature.
+ Hub
 
-Helping business work with nature
-The Global Biodiversity Framework (GBF) estimates the biodiversity finance gap as £550 billion a year between now and 2030. Work with us to help bridge that gap and achieve your sustainability objectives.
+Protecting species and habitats
+Ever since the RSPB began in 1889, we've helped species and that's still at the heart of what we do. The species of grea...
+Education and wellbeing
+Discover how we support teachers, schools, and people of all ages to connect with nature.
 
- Feature
-
-Invest in peatland carbon 
-Peatlands cover only 3% of the global land surface but store twice as much carbon as in all the world’s forests. Find ou...
- Feature
-
-Meet your Biodiversity Net Gain obligations
-Work with the UK’s largest conservation charity to meet BNG requirements. Here you can explore our available BNG units a...
-Long-lasting partnerships
-The RSPB has formed long-lasting partnerships with many different types of businesses, all helping our wildlife and wild places in a variety of ways. Our Business Engagement team works with them every step of the way to develop and deliver bold and ambitious sustainability initiatives at the scale needed to make a real difference.
-
-Explore our corporate sustainability partnerships and find out how we can help you.
-
-Showing 
-1-9
- of 
-11
- results
-Needingworth Quarry and the RSPB
-Together, we’re transforming a sand and gravel quarry into Europe’s largest manmade freshwater reedbed. 
- Feature
-
-holidaycottages.co.uk and the RSPB
-A staycation is a great way to experience new places and discover nature’s highlights.
- Feature
-
-Ella’s Kitchen and the RSPB 
-Helping birds, bees, and butterflies by protecting and restoring over 30 million sq. ft. of wildflower meadows by 2030 
- Feature
-
-Morgan Sindall Group and the RSPB
-Working together to create a bigger, better and more connected habitat at RSPB Lakenheath Fen for the benefit of wildlif...
- Feature
-
-Summerdown and the RSPB
-We are delighted to that our friends at Summerdown have embraced Fair to Nature certification for their herbal tea range...
- Feature
-
-Omaze and the RSPB
-The RSPB and Omaze community partner up to raise a record-breaking £4.9m towards protecting the UK’s precious peatlands!...
- Feature
-
-Tesco and the RSPB
-Working together to protect and restore nature on farms.
-28th Nov 2024
- Feature
-
-Weird Fish and the RSPB
-We are working together to raise vital funds for nature through the sale of witty pun T-shirts
- Feature
-
-Aldi and the RSPB
-Children in England, Wales and Scotland have enjoyed more than half a million nature experiences, thanks to a four-year ...
+RSPB Nature Prescriptions
+Connecting with nature to improve health and wellbeing.
+Education and inspiring the next generation
+Young people are our future. We’re determined to help the next generation enjoy and connect with nature, so they’re insp...
 Partnering with
  The RSPB is a member of BirdLife International.
 More
 
 [Contact links in page HTML]
-email: corporate.partnerships@rspb.org.uk
 email: membership@rspb.org.uk
 </document>
 <document url="https://www.rspb.org.uk/contact-us" type="html" page="contact">
@@ -471,261 +719,6 @@ email: CommsScot@rspb.org.uk
 email: comms.cymru@rspb.org.uk
 email: nicomms@rspb.org.uk
 email: EngMediaEnquiries@rspb.org.uk
-email: 
-email: membership@rspb.org.uk
-</document>
-<document url="https://www.rspb.org.uk/helping-nature/what-we-do" type="html" page="programs">
-What we do
-
- Hub
-
-What we do
-Like wildlife, our work takes many shapes and forms. From the smallest seeds in farmers’ fields to flyways that criss-cross the globe, find out more about how we’re fighting for nature’s future. 
-Donate to support our work
-Scientists taking a water sample
-These pages are all about the work we’re doing and how we’re doing it. Keep up with our conservationists, see how science keeps us on the cutting edge, discover our volunteer-powered projects, and learn how we’re pushing for change across the UK and around the world.
- Feature
-
-Science and nature 
-Find out why science is essential to the work we do and how we use it to guide our conservation efforts. 
- Hub
-
-Influencing government and business
-Find out more about the RSPB’s work across the UK and beyond to advocate for policies that protect and restore nature.
- Hub
-
-Protecting species and habitats
-Ever since the RSPB began in 1889, we've helped species and that's still at the heart of what we do. The species of grea...
-Education and wellbeing
-Discover how we support teachers, schools, and people of all ages to connect with nature.
-
-RSPB Nature Prescriptions
-Connecting with nature to improve health and wellbeing.
-Education and inspiring the next generation
-Young people are our future. We’re determined to help the next generation enjoy and connect with nature, so they’re insp...
-Partnering with
- The RSPB is a member of BirdLife International.
-More
-
-[Contact links in page HTML]
-email: membership@rspb.org.uk
-</document>
-<document url="https://www.rspb.org.uk/whats-happening/news" type="html" page="news">
-Nature news
-
-Nature news
-Stay updated with the latest nature news, stories and insights. Discover how we’re working to save species and help wildlife thrive.
-Get nature in your inbox
-Featured news and insight
- Spotlight
-
-Feeding garden birds – how to keep our feathered friends healthy 
-What does it mean to Feed Seasonally, Feed Safely? RSPB staff share their experiences. 
-17th Sep 2026
-The ‘The Book of Birds’ wins the 2026 Wainwright Prize Book of the Year!
-As proud partners with the UK’s leading nature writing competition, we’re delighted to share this ye...
-17th Sep 2026
-New drone images show hope for Dove Stone after unprecedented wildfires
-Early analysis suggests peatland restoration helped reduce wildfire severity, retaining patches of w...
-10th Sep 2026
-Explore topics
-Topic
-Area of Work
-Habitat
-Country
- Search 
-Showing 
-1-9
- of 
-628
- results
- News
-
-Hen Harriers celebrate successful breeding season in Wales
-There’s encouraging news for one of Wales’ most threatened birds of prey, following a successful breeding season at RSPB...
-23rd Sep 2026
- Opinion
-
-How can our love of nature influence the political landscape?
-As party conference season begins, new research shows nature is now a defining political issue.
- Kevin Austin 
-21st Sep 2026
- News
-
-Cautious optimism as record year for Hen Harrier chicks at RSPB Geltsdale
- A record-breaking 13 Hen Harrier chicks fledge at RSPB Geltsdale in Cumbria.
-18th Sep 2026
- Spotlight
-
-Feeding garden birds – how to keep our feathered friends healthy 
-What does it mean to Feed Seasonally, Feed Safely? RSPB staff share their experiences. 
-17th Sep 2026
- News
-
-The ‘The Book of Birds’ wins the 2026 Wainwright Prize Book of the Year!
-As proud partners with the UK’s leading nature writing competition, we’re delighted to share this year’s winners. 
-17th Sep 2026
- News
-
-Operation Orchid: giving 200 wild orchids a new home at RSPB Saltholme
-How do you move 200 wild orchids? Answer: very carefully!
-15th Sep 2026
- News
-
-Visitor centre work starts ahead of nature park opening
-Work is underway on a new RSPB visitor centre, as part of the planned 250-acre Kingsbrook Meadows nature park in Aylesbu...
-14th Sep 2026
- News
-
-New drone images show hope for Dove Stone after unprecedented wildfires
-Early analysis suggests peatland restoration helped reduce wildfire severity, retaining patches of wet vegetation
-10th Sep 2026
- Spotlight
-
-A helping hand for Swifts 
-An inspiring read about the volunteers who are making sure that Swifts have more homes to return to in spring.
-9th Sep 2026
-Your nature newsletter flying in every fortnight
-Want to learn more about wildlife, but unsure where to start? Keen to see the best of UK nature? Join over one million nature lovers and sign up to Notes on Nature. You’ll receive:
-
-Bird and wildlife ID guides  
-
-Your questions answered by experts  
-
-Practical ways you can help save nature   
-
- Latest news from our nature reserves and conservation projects 
-
-Bearded Tit
-Feeling inspired?
-Donate today 
-We depend on donations to tackle the increasing threats our natural world faces. Every donation makes a difference. Will you help us today?
-Membership 
-Join a flock of nearly 1.2 million people who are helping to protect our wonderful wildlife and wild places.
-Leave a legacy 
-Protect and restore nature for generations to come by leaving a gift in your Will to the RSPB.
-Partnering with
- The RSPB is a member of BirdLife International.
-More
-
-[Contact links in page HTML]
-email: membership@rspb.org.uk
-</document>
-<document url="https://www.rspb.org.uk/donate" type="html" page="donate">
-Charitable Donations to Wildlife & Nature - Donate to the RSPB
-
- Hub
-
-Donate
-We depend on donations to tackle the increasing threats our natural world faces. Every donation makes a difference.
-Donate today
-Swift
-Our vision is a world where wildlife, wild places and people thrive. We're a charity and everything we do is for the benefit of nature: when we protect birds, we protect habitats, biodiversity and our natural world as a whole. Thanks to your support we're the UK's largest nature conservation charity taking action for nature across the UK and beyond.
-
-Current appeals
-Our appeals raise money for some of our most ambitious, challenging and urgent nature conservation projects. Donate today and 100% of your gift will support your chosen project.
-
-Showing 
-1-8
- of 
-8
- results
- Feature
-
-Minsmere wildfire appeal
-Wildfires struck RSPB Minsmere this summer, causing large amounts of damage. We now need your help to restore the reserv...
-11th Aug 2026
- Feature
-
-Save our island havens
-Our islands were once safe havens for so many birds. Now entire colonies are disappearing. Help us protect them.
-1st Jul 2026
- Feature
-
-The breathtaking magic of seabirds 
-Majestic, beautiful and enchanting, seabirds are sadly under threat. 
-7th Apr 2026
- Feature
-
-Reconnect a precious Welsh landscape
-Help protect 96 hectares of rare habitat and reconnect a vital landscape for threatened wildlife.
-2nd Feb 2026
- Feature
-
-Give Curlew chicks a chance to fly
-Support our Curlew appeal today and help protect vulnerable chicks, one nest at a time. 
-4th Jul 2025
- Feature
-
-Orkney Native Wildlife Project
-Orkney's wildlife is at risk and this world-first project is at a critical stage. Be part of something special.
-30th Jan 2025
- Feature
-
-Protect Scotland's nature
-Scotland is home to some of the UK's rarest and most important wildlife, but it's under threat. Donate today.
-30th Jan 2025
- Feature
-
-Birds of Prey appeal
-Birds of prey are being shot, trapped and poisoned across the UK. Give a regular gift and help keep them in our skies.
-26th Jan 2025
-Philanthropy and major giving
-By making a significant gift to the RSPB you will help us protect and improve habitats in the UK and beyond, reversing the decline of threatened birds and other species that depend upon these precious places.
-
-Philanthropy & Major Gifts
-In memory
-There are many ways to remember someone special, for those who share a love of nature, a donation to help restore and protect it is a lasting tribute.
-
-Donate in memory
-There are many ways to remember someone special, for those who share a love of nature, a donation to help restore and pr...
-Plant a tree in memory or in celebration
-Memorial trees are a lasting way to celebrate the life of a loved one, or a special occasion, and give back to nature.
- Advice
-
-Tribute funds
-A Tribute Fund is a place to commemorate a loved one’s life. It’s somewhere family and friends can share stories, photos...
- Advice
-
-Funeral collections
-Collecting donations at a funeral or memorial service is a wonderful way to honour someone special and help protect the ...
- Feature
-
-In memory pin badges
-A beautiful range of specially designed pins to provide a lasting tribute to your loved one and a perfect keepsake for y...
-Partnering with
- The RSPB is a member of BirdLife International.
-More
-
-[Contact links in page HTML]
-email: membership@rspb.org.uk
-</document>
-<document url="https://www.rspb.org.uk/about-us/who-we-are" type="html" page="about">
-We’re the RSPB
-The RSPB is a charity for the conservation of birds and nature. We bring people together who love birds and other wildlife, and who want to take action to restore the health and diversity of the natural world.
-On this page
-We carry out conservation on a large scale, protect and restore habitats, and save species from extinction. We’re living in a nature and climate emergency, and we won’t stop whilst the threats persist.
-Our work is driven by science and evidence. It’s rooted in five areas: species, science, place, policy and people.
-Species
-The survival of wildlife species is the best sign of whether conservation is working. That’s why we work to protect them from a huge variety of threats, like habitat loss, decline of food sources and threats from introduced species.
-We take action to save species on the verge of global extinction and reduce the declines of many more. We’re proud play a part in helping species as diverse as the Bittern, Crane, Gannet, vultures and Saiga Antelope.
-Science
-Our world-leading research allows us to take a ‘bird’s eye view’ of the overarching problems facing nature and the planet, and then identify the solutions that make a real difference.
-We establish the conservation interventions that will have the most impact, and then we monitor and test these actions to measure success.
-The State of Nature report, a partnership report led by RSPB scientists, is the definitive stock-take on how nature is doing in the UK, what’s causing species to decline, and what’s needed to turn things around.
-Place
-Nature needs other nature to survive. That’s why we work to create more, bigger, better and well-connected protected areas for nature on land and at sea. We manage more than 200 nature reserves in the UK from the Shetlands to the Suffolk coast.
-Our work with partners stretches around the world: from establishing marine protected areas three times the size of the UK in the South Atlantic, to recovering an area of steppe grassland in Kazakhstan larger than Denmark.
-Policy
-To save nature, we must tackle the drivers of its decline, and put laws, policies and funding in place to help save it. All too often, political decisions don’t consider nature. That’s why we’ve been advocating, campaigning, influencing and successfully securing laws to protect nature for 135 years.
-From securing a ban on industrial sandeel fishing which protects food sources for Puffins and other seabirds, to helping to secure legally-binding targets for nature’s restoration within the UK Government’s Environment Act; taking action will always be at the heart of what we do at the RSPB.
-People
-We’re all connected by the wonder of nature. The health of the natural world is fundamental to the survival of all species – including us. Together with our incredible 1.2 million members, our supporters, volunteers, communities, farmers, campaigners, landowners, business leaders, partners and many more, we all work to save nature.
-From inspiring hundreds of thousands of people to connect with nature as part of Big Garden Birdwatch; to working as a hands-on conservation volunteer, we want to enthuse everyone and ensure the broadest possible support for our cause. Nature is in crisis. By working together, we can save it.
-Our impact
-We have the capacity and expertise to make a difference on a global scale. Our work provides clear proof that – with the right help – nature, birds and other wildlife can bounce back.
-
-[Contact links in page HTML]
 email: 
 email: membership@rspb.org.uk
 </document>

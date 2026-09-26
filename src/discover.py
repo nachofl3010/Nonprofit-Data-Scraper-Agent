@@ -23,6 +23,8 @@ CATEGORIES: dict[str, tuple[int, list[str]]] = {
                   "trustees", "governance"]),
     "financials": (9, ["annual-report", "annual_report", "annualreport", "financials", "financial",
                        "990", "accountability", "transparency", "audit", "impact-report"]),
+    "plans": (8, ["strategic-plan", "strategic-planning", "strategic-framework", "strategy",
+                  "capital-campaign", "roadmap"]),
     "careers": (8, ["careers", "jobs", "employment", "join-us", "work-with-us", "vacancies",
                     "join-our-team", "opportunities", "work-for-us"]),
     "contact": (7, ["contact", "get-in-touch", "reach-us", "locations"]),
@@ -34,6 +36,10 @@ CATEGORIES: dict[str, tuple[int, list[str]]] = {
     "partners": (6, ["partners", "funders", "sponsors", "supporters", "our-donors"]),
     "donate": (5, ["donate", "give", "giving", "support-us", "donation"]),
 }
+# Which categories get a guaranteed slot first. Buyer-signal sources (reports, plans, RFPs,
+# careers, news) come before contact and partner pages; donate stays for tech-stack detection.
+SELECT_ORDER = ["about", "financials", "plans", "rfp", "careers", "news", "donate", "team",
+                "programs", "news_feed", "contact", "partners"]
 # Word boundaries matter: /research is not /search, /accountability is not /account.
 NEGATIVE_PATH = re.compile(
     r"(?:^|[/\-_])(privacy|cookies?|terms|login|log-in|signin|sign-in|register|cart|checkout|"
@@ -232,11 +238,11 @@ def discover(html: str, home_url: str, sitemap: list[str] | None = None) -> list
 
 
 def select(candidates: list[Candidate], max_pages: int) -> tuple[list[Candidate], list[Candidate]]:
-    """Best page per category first (so we cover about/team/careers/...), then fill by score.
+    """Best page per category first, in SELECT_ORDER, then fill by score.
     Returns (selected, unfetched remainder for gap-fill)."""
     good = [c for c in candidates if c.score >= MIN_SCORE]
     selected: list[Candidate] = []
-    for cat in [*CATEGORIES, "news_feed"]:
+    for cat in SELECT_ORDER:
         best = next((c for c in good if c.category == cat), None)
         if best and len(selected) < max_pages:
             selected.append(best)

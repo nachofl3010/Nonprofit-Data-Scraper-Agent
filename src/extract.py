@@ -42,8 +42,9 @@ Rules:
 - Dates in ISO 8601 (YYYY-MM-DD; YYYY-MM or YYYY if that is all the page gives). Money as a plain number plus ISO 4217 currency code ("$12.5 million" -> 12500000, USD).
 - annual_revenue: total revenue or income for one fiscal year. Not a single gift, campaign goal, program budget or cumulative total.
 - registration_id: the number only, as printed (e.g. "12-3456789" or "207076"). If several are shown, the main one (US EIN, or the first charity number).
-- leadership: named executives, senior staff and board members (max 15). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Board Member", "Trustee"). Add email or LinkedIn only if shown next to that person.
+- leadership: up to 8 named leaders, most senior first: the chief executive, then heads of fundraising/development, finance and operations/IT, then at most 2 board officers (e.g. chair, treasurer). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Trustee"). Add email or LinkedIn only if shown next to that person.
 - general_contact: the organisation's general email, phone and contact page.
+- buyer_signals: up to 8 recent or planned events that suggest the organisation will spend on new tools, systems or services. Look hardest in annual reports, strategic plans, news and CEO/board letters. Types: technology_investment (the organisation is adopting, replacing or building its own CRM, database, website, digital or data systems); capital_campaign (a named campaign to raise capital or endowment for the organisation); strategic_plan (the organisation has adopted or is developing its own new multi-year strategic plan; an annual report, policy, code of practice, programme or event is not a strategic plan); leadership_change (a new chief executive, or a new head of development/fundraising, finance, operations or IT; board appointments do not count); merger (merger, acquisition or affiliation); expansion (new sites, regions or services of its own, or significant staff growth); major_grant (a large grant or gift to the organisation, e.g. $1M+ or a large share of its budget, especially for capacity building); funding_growth (stated growth in the organisation's own revenue, donors or budget); other. Only events the documents state, each with evidence. A signal must be about the organisation itself: its own systems, leadership, strategy, structure or funding. Not programmes, events, products or services it delivers to others (e.g. a workshop it hosts for other nonprofits, a directory or app it launches for the public, a product release), and not fundraising events or donation appeals. date: when it was announced or starts.
 - open_roles: current paid job openings only (no volunteer roles). open_rfps: current requests for proposals, tenders or procurement notices only.
 - recent_news: up to 8 of the newest dated news, press or blog items with their dates. Do not filter by age.
 - funders_and_partners: organisations named as funders, sponsors or partners (max 15).
@@ -348,7 +349,7 @@ def build_profile(ex: Extraction | None, *, input_: str, resolved_url: str | Non
     p.contacts = Contacts(last_checked=now, general_contact=ex.general_contact,
                           leadership=[Person(**x.model_dump()) for x in ex.leadership])
     p.signals = Signals(
-        last_checked=now, open_rfps=ex.open_rfps, recent_news=ex.recent_news,
+        last_checked=now, buyer_signals=ex.buyer_signals, open_rfps=ex.open_rfps, recent_news=ex.recent_news,
         funders_and_partners=ex.funders_and_partners,
         open_roles=[OpenRole(**r.model_dump()) for r in ex.open_roles],
     )

@@ -1,6 +1,7 @@
 """Views: selections and rankings computed from the core profile. No crawling, no LLM.
 
 sales_view  - primary user: vendors selling to nonprofits (donor CRM, fundraising software).
+              Ranked on buyer signals (RFPs, signal roles, plans, campaigns, growth), not contacts.
 funder_view - secondary user: foundations, grantmakers, CSR teams.
 Adding a customer type = adding a function here; the core profile doesn't change.
 """
@@ -10,7 +11,6 @@ from datetime import date
 
 from pydantic import BaseModel
 
-from src.categorise import parse_date
 from src.schema import NonprofitProfile, Person
 
 # Who the sales view scores for: a donor-CRM / fundraising-software vendor.
@@ -20,7 +20,12 @@ TARGET = {
     "ideal_size_bands": {"$500k-$5M", "$5M-$50M"},
     "too_small_bands": {"<$500k"},
 }
-RECENT_NEWS_DAYS = 90
+# Points per buyer-signal type, each type counted once. Ordered strongest first.
+SIGNAL_POINTS = {
+    "technology_investment": 3, "capital_campaign": 2, "strategic_plan": 2, "leadership_change": 2,
+    "merger": 2, "expansion": 1, "major_grant": 1, "funding_growth": 1,
+}
+REVENUE_SWING = 0.20  # registry revenue change (over ~3 filings) that counts as growth or decline
 ROLE_ORDER = ["executive", "fundraising", "finance", "operations_it", "other", "board"]
 DECISION_ROLES = {"executive", "fundraising", "finance", "operations_it"}
 
@@ -41,6 +46,10 @@ def _money(amount: float, currency: str) -> str:
 
 
 def lead_score(p: NonprofitProfile, today: date) -> tuple[int, list[ScoreItem]]:
+    if p.identity.looks_like_nonprofit is False:
+        # A company's product launches would otherwise read as buyer signals.
+        return 0, [ScoreItem(signal="not_a_nonprofit", points=0, timing=False,
+                             detail="not scored: the site doesn't look like a nonprofit")]
     items: list[ScoreItem] = []
     s, fin = p.signals, p.financials
 
@@ -52,11 +61,21 @@ def lead_score(p: NonprofitProfile, today: date) -> tuple[int, list[ScoreItem]]:
     if signal_roles:
         titles = ", ".join(r.title for r in signal_roles[:2])
         items.append(ScoreItem(signal="buying_signal_role", points=2, timing=True, detail=f"hiring: {titles}"))
-    fresh = [n for n in s.recent_news if (d := parse_date(n.date)) and (today - d).days <= RECENT_NEWS_DAYS]
-    if fresh:
-        n = fresh[0]
-        items.append(ScoreItem(signal="recent_news", points=1, timing=True,
-                               detail=f"in the news {n.date}: '{n.headline}'"))
+    # Low confidence = the grounding check couldn't find the evidence, so it doesn't score.
+    trusted = [b for b in s.buyer_signals if b.confidence != "low"]
+    for kind, points in SIGNAL_POINTS.items():
+        b = next((b for b in trusted if b.type == kind), None)
+        if b:
+            when = f" ({b.date})" if b.date else ""
+            items.append(ScoreItem(signal=kind, points=points, timing=True,
+                                   detail=f"{kind.replace('_', ' ')}{when}: {b.description.rstrip('. ')}"))
+    change = revenue_change(p)
+    if change and change[0] >= REVENUE_SWING:
+        items.append(ScoreItem(signal="revenue_growth", points=1, timing=True,
+                               detail=f"revenue {change[0]:+.0%} ({change[1]}->{change[2]}, IRS filings)"))
+    elif change and change[0] <= -REVENUE_SWING:
+        items.append(ScoreItem(signal="revenue_decline", points=-1, timing=False,
+                               detail=f"revenue {change[0]:+.0%} ({change[1]}->{change[2]}, IRS filings)"))
 
     crm = [t.tool for t in p.technology.tech_stack if t.category in TARGET["competitor_categories"]]
     if crm:
@@ -78,7 +97,9 @@ def lead_score(p: NonprofitProfile, today: date) -> tuple[int, list[ScoreItem]]:
 
 def why_now(items: list[ScoreItem]) -> str:
     """Templated, so it reads the same way across 500k orgs."""
-    timing = [i.detail for i in items if i.timing]
+    if any(i.signal == "not_a_nonprofit" for i in items):
+        return "Not scored: the site doesn't look like a nonprofit; check before outreach."
+    timing =[i.detail for i in items if i.timing]
     fit = [i.detail for i in items if not i.timing]
     out = ("Why now: " + "; ".join(timing) + ".") if timing else "No active timing signals; nurture."
     if fit:
@@ -112,6 +133,8 @@ def sales_view(p: NonprofitProfile, today: date) -> dict:
         "lead_score": score,
         "score_breakdown": [i.model_dump() for i in items],
         "why_now": why_now(items),
+        "buyer_signals": [b.model_dump() for b in p.signals.buyer_signals],
+        "revenue_trend": revenue_trend(p),
         "tech_stack": [f"{t.tool} ({t.category})" for t in p.technology.tech_stack],
         "contacts_by_role": {
             role: [{"name": x.name, "title": x.title, "email": x.email, "linkedin": x.linkedin} for x in people]
@@ -124,16 +147,24 @@ def sales_view(p: NonprofitProfile, today: date) -> dict:
     }
 
 
-def revenue_trend(p: NonprofitProfile) -> str:
-    """Latest filing vs ~3 years earlier: growing / stable / declining / unknown."""
+def revenue_change(p: NonprofitProfile) -> tuple[float, int, int] | None:
+    """(fractional change, base year, latest year): latest filing vs ~3 years earlier."""
     hist = [h for h in (p.financials.financial_history or []) if h.revenue]
     if len(hist) < 2:
-        return "unknown"
+        return None
     latest = hist[0]
     base = next((h for h in hist if latest.fiscal_year - h.fiscal_year >= 3), hist[-1])
-    change = (latest.revenue - base.revenue) / base.revenue
-    label = "growing" if change > 0.1 else "declining" if change < -0.1 else "stable"
-    return f"{label} ({change:+.0%} {base.fiscal_year}->{latest.fiscal_year})"
+    return (latest.revenue - base.revenue) / base.revenue, base.fiscal_year, latest.fiscal_year
+
+
+def revenue_trend(p: NonprofitProfile) -> str:
+    """growing / stable / declining / unknown, with the change."""
+    change = revenue_change(p)
+    if change is None:
+        return "unknown"
+    pct, base, latest = change
+    label = "growing" if pct > 0.1 else "declining" if pct < -0.1 else "stable"
+    return f"{label} ({pct:+.0%} {base}->{latest})"
 
 
 def funder_view(p: NonprofitProfile) -> dict:
@@ -160,7 +191,8 @@ def funder_view(p: NonprofitProfile) -> dict:
 
 
 CSV_COLUMNS = [
-    "name", "website", "status", "lead_score", "why_now", "cause_area", "size_band", "annual_revenue",
+    "name", "website", "status", "lead_score", "why_now", "buyer_signals", "n_buyer_signals",
+    "revenue_trend", "cause_area", "size_band", "annual_revenue",
     "currency", "fiscal_year", "hq_location", "country", "registration_id",
     "executive_name", "executive_title", "executive_email",
     "fundraising_name", "fundraising_title", "fundraising_email",
@@ -180,6 +212,10 @@ def to_csv_row(p: NonprofitProfile, sales: dict, profile_path: str = "") -> dict
     row: dict[str, object] = {
         "name": sales["name"], "website": sales["website"], "status": p.status,
         "lead_score": sales["lead_score"], "why_now": sales["why_now"],
+        "buyer_signals": "; ".join(f"{b.type}: {b.description}" + (f" ({b.date})" if b.date else "")
+                                   for b in p.signals.buyer_signals),
+        "n_buyer_signals": len(p.signals.buyer_signals),
+        "revenue_trend": sales["revenue_trend"],
         "cause_area": sales["cause_area"], "size_band": p.financials.size_band,
         "annual_revenue": int(rev.value.amount) if rev else None,
         "currency": rev.value.currency if rev else None,

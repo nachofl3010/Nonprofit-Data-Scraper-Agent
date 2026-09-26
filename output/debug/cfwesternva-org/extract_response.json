@@ -4,11 +4,7 @@
     "source_url": "https://www.cfwesternva.org/who-we-are/",
     "confidence": "high"
   },
-  "legal_name": {
-    "value": "Community Foundation Serving Western Virginia",
-    "source_url": "https://www.cfwesternva.org/who-we-are/",
-    "confidence": "high"
-  },
+  "legal_name": null,
   "registration_id": {
     "value": "54-1959458",
     "source_url": "https://www.cfwesternva.org/who-we-are/financials-accountability/",
@@ -17,7 +13,7 @@
   },
   "country": {
     "value": "US",
-    "source_url": "https://www.cfwesternva.org/who-we-are/",
+    "source_url": "https://www.cfwesternva.org/",
     "confidence": "high"
   },
   "hq_location": {
@@ -32,20 +28,8 @@
   },
   "programs": [
     {
-      "name": "Nonprofit Directory",
-      "description": "Resource to discover and connect with nonprofit organizations serving the region."
-    },
-    {
-      "name": "NPO Connect: Fall Half Day of Learning",
-      "description": "Nonprofit training sessions on donor retention and grant writing essentials."
-    },
-    {
-      "name": "Fearless Fundraising Studio",
-      "description": "Three-month pilot learning community focused on fundraising strategy and leadership development, fully funded by the Foundation."
-    },
-    {
       "name": "Private Foundation Services",
-      "description": "Customized services for private foundations including donor advised funds and foundation conversion assistance."
+      "description": "Custom services to assist private foundations with charitable administrative responsibilities including donor advised funds, consulting and management."
     }
   ],
   "cause_area": {
@@ -57,15 +41,15 @@
     "value": {
       "scope": "regional",
       "places": [
-        "Roanoke",
         "Martinsville",
+        "Roanoke",
         "Salem",
-        "Botetourt County",
-        "Craig County",
-        "Franklin County",
-        "Henry County",
-        "Patrick County",
-        "Roanoke County"
+        "Botetourt",
+        "Craig",
+        "Franklin",
+        "Henry",
+        "Patrick",
+        "Roanoke counties"
       ]
     },
     "source_url": "https://www.cfwesternva.org/who-we-are/",
@@ -83,33 +67,23 @@
       "fiscal_year": 2025
     },
     "source_url": "https://www.cfwesternva.org/wp-content/uploads/2025/12/CFSWV_AnnualReport_2025_FNL.pdf",
-    "confidence": "low",
-    "evidence": "Financial amounts present but exact total revenue figure not directly stated in provided pages."
+    "confidence": "medium",
+    "evidence": "Report of Activities for the Fiscal Year Ended June 30, 2025"
   },
   "staff_count": null,
   "impact_metrics": [
     {
-      "value": "Served approximately 202 elementary students through five afterschool sites in 2024-2025.",
+      "value": "In FY25, YMCA served approximately 202 elementary students through five afterschool sites and 87 children in summer day camp.",
       "source_url": "https://www.cfwesternva.org/wp-content/uploads/2025/12/CFSWV_AnnualReport_2025_FNL.pdf",
       "confidence": "high"
     },
     {
-      "value": "Served 87 children in 11-week summer day camp in 2024-2025.",
+      "value": "Roanoke Valley SPCA provided 1,585 calls for help and helped 1,000+ animals find new homes this year.",
       "source_url": "https://www.cfwesternva.org/wp-content/uploads/2025/12/CFSWV_AnnualReport_2025_FNL.pdf",
       "confidence": "high"
     },
     {
-      "value": "RVSPCA helped 1,000+ animals find new homes in the past year.",
-      "source_url": "https://www.cfwesternva.org/wp-content/uploads/2025/12/CFSWV_AnnualReport_2025_FNL.pdf",
-      "confidence": "high"
-    },
-    {
-      "value": "RVSPCA received 1,585 calls for help in the past year.",
-      "source_url": "https://www.cfwesternva.org/wp-content/uploads/2025/12/CFSWV_AnnualReport_2025_FNL.pdf",
-      "confidence": "high"
-    },
-    {
-      "value": "SSRC provides 24/7 crisis helpline and emergency shelter for women and children.",
+      "value": "Southside Survivor Response Center has 17 dedicated staff members and offers 24/7 crisis helpline services.",
       "source_url": "https://www.cfwesternva.org/wp-content/uploads/2025/12/CFSWV_AnnualReport_2025_FNL.pdf",
       "confidence": "high"
     }
@@ -121,8 +95,7 @@
       "email": "carly@cfwesternva.org",
       "linkedin": null,
       "source_url": "https://www.cfwesternva.org/team/",
-      "confidence": "high",
-      "evidence": "Carly C. Oliver, President/CEO"
+      "confidence": "high"
     },
     {
       "name": "April Haynes",
@@ -130,17 +103,7 @@
       "email": "april@cfwesternva.org",
       "linkedin": null,
       "source_url": "https://www.cfwesternva.org/team/",
-      "confidence": "high",
-      "evidence": "April Haynes, Chief Operating Officer"
-    },
-    {
-      "name": "Michelle Eberly",
-      "title": "Director, Grants & Donor Engagement",
-      "email": "michelle@cfwesternva.org",
-      "linkedin": null,
-      "source_url": "https://www.cfwesternva.org/team/",
-      "confidence": "high",
-      "evidence": "Michelle Eberly, Director, Grants & Donor Engagement"
+      "confidence": "high"
     },
     {
       "name": "Beth Kelley",
@@ -148,8 +111,15 @@
       "email": "beth@cfwesternva.org",
       "linkedin": null,
       "source_url": "https://www.cfwesternva.org/team/",
-      "confidence": "high",
-      "evidence": "Beth Kelley, Chief Financial Officer"
+      "confidence": "high"
+    },
+    {
+      "name": "Michelle Eberly",
+      "title": "Director, Grants & Donor Engagement",
+      "email": "michelle@cfwesternva.org",
+      "linkedin": null,
+      "source_url": "https://www.cfwesternva.org/team/",
+      "confidence": "high"
     },
     {
       "name": "Alyssa W. Rorrer",
@@ -157,8 +127,7 @@
       "email": "alyssa@cfwesternva.org",
       "linkedin": null,
       "source_url": "https://www.cfwesternva.org/team/",
-      "confidence": "high",
-      "evidence": "Alyssa W. Rorrer, Program Officer"
+      "confidence": "high"
     },
     {
       "name": "Chrissy Hannabass",
@@ -166,8 +135,7 @@
       "email": "chrissy@cfwesternva.org",
       "linkedin": null,
       "source_url": "https://www.cfwesternva.org/team/",
-      "confidence": "high",
-      "evidence": "Chrissy Hannabass, Program Associate"
+      "confidence": "high"
     },
     {
       "name": "Samantha Hayes",
@@ -175,98 +143,37 @@
       "email": "samantha@cfwesternva.org",
       "linkedin": null,
       "source_url": "https://www.cfwesternva.org/team/",
-      "confidence": "high",
-      "evidence": "Samantha Hayes, Grants Associate"
+      "confidence": "high"
     }
   ],
   "general_contact": {
     "email": "carly@cfwesternva.org",
     "phone": "540.985.0204",
-    "contact_page_url": "https://www.cfwesternva.org/donate/",
+    "contact_page_url": "https://www.cfwesternva.org/contact/",
     "source_url": "https://www.cfwesternva.org/"
   },
+  "buyer_signals": [
+    {
+      "type": "strategic_plan",
+      "description": "Inviting nonprofit leaders to participate in pilot learning community focused on fundraising strategy and leadership development, with application period Oct 1-22, 2026.",
+      "date": "2026-10",
+      "source_url": "https://www.cfwesternva.org/",
+      "confidence": "high",
+      "evidence": "Hosted by The Community Foundation Serving Western Virginia in partnership with Kobia Consulting January–March 2027...Application period Opens: October 1, 2026 Closes: October 22, 2026"
+    },
+    {
+      "type": "leadership_change",
+      "description": "Multiple new Board of Governors members welcomed, bringing new leadership and expertise.",
+      "date": "2026-09",
+      "source_url": "https://www.cfwesternva.org/",
+      "confidence": "high",
+      "evidence": "Please join us in welcoming Talfourd H. Kemper Jr. to the Community Foundation’s Board of Governors!...Please help us welcome Jane Judah...Sherry Frantz...Chris Desimone...Lindsay Collins to the Board."
+    }
+  ],
   "open_rfps": [],
   "open_roles": [],
-  "recent_news": [
-    {
-      "headline": "Please join us in welcoming Talfourd H. Kemper Jr. to the Community Foundation’s Board of Governors!",
-      "date": "2026-09-22",
-      "url": "https://www.cfwesternva.org/",
-      "summary": null,
-      "source_url": "https://www.cfwesternva.org/"
-    },
-    {
-      "headline": "Please help us welcome Jane Judah to the Community Foundation’s Board of Governors!",
-      "date": "2026-09-22",
-      "url": "https://www.cfwesternva.org/",
-      "summary": null,
-      "source_url": "https://www.cfwesternva.org/"
-    },
-    {
-      "headline": "Please join us in welcoming Sherry Frantz to the Community Foundation’s Board of Governors!",
-      "date": "2026-09-22",
-      "url": "https://www.cfwesternva.org/",
-      "summary": null,
-      "source_url": "https://www.cfwesternva.org/"
-    },
-    {
-      "headline": "Please join us in welcoming Chris Desimone to the Community Foundation’s Board of Governors!",
-      "date": "2026-09-22",
-      "url": "https://www.cfwesternva.org/",
-      "summary": null,
-      "source_url": "https://www.cfwesternva.org/"
-    },
-    {
-      "headline": "Please join us in welcoming Lindsay Collins to the Community Foundation’s Board of Governors!",
-      "date": "2026-09-22",
-      "url": "https://www.cfwesternva.org/",
-      "summary": null,
-      "source_url": "https://www.cfwesternva.org/"
-    },
-    {
-      "headline": "We're excited to announce that the Community Foundation Serving Western Virginia's Nonprofit Directory is now live!",
-      "date": "2026-09-22",
-      "url": "cfswv.fcsuite.com/erp/donate/list/directory",
-      "summary": "Resource to discover and connect with nonprofit organizations serving the region.",
-      "source_url": "https://www.cfwesternva.org/"
-    },
-    {
-      "headline": "NPO Connect: Fall Half Day of Learning, October 8, 2026",
-      "date": "2026-10-08",
-      "url": "https://lp.constantcontactpages.com/ev/reg/zwwmfeb",
-      "summary": "Nonprofit sessions on donor retention and grant writing.",
-      "source_url": "https://www.cfwesternva.org/"
-    },
-    {
-      "headline": "Hosted by The Community Foundation Serving Western Virginia in partnership with Kobia Consulting – Fearless Fundraising Studio program announced",
-      "date": "2027-01",
-      "url": "https://www.cfwesternva.org/npo-connect/npo-connect-fearless-fundraising-studio/",
-      "summary": "Three-month pilot learning community on fundraising and leadership development, fully funded.",
-      "source_url": "https://www.cfwesternva.org/"
-    }
-  ],
-  "funders_and_partners": [
-    {
-      "name": "Hermes Family Fund",
-      "type": "other",
-      "source_url": "https://www.cfwesternva.org/wp-content/uploads/2025/12/CFSWV_AnnualReport_2025_FNL.pdf"
-    },
-    {
-      "name": "Dr. John D. French Legacy Fund",
-      "type": "other",
-      "source_url": "https://www.cfwesternva.org/wp-content/uploads/2025/12/CFSWV_AnnualReport_2025_FNL.pdf"
-    },
-    {
-      "name": "Phalia M. and Guy M. Kinder Fund",
-      "type": "other",
-      "source_url": "https://www.cfwesternva.org/wp-content/uploads/2025/12/CFSWV_AnnualReport_2025_FNL.pdf"
-    },
-    {
-      "name": "Earl D. and Carrie Leigh Doran Fund",
-      "type": "other",
-      "source_url": "https://www.cfwesternva.org/wp-content/uploads/2025/12/CFSWV_AnnualReport_2025_FNL.pdf"
-    }
-  ],
+  "recent_news": [],
+  "funders_and_partners": [],
   "looks_like_nonprofit": true,
   "not_nonprofit_reason": null
 }

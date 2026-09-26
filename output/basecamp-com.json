@@ -1,16 +1,16 @@
 {
   "profile": {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "taxonomy_version": "ntee-major-v1",
     "input": "https://basecamp.com",
     "resolved_url": "https://basecamp.com/",
-    "extracted_at": "2026-09-25T15:02:52.580187Z",
+    "extracted_at": "2026-09-25T22:01:46.179052Z",
     "status": "partial",
     "flags": [
       "not_a_nonprofit?"
     ],
     "identity": {
-      "last_checked": "2026-09-25T15:02:52.580187Z",
+      "last_checked": "2026-09-25T22:01:46.179052Z",
       "name": {
         "value": "Basecamp",
         "source_url": "https://basecamp.com/",
@@ -29,7 +29,7 @@
       "programs": [
         {
           "name": "Hill Charts",
-          "description": "A Basecamp exclusive way to track progress, showing a 10,000-foot view of project status called the Hill Chart."
+          "description": "A Basecamp exclusive way to track progress."
         }
       ],
       "cause_area": null,
@@ -37,8 +37,7 @@
         "value": {
           "scope": "international",
           "places": [
-            "over 100 countries",
-            "every populated continent"
+            "100+ countries"
           ]
         },
         "source_url": "https://basecamp.com/live",
@@ -46,12 +45,12 @@
       },
       "impact_metrics": [
         {
-          "value": "Thousands of people are working in Basecamp now",
+          "value": "Nearly a million people, teams, companies, and non-profits worldwide rely on it daily",
           "source_url": "https://basecamp.com/",
           "confidence": "high"
         },
         {
-          "value": "Used across every industry, and nearly a million people, teams, companies, and non-profits worldwide rely on it daily",
+          "value": "Thousands of people are working in Basecamp now",
           "source_url": "https://basecamp.com/",
           "confidence": "high"
         },
@@ -84,57 +83,12 @@
           "value": "2.7 billion comments",
           "source_url": "https://basecamp.com/",
           "confidence": "high"
-        },
-        {
-          "value": "2.2 billion files",
-          "source_url": "https://basecamp.com/",
-          "confidence": "high"
-        },
-        {
-          "value": "2.3 billion pings",
-          "source_url": "https://basecamp.com/",
-          "confidence": "high"
-        },
-        {
-          "value": "675 million boosts",
-          "source_url": "https://basecamp.com/",
-          "confidence": "high"
-        },
-        {
-          "value": "5 petabytes of data",
-          "source_url": "https://basecamp.com/",
-          "confidence": "high"
-        },
-        {
-          "value": "200 million scheduled events",
-          "source_url": "https://basecamp.com/",
-          "confidence": "high"
-        },
-        {
-          "value": "180 million to-do lists",
-          "source_url": "https://basecamp.com/",
-          "confidence": "high"
-        },
-        {
-          "value": "1 billion @mentions",
-          "source_url": "https://basecamp.com/",
-          "confidence": "high"
-        },
-        {
-          "value": "545 million to-dos completed",
-          "source_url": "https://basecamp.com/",
-          "confidence": "high"
-        },
-        {
-          "value": "15 billion notifications",
-          "source_url": "https://basecamp.com/",
-          "confidence": "high"
         }
       ],
       "looks_like_nonprofit": false
     },
     "financials": {
-      "last_checked": "2026-09-25T15:02:52.580187Z",
+      "last_checked": "2026-09-25T22:01:46.179052Z",
       "annual_revenue": null,
       "staff_count": null,
       "size_band": "unknown",
@@ -142,17 +96,34 @@
       "tax_status": null
     },
     "contacts": {
-      "last_checked": "2026-09-25T15:02:52.580187Z",
+      "last_checked": "2026-09-25T22:01:46.179052Z",
       "leadership": [
         {
           "name": "Jason Fried",
           "title": "Co-founder & CEO",
           "email": "jason@basecamp.com",
           "linkedin": null,
-          "source_url": "https://basecamp.com/",
+          "source_url": "https://basecamp.com/about",
           "confidence": "high",
-          "evidence": "Jason Fried, jason@basecamp.com Co-founder & CEO",
           "buyer_role": "executive"
+        },
+        {
+          "name": "Eron",
+          "title": "Head of Technical Ops",
+          "email": null,
+          "linkedin": null,
+          "source_url": "https://basecamp.com/",
+          "confidence": "medium",
+          "buyer_role": "other"
+        },
+        {
+          "name": "Chase",
+          "title": "Head of Support",
+          "email": null,
+          "linkedin": null,
+          "source_url": "https://basecamp.com/",
+          "confidence": "medium",
+          "buyer_role": "other"
         }
       ],
       "general_contact": {
@@ -163,14 +134,32 @@
       }
     },
     "signals": {
-      "last_checked": "2026-09-25T15:02:52.580187Z",
+      "last_checked": "2026-09-25T22:01:46.179052Z",
+      "buyer_signals": [
+        {
+          "type": "technology_investment",
+          "description": "Release of Basecamp 5 in 2026, a major upgrade with new features and improvements.",
+          "date": "2026",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high",
+          "evidence": "in 2026 we released the all-new Basecamp 5, packing decades of experience into our best version yet."
+        },
+        {
+          "type": "technology_investment",
+          "description": "Basecamp is bringing AI agents to their platform.",
+          "date": null,
+          "source_url": "https://basecamp.com/",
+          "confidence": "high",
+          "evidence": "Basecamp 5 is here New! Bring your AI agents to Basecamp"
+        }
+      ],
       "open_rfps": [],
       "open_roles": [],
       "recent_news": [],
       "funders_and_partners": []
     },
     "technology": {
-      "last_checked": "2026-09-25T15:02:52.580187Z",
+      "last_checked": "2026-09-25T22:01:46.179052Z",
       "tech_stack": [
         {
           "tool": "Mailchimp",
@@ -200,24 +189,6 @@
         "via": "crawl"
       },
       {
-        "url": "https://basecamp.com/live",
-        "page_type": "team",
-        "kind": "html",
-        "status": 200,
-        "tokens": 559,
-        "error": null,
-        "via": "crawl"
-      },
-      {
-        "url": "https://basecamp.com/hill-charts",
-        "page_type": "programs",
-        "kind": "html",
-        "status": 200,
-        "tokens": 1041,
-        "error": null,
-        "via": "crawl"
-      },
-      {
         "url": "https://basecamp.com/gettingreal/13.3-ride-the-blog-wave",
         "page_type": "news",
         "kind": "html",
@@ -232,6 +203,24 @@
         "kind": "html",
         "status": 200,
         "tokens": 1468,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://basecamp.com/live",
+        "page_type": "team",
+        "kind": "html",
+        "status": 200,
+        "tokens": 559,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://basecamp.com/hill-charts",
+        "page_type": "programs",
+        "kind": "html",
+        "status": 200,
+        "tokens": 1041,
         "error": null,
         "via": "crawl"
       },
@@ -264,9 +253,8 @@
       }
     ],
     "errors": [
-      "site may not be a nonprofit: Basecamp is a software company offering a commercial project management product, operated by 37signals LLC, a for-profit business.",
-      "registry: no confident registry match for 'Basecamp': no name match",
-      "news filter: dropped 1 item(s) older than 12 months or undated"
+      "site may not be a nonprofit: Basecamp is a commercial software company offering project management tools with paid plans, not a nonprofit.",
+      "registry: no confident registry match for 'Basecamp': no name match"
     ],
     "gapfill": {
       "triggered": false,
@@ -282,19 +270,19 @@
         {
           "purpose": "extract",
           "model": "gpt-4.1-mini",
-          "input_tokens": 3759,
-          "output_tokens": 806,
-          "cache_read_tokens": 9088,
+          "input_tokens": 10437,
+          "output_tokens": 683,
+          "cache_read_tokens": 2944,
           "cache_write_tokens": 0,
           "cached_locally": false,
-          "usd": 0.003702,
-          "usd_list": 0.003702
+          "usd": 0.005562,
+          "usd_list": 0.005562
         }
       ],
-      "input_tokens": 12847,
-      "output_tokens": 806,
-      "usd": 0.003702,
-      "usd_list": 0.003702
+      "input_tokens": 13381,
+      "output_tokens": 683,
+      "usd": 0.005562,
+      "usd_list": 0.005562
     }
   },
   "views": {
@@ -309,16 +297,35 @@
       "size_band": "unknown",
       "annual_revenue": null,
       "hq_location": null,
-      "lead_score": 1,
+      "lead_score": 0,
       "score_breakdown": [
         {
-          "signal": "reachable_decision_maker",
-          "points": 1,
-          "detail": "direct email for Jason Fried (Co-founder & CEO)",
+          "signal": "not_a_nonprofit",
+          "points": 0,
+          "detail": "not scored: the site doesn't look like a nonprofit",
           "timing": false
         }
       ],
-      "why_now": "No active timing signals; nurture. Fit: direct email for Jason Fried (Co-founder & CEO).",
+      "why_now": "Not scored: the site doesn't look like a nonprofit; check before outreach.",
+      "buyer_signals": [
+        {
+          "type": "technology_investment",
+          "description": "Release of Basecamp 5 in 2026, a major upgrade with new features and improvements.",
+          "date": "2026",
+          "source_url": "https://basecamp.com/",
+          "confidence": "high",
+          "evidence": "in 2026 we released the all-new Basecamp 5, packing decades of experience into our best version yet."
+        },
+        {
+          "type": "technology_investment",
+          "description": "Basecamp is bringing AI agents to their platform.",
+          "date": null,
+          "source_url": "https://basecamp.com/",
+          "confidence": "high",
+          "evidence": "Basecamp 5 is here New! Bring your AI agents to Basecamp"
+        }
+      ],
+      "revenue_trend": "unknown",
       "tech_stack": [
         "Mailchimp (email_marketing)"
       ],
@@ -328,6 +335,20 @@
             "name": "Jason Fried",
             "title": "Co-founder & CEO",
             "email": "jason@basecamp.com",
+            "linkedin": null
+          }
+        ],
+        "other": [
+          {
+            "name": "Eron",
+            "title": "Head of Technical Ops",
+            "email": null,
+            "linkedin": null
+          },
+          {
+            "name": "Chase",
+            "title": "Head of Support",
+            "email": null,
             "linkedin": null
           }
         ]
@@ -350,14 +371,13 @@
       "geography_served": {
         "scope": "international",
         "places": [
-          "over 100 countries",
-          "every populated continent"
+          "100+ countries"
         ]
       },
       "programs": [
         {
           "name": "Hill Charts",
-          "description": "A Basecamp exclusive way to track progress, showing a 10,000-foot view of project status called the Hill Chart."
+          "description": "A Basecamp exclusive way to track progress."
         }
       ],
       "registration_id": null,
@@ -369,23 +389,14 @@
         "history": []
       },
       "impact_metrics": [
+        "Nearly a million people, teams, companies, and non-profits worldwide rely on it daily",
         "Thousands of people are working in Basecamp now",
-        "Used across every industry, and nearly a million people, teams, companies, and non-profits worldwide rely on it daily",
         "84 million accounts",
         "60 million projects",
         "72 million check-in answers",
         "350 million messages",
         "1.7 billion to-dos",
-        "2.7 billion comments",
-        "2.2 billion files",
-        "2.3 billion pings",
-        "675 million boosts",
-        "5 petabytes of data",
-        "200 million scheduled events",
-        "180 million to-do lists",
-        "1 billion @mentions",
-        "545 million to-dos completed",
-        "15 billion notifications"
+        "2.7 billion comments"
       ],
       "existing_funders": []
     }

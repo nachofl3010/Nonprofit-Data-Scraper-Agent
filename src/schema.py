@@ -14,7 +14,7 @@ from typing import Generic, Literal, TypeVar
 
 from pydantic import BaseModel, Field
 
-SCHEMA_VERSION = "1.0"
+SCHEMA_VERSION = "1.1"  # 1.1: buyer_signals; leadership without evidence, max 8
 # Bump when the category lists below change, so old profiles can be re-mapped.
 TAXONOMY_VERSION = "ntee-major-v1"
 
@@ -29,6 +29,11 @@ GeoScope = Literal["local", "regional", "national", "international"]
 SizeBand = Literal["<$500k", "$500k-$5M", "$5M-$50M", ">$50M", "unknown"]
 BuyerRole = Literal["executive", "fundraising", "finance", "operations_it", "board", "other"]
 FunderType = Literal["foundation", "corporate", "government", "individual", "other"]
+# Events that suggest the org will spend on new tools, systems or services soon.
+SignalType = Literal[
+    "technology_investment", "capital_campaign", "strategic_plan", "leadership_change",
+    "merger", "expansion", "major_grant", "funding_growth", "other",
+]
 Status = Literal["ok", "partial", "failed"]
 DocKind = Literal["html", "pdf", "csv", "xml"]
 
@@ -71,13 +76,14 @@ class Revenue(BaseModel):
 
 
 class LLMPerson(BaseModel):
+    # No evidence snippet: contacts matter less than buyer signals, and the grounding
+    # check already verifies every name and email against the fetched text.
     name: str
     title: str | None
     email: str | None = Field(description="Only if shown next to this person")
     linkedin: str | None
     source_url: str
     confidence: Confidence
-    evidence: str | None = Field(description="Verbatim snippet naming the person and title")
 
 
 class GeneralContact(BaseModel):
@@ -118,6 +124,15 @@ class FunderPartner(BaseModel):
     source_url: str
 
 
+class BuyerSignal(BaseModel):
+    type: SignalType
+    description: str = Field(description="One line: what is happening")
+    date: str | None = Field(description="ISO 8601: when it was announced or starts (YYYY-MM-DD, YYYY-MM or YYYY)")
+    source_url: str
+    confidence: Confidence
+    evidence: str | None = Field(description="Verbatim snippet from the document, max 30 words")
+
+
 # ---------------------------------------------------------------- LLM targets
 
 class Extraction(BaseModel):
@@ -139,8 +154,9 @@ class Extraction(BaseModel):
         description="Total revenue/income for one fiscal year; not a single gift, goal or budget")
     staff_count: Sourced[int] | None
     impact_metrics: list[Sourced[str]] = Field(description="Max 5 short quantified claims")
-    leadership: list[LLMPerson] = Field(description="Named staff leaders and board members, max 15")
+    leadership: list[LLMPerson] = Field(description="Max 8, most senior first")
     general_contact: GeneralContact | None
+    buyer_signals: list[BuyerSignal] = Field(description="Max 8")
     open_rfps: list[RFP]
     open_roles: list[LLMOpenRole] = Field(description="Current paid job openings only")
     recent_news: list[NewsItem] = Field(description="Up to 8 newest dated items")
@@ -218,6 +234,7 @@ class Contacts(BaseModel):
 
 class Signals(BaseModel):
     last_checked: datetime | None = None
+    buyer_signals: list[BuyerSignal] = []
     open_rfps: list[RFP] = []
     open_roles: list[OpenRole] = []
     recent_news: list[NewsItem] = []

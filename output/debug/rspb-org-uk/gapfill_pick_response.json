@@ -1,8 +1,8 @@
 {
   "urls": [
-    "https://www.rspb.org.uk/about-us/how-we-are-run",
-    "https://www.rspb.org.uk/about-us/annual-report/rspb-annual-report-top-ten",
-    "https://www.rspb.org.uk/about-us/annual-report/annual-report-archive"
+    "https://www.rspb.org.uk/about-us/who-we-are",
+    "https://www.rspb.org.uk/about-us/annual-report/annual-report-archive",
+    "https://www.rspb.org.uk/about-us/annual-report/rspb-annual-report-top-ten"
   ],
-  "reason": "The 'How we are run' page is likely to include leadership information. The 'annual-report-top-ten' and 'annual-report-archive' pages are related to financials and would likely contain annual revenue details."
+  "reason": "The 'Who we are' page is likely to contain information about leadership. The 'annual-report-archive' and 'rspb-annual-report-top-ten' pages are likely to contain financial information such as annual revenue."
 }

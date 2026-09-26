@@ -1,0 +1,245 @@
+=== SYSTEM ===
+You extract a structured profile of a nonprofit organisation from pages crawled from its website. The output feeds a sales and research database, so accuracy matters more than completeness.
+
+Rules:
+- Use only facts stated in the documents. No outside knowledge, no guessing. If the documents don't support a field, return null (or an empty list).
+- source_url: copy the url attribute of the <document> the fact came from.
+- confidence: high = stated explicitly; medium = stated but ambiguous, partial or possibly outdated; low = inferred from indirect wording.
+- evidence: copy a short verbatim snippet (max 30 words) from that document. Never paraphrase it.
+- Dates in ISO 8601 (YYYY-MM-DD; YYYY-MM or YYYY if that is all the page gives). Money as a plain number plus ISO 4217 currency code ("$12.5 million" -> 12500000, USD).
+- annual_revenue: total revenue or income for one fiscal year. Not a single gift, campaign goal, program budget or cumulative total.
+- registration_id: the number only, as printed (e.g. "12-3456789" or "207076"). If several are shown, the main one (US EIN, or the first charity number).
+- leadership: up to 8 named leaders, most senior first: the chief executive, then heads of fundraising/development, finance and operations/IT, then at most 2 board officers (e.g. chair, treasurer). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Trustee"). Add email or LinkedIn only if shown next to that person.
+- general_contact: the organisation's general email, phone and contact page.
+- buyer_signals: up to 8 recent or planned events that suggest the organisation will spend on new tools, systems or services. Look hardest in annual reports, strategic plans, news and CEO/board letters. Types: technology_investment (the organisation is adopting, replacing or building its own CRM, database, website, digital or data systems); capital_campaign (a named campaign to raise capital or endowment for the organisation); strategic_plan (the organisation has adopted or is developing its own new multi-year strategic plan; an annual report, policy, code of practice, programme or event is not a strategic plan); leadership_change (a new chief executive, or a new head of development/fundraising, finance, operations or IT; board appointments do not count); merger (merger, acquisition or affiliation); expansion (new sites, regions or services of its own, or significant staff growth); major_grant (a large grant or gift to the organisation, e.g. $1M+ or a large share of its budget, especially for capacity building); funding_growth (stated growth in the organisation's own revenue, donors or budget); other. Only events the documents state, each with evidence. A signal must be about the organisation itself: its own systems, leadership, strategy, structure or funding. Not programmes, events, products or services it delivers to others (e.g. a workshop it hosts for other nonprofits, a directory or app it launches for the public, a product release), and not fundraising events or donation appeals. date: when it was announced or starts.
+- open_roles: current paid job openings only (no volunteer roles). open_rfps: current requests for proposals, tenders or procurement notices only.
+- recent_news: up to 8 of the newest dated news, press or blog items with their dates. Do not filter by age.
+- funders_and_partners: organisations named as funders, sponsors or partners (max 15).
+- impact_metrics: up to 5 short quantified claims about the organisation's own work, e.g. "Served 12,000 meals in 2024". Not outcomes of its grantees or partners.
+- cause_area: the single best fit from the allowed list. geography_served.scope: local (one city or county), regional (state, province or multi-county area), national or international.
+- looks_like_nonprofit: false if the site is clearly a business, government body or personal site; say why in not_nonprofit_reason.
+
+=== USER ===
+<documents>
+<document url="https://www.habitat.org/about/habitat-for-humanity-leadership" type="html" page="team">
+Habitat for Humanity leadership | Habitat for Humanity
+
+Skip to main content
+
+ Menu
+
+This page is about our work in the 
+North America
+ region.
+
+Make 
+North America
+ your preferred site edition
+
+This page is about our work in the 
+North America
+ region.
+
+Make 
+North America
+ your preferred site edition
+
+ Habitat for Humanity leadership
+
+Habitat's board of directors and senior leadership
+
+Habitat for Humanity International’s work is overseen by a board of directors and a senior management group who deeply believe that all people deserve a decent place to call home.
+Habitat’s board is responsible for establishing policy and guiding Habitat’s work to construct, rehabilitate, repair and improve housing in approximately 70 countries.
+Habitat for Humanity International is managed by an administrative staff, led by 
+CEO Jonathan Reckford
+, dedicated to the cause of decent and affordable housing.
+
+Board of directors
+
+Senior management group
+
+Board of directors
+Chair
+Christiana Smith Shi
+Former President, Global Direct-to-Consumer, Nike Inc.
+Portland, Oregon, USA
+Vice Chair and Operations Committee Chair
+Alejandro “Alex” Krell
+Partner, Paladin Realty Partners
+San Juan, Puerto Rico
+Vice Chair and Resource Development Committee Chair
+Bill Brand 
+Executive, Adviser and Board Leader
+Palm Springs, California, USA
+Finance and Audit Committee Chair, Treasurer
+Mary Mack
+Retired, formerly CEO, Consumer and Small Business Banking, Wells Fargo and Company
+Charlotte, North Carolina, USA
+Governance Committee Chair
+Robbie Bach
+Civic Engineer, XBachs LLC
+Medina, Washington, USA
+Secretary
+Olivia Wong
+General Manager, Environmental and Social Responsibility, MTR Corporation Ltd.
+Hong Kong, China
+Dr. Belinda Bennet
+Chief International Programs Officer, Children Believe
+Chennai, Tamil Nadu, India
+Marc Bitzer
+CEO and Chair, Board of Directors, Whirlpool Corporation
+St. Joseph, Michigan, USA
+D. Steve Boland
+Retired, formerly P
+rincipal, Boland Consulting Group
+Charlotte, North Carolina, USA
+Carolyn Graham
+Retired, formerly Senior Executive Vice President, CWB Financial Group
+Edmonton, Alberta, Canada
+Kristiane Graham
+Board Member, Dover Corporation
+Middleburg, Virginia, USA
+Kenneth Mac Quene
+Director, FORGE Development and Training Systems
+Cape Town, South Africa
+Manjula Mathews
+Board Chair, First Capital Treasuries PLC
+Nugegoda, Sri Lanka
+Gilles Morel
+Nonexecutive Director, Beko Europe
+Milan, Italy
+Rob Portman
+F
+ormer U.S. Senator of Ohio
+Cincinnati, Ohio, USA
+Jonathan Reckford, ex officio
+CEO, Habitat for Humanity International
+Atlanta, Georgia, USA
+Clara Reid
+
+CEO and Chair, Board of Directors, Reid & Compañía S.A.; CEO and Vice Chair, Board of Directors, Autocamiones S.A.
+Dominican Republic
+J. Ronald Terwilliger, ex officio
+Chairman Emeritus, Trammell Crow Residential
+Key Largo, Florida, USA
+Adrianne Todman
+Former Acting Secretary, U.S. Department of Housing and Urban Development
+Washington, D.C., USA
+The Right Rev. Robert Christopher Wright
+Bishop of the Episcopal Diocese of Atlanta
+Atlanta, Georgia, USA
+
+Senior management group
+
+ Jonathan Reckford
+
+Chief Executive Officer
+
+Condense
+
+About Jonathan
+
+Jonathan Reckford is the chief executive officer of Habitat for Humanity International, a global Christian housing organization that has helped more than 65 million people access safe housing.
+See Jonathan’s full profile.
+
+ Amy Dunham
+
+Chief Communications Officer
+
+Condense
+
+About Amy
+
+Amy Dunham leads a global division in stewarding Habitat’s brand and coordinating our story among local Habitat organizations in all U.S. states and more than 60 countries.
+Read Amy’s full bio.
+
+ Tolli Love
+
+Chief Development Officer
+
+Condense
+
+About Tolli
+
+Tolli Love leads Habitat for Humanity International’s 120-person resource development team and is responsible for its strategic direction, including direct marketing, individual and corporate giving areas.
+
+Read Tolli’s full bio.
+
+ Craig Molyneaux
+
+Chief Financial and Administration Officer
+
+Condense
+
+About Craig
+
+Craig Molyneaux is responsible for developing and implementing financial strategies and programs that are consistent with Habitat for Humanity International’s strategic plan and that optimize the success of Habitat’s global network.
+
+Read Craig’s full bio.
+
+ Valerie Norton
+
+Chief People Officer
+
+Condense
+
+About Valerie
+
+Valerie Norton leads Habitat for Humanity International’s global people function to implement our strategic initiatives and achieve the goals in our strategic plan.
+
+Read Valerie’s full bio.
+
+ Timothy Phillips
+
+Chief Legal Officer
+
+Condense
+
+About Timothy
+
+Tim Phillips is Habitat for Humanity International’s principal adviser on legal, governance, risk management and compliance matters and also oversees legal support for the organization’s corporate transactional matters, including Habitat Capital, the Terwilliger Center for Innovation in Shelter and the MicroBuild initiative.
+
+Read Tim’s full bio.
+
+ Adrienne Goolsby 
+
+Senior Vice President, U.S. Office and Canada
+
+Condense
+
+About Adrienne
+
+Adrienne E. Goolsby provides strategic leadership and managerial oversight to Habitat’s U.S./Canada staff in serving their affiliate networks, and engages and collaborates with the broader affiliate community, including the U.S. Council and Habitat’s board of directors.
+
+Read Adrienne’s full bio.
+
+ Jacqueline Innocent
+
+Senior Vice President, Global Program Impact
+
+Condense
+
+About Jacqueline
+
+Jacqueline Innocent leads Habitat’s Global Program Impact Team, including Program Effectiveness, Government Relations and Advocacy, Volunteer and Institutional Engagement, and the Terwilliger Center for Innovation in Shelter.
+Read Jacqueline’s full bio.
+
+Subscribe to our monthly newsletter
+
+Sign up for our monthly newsletter to get the latest news, volunteer opportunities, DIY tips and the many ways to build a better world with Habitat for Humanity.
+
+donate
+
+© 2026 Habitat for Humanity® International.
+All rights reserved. “Habitat for Humanity®” is a registered service mark owned by Habitat for Humanity International. Habitat® is a service mark of Habitat for Humanity International.
+
+Habitat for Humanity® International is a tax-exempt 501(C)(3) nonprofit organization. Your gift is tax-deductible as allowed by law. Habitat for Humanity International’s tax ID number is 91-1914868.
+
+© 2026 Habitat for Humanity® International.
+All rights reserved. “Habitat for Humanity®” is a registered service mark owned by Habitat for Humanity International. Habitat® is a service mark of Habitat for Humanity International.
+
+Habitat for Humanity® International is a tax-exempt 501(C)(3) nonprofit organization. Your gift is tax-deductible as allowed by law. Habitat for Humanity International’s tax ID number is 91-1914868.
+</document>
+</documents>
+
+Extract ONLY these fields: leadership. Leave the other fields null or empty.

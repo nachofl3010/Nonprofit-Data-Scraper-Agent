@@ -1,16 +1,16 @@
 {
   "profile": {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "taxonomy_version": "ntee-major-v1",
     "input": "https://www.charitywater.org",
     "resolved_url": "https://www.charitywater.org/",
-    "extracted_at": "2026-09-25T15:01:01.223132Z",
+    "extracted_at": "2026-09-25T21:59:38.049732Z",
     "status": "ok",
     "flags": [
       "registry_match:ein"
     ],
     "identity": {
-      "last_checked": "2026-09-25T15:01:01.223132Z",
+      "last_checked": "2026-09-25T21:59:38.049732Z",
       "name": {
         "value": "charity: water",
         "source_url": "https://www.charitywater.org/",
@@ -46,7 +46,7 @@
       "programs": [
         {
           "name": "Water Project Sponsorship",
-          "description": "By sponsoring a project, you can provide clean water for a community, school, or health clinic. 100% of your donation will fund clean water."
+          "description": "By sponsoring a project, you can provide clean water for a community, school, or health clinic."
         }
       ],
       "cause_area": {
@@ -81,7 +81,12 @@
           "confidence": "high"
         },
         {
-          "value": "In fiscal year 2025, clean water brought to 1.41 million people for the very first time",
+          "value": "Over 22,000 water projects across 20 countries in FY 2025",
+          "source_url": "https://www.charitywater.org/about/financials",
+          "confidence": "high"
+        },
+        {
+          "value": "1.41 million people gained clean water for the first time in FY 2025",
           "source_url": "https://www.charitywater.org/about/financials",
           "confidence": "high"
         }
@@ -89,7 +94,7 @@
       "looks_like_nonprofit": true
     },
     "financials": {
-      "last_checked": "2026-09-25T15:01:01.223132Z",
+      "last_checked": "2026-09-25T21:59:38.049732Z",
       "annual_revenue": {
         "value": {
           "amount": 82267852.0,
@@ -159,7 +164,7 @@
       }
     },
     "contacts": {
-      "last_checked": "2026-09-25T15:01:01.223132Z",
+      "last_checked": "2026-09-25T21:59:38.049732Z",
       "leadership": [
         {
           "name": "Scott Harrison",
@@ -168,7 +173,6 @@
           "linkedin": null,
           "source_url": "https://www.charitywater.org/about/executive-team",
           "confidence": "high",
-          "evidence": "Founder & Chief executive officer Scott Harrison",
           "buyer_role": "executive"
         },
         {
@@ -178,7 +182,6 @@
           "linkedin": null,
           "source_url": "https://www.charitywater.org/about/executive-team",
           "confidence": "high",
-          "evidence": "President Melissa Russell",
           "buyer_role": "executive"
         },
         {
@@ -188,7 +191,6 @@
           "linkedin": null,
           "source_url": "https://www.charitywater.org/about/executive-team",
           "confidence": "high",
-          "evidence": "Chief Revenue Officer Ben Greene",
           "buyer_role": "fundraising"
         },
         {
@@ -198,7 +200,6 @@
           "linkedin": null,
           "source_url": "https://www.charitywater.org/about/executive-team",
           "confidence": "high",
-          "evidence": "Chief Water Programs Officer Brian Hoyer",
           "buyer_role": "other"
         },
         {
@@ -208,7 +209,6 @@
           "linkedin": null,
           "source_url": "https://www.charitywater.org/about/executive-team",
           "confidence": "high",
-          "evidence": "Chief Technology Officer Christa Stelzmuller",
           "buyer_role": "operations_it"
         },
         {
@@ -218,7 +218,6 @@
           "linkedin": null,
           "source_url": "https://www.charitywater.org/about/executive-team",
           "confidence": "high",
-          "evidence": "Chief Financial Officer John Passauer",
           "buyer_role": "finance"
         },
         {
@@ -228,8 +227,16 @@
           "linkedin": null,
           "source_url": "https://www.charitywater.org/about/executive-team",
           "confidence": "high",
-          "evidence": "General Counsel Ceena Johnson",
           "buyer_role": "other"
+        },
+        {
+          "name": "Brook Hazelton",
+          "title": "Board Chair",
+          "email": null,
+          "linkedin": null,
+          "source_url": "https://www.charitywater.org/about/executive-team",
+          "confidence": "high",
+          "buyer_role": "board"
         }
       ],
       "general_contact": {
@@ -240,14 +247,15 @@
       }
     },
     "signals": {
-      "last_checked": "2026-09-25T15:01:01.223132Z",
+      "last_checked": "2026-09-25T21:59:38.049732Z",
+      "buyer_signals": [],
       "open_rfps": [],
       "open_roles": [],
       "recent_news": [],
       "funders_and_partners": []
     },
     "technology": {
-      "last_checked": "2026-09-25T15:01:01.223132Z",
+      "last_checked": "2026-09-25T21:59:38.049732Z",
       "tech_stack": []
     },
     "pages_crawled": [
@@ -270,15 +278,6 @@
         "via": "crawl"
       },
       {
-        "url": "https://www.charitywater.org/about/executive-team",
-        "page_type": "team",
-        "kind": "html",
-        "status": 200,
-        "tokens": 2305,
-        "error": null,
-        "via": "crawl"
-      },
-      {
         "url": "https://www.charitywater.org/about/financials",
         "page_type": "financials",
         "kind": "html",
@@ -297,11 +296,29 @@
         "via": "crawl"
       },
       {
-        "url": "https://www.charitywater.org/contact",
-        "page_type": "contact",
+        "url": "https://www.charitywater.org/updates/sierra-leone",
+        "page_type": "news",
         "kind": "html",
         "status": 200,
-        "tokens": 407,
+        "tokens": 1090,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.charitywater.org/donate",
+        "page_type": "donate",
+        "kind": "html",
+        "status": 200,
+        "tokens": 1030,
+        "error": null,
+        "via": "crawl"
+      },
+      {
+        "url": "https://www.charitywater.org/about/executive-team",
+        "page_type": "team",
+        "kind": "html",
+        "status": 200,
+        "tokens": 2305,
         "error": null,
         "via": "crawl"
       },
@@ -315,11 +332,11 @@
         "via": "crawl"
       },
       {
-        "url": "https://www.charitywater.org/updates/sierra-leone",
-        "page_type": "news",
+        "url": "https://www.charitywater.org/contact",
+        "page_type": "contact",
         "kind": "html",
         "status": 200,
-        "tokens": 1090,
+        "tokens": 407,
         "error": null,
         "via": "crawl"
       },
@@ -331,20 +348,9 @@
         "tokens": 2617,
         "error": null,
         "via": "crawl"
-      },
-      {
-        "url": "https://www.charitywater.org/donate",
-        "page_type": "donate",
-        "kind": "html",
-        "status": 200,
-        "tokens": 1030,
-        "error": null,
-        "via": "crawl"
       }
     ],
-    "errors": [
-      "news filter: dropped 1 item(s) older than 12 months or undated"
-    ],
+    "errors": [],
     "gapfill": {
       "triggered": false,
       "missing": [],
@@ -357,19 +363,19 @@
         {
           "purpose": "extract",
           "model": "gpt-4.1-mini",
-          "input_tokens": 9257,
-          "output_tokens": 976,
-          "cache_read_tokens": 3968,
+          "input_tokens": 13759,
+          "output_tokens": 895,
+          "cache_read_tokens": 0,
           "cache_write_tokens": 0,
           "cached_locally": false,
-          "usd": 0.005661,
-          "usd_list": 0.005661
+          "usd": 0.006936,
+          "usd_list": 0.006936
         }
       ],
-      "input_tokens": 13225,
-      "output_tokens": 976,
-      "usd": 0.005661,
-      "usd_list": 0.005661
+      "input_tokens": 13759,
+      "output_tokens": 895,
+      "usd": 0.006936,
+      "usd_list": 0.006936
     }
   },
   "views": {
@@ -391,6 +397,8 @@
       "lead_score": 0,
       "score_breakdown": [],
       "why_now": "No active timing signals; nurture.",
+      "buyer_signals": [],
+      "revenue_trend": "declining (-15% 2022->2025)",
       "tech_stack": [],
       "contacts_by_role": {
         "executive": [
@@ -444,6 +452,14 @@
             "email": null,
             "linkedin": null
           }
+        ],
+        "board": [
+          {
+            "name": "Brook Hazelton",
+            "title": "Board Chair",
+            "email": null,
+            "linkedin": null
+          }
         ]
       },
       "general_contact": {
@@ -470,7 +486,7 @@
       "programs": [
         {
           "name": "Water Project Sponsorship",
-          "description": "By sponsoring a project, you can provide clean water for a community, school, or health clinic. 100% of your donation will fund clean water."
+          "description": "By sponsoring a project, you can provide clean water for a community, school, or health clinic."
         }
       ],
       "registration_id": "22-3936753",
@@ -530,7 +546,8 @@
         "209,241 water projects funded",
         "29 countries served",
         "21,641,908 people will be served",
-        "In fiscal year 2025, clean water brought to 1.41 million people for the very first time"
+        "Over 22,000 water projects across 20 countries in FY 2025",
+        "1.41 million people gained clean water for the first time in FY 2025"
       ],
       "existing_funders": []
     }

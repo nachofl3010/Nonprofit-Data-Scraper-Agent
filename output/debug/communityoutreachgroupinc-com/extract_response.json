@@ -16,12 +16,12 @@
     "confidence": "high"
   },
   "hq_location": {
-    "value": "Middletown Township, NJ",
+    "value": "Middletown, NJ",
     "source_url": "https://www.communityoutreachgroupinc.com/",
     "confidence": "high"
   },
   "mission": {
-    "value": "Our mission is to help people in need by providing clothing, food, housing, and utility assistance to those who may not have the means to provide for themselves and their families.",
+    "value": "Community Outreach Group, Inc. is a nonprofit that provides basic needs assistance to low-income families and individuals in the community. Our mission is to help people in need by providing clothing, food, housing, and utility assistance to those who may not have the means to provide for themselves and their families.",
     "source_url": "https://www.communityoutreachgroupinc.com/",
     "confidence": "high"
   },
@@ -31,12 +31,12 @@
       "description": "Provides emergency food, personal care, and cleaning products to those in need."
     },
     {
-      "name": "Emergency Assistance Fund",
-      "description": "Provides one-time assistance to low-income households with utility and rent/mortgage assistance."
+      "name": "Calico Cat Thrift Shop",
+      "description": "Sells new and gently used merchandise to support the Emergency Assistance Fund, Food Pantry, and other non-profits."
     },
     {
-      "name": "Calico Cat Thrift Shop",
-      "description": "Sells new and gently used merchandise to support the Emergency Assistance Fund, Food Pantry, and other nonprofits."
+      "name": "Emergency Assistance Fund",
+      "description": "Provides one-time assistance for utility and rent/mortgage aid to low-income households."
     }
   ],
   "cause_area": {
@@ -48,7 +48,6 @@
     "value": {
       "scope": "regional",
       "places": [
-        "Middletown Township",
         "Aberdeen",
         "Atlantic Highlands",
         "Belford",
@@ -61,6 +60,7 @@
         "Leonardo",
         "Lincroft",
         "Matawan",
+        "Middletown",
         "Port Monmouth",
         "Red Bank",
         "Union Beach"
@@ -78,7 +78,12 @@
   "staff_count": null,
   "impact_metrics": [
     {
-      "value": "Food Pantry open first and third Wednesday each month providing food and essentials",
+      "value": "Food Pantry is open the first and third Wednesday of each month from 9:00 until 3:00",
+      "source_url": "https://www.communityoutreachgroupinc.com/",
+      "confidence": "high"
+    },
+    {
+      "value": "Emergency Assistance Fund provides one-time aid to residents in multiple towns",
       "source_url": "https://www.communityoutreachgroupinc.com/",
       "confidence": "high"
     }
@@ -90,8 +95,7 @@
       "email": "Christinecalicocat@gmail.com",
       "linkedin": null,
       "source_url": "https://www.communityoutreachgroupinc.com/",
-      "confidence": "high",
-      "evidence": "Contact \\n Christine Stockhausen, Vice President \\n Christinecalicocat@gmail.com"
+      "confidence": "high"
     },
     {
       "name": "Jane Chou",
@@ -99,8 +103,7 @@
       "email": null,
       "linkedin": null,
       "source_url": "https://www.communityoutreachgroupinc.com/",
-      "confidence": "high",
-      "evidence": "Contact \\n Ms. Jane Chou \\n EAF Coordinator"
+      "confidence": "high"
     }
   ],
   "general_contact": {
@@ -109,67 +112,83 @@
     "contact_page_url": "https://www.communityoutreachgroupinc.com/",
     "source_url": "https://www.communityoutreachgroupinc.com/"
   },
+  "buyer_signals": [],
   "open_rfps": [],
   "open_roles": [],
   "recent_news": [],
   "funders_and_partners": [
     {
-      "name": "Christ Episcopal Church-Middletown",
+      "name": "Aslan Youth",
       "type": "other",
       "source_url": "https://www.communityoutreachgroupinc.com/"
     },
     {
-      "name": "Middletown Reformed Church",
+      "name": "Backpack Crew",
       "type": "other",
       "source_url": "https://www.communityoutreachgroupinc.com/"
     },
     {
-      "name": "Old First Church-Middletown",
+      "name": "Bayshore Lunch Program",
       "type": "other",
       "source_url": "https://www.communityoutreachgroupinc.com/"
     },
     {
-      "name": "Westminster Presbyterian Church-Middletown",
+      "name": "Blessing Bag Brigade",
       "type": "other",
       "source_url": "https://www.communityoutreachgroupinc.com/"
     },
     {
-      "name": "Middletown United Methodist Church",
+      "name": "HABcore",
       "type": "other",
       "source_url": "https://www.communityoutreachgroupinc.com/"
     },
     {
-      "name": "Lincroft Presbyterian Church",
+      "name": "Habitat for Humanity",
       "type": "other",
       "source_url": "https://www.communityoutreachgroupinc.com/"
     },
     {
-      "name": "St. Leo the Great R.C. Church-Lincroft",
+      "name": "Keyport Food Pantry",
       "type": "other",
       "source_url": "https://www.communityoutreachgroupinc.com/"
     },
     {
-      "name": "Ecumenical Missionaries-St. Augustine’s Monastery, Belford",
+      "name": "Love Thy Neighbor",
       "type": "other",
       "source_url": "https://www.communityoutreachgroupinc.com/"
     },
     {
-      "name": "Masjid Al Aman Mosque, Middletown",
+      "name": "Monmouth Day Care",
       "type": "other",
       "source_url": "https://www.communityoutreachgroupinc.com/"
     },
     {
-      "name": "Holmdel Community United Church of Christ",
+      "name": "No Limits Café",
       "type": "other",
       "source_url": "https://www.communityoutreachgroupinc.com/"
     },
     {
-      "name": "Good Shepherd Lutheran Church, Holmdel",
+      "name": "St. Marks Center for Renewal",
       "type": "other",
       "source_url": "https://www.communityoutreachgroupinc.com/"
     },
     {
-      "name": "St. Catharine R.C. Church, Holmdel",
+      "name": "St. Ann’s Day Care",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "Stephy’s Place",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "Family Promise of Monmouth County",
+      "type": "other",
+      "source_url": "https://www.communityoutreachgroupinc.com/"
+    },
+    {
+      "name": "Parker Family Health Clinic",
       "type": "other",
       "source_url": "https://www.communityoutreachgroupinc.com/"
     }

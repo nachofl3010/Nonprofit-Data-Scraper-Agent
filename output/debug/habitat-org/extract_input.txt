@@ -9,8 +9,9 @@ Rules:
 - Dates in ISO 8601 (YYYY-MM-DD; YYYY-MM or YYYY if that is all the page gives). Money as a plain number plus ISO 4217 currency code ("$12.5 million" -> 12500000, USD).
 - annual_revenue: total revenue or income for one fiscal year. Not a single gift, campaign goal, program budget or cumulative total.
 - registration_id: the number only, as printed (e.g. "12-3456789" or "207076"). If several are shown, the main one (US EIN, or the first charity number).
-- leadership: named executives, senior staff and board members (max 15). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Board Member", "Trustee"). Add email or LinkedIn only if shown next to that person.
+- leadership: up to 8 named leaders, most senior first: the chief executive, then heads of fundraising/development, finance and operations/IT, then at most 2 board officers (e.g. chair, treasurer). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Trustee"). Add email or LinkedIn only if shown next to that person.
 - general_contact: the organisation's general email, phone and contact page.
+- buyer_signals: up to 8 recent or planned events that suggest the organisation will spend on new tools, systems or services. Look hardest in annual reports, strategic plans, news and CEO/board letters. Types: technology_investment (the organisation is adopting, replacing or building its own CRM, database, website, digital or data systems); capital_campaign (a named campaign to raise capital or endowment for the organisation); strategic_plan (the organisation has adopted or is developing its own new multi-year strategic plan; an annual report, policy, code of practice, programme or event is not a strategic plan); leadership_change (a new chief executive, or a new head of development/fundraising, finance, operations or IT; board appointments do not count); merger (merger, acquisition or affiliation); expansion (new sites, regions or services of its own, or significant staff growth); major_grant (a large grant or gift to the organisation, e.g. $1M+ or a large share of its budget, especially for capacity building); funding_growth (stated growth in the organisation's own revenue, donors or budget); other. Only events the documents state, each with evidence. A signal must be about the organisation itself: its own systems, leadership, strategy, structure or funding. Not programmes, events, products or services it delivers to others (e.g. a workshop it hosts for other nonprofits, a directory or app it launches for the public, a product release), and not fundraising events or donation appeals. date: when it was announced or starts.
 - open_roles: current paid job openings only (no volunteer roles). open_rfps: current requests for proposals, tenders or procurement notices only.
 - recent_news: up to 8 of the newest dated news, press or blog items with their dates. Do not filter by age.
 - funders_and_partners: organisations named as funders, sponsors or partners (max 15).
@@ -102,6 +103,224 @@ Learn more
  Sign up for our monthly newsletter to get the latest news, DIY tips, volunteer opportunities and learn about other ways to get involved with Habitat.
 Donate monthly
 Passionate about our mission? Families who partner with us build their own homes alongside volunteers, pay an affordable mortgage and are grateful for your help.
+</document>
+<document url="https://www.habitat.org/about/annual-reports-990s" type="html" page="financials">
+2025: Home is the foundation
+In fiscal year 2025, we helped more than 3 million people build or improve a place to call home, and through training and advocacy, an additional 20 million gained the potential to improve their housing conditions.
+- FY2025 Annual Report online
+- 990 (PDF, 688 KB)
+- Consolidated Financial Statements (PDF, 1MB)
+2024: A blueprint for a better future
+In fiscal year 2024, we helped 3 million people build or improve a place to call home. An additional 5.3 million people gained the potential to improve their housing conditions through training programs and advocacy work driven by Habitat in local communities.
+2023: Catalyzing communities for global solutions
+In fiscal year 2023, we helped 13.4 million people build or improve a place to call home. An additional 9.5 million people gained the potential to improve their housing conditions through training programs and advocacy work driven by Habitat in local communities.
+2022: Innovating change, building momentum
+In fiscal year 2022, we helped more than 7.1 million people build or improve a place to call home, and through training and advocacy, an additional 5 million more gained the potential to improve their housing conditions.
+2021: Drawing home
+In fiscal year 2021, we helped more than 4.2 million people and an additional 8.5 million gained the potential to improve their housing conditions through training and advocacy.
+2020: Homes, Communities, Hope, You
+Even as COVID-19 significantly impacted Habitat’s ability to build at full capacity — and likely will continue to do so in many locations well into 2021 — we still have seen great progress and positive results. In fiscal year 2020, we helped more than 5.9 million people build or improve a place to call home, and through training and advocacy, an additional 9.9 million gained the potential to improve their housing conditions.
+2019: Build. Advocate. Empower.
+Since our founding in 1976, Habitat has helped more than 29 million people build or improve the place they call home. In fiscal year 2019, we helped more than 7 million people, and an additional 2.3 million gained the potential to improve their housing conditions through training and advocacy.
+2018: Tools that build a better future
+Since our founding in 1976, Habitat has helped more than 22 million people build or improve the place they call home. In fiscal year 2018, we helped more than 8.7 million people, and an additional 2.2 million gained the potential to improve their living conditions through training and advocacy.
+2017: Through shelter, we empower
+Since our founding in 1976, Habitat has helped more than 13.2 million people obtain a safer place to sleep at night. In fiscal year 2017, we helped 3.5 million people improve their living conditions, and an additional 2.6 million now have the potential to do so, thanks to our advocacy efforts and the information and training that we provide.
+2016: We build strength, stability and self-reliance through shelter.
+Since 1976, Habitat has helped more than 9.8 million people meet their affordable housing needs. In fiscal year 2016, Habitat improved the housing conditions of 3 million people through new home construction, rehabilitation, incremental improvements, repairs or increased access to improved shelter through partnerships with the private sector. In addition, nearly 2.1 million people now have the potential to improve their housing conditions as a result of Habitat’s advocacy efforts, which changed policies and systems to allow more access to shelter solutions, and because of our provision of information and training in construction, financial management and other housing-related topics.
+Older reports
+2015: Together we build
+- FY2015 Annual Report online
+- FY2015 Annual Report download (PDF, 7 MB)
+- 990 (PDF, 1.3 MB)
+- Consolidated Financial Statements (PDF, 170 KB)
+</document>
+<document url="https://www.habitat.org/volunteer/long-term-opportunities" type="html" page="careers">
+Long-term volunteer opportunities | Habitat for Humanity
+
+Skip to main content
+
+ Menu
+
+This page is about our work in the 
+North America
+ region.
+
+Make 
+North America
+ your preferred site edition
+
+This page is about our work in the 
+North America
+ region.
+
+Make 
+North America
+ your preferred site edition
+
+ Long-term volunteer opportunities
+
+We offer long-term volunteer opportunities in the U.S. and around the world.
+
+Habitat for Humanity AmeriCorps
+
+You can help strengthen communities in your area or across the country through a year of service with Habitat AmeriCorps.
+
+Read more
+
+International Volunteer Program
+
+Are you looking for an exciting opportunity to live in another country? Volunteer abroad with Habitat for Humanity.
+
+Learn more
+
+U.S. Long-term Volunteer Program 
+
+If you have construction, professional or retail experience, we likely have a place that’s a great fit for you.
+
+Learn more
+
+donate
+
+© 2026 Habitat for Humanity® International.
+All rights reserved. “Habitat for Humanity®” is a registered service mark owned by Habitat for Humanity International. Habitat® is a service mark of Habitat for Humanity International.
+
+Habitat for Humanity® International is a tax-exempt 501(C)(3) nonprofit organization. Your gift is tax-deductible as allowed by law. Habitat for Humanity International’s tax ID number is 91-1914868.
+
+© 2026 Habitat for Humanity® International.
+All rights reserved. “Habitat for Humanity®” is a registered service mark owned by Habitat for Humanity International. Habitat® is a service mark of Habitat for Humanity International.
+
+Habitat for Humanity® International is a tax-exempt 501(C)(3) nonprofit organization. Your gift is tax-deductible as allowed by law. Habitat for Humanity International’s tax ID number is 91-1914868.
+</document>
+<document url="https://www.habitat.org/newsroom" type="html" page="news">
+Newsroom
+Habitat for Humanity’s newsroom has the latest press releases covering Habitat’s corporate news.
+Habitat for Humanity has experts available to the media on a wide array of topics, including affordable housing, residential home construction and repairs, neighborhood revitalization, community development, volunteerism, philanthropy and nonprofit fundraising, disaster recovery, international development, housing microfinance, among others.
+Members of the news media may request interviews or additional resources — including high-resolution photographs and video footage — by contacting the media and public affairs team at [email protected]. For all non-media related inquiries, please call 1-800-HABITAT – (800) 422-4828.
+Featured partners
+Wells Fargo invests $1.5 million with Habitat for Humanity to scale innovative home construction in rural communities
+Wells Fargo announced today that it is making a $1.5 million investment to Habitat for Humanity to focus on innovative and affordable housing options in towns and rural communities across the country.
+Read more
+State Farm and Habitat for Humanity International continue long-standing national partnership
+State Farm announced today that it is continuing its national partnership with Habitat for Humanity International, granting funding to engage and mobilize youth, support the building of resilient housing in communities across the U.S. and help expand the nonprofit’s impact during its 50th anniversary.
+Read more
+Nissan and Habitat for Humanity International celebrate 21 years of partnership
+As part of its 2026 commitment, Nissan will partner with 10 Habitat affiliates across the United States to support home building projects. Nissan will also donate durable work trucks to aid Habitat’s efforts.
+Read more
+Henkel and Habitat for Humanity International expand partnership
+Henkel’s continued support of Habitat’s mission enters a new phase with the Loctite 2nd Chance House Campaign with Greater Cleveland Habitat for Humanity.
+Read more
+Wells Fargo Foundation awards $6.3 million to support build, repair projects across the U.S. with Habitat for Humanity
+This year, the company is providing more than $6.3 million in grant funding through the 2024 Wells Fargo Builds program to support new home construction, renovation and repair of more than 280 affordable homes in 175 communities across the U.S.
+Read more
+Latest news
+Resilience starts at home: Advancing climate action through the Building Climate Resilience with the Urban Poor Programme
+The unveiling of the programme at the 81st Session of the United Nations General Assembly marks an important milestone in advancing a global effort to strengthen climate resilience in vulnerable urban communities through inclusive, locally led and sustainable solutions.
+Read more
+Habitat for Humanity International announces appointment of Johann Fernando as chief operating officer
+Habitat for Humanity International is pleased to welcome Johann Fernando, an experienced private sector leader, as the organization’s new chief operating officer.
+Read more
+Habitat for Humanity International announces appointment of Liz Satow as senior vice president, International Operations
+Since joining Habitat in August 2024, Satow has driven regional strategy across 14 countries, guided governance across 10 country boards and partnered closely with National Directors to strengthen leadership and program quality.
+Read more
+Habitat for Humanity’s corporate partners to support building more prosperous and vibrant communities during 2025 holiday season
+We are grateful to our corporate partners for their continuous support of our mission as well as for offering consumers opportunities to give back and further our global efforts to help families build or improve a place to call home.
+Read more
+Habitat for Humanity helped more than 3 million people build or improve a place to call home during past year
+In 2025, Habitat for Humanity helped 3 million people build or improve a place to call home. Learn more about Habitat’s work and see the annual report.
+Read more
+Wesco International continues partnership with Habitat for Humanity to support 100,000 Floors to Play On initiative
+This year, Wesco is supporting the installation of safe, durable flooring in homes across Brazil, Chile and Mexico, with each national Habitat organization receiving $60,000 to advance this critical work.
+Read more
+Habitat for Humanity mourns the death of former U.S. President Jimmy Carter
+Habitat for Humanity joins the world in mourning the death of former U.S. President Jimmy Carter. A champion for affordable and decent housing, he and Rosalynn Carter donated their time and leadership each year to build and improve homes with Habitat around the world.
+Read more
+Hábitat para la Humanidad lamenta el deceso del expresidente de los Estados Unidos Jimmy Carter
+Hábitat para la Humanidad se une al mundo en el duelo por la muerte del ex presidente estadounidense Jimmy Carter. Defensor de la vivienda digna y asequible, él y Rosalynn Carter donaron su tiempo y liderazgo cada año para construir y mejorar viviendas con Hábitat en todo el mundo.
+Leer más
+Habitat for Humanity International announces appointment of Craig Molyneaux as chief financial and administration officer
+Habitat for Humanity International is pleased to welcome Craig Molyneaux, a seasoned and accomplished finance executive in global for-profit and not-for-profit environments, as the organization’s new chief financial and administration officer.
+Read more
+Habitat for Humanity helped more than 13.4 million people build or improve a place to call home during past year
+According to the global housing nonprofit’s fiscal year 2023 annual report released today, Habitat for Humanity has worked alongside more than 59 million people around the world since its founding in 1976.
+Read more
+NewAge Products reaches $1 million+ giving milestone with Habitat for Humanity
+Habitat for Humanity announced today that NewAge Products Inc., manufacturers of indoor and outdoor storage, appliance, furniture and accessory solutions for the home, has surpassed a $1 million donated product milestone with Habitat.
+Read more
+Habitat for Humanity calls on global leaders at COP28 to prioritize adequate and affordable housing
+Habitat is calling on delegates at the COP28 climate change conference to prioritize the housing needs of vulnerable populations, particularly those who are living in slums and informal settlements, by taking action that will meaningfully address the impact of climate change on safe, decent and affordable housing.
+Read more
+J.M. Huber Corporation continues partnership with Habitat for Humanity, announces commitment to increase equitable access to affordable homeownership across the U.S.
+J.M. Huber Corporation, a global manufacturer of engineered materials that serves a broad range of industries, announced today it is renewing its partnership with Habitat for Humanity International.
+Read more
+MaxLite and Habitat for Humanity International celebrate 10 years of partnership
+Over the course of its partnership with Habitat, MaxLite has donated $13 million in energy-efficient lighting products and funding to help Habitat homeowners lower their home energy costs and make housing more affordable.
+Read more
+Habitat CEO Jonathan Reckford statement on legislation that will reduce home energy costs and support home repair programs
+Habitat for Humanity International CEO Jonathan Reckford issues a statement applauding Congress for including over $10 billion for energy-related housing measures in the Inflation Reduction Act of 2022.
+Read more
+Resilience starts at home: Advancing climate action through the Building Climate Resilience with the Urban Poor Programme
+The unveiling of the programme at the 81st Session of the United Nations General Assembly marks an important milestone in advancing a global effort to strengthen climate resilience in vulnerable urban communities through inclusive, locally led and sustainable solutions.
+Read more
+Habitat for Humanity International announces appointment of Johann Fernando as chief operating officer
+Habitat for Humanity International is pleased to welcome Johann Fernando, an experienced private sector leader, as the organization’s new chief operating officer.
+Read more
+Habitat for Humanity International announces appointment of Liz Satow as senior vice president, International Operations
+Since joining Habitat in August 2024, Satow has driven regional strategy across 14 countries, guided governance across 10 country boards and partnered closely with National Directors to strengthen leadership and program quality.
+Read more
+Habitat for Humanity newsroom
+Sign up to receive emails with Habitat’s latest press releases.
+Media contacts
+Contact our Media Relations team at [email protected]. We can offer the news media high-quality Habitat photography and video as well as quotes and interviews about our work.
+We can also offer interviews with subject matter experts on topics such as: volunteerism, home construction, philanthropy, cause marketing, operating home improvement retail stores, international development, social services and more.
+</document>
+<document url="https://secure.habitat.org/site/Donation2?df_id=3441&3441.donation=form1" type="html" page="donate">
+Donate Today - Habitat for Humanity
+
+Help families build better, brighter futures in Habitat homes.
+
+Families struggling with skyrocketing rents and unsafe living conditions need your help now. Everyone deserves a decent place to live. Please give.
+
+Rest assured
+
+Our donation system's 
+security measures
+ (opens in a new window) keep your personal information safe.
+
+Good stewardship
+
+Habitat for Humanity International is a tax-exempt 
+501(c)(3)
+ nonprofit organization. Your gift is tax-deductible as allowed by law.
+
+We take seriously our responsibility to contributors, to those counting on our help, and to God, to be wise stewards of funds entrusted to us. See our 
+annual report and financial statement
+ (opens in a new window) for more information.
+
+Your gift will go where it is needed most, unless you specify a particular location, local affiliate or cause for it to be used. 
+Designate your gift.
+
+Habitat for Humanity International (Tax ID: 91‑1914868) is a tax exempt 501(c)(3) nonprofit organization.
+
+Your gift is tax deductible as allowed by law.
+
+Habitat for Humanity will make every effort to use funds as designated. Donations, excluding Match/Challenge sponsor funding, will be shared with local Habitat affiliates when applicable according to affiliate agreements and unless otherwise directed. Habitat maintains control over the use and distribution of donations in furtherance of its mission. Visit 
+habitat.org/funds
+ to learn more about how funds are allocated. If you have questions about how your gift will be directed, please call (800) HABITAT. We will use your address or email to send a receipt.
+
+To contact us:
+
+Habitat for Humanity International
+322 West Lamar Street
+Americus, GA 31709-3543
+campaign@habitat.org
+
+© 2026 Habitat for Humanity
+®
+ International. All rights reserved.
+
+[Contact links in page HTML]
+email: campaign@habitat.org
 </document>
 <document url="https://www.habitat.org/you-thought-leadership-series" type="html" page="team">
 +You thought leadership video series | Habitat for Humanity
@@ -411,93 +630,23 @@ Dan Rosensweig
  (moderator), President & CEO, Habitat for Humanity of Greater
 [...truncated]
 </document>
-<document url="https://www.habitat.org/about/annual-reports-990s" type="html" page="financials">
-2025: Home is the foundation
-In fiscal year 2025, we helped more than 3 million people build or improve a place to call home, and through training and advocacy, an additional 20 million gained the potential to improve their housing conditions.
-- FY2025 Annual Report online
-- 990 (PDF, 688 KB)
-- Consolidated Financial Statements (PDF, 1MB)
-2024: A blueprint for a better future
-In fiscal year 2024, we helped 3 million people build or improve a place to call home. An additional 5.3 million people gained the potential to improve their housing conditions through training programs and advocacy work driven by Habitat in local communities.
-2023: Catalyzing communities for global solutions
-In fiscal year 2023, we helped 13.4 million people build or improve a place to call home. An additional 9.5 million people gained the potential to improve their housing conditions through training programs and advocacy work driven by Habitat in local communities.
-2022: Innovating change, building momentum
-In fiscal year 2022, we helped more than 7.1 million people build or improve a place to call home, and through training and advocacy, an additional 5 million more gained the potential to improve their housing conditions.
-2021: Drawing home
-In fiscal year 2021, we helped more than 4.2 million people and an additional 8.5 million gained the potential to improve their housing conditions through training and advocacy.
-2020: Homes, Communities, Hope, You
-Even as COVID-19 significantly impacted Habitat’s ability to build at full capacity — and likely will continue to do so in many locations well into 2021 — we still have seen great progress and positive results. In fiscal year 2020, we helped more than 5.9 million people build or improve a place to call home, and through training and advocacy, an additional 9.9 million gained the potential to improve their housing conditions.
-2019: Build. Advocate. Empower.
-Since our founding in 1976, Habitat has helped more than 29 million people build or improve the place they call home. In fiscal year 2019, we helped more than 7 million people, and an additional 2.3 million gained the potential to improve their housing conditions through training and advocacy.
-2018: Tools that build a better future
-Since our founding in 1976, Habitat has helped more than 22 million people build or improve the place they call home. In fiscal year 2018, we helped more than 8.7 million people, and an additional 2.2 million gained the potential to improve their living conditions through training and advocacy.
-2017: Through shelter, we empower
-Since our founding in 1976, Habitat has helped more than 13.2 million people obtain a safer place to sleep at night. In fiscal year 2017, we helped 3.5 million people improve their living conditions, and an additional 2.6 million now have the potential to do so, thanks to our advocacy efforts and the information and training that we provide.
-2016: We build strength, stability and self-reliance through shelter.
-Since 1976, Habitat has helped more than 9.8 million people meet their affordable housing needs. In fiscal year 2016, Habitat improved the housing conditions of 3 million people through new home construction, rehabilitation, incremental improvements, repairs or increased access to improved shelter through partnerships with the private sector. In addition, nearly 2.1 million people now have the potential to improve their housing conditions as a result of Habitat’s advocacy efforts, which changed policies and systems to allow more access to shelter solutions, and because of our provision of information and training in construction, financial management and other housing-related topics.
-Older reports
-2015: Together we build
-- FY2015 Annual Report online
-- FY2015 Annual Report download (PDF, 7 MB)
-- 990 (PDF, 1.3 MB)
-- Consolidated Financial Statements (PDF, 170 KB)
-</document>
-<document url="https://www.habitat.org/volunteer/long-term-opportunities" type="html" page="careers">
-Long-term volunteer opportunities | Habitat for Humanity
-
-Skip to main content
-
- Menu
-
-This page is about our work in the 
-North America
- region.
-
-Make 
-North America
- your preferred site edition
-
-This page is about our work in the 
-North America
- region.
-
-Make 
-North America
- your preferred site edition
-
- Long-term volunteer opportunities
-
-We offer long-term volunteer opportunities in the U.S. and around the world.
-
-Habitat for Humanity AmeriCorps
-
-You can help strengthen communities in your area or across the country through a year of service with Habitat AmeriCorps.
-
-Read more
-
-International Volunteer Program
-
-Are you looking for an exciting opportunity to live in another country? Volunteer abroad with Habitat for Humanity.
-
-Learn more
-
-U.S. Long-term Volunteer Program 
-
-If you have construction, professional or retail experience, we likely have a place that’s a great fit for you.
-
-Learn more
-
-donate
-
-© 2026 Habitat for Humanity® International.
-All rights reserved. “Habitat for Humanity®” is a registered service mark owned by Habitat for Humanity International. Habitat® is a service mark of Habitat for Humanity International.
-
-Habitat for Humanity® International is a tax-exempt 501(C)(3) nonprofit organization. Your gift is tax-deductible as allowed by law. Habitat for Humanity International’s tax ID number is 91-1914868.
-
-© 2026 Habitat for Humanity® International.
-All rights reserved. “Habitat for Humanity®” is a registered service mark owned by Habitat for Humanity International. Habitat® is a service mark of Habitat for Humanity International.
-
-Habitat for Humanity® International is a tax-exempt 501(C)(3) nonprofit organization. Your gift is tax-deductible as allowed by law. Habitat for Humanity International’s tax ID number is 91-1914868.
+<document url="https://www.habitat.org/our-work/impact" type="html" page="programs">
+Impact
+Decent, affordable shelter provides families with a place to gather and grow. Even more, by working with Habitat to achieve affordable homeownership, families can transform their lives.
+Affordable homeownership helps create the conditions that free families from stress and fear, helping build stability and confidence. Studies show that strong and stable households are foundational to child development and growth. When a home fosters — instead of hinders — health and safety, families can flourish. Owning an affordable home also allows homeowners to lift up their entire family by saving for their futures and investing in educational opportunities — bolstering job opportunities and long-term career growth.
+Data and surveys on our impact
+Surveys of Habitat homeowners and their families show better financial health, parents who are more confident about meeting their family’s needs, and even improved grades for their children since purchasing a Habitat home:
+- 65% reported better physical health in the Greater Cleveland Habitat for Humanity’s homeownership impact survey.
+- 80% of children’s grades improved and 41% of adults completed an educational or job training program, Chatham Habitat for Humanity in Pittsboro found in a 2021 homeownership impact survey.
+- 94% of homeowners now feel safe in their homes and 98% said that owning a home improved how they felt about themselves, according to Habitat for Humanity East Bay/Silicon Valley’s 2021 social impact study.
+- 57% of families have more savings and 48% of families feel more connected to the community, a survey of Habitat for Humanity Greater Sacramento’s first 100 families found.
+Read about our impact
+- Through a research series highlighted below, Habitat is bringing to light evidence on the barriers to affordable housing and the incredible impact that removing these barriers has on individuals and families in the U.S. and around the globe.
+- You can catch a glimpse of Habitat’s impact on our stories page or our online collection of Habitat magazine issues, where homeowners and volunteers share how Habitat’s vision of decent and affordable housing for all has changed their lives.
+Wherever we work, we witness tangible evidence that decent, affordable shelter creates long-lasting and life-changing impact on families and communities.
+The impact of decent, affordable housing
+Evidence briefs
+Read research summaries about housing solutions and the impacts of affordable housing.
 </document>
 <document url="https://www.habitat.org/contact" type="html" page="contact">
 Contact Habitat for Humanity International
@@ -532,106 +681,6 @@ International area offices
 
  Get our latest news, volunteer opportunities, DIY tips and other ways to get involved with Habitat for Humanity.
 </document>
-<document url="https://www.habitat.org/our-work/impact" type="html" page="programs">
-Impact
-Decent, affordable shelter provides families with a place to gather and grow. Even more, by working with Habitat to achieve affordable homeownership, families can transform their lives.
-Affordable homeownership helps create the conditions that free families from stress and fear, helping build stability and confidence. Studies show that strong and stable households are foundational to child development and growth. When a home fosters — instead of hinders — health and safety, families can flourish. Owning an affordable home also allows homeowners to lift up their entire family by saving for their futures and investing in educational opportunities — bolstering job opportunities and long-term career growth.
-Data and surveys on our impact
-Surveys of Habitat homeowners and their families show better financial health, parents who are more confident about meeting their family’s needs, and even improved grades for their children since purchasing a Habitat home:
-- 65% reported better physical health in the Greater Cleveland Habitat for Humanity’s homeownership impact survey.
-- 80% of children’s grades improved and 41% of adults completed an educational or job training program, Chatham Habitat for Humanity in Pittsboro found in a 2021 homeownership impact survey.
-- 94% of homeowners now feel safe in their homes and 98% said that owning a home improved how they felt about themselves, according to Habitat for Humanity East Bay/Silicon Valley’s 2021 social impact study.
-- 57% of families have more savings and 48% of families feel more connected to the community, a survey of Habitat for Humanity Greater Sacramento’s first 100 families found.
-Read about our impact
-- Through a research series highlighted below, Habitat is bringing to light evidence on the barriers to affordable housing and the incredible impact that removing these barriers has on individuals and families in the U.S. and around the globe.
-- You can catch a glimpse of Habitat’s impact on our stories page or our online collection of Habitat magazine issues, where homeowners and volunteers share how Habitat’s vision of decent and affordable housing for all has changed their lives.
-Wherever we work, we witness tangible evidence that decent, affordable shelter creates long-lasting and life-changing impact on families and communities.
-The impact of decent, affordable housing
-Evidence briefs
-Read research summaries about housing solutions and the impacts of affordable housing.
-</document>
-<document url="https://www.habitat.org/newsroom" type="html" page="news">
-Newsroom
-Habitat for Humanity’s newsroom has the latest press releases covering Habitat’s corporate news.
-Habitat for Humanity has experts available to the media on a wide array of topics, including affordable housing, residential home construction and repairs, neighborhood revitalization, community development, volunteerism, philanthropy and nonprofit fundraising, disaster recovery, international development, housing microfinance, among others.
-Members of the news media may request interviews or additional resources — including high-resolution photographs and video footage — by contacting the media and public affairs team at [email protected]. For all non-media related inquiries, please call 1-800-HABITAT – (800) 422-4828.
-Featured partners
-Wells Fargo invests $1.5 million with Habitat for Humanity to scale innovative home construction in rural communities
-Wells Fargo announced today that it is making a $1.5 million investment to Habitat for Humanity to focus on innovative and affordable housing options in towns and rural communities across the country.
-Read more
-State Farm and Habitat for Humanity International continue long-standing national partnership
-State Farm announced today that it is continuing its national partnership with Habitat for Humanity International, granting funding to engage and mobilize youth, support the building of resilient housing in communities across the U.S. and help expand the nonprofit’s impact during its 50th anniversary.
-Read more
-Nissan and Habitat for Humanity International celebrate 21 years of partnership
-As part of its 2026 commitment, Nissan will partner with 10 Habitat affiliates across the United States to support home building projects. Nissan will also donate durable work trucks to aid Habitat’s efforts.
-Read more
-Henkel and Habitat for Humanity International expand partnership
-Henkel’s continued support of Habitat’s mission enters a new phase with the Loctite 2nd Chance House Campaign with Greater Cleveland Habitat for Humanity.
-Read more
-Wells Fargo Foundation awards $6.3 million to support build, repair projects across the U.S. with Habitat for Humanity
-This year, the company is providing more than $6.3 million in grant funding through the 2024 Wells Fargo Builds program to support new home construction, renovation and repair of more than 280 affordable homes in 175 communities across the U.S.
-Read more
-Latest news
-Habitat for Humanity International announces appointment of Johann Fernando as chief operating officer
-Habitat for Humanity International is pleased to welcome Johann Fernando, an experienced private sector leader, as the organization’s new chief operating officer.
-Read more
-Habitat for Humanity International announces appointment of Liz Satow as senior vice president, International Operations
-Since joining Habitat in August 2024, Satow has driven regional strategy across 14 countries, guided governance across 10 country boards and partnered closely with National Directors to strengthen leadership and program quality.
-Read more
-ADS Foundation announces $1 million partnership with Habitat for Humanity International to help expand access to affordable housing
-The three-year partnership will support Habitat’s mission while creating opportunities for ADS employees to help build stronger communities across the country.
-Read more
-Habitat for Humanity’s corporate partners to support building more prosperous and vibrant communities during 2025 holiday season
-We are grateful to our corporate partners for their continuous support of our mission as well as for offering consumers opportunities to give back and further our global efforts to help families build or improve a place to call home.
-Read more
-Habitat for Humanity helped more than 3 million people build or improve a place to call home during past year
-In 2025, Habitat for Humanity helped 3 million people build or improve a place to call home. Learn more about Habitat’s work and see the annual report.
-Read more
-Wesco International continues partnership with Habitat for Humanity to support 100,000 Floors to Play On initiative
-This year, Wesco is supporting the installation of safe, durable flooring in homes across Brazil, Chile and Mexico, with each national Habitat organization receiving $60,000 to advance this critical work.
-Read more
-Habitat for Humanity mourns the death of former U.S. President Jimmy Carter
-Habitat for Humanity joins the world in mourning the death of former U.S. President Jimmy Carter. A champion for affordable and decent housing, he and Rosalynn Carter donated their time and leadership each year to build and improve homes with Habitat around the world.
-Read more
-Hábitat para la Humanidad lamenta el deceso del expresidente de los Estados Unidos Jimmy Carter
-Hábitat para la Humanidad se une al mundo en el duelo por la muerte del ex presidente estadounidense Jimmy Carter. Defensor de la vivienda digna y asequible, él y Rosalynn Carter donaron su tiempo y liderazgo cada año para construir y mejorar viviendas con Hábitat en todo el mundo.
-Leer más
-Habitat for Humanity International announces appointment of Craig Molyneaux as chief financial and administration officer
-Habitat for Humanity International is pleased to welcome Craig Molyneaux, a seasoned and accomplished finance executive in global for-profit and not-for-profit environments, as the organization’s new chief financial and administration officer.
-Read more
-Habitat for Humanity helped more than 13.4 million people build or improve a place to call home during past year
-According to the global housing nonprofit’s fiscal year 2023 annual report released today, Habitat for Humanity has worked alongside more than 59 million people around the world since its founding in 1976.
-Read more
-NewAge Products reaches $1 million+ giving milestone with Habitat for Humanity
-Habitat for Humanity announced today that NewAge Products Inc., manufacturers of indoor and outdoor storage, appliance, furniture and accessory solutions for the home, has surpassed a $1 million donated product milestone with Habitat.
-Read more
-Habitat for Humanity calls on global leaders at COP28 to prioritize adequate and affordable housing
-Habitat is calling on delegates at the COP28 climate change conference to prioritize the housing needs of vulnerable populations, particularly those who are living in slums and informal settlements, by taking action that will meaningfully address the impact of climate change on safe, decent and affordable housing.
-Read more
-J.M. Huber Corporation continues partnership with Habitat for Humanity, announces commitment to increase equitable access to affordable homeownership across the U.S.
-J.M. Huber Corporation, a global manufacturer of engineered materials that serves a broad range of industries, announced today it is renewing its partnership with Habitat for Humanity International.
-Read more
-MaxLite and Habitat for Humanity International celebrate 10 years of partnership
-Over the course of its partnership with Habitat, MaxLite has donated $13 million in energy-efficient lighting products and funding to help Habitat homeowners lower their home energy costs and make housing more affordable.
-Read more
-Habitat CEO Jonathan Reckford statement on legislation that will reduce home energy costs and support home repair programs
-Habitat for Humanity International CEO Jonathan Reckford issues a statement applauding Congress for including over $10 billion for energy-related housing measures in the Inflation Reduction Act of 2022.
-Read more
-Habitat for Humanity International announces appointment of Johann Fernando as chief operating officer
-Habitat for Humanity International is pleased to welcome Johann Fernando, an experienced private sector leader, as the organization’s new chief operating officer.
-Read more
-Habitat for Humanity International announces appointment of Liz Satow as senior vice president, International Operations
-Since joining Habitat in August 2024, Satow has driven regional strategy across 14 countries, guided governance across 10 country boards and partnered closely with National Directors to strengthen leadership and program quality.
-Read more
-ADS Foundation announces $1 million partnership with Habitat for Humanity International to help expand access to affordable housing
-The three-year partnership will support Habitat’s mission while creating opportunities for ADS employees to help build stronger communities across the country.
-Read more
-Habitat for Humanity newsroom
-Sign up to receive emails with Habitat’s latest press releases.
-Media contacts
-Contact our Media Relations team at [email protected]. We can offer the news media high-quality Habitat photography and video as well as quotes and interviews about our work.
-We can also offer interviews with subject matter experts on topics such as: volunteerism, home construction, philanthropy, cause marketing, operating home improvement retail stores, international development, social services and more.
-</document>
 <document url="https://www.habitat.org/support/partnerships" type="html" page="partners">
 Partnerships
 Learn how you can support Habitat through your company or organization.
@@ -650,54 +699,6 @@ Learn more
 Group volunteer opportunities
 Learn about the group opportunities offered by Habitat for Humanity.
 Read more
-</document>
-<document url="https://secure.habitat.org/site/Donation2?df_id=3441&3441.donation=form1" type="html" page="donate">
-Donate Today - Habitat for Humanity
-
-Help families build better, brighter futures in Habitat homes.
-
-Families struggling with skyrocketing rents and unsafe living conditions need your help now. Everyone deserves a decent place to live. Please give.
-
-Rest assured
-
-Our donation system's 
-security measures
- (opens in a new window) keep your personal information safe.
-
-Good stewardship
-
-Habitat for Humanity International is a tax-exempt 
-501(c)(3)
- nonprofit organization. Your gift is tax-deductible as allowed by law.
-
-We take seriously our responsibility to contributors, to those counting on our help, and to God, to be wise stewards of funds entrusted to us. See our 
-annual report and financial statement
- (opens in a new window) for more information.
-
-Your gift will go where it is needed most, unless you specify a particular location, local affiliate or cause for it to be used. 
-Designate your gift.
-
-Habitat for Humanity International (Tax ID: 91‑1914868) is a tax exempt 501(c)(3) nonprofit organization.
-
-Your gift is tax deductible as allowed by law.
-
-Habitat for Humanity will make every effort to use funds as designated. Donations, excluding Match/Challenge sponsor funding, will be shared with local Habitat affiliates when applicable according to affiliate agreements and unless otherwise directed. Habitat maintains control over the use and distribution of donations in furtherance of its mission. Visit 
-habitat.org/funds
- to learn more about how funds are allocated. If you have questions about how your gift will be directed, please call (800) HABITAT. We will use your address or email to send a receipt.
-
-To contact us:
-
-Habitat for Humanity International
-322 West Lamar Street
-Americus, GA 31709-3543
-campaign@habitat.org
-
-© 2026 Habitat for Humanity
-®
- International. All rights reserved.
-
-[Contact links in page HTML]
-email: campaign@habitat.org
 </document>
 </documents>
 

@@ -5,6 +5,7 @@ You help a web crawler decide which pages to fetch next. You get the fields stil
 Missing fields: leadership, annual_revenue
 
 Unfetched links (url | anchor | guess):
+- https://www.rspb.org.uk/about-us/who-we-are | Who we are | about
 - https://www.rspb.org.uk/about-us/our-history | Our history | about
 - https://www.rspb.org.uk/whats-happening/news/all-about-nightjars | - | about
 - https://www.rspb.org.uk/whats-happening/news/black-history-month | - | about
@@ -44,4 +45,3 @@ Unfetched links (url | anchor | guess):
 - https://www.rspb.org.uk/about-us/management-policies-and-procedures | - | about
 - https://www.rspb.org.uk/about-us/policies-and-procedures | - | about
 - https://www.rspb.org.uk/whats-happening/news/state-of-nature-report/the-peoples-plan-for-nature-we-have-responded-now-others-must-do-the-same | - | team
-- https://www.rspb.org.uk/whats-happening/news/climate-change-news-piece | - | news

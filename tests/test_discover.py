@@ -1,5 +1,5 @@
 from src.discover import (
-    Candidate, base_domain, discover, host_allowed, parse_sitemap, pdf_links, score_link, select,
+    SELECT_ORDER, CATEGORIES, Candidate, base_domain, discover, host_allowed, parse_sitemap, pdf_links, score_link, select,
 )
 
 HOME = "https://www.riverbendfoodbank.org/"
@@ -65,8 +65,8 @@ def test_select_covers_categories_then_fills_by_score():
         Candidate(url="https://x.org/misc", score=2, category="other"),
     ]
     selected, remainder = select(cands, max_pages=4)
-    assert [c.url for c in selected] == ["https://x.org/about", "https://x.org/team",
-                                         "https://x.org/jobs", "https://x.org/donate"]
+    assert [c.url for c in selected] == ["https://x.org/about", "https://x.org/jobs",
+                                         "https://x.org/donate", "https://x.org/team"]
     assert {c.url for c in remainder} == {"https://x.org/history", "https://x.org/misc"}
 
 
@@ -93,3 +93,14 @@ def test_pdf_hop_skips_stale_reports():
     html = '<a href="/files/annual-report-FY2017-web.pdf">Annual Report 2017</a>'
     assert pdf_links(html, "https://www.x.org/about/annual-reports/", this_year=2026) == []
     assert len(pdf_links(html, "https://www.x.org/about/annual-reports/", this_year=2019)) == 1
+
+
+def test_plan_pages_are_their_own_category():
+    assert score_link("https://x.org/about/strategic-plan")[1] == "plans"
+    assert score_link("https://x.org/capital-campaign/")[1] == "plans"
+    assert score_link("https://x.org/files/Strategic-Plan-2026-2030.pdf")[1] == "plans"
+
+
+def test_select_order_covers_every_category_and_puts_signal_pages_first():
+    assert set(SELECT_ORDER) == set(CATEGORIES) | {"news_feed"}
+    assert SELECT_ORDER.index("plans") < SELECT_ORDER.index("team") < SELECT_ORDER.index("contact")

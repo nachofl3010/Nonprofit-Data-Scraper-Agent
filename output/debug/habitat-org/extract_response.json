@@ -1,10 +1,14 @@
 {
   "name": {
+    "value": "Habitat for Humanity",
+    "source_url": "https://www.habitat.org/",
+    "confidence": "high"
+  },
+  "legal_name": {
     "value": "Habitat for Humanity International",
     "source_url": "https://www.habitat.org/",
     "confidence": "high"
   },
-  "legal_name": null,
   "registration_id": {
     "value": "91-1914868",
     "source_url": "https://www.habitat.org/",
@@ -13,7 +17,7 @@
   },
   "country": {
     "value": "US",
-    "source_url": "https://www.habitat.org/",
+    "source_url": "https://www.habitat.org/about",
     "confidence": "high"
   },
   "hq_location": {
@@ -22,26 +26,26 @@
     "confidence": "high"
   },
   "mission": {
-    "value": "Habitat for Humanity is a global nonprofit housing organization working in local communities across all 50 states in the U.S. and in approximately 70 countries. Habitat’s vision is of a world where everyone has a decent place to live.",
+    "value": "A global nonprofit housing organization working in local communities to build innovative housing solutions and provide decent and affordable housing for everyone.",
     "source_url": "https://www.habitat.org/about",
     "confidence": "high"
   },
   "programs": [
     {
       "name": "Habitat AmeriCorps",
-      "description": "A year of service with Habitat AmeriCorps to strengthen communities in the U.S."
+      "description": "Year of service to strengthen communities in the US"
     },
     {
       "name": "International Volunteer Program",
-      "description": "Opportunities to volunteer abroad with Habitat for Humanity."
+      "description": "Volunteer abroad with Habitat for Humanity"
     },
     {
       "name": "U.S. Long-term Volunteer Program",
-      "description": "Volunteer placements for people with construction, professional or retail experience."
+      "description": "Volunteer opportunities in construction, professional or retail experience in the U.S."
     }
   ],
   "cause_area": {
-    "value": "community_development",
+    "value": "human_services",
     "source_url": "https://www.habitat.org/about",
     "confidence": "high"
   },
@@ -57,130 +61,178 @@
     "confidence": "high"
   },
   "tax_status": {
-    "value": "501(C)(3)",
+    "value": "501(c)(3)",
     "source_url": "https://www.habitat.org/",
     "confidence": "high"
   },
-  "annual_revenue": null,
+  "annual_revenue": {
+    "value": {
+      "amount": 0,
+      "currency": "USD",
+      "fiscal_year": null
+    },
+    "source_url": "https://www.habitat.org/about/annual-reports-990s",
+    "confidence": "medium",
+    "evidence": "Annual reports and 990 tax forms and consolidated financial statements to learn more about our work across the years."
+  },
   "staff_count": null,
   "impact_metrics": [
     {
-      "value": "Helped more than 3 million people build or improve a place to call home in fiscal year 2025",
+      "value": "Helped more than 65 million people globally build, improve or finance places to call home over 50 years",
+      "source_url": "https://www.habitat.org/",
+      "confidence": "high"
+    },
+    {
+      "value": "In fiscal year 2025, helped more than 3 million people build or improve a place to call home",
       "source_url": "https://www.habitat.org/about/annual-reports-990s",
       "confidence": "high"
     },
     {
-      "value": "Helped 3 million people build or improve a place to call home in fiscal year 2024",
+      "value": "In fiscal year 2024, helped 3 million people build or improve a place to call home",
       "source_url": "https://www.habitat.org/about/annual-reports-990s",
       "confidence": "high"
     },
     {
-      "value": "Helped 13.4 million people build or improve a place to call home in fiscal year 2023",
+      "value": "In fiscal year 2023, helped 13.4 million people build or improve a place to call home",
       "source_url": "https://www.habitat.org/about/annual-reports-990s",
+      "confidence": "high"
+    },
+    {
+      "value": "Since founding in 1976, helped more than 59 million people around the world",
+      "source_url": "https://www.habitat.org/newsroom",
       "confidence": "high"
     }
   ],
-  "leadership": [
+  "leadership": [],
+  "general_contact": {
+    "email": "campaign@habitat.org",
+    "phone": "(800) 422-4828",
+    "contact_page_url": "https://www.habitat.org/contact",
+    "source_url": "https://secure.habitat.org/site/Donation2?df_id=3441&3441.donation=form1"
+  },
+  "buyer_signals": [
     {
-      "name": "Jonathan Reckford",
-      "title": "CEO",
-      "email": null,
-      "linkedin": null,
-      "source_url": "https://www.habitat.org/you-thought-leadership-series",
-      "confidence": "high",
-      "evidence": "Jonathan Reckford, CEO, Habitat for Humanity International"
-    },
-    {
-      "name": "Johann Fernando",
-      "title": "Chief Operating Officer",
-      "email": null,
-      "linkedin": null,
+      "type": "leadership_change",
+      "description": "Appointment of Johann Fernando as chief operating officer",
+      "date": "2026-09",
       "source_url": "https://www.habitat.org/newsroom",
       "confidence": "high",
       "evidence": "Habitat for Humanity International announces appointment of Johann Fernando as chief operating officer"
     },
     {
-      "name": "Liz Satow",
-      "title": "Senior Vice President, International Operations",
-      "email": null,
-      "linkedin": null,
+      "type": "leadership_change",
+      "description": "Appointment of Liz Satow as senior vice president, International Operations",
+      "date": "2024-08",
       "source_url": "https://www.habitat.org/newsroom",
       "confidence": "high",
-      "evidence": "Liz Satow as senior vice president, International Operations"
+      "evidence": "Appointment of Liz Satow as senior vice president, International Operations since August 2024"
     },
     {
-      "name": "Craig Molyneaux",
-      "title": "Chief Financial and Administration Officer",
-      "email": null,
-      "linkedin": null,
+      "type": "leadership_change",
+      "description": "Appointment of Craig Molyneaux as chief financial and administration officer",
+      "date": "2026-09",
       "source_url": "https://www.habitat.org/newsroom",
       "confidence": "high",
-      "evidence": "Habitat for Humanity International announces appointment of Craig Molyneaux as chief financial and administration officer"
+      "evidence": "Appointment of Craig Molyneaux as chief financial and administration officer"
+    },
+    {
+      "type": "major_grant",
+      "description": "Wells Fargo invests $1.5 million for innovative home construction in rural communities",
+      "date": "2026-09",
+      "source_url": "https://www.habitat.org/newsroom",
+      "confidence": "high",
+      "evidence": "Wells Fargo invests $1.5 million with Habitat for Humanity to scale innovative home construction in rural communities"
+    },
+    {
+      "type": "major_grant",
+      "description": "Wells Fargo Foundation awards $6.3 million in grant funding for build and repair projects in the U.S.",
+      "date": "2026",
+      "source_url": "https://www.habitat.org/newsroom",
+      "confidence": "high",
+      "evidence": "Wells Fargo Foundation awards $6.3 million to support build, repair projects across the U.S. with Habitat for Humanity"
+    },
+    {
+      "type": "funding_growth",
+      "description": "State Farm continues national partnership with funding to support youth engagement and resilient housing during 50th anniversary",
+      "date": "2026",
+      "source_url": "https://www.habitat.org/newsroom",
+      "confidence": "high",
+      "evidence": "State Farm and Habitat for Humanity International continue long-standing national partnership with funding"
+    },
+    {
+      "type": "funding_growth",
+      "description": "J.M. Huber Corporation renewing partnership with commitments to increase equitable access to affordable homeownership",
+      "date": "2026-09",
+      "source_url": "https://www.habitat.org/newsroom",
+      "confidence": "high",
+      "evidence": "J.M. Huber Corporation announces commitment to increase equitable access to affordable homeownership"
+    },
+    {
+      "type": "expansion",
+      "description": "Nissan partners with 10 Habitat affiliates across the US and donates work trucks to support home building projects",
+      "date": "2026",
+      "source_url": "https://www.habitat.org/newsroom",
+      "confidence": "high",
+      "evidence": "Nissan will partner with 10 Habitat affiliates and donate durable work trucks to aid Habitat’s efforts"
     }
   ],
-  "general_contact": {
-    "email": "campaign@habitat.org",
-    "phone": "(800) 422-4828",
-    "contact_page_url": "https://www.habitat.org/contact",
-    "source_url": "https://www.habitat.org/contact"
-  },
   "open_rfps": [],
   "open_roles": [],
   "recent_news": [
     {
       "headline": "Habitat for Humanity International announces appointment of Johann Fernando as chief operating officer",
-      "date": "2026-06",
-      "url": null,
-      "summary": null,
-      "source_url": "https://www.habitat.org/newsroom"
-    },
-    {
-      "headline": "Habitat for Humanity International announces appointment of Liz Satow as senior vice president, International Operations",
-      "date": "2026-06",
-      "url": null,
-      "summary": null,
-      "source_url": "https://www.habitat.org/newsroom"
-    },
-    {
-      "headline": "ADS Foundation announces $1 million partnership with Habitat for Humanity International to help expand access to affordable housing",
-      "date": "2026-06",
-      "url": null,
-      "summary": null,
-      "source_url": "https://www.habitat.org/newsroom"
-    },
-    {
-      "headline": "Habitat for Humanity’s corporate partners to support building more prosperous and vibrant communities during 2025 holiday season",
-      "date": "2026-06",
-      "url": null,
-      "summary": null,
-      "source_url": "https://www.habitat.org/newsroom"
-    },
-    {
-      "headline": "Habitat for Humanity helped more than 3 million people build or improve a place to call home during past year",
-      "date": "2026-06",
-      "url": null,
-      "summary": null,
-      "source_url": "https://www.habitat.org/newsroom"
-    },
-    {
-      "headline": "Wesco International continues partnership with Habitat for Humanity to support 100,000 Floors to Play On initiative",
-      "date": "2026-06",
-      "url": null,
-      "summary": null,
-      "source_url": "https://www.habitat.org/newsroom"
-    },
-    {
-      "headline": "Habitat for Humanity mourns the death of former U.S. President Jimmy Carter",
-      "date": "2026-06",
-      "url": null,
-      "summary": null,
+      "date": "2026-09",
+      "url": "https://www.habitat.org/newsroom",
+      "summary": "Johann Fernando appointed as new chief operating officer of Habitat for Humanity International.",
       "source_url": "https://www.habitat.org/newsroom"
     },
     {
       "headline": "Habitat for Humanity International announces appointment of Craig Molyneaux as chief financial and administration officer",
-      "date": "2026-06",
-      "url": null,
-      "summary": null,
+      "date": "2026-09",
+      "url": "https://www.habitat.org/newsroom",
+      "summary": "Craig Molyneaux appointed as chief financial and administration officer.",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "Habitat for Humanity helped more than 3 million people build or improve a place to call home during past year",
+      "date": "2026",
+      "url": "https://www.habitat.org/newsroom",
+      "summary": "In 2025, Habitat for Humanity helped 3 million people build or improve a place to call home.",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "Wells Fargo invests $1.5 million with Habitat for Humanity to scale innovative home construction in rural communities",
+      "date": "2026-09",
+      "url": "https://www.habitat.org/newsroom",
+      "summary": "Wells Fargo makes $1.5 million investment to support innovative and affordable housing in rural communities.",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "State Farm and Habitat for Humanity International continue long-standing national partnership",
+      "date": "2026",
+      "url": "https://www.habitat.org/newsroom",
+      "summary": "State Farm grants funding to support youth and resilient housing during Habitat's 50th anniversary.",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "Nissan and Habitat for Humanity International celebrate 21 years of partnership",
+      "date": "2026",
+      "url": "https://www.habitat.org/newsroom",
+      "summary": "Nissan partners with 10 Habitat affiliates and donates trucks to support home building projects.",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "Wells Fargo Foundation awards $6.3 million to support build, repair projects across the U.S. with Habitat for Humanity",
+      "date": "2026",
+      "url": "https://www.habitat.org/newsroom",
+      "summary": "Wells Fargo Foundation provides $6.3 million grant funding for affordable home construction and repair.",
+      "source_url": "https://www.habitat.org/newsroom"
+    },
+    {
+      "headline": "J.M. Huber Corporation continues partnership with Habitat for Humanity, announces commitment to increase equitable access to affordable homeownership across the U.S.",
+      "date": "2026-09",
+      "url": "https://www.habitat.org/newsroom",
+      "summary": "J.M. Huber Corporation renews partnership and commits to increasing equitable access to affordable homeownership.",
       "source_url": "https://www.habitat.org/newsroom"
     }
   ],
@@ -207,12 +259,12 @@
     },
     {
       "name": "Wells Fargo Foundation",
-      "type": "foundation",
+      "type": "corporate",
       "source_url": "https://www.habitat.org/newsroom"
     },
     {
-      "name": "ADS Foundation",
-      "type": "foundation",
+      "name": "NewAge Products Inc.",
+      "type": "corporate",
       "source_url": "https://www.habitat.org/newsroom"
     },
     {
@@ -226,17 +278,7 @@
       "source_url": "https://www.habitat.org/newsroom"
     },
     {
-      "name": "NewAge Products Inc.",
-      "type": "corporate",
-      "source_url": "https://www.habitat.org/newsroom"
-    },
-    {
       "name": "Wesco International",
-      "type": "corporate",
-      "source_url": "https://www.habitat.org/newsroom"
-    },
-    {
-      "name": "J.M. Huber Corporation",
       "type": "corporate",
       "source_url": "https://www.habitat.org/newsroom"
     }

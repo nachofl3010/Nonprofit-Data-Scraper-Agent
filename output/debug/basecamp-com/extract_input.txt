@@ -9,8 +9,9 @@ Rules:
 - Dates in ISO 8601 (YYYY-MM-DD; YYYY-MM or YYYY if that is all the page gives). Money as a plain number plus ISO 4217 currency code ("$12.5 million" -> 12500000, USD).
 - annual_revenue: total revenue or income for one fiscal year. Not a single gift, campaign goal, program budget or cumulative total.
 - registration_id: the number only, as printed (e.g. "12-3456789" or "207076"). If several are shown, the main one (US EIN, or the first charity number).
-- leadership: named executives, senior staff and board members (max 15). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Board Member", "Trustee"). Add email or LinkedIn only if shown next to that person.
+- leadership: up to 8 named leaders, most senior first: the chief executive, then heads of fundraising/development, finance and operations/IT, then at most 2 board officers (e.g. chair, treasurer). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Trustee"). Add email or LinkedIn only if shown next to that person.
 - general_contact: the organisation's general email, phone and contact page.
+- buyer_signals: up to 8 recent or planned events that suggest the organisation will spend on new tools, systems or services. Look hardest in annual reports, strategic plans, news and CEO/board letters. Types: technology_investment (the organisation is adopting, replacing or building its own CRM, database, website, digital or data systems); capital_campaign (a named campaign to raise capital or endowment for the organisation); strategic_plan (the organisation has adopted or is developing its own new multi-year strategic plan; an annual report, policy, code of practice, programme or event is not a strategic plan); leadership_change (a new chief executive, or a new head of development/fundraising, finance, operations or IT; board appointments do not count); merger (merger, acquisition or affiliation); expansion (new sites, regions or services of its own, or significant staff growth); major_grant (a large grant or gift to the organisation, e.g. $1M+ or a large share of its budget, especially for capacity building); funding_growth (stated growth in the organisation's own revenue, donors or budget); other. Only events the documents state, each with evidence. A signal must be about the organisation itself: its own systems, leadership, strategy, structure or funding. Not programmes, events, products or services it delivers to others (e.g. a workshop it hosts for other nonprofits, a directory or app it launches for the public, a product release), and not fundraising events or donation appeals. date: when it was announced or starts.
 - open_roles: current paid job openings only (no volunteer roles). open_rfps: current requests for proposals, tenders or procurement notices only.
 - recent_news: up to 8 of the newest dated news, press or blog items with their dates. Do not filter by age.
 - funders_and_partners: organisations named as funders, sponsors or partners (max 15).
@@ -411,6 +412,49 @@ Thanks for reading, and for giving Basecamp a try. You can always contact me dir
 [Contact links in page HTML]
 email: jason@basecamp.com
 </document>
+<document url="https://basecamp.com/gettingreal/13.3-ride-the-blog-wave" type="html" page="news">
+Blogging can be more effective than advertising (and it’s a hell of a lot cheaper)
+Advertising is expensive. And evaluating the effectiveness of various types of advertising can wind up being even more expensive than the advertising itself. When you don’t have the time or money to go the traditional advertising route, consider the promote-via-blog route instead.
+Start off by creating a blog that not only touts your product but offers helpful advice, tips, tricks, links, etc. Our Signal vs. Noise blog gets thousands of unique readers a week thanks to the helpful, informative, and interesting bits and anecdotes we post on a daily basis.
+So when it came time to promote our first product, Basecamp, we started there. We got the word out on SvN and it started to spread. Folks like Jason Kottke, the BoingBoingers, Jim Coudal, and a variety of other people with popular blogs helped raise the visibility and things took off.
+Ta-da List is another great example of the power of blog-based marketing. We launched Ta-da with a single post on Signal vs. Noise, and a few weeks later it had been mentioned on over 200 blogs and over 12,000 people had signed up for their own Ta-da account. Word about Backpack spread even faster. Within 24 hours of launch, more than 10,000 signed up.
+</document>
+<document url="https://basecamp.com/managers/giving-feedback" type="html" page="donate">
+Giving Feedback
+Performance reviews are once-a-year formal touch points during which managers evaluate and discuss job successes, challenges, and goals with their report. However, between those touch points, managers should be giving regular, reliable feedback.
+Coachability is a defined performance expectation for every role and every level at the company. That means everyone is expected to receive feedback graciously, and everyone is expected to apply that feedback when necessary. As a leader, you’re expected to provide useful, actionable, well-considered feedback to your report and your more junior colleagues.
+First, some definitions:
+- Positive feedback recognizes and reinforces successful behaviors or actions.
+- Negative feedback is sharing your thoughts about your report’s behavior in a disparaging way. Don’t do this!
+- Constructive feedback uses observations and your own expert advice to steer your report towards improvement. Critical, yes, but also helpful.
+This chapter is focused on techniques for giving constructive feedback. But in general, a combination of constructive feedback + positive feedback + continuous feedback throughout all levels and departments results in a healthy feedback culture, in which communication flows freely and with the end goal of improving individual and company performance.
+There are three general areas where your report may need constructive feedback.
+- Approach, or project management.
+- Tactics, or the practical tasks necessary to execute their approach.
+- Engagement, or how they show up to work.
+Approach
+Generally speaking, employees at 37signals enjoy a high degree of control over their own work and desired workflow. This value is ingrained in our company culture and one of the major perks of working here. Encourage your report to find their own way and devise their own strategy once they’ve been assigned a project. Avoid giving unnecessary feedback when their approach is solid and just different than the one you would take. When you start to monitor their preferred strategy for tackling projects or problems, you veer into micromanagement territory.
+On the other hand, when your report’s approach is detrimental to team or individual productivity, work quality, team process, or team morale, it’s your duty to step in and provide specific and actionable feedback so they have the opportunity to correct.
+When you notice work going off track, taking too long, or projects being mismanaged, speak up. Feedback is best when it’s given right when you see the need for it. Provide concrete examples, actionable suggestions, and approach the conversation with a collaborative mindset.
+❌ “Something’s not right.”
+✅ “By this point, I expected [specific progress or deliverable]. What needs to change to get this back on track by [deadline]?”
+Tactics
+Most often, you’ll be called on to provide feedback on your report’s daily work in PRs, to-dos, support or on-call cases, or by request when they have questions. When you’re giving feedback on tasks:
+- Be clear and to the point. Name what you see and what needs to change. Be open to engaging in a conversation about how to accomplish the desired result.
+- Don’t overload your report. Giving too much critique at once can demotivate.
+- Avoid the “compliment sandwich”. Sandwiching constructive feedback in between positive feedback is usually inauthentic so use it sparingly, if ever.
+- Offer suggestions. Don’t just complain that your report did something wrong. Help them understand what went wrong and why, and how to correct in the future.
+❌ “Your tone in this case is all wrong.”
+✅ “I saw this card come across my timeline. I’d have liked to see more investigation on your part before asking for help, and there should be more documentation to come out of cases like this. Here are some examples…”
+Engagement
+Sometimes you’ll have to manage engagement issues in your report. This often looks like an attitude problem, conflict with other employees, or unusual disengagement from their work or team relationships.
+The same basic principles apply when giving feedback on someone’s engagement, but personality or behavioral issues require a more delicate touch. You should still be clear and to the point, and in engagement cases, also:
+- Focus on the behaviors instead of the person. “People say you’ve been hard to work with lately.” is personal. “Your tone in PR feedback is unusually blunt lately [share examples]. Is something going on?” is better.
+- Use specific examples. “You seem uninterested in your work lately” isn’t specific. “I noticed you haven’t spoken up in our team call for the past few weeks, and your check-ins aren’t as detailed as they usually are. Is something wrong?” is better.
+- Avoid becoming a therapist. We’re all human and sometimes outside stress bleeds into how we show up to work. If you’ve built trust with your report, they’ll feel comfortable sharing what ails them and how it’s affecting their work. Be empathetic, but ultimately seek to redirect the conversation to their presence at work. Loop in People Ops if you feel unequipped to handle any personal problems that surface.
+Lastly, don’t forget about positive feedback! Like recognition, noticing what your report is doing well and naming it and its impact is great for morale and encouraging the behaviors and great work you want to see.
+Consider using AI to help you with your feedback for your report. Draft your talking points first and then ask AI to flag anything that sounds vague, focuses on the person rather than the behavior, or lacks specificity. You can feed this playbook document into AI, in fact, to give it context for the qualities expected of your manager feedback. Ask AI to react as if it is your report to see how your feedback might land. Think of it as a way to preview & test your talking points & ideas before the real conversation.
+</document>
 <document url="https://basecamp.com/live" type="html" page="team">
 Basecamp — Live around the world
 
@@ -587,49 +631,6 @@ Unknown to known, and known to done
 Since we adopted the Hill Chart internally at Basecamp, our teams have been communicating about progress at a level never before possible. Our intuition is the same, but now we have a way to immediately show each other where things stand.
 And because of the Hill Chart history, we don’t need to call meetings to catch up on a project’s status. It’s no longer a challenge to see what’s in motion and what’s stuck. We can have quick, substantial conversations asynchronously about where to focus next or how to break up a problem.
 Try the Hill Chart on your next Basecamp project. To use it, navigate to any To-do List and choose “Track this on the Hill Chart” from the Options menu (•••) in the top-right corner.
-</document>
-<document url="https://basecamp.com/gettingreal/13.3-ride-the-blog-wave" type="html" page="news">
-Blogging can be more effective than advertising (and it’s a hell of a lot cheaper)
-Advertising is expensive. And evaluating the effectiveness of various types of advertising can wind up being even more expensive than the advertising itself. When you don’t have the time or money to go the traditional advertising route, consider the promote-via-blog route instead.
-Start off by creating a blog that not only touts your product but offers helpful advice, tips, tricks, links, etc. Our Signal vs. Noise blog gets thousands of unique readers a week thanks to the helpful, informative, and interesting bits and anecdotes we post on a daily basis.
-So when it came time to promote our first product, Basecamp, we started there. We got the word out on SvN and it started to spread. Folks like Jason Kottke, the BoingBoingers, Jim Coudal, and a variety of other people with popular blogs helped raise the visibility and things took off.
-Ta-da List is another great example of the power of blog-based marketing. We launched Ta-da with a single post on Signal vs. Noise, and a few weeks later it had been mentioned on over 200 blogs and over 12,000 people had signed up for their own Ta-da account. Word about Backpack spread even faster. Within 24 hours of launch, more than 10,000 signed up.
-</document>
-<document url="https://basecamp.com/managers/giving-feedback" type="html" page="donate">
-Giving Feedback
-Performance reviews are once-a-year formal touch points during which managers evaluate and discuss job successes, challenges, and goals with their report. However, between those touch points, managers should be giving regular, reliable feedback.
-Coachability is a defined performance expectation for every role and every level at the company. That means everyone is expected to receive feedback graciously, and everyone is expected to apply that feedback when necessary. As a leader, you’re expected to provide useful, actionable, well-considered feedback to your report and your more junior colleagues.
-First, some definitions:
-- Positive feedback recognizes and reinforces successful behaviors or actions.
-- Negative feedback is sharing your thoughts about your report’s behavior in a disparaging way. Don’t do this!
-- Constructive feedback uses observations and your own expert advice to steer your report towards improvement. Critical, yes, but also helpful.
-This chapter is focused on techniques for giving constructive feedback. But in general, a combination of constructive feedback + positive feedback + continuous feedback throughout all levels and departments results in a healthy feedback culture, in which communication flows freely and with the end goal of improving individual and company performance.
-There are three general areas where your report may need constructive feedback.
-- Approach, or project management.
-- Tactics, or the practical tasks necessary to execute their approach.
-- Engagement, or how they show up to work.
-Approach
-Generally speaking, employees at 37signals enjoy a high degree of control over their own work and desired workflow. This value is ingrained in our company culture and one of the major perks of working here. Encourage your report to find their own way and devise their own strategy once they’ve been assigned a project. Avoid giving unnecessary feedback when their approach is solid and just different than the one you would take. When you start to monitor their preferred strategy for tackling projects or problems, you veer into micromanagement territory.
-On the other hand, when your report’s approach is detrimental to team or individual productivity, work quality, team process, or team morale, it’s your duty to step in and provide specific and actionable feedback so they have the opportunity to correct.
-When you notice work going off track, taking too long, or projects being mismanaged, speak up. Feedback is best when it’s given right when you see the need for it. Provide concrete examples, actionable suggestions, and approach the conversation with a collaborative mindset.
-❌ “Something’s not right.”
-✅ “By this point, I expected [specific progress or deliverable]. What needs to change to get this back on track by [deadline]?”
-Tactics
-Most often, you’ll be called on to provide feedback on your report’s daily work in PRs, to-dos, support or on-call cases, or by request when they have questions. When you’re giving feedback on tasks:
-- Be clear and to the point. Name what you see and what needs to change. Be open to engaging in a conversation about how to accomplish the desired result.
-- Don’t overload your report. Giving too much critique at once can demotivate.
-- Avoid the “compliment sandwich”. Sandwiching constructive feedback in between positive feedback is usually inauthentic so use it sparingly, if ever.
-- Offer suggestions. Don’t just complain that your report did something wrong. Help them understand what went wrong and why, and how to correct in the future.
-❌ “Your tone in this case is all wrong.”
-✅ “I saw this card come across my timeline. I’d have liked to see more investigation on your part before asking for help, and there should be more documentation to come out of cases like this. Here are some examples…”
-Engagement
-Sometimes you’ll have to manage engagement issues in your report. This often looks like an attitude problem, conflict with other employees, or unusual disengagement from their work or team relationships.
-The same basic principles apply when giving feedback on someone’s engagement, but personality or behavioral issues require a more delicate touch. You should still be clear and to the point, and in engagement cases, also:
-- Focus on the behaviors instead of the person. “People say you’ve been hard to work with lately.” is personal. “Your tone in PR feedback is unusually blunt lately [share examples]. Is something going on?” is better.
-- Use specific examples. “You seem uninterested in your work lately” isn’t specific. “I noticed you haven’t spoken up in our team call for the past few weeks, and your check-ins aren’t as detailed as they usually are. Is something wrong?” is better.
-- Avoid becoming a therapist. We’re all human and sometimes outside stress bleeds into how we show up to work. If you’ve built trust with your report, they’ll feel comfortable sharing what ails them and how it’s affecting their work. Be empathetic, but ultimately seek to redirect the conversation to their presence at work. Loop in People Ops if you feel unequipped to handle any personal problems that surface.
-Lastly, don’t forget about positive feedback! Like recognition, noticing what your report is doing well and naming it and its impact is great for morale and encouraging the behaviors and great work you want to see.
-Consider using AI to help you with your feedback for your report. Draft your talking points first and then ask AI to flag anything that sounds vague, focuses on the person rather than the behavior, or lacks specificity. You can feed this playbook document into AI, in fact, to give it context for the qualities expected of your manager feedback. Ask AI to react as if it is your report to see how your feedback might land. Think of it as a way to preview & test your talking points & ideas before the real conversation.
 </document>
 <document url="https://basecamp.com/gettingreal/01.2-about-basecamp" type="html" page="about">
 What we do

@@ -448,10 +448,24 @@
     "source": "sitemap"
   },
   {
+    "url": "https://www.rspb.org.uk/whats-happening/news/work-with-the-rspb-to-plan-and-implement-your-biodiversity-net-gain-bng-strategy",
+    "anchor": "",
+    "score": 4.0,
+    "category": "plans",
+    "source": "sitemap"
+  },
+  {
     "url": "https://www.rspb.org.uk/whats-happening/news/we-are-marching-for-clean-water-come-and-join-us",
     "anchor": "",
     "score": 4.0,
     "category": "careers",
+    "source": "sitemap"
+  },
+  {
+    "url": "https://www.rspb.org.uk/whats-happening/news/wales-welcomes-long-awaited-seabird-conservation-strategy",
+    "anchor": "",
+    "score": 4.0,
+    "category": "plans",
     "source": "sitemap"
   },
   {
@@ -522,13 +536,6 @@
     "anchor": "How we are funded",
     "score": 2.0,
     "category": "about",
-    "source": "homepage"
-  },
-  {
-    "url": "https://www.rspb.org.uk/whats-happening/news/bird-feeding",
-    "anchor": "Spotlight Feeding garden birds – how to keep our feathered friends healthy What ",
-    "score": 2.0,
-    "category": "news",
     "source": "homepage"
   },
   {
@@ -1769,6 +1776,13 @@
     "score": 1.0,
     "category": "donate",
     "source": "sitemap"
+  },
+  {
+    "url": "https://www.rspb.org.uk/whats-happening/news/celebrating-twenty-years-of-restoring-chalk-wildlife-in-wiltshire",
+    "anchor": "News Celebrating 20 years of restoring chalk wildlife in Wiltshire The reserve w",
+    "score": 0.8000000000000007,
+    "category": "news",
+    "source": "homepage"
   },
   {
     "url": "https://www.rspb.org.uk/wales/news/hen-harriers-celebrate-successful-breeding-season-in-wales",

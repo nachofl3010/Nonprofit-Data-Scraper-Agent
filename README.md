@@ -1,6 +1,6 @@
 # Nonprofit Profile Agent
 
-Give it a nonprofit's name or website. It returns a structured profile with a source on every fact, plus a **sales view**: a lead score, a one-line "why now", and a flat CSV row ready for CRM import.
+Give it a nonprofit's name or website. It returns a structured profile with a source on every fact, plus a **sales view** built on **buyer signals** (strategic plans, capital campaigns, new leaders, technology investment, RFPs, revenue growth): a lead score, a one-line "why now", and a flat CSV row ready for CRM import.
 
 ```bash
 python run.py https://www.charitywater.org        # one org
@@ -24,8 +24,8 @@ I split users by **the direction the money flows**:
 | | Sell-side: **primary user** | Fund-side: supported |
 |---|---|---|
 | Who | Vendors selling *to* nonprofits: donor-CRM and fundraising software, consultants, auditors, agencies | Those giving money *to* nonprofits: foundations, government grantmakers, corporate CSR teams |
-| Their question | *Who is this, can they pay, who decides, why reach out now?* | *Do they fit our focus, are they financially healthy, are they legitimate?* |
-| What they get | `sales_view`: lead score, why-now line, contacts grouped by buyer role, tech stack, CSV row | `funder_view`: mission, programs, geography, tax status, multi-year revenue trend, impact claims, existing funders |
+| Their question | *Why reach out now? Can they pay? What do they use today? Who decides?* | *Do they fit our focus, are they financially healthy, are they legitimate?* |
+| What they get | `sales_view`: lead score, why-now line, buyer signals, revenue trend, tech stack, contacts grouped by buyer role, CSV row | `funder_view`: mission, programs, geography, tax status, multi-year revenue trend, impact claims, existing funders |
 
 The sell-side is the primary user for the MVP. It is the larger, repeat-purchase market, and its value depends on freshness, which is exactly what automation provides. The split isn't clean:
 - corporate sponsors sit on both sides, since they give money but expect marketing value back;
@@ -37,12 +37,14 @@ That's why there is **one shared core profile** and **two thin views** computed 
 
 ## 3. The schema, and why each field is there
 
-Defined in [`src/schema.py`](src/schema.py) (Pydantic). Every extracted value carries **`source_url` + `confidence`**. Five high-stakes fields also carry verbatim **`evidence`** of at most 30 words, because these are the fields a person checks before acting on them:
-- revenue
-- registration ID
-- leadership
+Defined in [`src/schema.py`](src/schema.py) (Pydantic). The organising question is the sales user's: **is there a reason this org will buy something soon?** So the schema is built around buyer signals first, then ability to pay and current tools, with contacts last.
+
+Every extracted value carries **`source_url` + `confidence`**. Five high-stakes fields also carry verbatim **`evidence`** of at most 30 words, because these are the fields a person checks before acting on them:
+- buyer signals
 - RFPs
 - open roles
+- revenue
+- registration ID
 
 Evidence isn't on every field because output tokens cost 4–6× input tokens with both Anthropic and OpenAI. Output is about 9% of our tokens but about 30% of the LLM bill (§7).
 
@@ -57,18 +59,19 @@ Evidence isn't on every field because output tokens cost 4–6× input tokens wi
 | `cause_area` (fixed list) | both | Segmenting lists (see §9) | NTEE code from IRS, otherwise LLM choosing from the fixed list | yearly |
 | `geography_served` (local / regional / national / international) | both | Funders fund places; sales territories | site | yearly |
 | `annual_revenue`, `fiscal_year`, `staff_count` → `size_band` | **sales**: can they pay? | Budget qualifies the deal size; the band is computed by rule, not by the LLM | IRS 990 first, then annual report or site | yearly |
-| `financial_history` | funders | Revenue trend, i.e. financial health | IRS 990 filings (US) | yearly |
+| `financial_history` | both | Revenue trend. Sales: growth of 20%+ over about 3 years is scored as a buyer signal (tools have to scale), a similar decline counts against. Funders: financial health | IRS 990 filings (US) | yearly |
 | `tax_status` | funders | Many funders can only give to 501(c)(3) orgs | IRS, otherwise site | yearly |
 | `impact_metrics` | funders | Credibility; quantified outcomes | site or report | yearly |
-| `leadership[]` + `buyer_role` | **sales**: who decides? | A donor-CRM sale goes to the fundraising lead; accounting software goes to finance. The role is set by keyword rules on the title | team or board page | quarterly |
+| `leadership[]` + `buyer_role` | **sales**: who decides? | Deliberately light: at most 8, most senior first, no evidence snippet (the grounding check still verifies every name and email). A donor-CRM sale goes to the fundraising lead; accounting software goes to finance. The role is set by keyword rules on the title | team or board page | yearly |
 | `general_contact` | both | Fallback contact route | contact page, footer | yearly |
 | `tech_stack[]` | **sales** | The most useful field for a software vendor: already a competitor's customer? A migration target? No platform yet (greenfield)? Detected **deterministically** from embeds, with no LLM | donate page and other pages' HTML | quarterly |
+| **`buyer_signals[]`** | **sales** | **The core sales field.** Events that suggest spending on new tools or services soon, each with a type from a fixed list: `technology_investment`, `capital_campaign`, `strategic_plan`, `leadership_change`, `merger`, `expansion`, `major_grant`, `funding_growth`, `other`. Mostly found in annual reports, strategic plans, CEO letters and news. Signals older than 2 years are dropped in code; ones whose evidence can't be found on the page stay in the profile but don't score | annual report PDF, strategic plan, news, site | monthly |
 | `open_rfps[]` | **sales** | The strongest buying signal. **Expect it to be empty for most orgs**: few nonprofits publish RFPs. Empty means none were found; it's not a bug | site | monthly |
 | `open_roles[]` + `is_buying_signal` | **sales** | A new Development Director or CRM/database manager usually means new tools within months. The flag comes from keyword rules on the title | careers page / ATS | monthly |
-| `recent_news[]` (last 12 months) | both | Trigger events: new CEO, capital campaign, merger, big grant. Items older than 12 months are **filtered in code**, not left to the prompt | news, press, RSS | monthly |
+| `recent_news[]` (last 12 months) | both | Context, and a source of buyer signals. A news item only scores if it describes a signal (a new CEO, a capital campaign); being in the news alone doesn't. Items older than 12 months are **filtered in code**, not left to the prompt | news, press, RSS | monthly |
 | `funders_and_partners[]` | both | Sales: social proof and warm introductions. Funders: who else is funding them | site | yearly |
 
-Run metadata: `input`, `resolved_url`, `extracted_at`, `status` (ok / partial / failed), `flags`, `pages_crawled` (URL, type, HTTP status, tokens), `errors` (every non-fatal problem), `gapfill`, `cost`. Each section (identity, financials, contacts, signals, technology) has its own `last_checked` timestamp, which is what makes tiered refresh (§7) workable.
+Run metadata: `schema_version`, `input`, `resolved_url`, `extracted_at`, `status` (ok / partial / failed), `flags`, `pages_crawled` (URL, type, HTTP status, tokens), `errors` (every non-fatal problem), `gapfill`, `cost`. Each section (identity, financials, contacts, signals, technology) has its own `last_checked` timestamp, which is what makes tiered refresh (§7) workable.
 
 ### Deliberately not collected
 
@@ -90,9 +93,10 @@ Run metadata: `input`, `resolved_url`, `extracted_at`, `status` (ok / partial / 
 - **One** structured LLM extraction call, validated against the schema, plus a deterministic grounding check.
 - IRS 990 data from ProPublica for US orgs: EIN, revenue history, NTEE code, tax status.
 - **At most one** gap-fill round when leadership, contact details or revenue are still missing.
-- Rules: size band, buyer roles, buying-signal roles, NTEE → cause area, news and RFP date filters.
-- Views: `sales_view` (lead score + why-now) and `funder_view`, written as JSON plus an upserted CSV row per org.
-- 93 unit tests (`pytest`, no network, no LLM), a `-v` trace, a debug folder, an eval script, and a cost log.
+- Buyer signals (plans, campaigns, technology investment, leadership change, growth…) extracted in the same call, with evidence, and grounded.
+- Rules: size band, buyer roles, buying-signal roles, NTEE → cause area, date filters for news, buyer signals and RFPs.
+- Views: `sales_view` (lead score driven by buyer signals + why-now) and `funder_view`, written as JSON plus an upserted CSV row per org.
+- 101 unit tests (`pytest`, no network, no LLM), a `-v` trace, a debug folder, an eval script, and a cost log.
 
 ---
 
@@ -102,7 +106,7 @@ I considered an LLM tool-calling loop that browses the site. I chose a **determi
 
 | | Tool-calling agent | This pipeline |
 |---|---|---|
-| Tokens per org | Every turn re-sends the growing context. 10 turns over 3k→35k tokens of page text is about 200k input tokens | About 13k input tokens (measured, §7) |
+| Tokens per org | Every turn re-sends the growing context. 10 turns over 3k→35k tokens of page text is about 200k input tokens | About 15k input tokens (measured, §7) |
 | Predictability | Step count varies per site, so it's hard to budget at 500k | Fixed: 1–3 LLM calls, at most 14 pages (10 + 1 PDF hop + 3 gap-fill) |
 | Reproducibility | Different paths on different runs | Same pages, same prompt, cacheable, testable |
 | Orchestration | Needs an agent framework | A plain loop. At 500k, orchestration belongs in a job queue and the Batch API, not an in-process agent graph |
@@ -137,11 +141,11 @@ input ──► resolve ──► discover ──► fetch & clean ──► tec
 ```
 
 1. **Resolve** ([`resolve.py`](src/resolve.py)). URLs are normalised: scheme added, host lowercased, `utm_*`/`fbclid`/… removed, redirects followed, `http` fallback. Names go to one web search (Serper). Directories, social sites and news sites are dropped, and the top result is **verified** by fuzzy-matching the org name against its title, h1 and og:site_name, which tolerates typos. If there's no key, no result or the check fails, the run stops with "please provide the URL". **It never profiles a guessed site.**
-2. **Discover** ([`discover.py`](src/discover.py)). Homepage links + `sitemap.xml` (from `robots.txt`), + RSS feeds are scored by keyword category: about, team, financials, careers, contact, programs, rfp, news, partners, donate. The rules:
+2. **Discover** ([`discover.py`](src/discover.py)). Homepage links + `sitemap.xml` (from `robots.txt`), + RSS feeds are scored by keyword category: about, financials, plans (strategic plan, capital campaign), rfp, careers, news, donate, team, programs, contact, partners. The rules:
    - The last path segment decides the category.
    - Word boundaries keep `/research` from matching `search`.
    - Deep URLs and long article-like slugs are penalised.
-   - The best page per category is picked first, then remaining slots fill by score.
+   - The best page per category is picked first, then remaining slots fill by score. The category order puts buyer-signal sources (reports, plans, RFPs, careers, news) ahead of team, contact and partner pages, so those are the ones dropped when the 10-page cap bites.
    - The site's own domain is allowed, plus an allowlist of job boards and donation platforms.
    - Annual-report PDFs are usually linked from the financials page, so there's **one hop** to the best report PDF. It prefers the newest year in the file name and skips reports more than 3 years old.
 3. **Fetch & clean** ([`fetch.py`](src/fetch.py), [`parse.py`](src/parse.py)).
@@ -165,12 +169,13 @@ input ──► resolve ──► discover ──► fetch & clean ──► tec
 9. **Rules** ([`categorise.py`](src/categorise.py)) and **views** ([`views.py`](src/views.py)). The lead score adds:
    - open RFP +3;
    - buying-signal role +2;
-   - news in the last 90 days +1;
+   - buyer signals, each type counted once: technology investment +3; capital campaign, strategic plan, leadership change, merger +2; expansion, major grant, funding growth +1. Low-confidence signals (evidence not found) don't count;
+   - IRS revenue up 20%+ over about 3 filings +1, down 20%+ −1;
    - a competitor donor CRM in the stack +1;
    - revenue in the target band +1, or −1 if under $500k;
    - a named decision-maker with an email +1.
 
-   `why_now` is filled from a template using only the signals that fired, so it reads the same way across 500k orgs.
+   Being in the news no longer scores on its own; only news that describes a signal does. The weights are my judgment, not fitted to data (§12). `why_now` is filled from a template using only the signals that fired, so it reads the same way across 500k orgs.
 
 **Debugging:** `-v` prints one block per stage. `output/debug/<domain>/` holds the scored candidate links, the **exact text sent to the LLM** and its raw response. A wrong field can then be traced to one of two causes: a **crawl** failure (the fact isn't in `extract_input.txt`) or an **extraction** failure (the fact is there and the LLM misread it).
 
@@ -185,10 +190,10 @@ From the final batch, run on gpt-4.1-mini. Averages cover the 5 orgs with a full
 |---|---|
 | Pages/files fetched | 9–13 |
 | HTTP requests | about 12–16, including robots.txt, sitemap and the IRS lookup |
-| LLM calls | 1. Gap-fill fired for 1 of the 7 orgs that reached extraction (RSPB), making 3 calls there |
-| Input tokens | 13.4k on average |
-| Output tokens | 1.3k on average (0.8k–2.0k) |
-| LLM cost | **$0.0055** on average ($0.0037–0.0072), including OpenAI's automatic prompt-cache discount |
+| LLM calls | 1. Gap-fill fired for 2 of the 7 orgs that reached extraction (RSPB and Habitat), making 3 calls there |
+| Input tokens | 14.9k on average |
+| Output tokens | 1.4k on average (0.7k–2.4k) |
+| LLM cost | **$0.0075** on average ($0.0056–0.0104). Up from $0.0055 before buyer signals: a little more input from report and plan pages, more output, and one more gap-fill |
 | Wall time | about 35 s, almost all of it the 1 s politeness delay between requests |
 
 ### Formula
@@ -201,16 +206,16 @@ cost/org = input_tokens × input_price + cached_tokens × cached_price + output_
 ```
 
 ### First full crawl of 500k orgs
-Measured tokens (13.4k in, 1.3k out) × list prices × 500,000. This is conservative, because it ignores prompt-cache discounts:
+Measured tokens (14.9k in, 1.4k out) × list prices × 500,000. This is conservative, because it ignores prompt-cache discounts:
 
 | Model | $/org | 500k orgs | 500k with Batch API (−50%) |
 |---|---|---|---|
-| gpt-4.1-nano ¹ | $0.0019 | $933 | $467 |
-| gpt-6-luna ¹ | $0.0020 | $998 | $499 |
-| **gpt-4.1-mini** (what we ran) | **$0.0075** | **$3,732** | **$1,866** |
-| Claude Haiku 4.5 | $0.0200 | $9,983 | $4,992 |
-| gpt-5.4 (frontier) | $0.0532 | $26,589 | $13,295 |
-| Claude Opus 5 (frontier) | $0.0998 | $49,916 | $24,958 |
+| gpt-4.1-nano ¹ | $0.0020 | $1,020 | $510 |
+| gpt-6-luna ¹ | $0.0022 | $1,089 | $545 |
+| **gpt-4.1-mini** (what we ran) | **$0.0082** | **$4,081** | **$2,040** |
+| Claude Haiku 4.5 | $0.0218 | $10,893 | $5,446 |
+| gpt-5.4 (frontier) | $0.0579 | $28,960 | $14,480 |
+| Claude Opus 5 (frontier) | $0.1089 | $54,464 | $27,232 |
 
 ¹ Not yet run against the eval set. A cheaper model only counts if `eval.py` still shows about 0 wrong.
 
@@ -220,10 +225,10 @@ The first pass costs about **$2k in LLM spend** with a small model and the Batch
 | Cadence | What runs | LLM $/month (gpt-4.1-mini, Batch API) |
 |---|---|---|
 | Monthly | Re-fetch careers, news and RFP pages (about 3 requests per org) and compare content hashes. Re-extract signals only where a page changed. Assumes 30% change a month, so 150k orgs × about 4k in / 0.4k out | about $170 |
-| Yearly, spread monthly | Full re-crawl and extraction (identity, leadership, programs) | about $155 |
+| Yearly, spread monthly | Full re-crawl and extraction (identity, leadership, programs, reports and plans) | about $170 |
 | When the IRS publishes | Registry refresh: revenue, EIN, NTEE | $0 (free API) |
 
-That's about **$300–350 a month** to keep 500k profiles current, compared with about $1.9k for the first pass. The 30% change rate is an assumption; the per-section `last_checked` timestamps and stored ETags are what would measure it.
+That's about **$340 a month** to keep 500k profiles current, compared with about $2k for the first pass. The 30% change rate is an assumption; the per-section `last_checked` timestamps and stored ETags are what would measure it.
 
 ### Non-LLM costs
 - **Requests:** about 12–15 per org (robots.txt, sitemap, 10 pages, a registry call), so about 7M requests per full pass. Bandwidth is trivial: text only, PDFs capped.
@@ -238,7 +243,7 @@ Items marked **(done)** are in V1; **(not built)** are next steps.
 2. **(not built) Tiered refresh using the per-section `last_checked`.** Signals (careers, news, RFP pages) are rechecked monthly, re-extracting only those pages with a smaller signals-only schema. Identity, leadership and programs are rechecked yearly. The registry is refreshed when the IRS publishes new data.
 3. **(not built) Batch API** for bulk runs: 50% off, and latency doesn't matter here.
 4. **(done) Registry first.** For US orgs the IRS data already gives EIN, revenue, NTEE and tax status for free, so PDFs aren't parsed just to find revenue.
-5. **(done) Fewer output tokens.** Output tokens cost 4–6× input tokens and are already about 30% of the bill, so evidence stays on only 5 fields, lists are capped (8 programs, 15 leaders, 8 news items), and fields code can derive are kept out of the LLM schema.
+5. **(done) Fewer output tokens.** Output tokens cost 4–6× input tokens and are already about 30% of the bill, so evidence stays on only 5 fields, lists are capped (8 programs, 8 leaders, 8 buyer signals, 8 news items), and fields code can derive are kept out of the LLM schema.
 6. **(done) Prompt caching** of the static system prompt and schema, about 3.4k tokens. It's a smaller lever than it sounds. OpenAI caches long repeated prefixes automatically; Anthropic's Haiku 4.5 only caches prefixes of at least 4,096 tokens, so ours doesn't qualify. Either way, the per-org documents are what cost money, and they're unique.
 7. **(partly done) Cheapest model that holds quality on the eval set.** A small model handles routine extraction; sending only orgs where extraction fails or confidence is low to a stronger model is not built. Switching model is one line in `.env` (`LLM_MODEL`), and `eval.py` decides whether the cheaper one is good enough.
 
@@ -252,18 +257,18 @@ Results from the committed run (gpt-4.1-mini). All 10 inputs finished; nothing c
 
 | Input | What it tests | Result |
 |---|---|---|
-| charitywater.org | large, well-structured charity | `ok`, score 0. EIN from the site footer, confirmed by the IRS record. 6 executives, including the founder (after fix 10). No open roles, RFPs or recent dated news, so "nurture" |
+| charitywater.org | large, well-structured charity | `ok`, score 0. EIN from the site footer, confirmed by the IRS record. 7 executives plus the board chair, including the founder (after fix 10). No buyer signals on the pages fetched (no plan, campaign or leadership change, and no reachable report PDF), so "nurture". An earlier run labelled the annual report itself a "strategic plan"; the tighter type definitions fixed that |
 | communityoutreachgroupinc.com | tiny local org, one-page site | `ok`, score **−1** (under $500k). One page, no links to follow. EIN and revenue came from an exact IRS name match; PayPal Giving detected |
-| rspb.org.uk | non-US (UK) | `ok`, score 1 (news from the last 90 days). Charity no. **207076** from the footer (after fix 1); IRS lookup skipped. Gap-fill fired but the pages it picked held no leaders or income figure, so those fields honestly stay null |
-| lfcfp.org | JS-rendered React site | `partial`, with the error "homepage has almost no visible text (likely rendered by JavaScript)". The IRS record still gives EIN and revenue |
-| cfwesternva.org | annual-report PDF one hop from the financials page | `ok`, score 3. The **2025 annual-report PDF** was reached through the hop. 7 staff with emails, correctly mapped to buyer roles |
+| rspb.org.uk | non-US (UK) | `ok`, score 3. Charity no. **207076** from the footer (after fix 1); IRS lookup skipped. Gap-fill fired but the pages it picked held no leaders or income figure, so those fields honestly stay null. The score comes from a **false positive**: a biodiversity-credit scheme it sells to developers, labelled `technology_investment` (see §12) |
+| lfcfp.org | JS-rendered React site | `partial`, with the error "homepage has almost no visible text (likely rendered by JavaScript)". The IRS record still gives EIN, revenue and a **+70% revenue trend** (scored +1, offset by −1 for being under $500k) |
+| cfwesternva.org | annual-report PDF one hop from the financials page | `ok`, score 4. The **2025 annual-report PDF** was reached through the hop. 7 staff with emails, mapped to buyer roles. New board members labelled `leadership_change` were **dropped by the board-appointment rule**; a learning programme it runs for other nonprofits still came back as `strategic_plan` (+2), a false positive |
 | `Habitat for Humantiy` | typo'd name | `failed`: "no SEARCH_API_KEY is set; please provide the website URL". The search path (search → drop directories → verify the name on the page) is unit-tested but wasn't run live: no Serper key |
 | this-charity-does-not-exist-4821.org | dead domain | `failed`: "could not connect (DNS or connection failure)" |
-| basecamp.com | not a nonprofit | `partial`, flagged **`not_a_nonprofit?`**: "a software company offering a commercial project management product" |
-| `habitat.org/?utm_source=…` | no scheme + tracking params | Normalised to `https://www.habitat.org/`, `ok`, score 1. **Blackbaud Luminate** detected (a migration target for a CRM vendor). The site and registry categories disagree, so it's flagged for a human |
+| basecamp.com | not a nonprofit | `partial`, flagged **`not_a_nonprofit?`**: "a commercial software company". **Not scored** (fix 14), although its product release was extracted as a technology investment |
+| `habitat.org/?utm_source=…` | no scheme + tracking params | Normalised to `https://www.habitat.org/`, `ok`, score **6**, the best example of buyer signals working: a **new COO and a new CFO** (Sept 2026), a $6.3M Wells Fargo Foundation grant, and **Blackbaud Luminate** detected (a migration target for a CRM vendor). Two labels are loose (a partnership renewal as `funding_growth`, donated trucks as `expansion`). Gap-fill found the leadership page. The site and registry categories disagree, so it's flagged for a human |
 | alleganfoundation.org | bot protection | `failed`: "HTTP 403 (access denied, possibly bot protection)" |
 
-Lead scores are low across this sample (−1 to 3). That's expected: none of these orgs has an open RFP or a buying-signal job posted right now, which is what separates a "call this week" lead from "nurture".
+Scores range from −1 to 6. Habitat ranks first for a real reason (new finance and operations leaders plus a CRM migration target). None of these orgs has an open RFP or a buying-signal job right now. **Signal precision is the weak spot:** of the 6 buyer signals that scored across the sample, 2 are solid (Habitat's new leaders and its grant), 2 are loosely labelled (Habitat) and 2 are clear false positives (RSPB, cfwesternva).
 
 ---
 
@@ -312,6 +317,8 @@ Results for the committed outputs (gpt-4.1-mini):
 
 The one "wrong" is charity: water's cause area. The site-based pick and the IRS code both say `human_services`; my label says `international` (clean water in developing countries). It's a genuine judgment call, and I left the label as I first wrote it rather than editing it to match.
 
+The score is unchanged after adding buyer signals and slimming contacts, so the lighter contact extraction lost nothing on these fields. Buyer signals themselves aren't labelled yet (§12).
+
 **The eval moved during development:** 94% → 96% → 98%, with fixes to both the pipeline and the eval (see §11, items 9–12). Five orgs and 49 labels is a smoke test, not a benchmark; the value is that every prompt or model change reruns the same labelled sample.
 
 ---
@@ -349,6 +356,11 @@ Found in the live LLM runs (the debug folder shows whether each was a crawl or a
 
     I fixed all three and reported the numbers after the fixes. Lesson: a gold set needs a second labeller before anyone trusts its numbers.
 
+Found after adding buyer signals:
+
+13. **Programme activity read as buyer signals.** A community foundation's public nonprofit directory came back as `technology_investment`, and a learning programme it runs *for other nonprofits* as `strategic_plan`, inflating its score to 7. charity: water's annual report was labelled a strategic plan, and new board members a leadership change. Extraction problem. Two prompt passes (signals must be about the organisation itself; a stricter definition per type) fixed some of it. gpt-4.1-mini still ignores the finer rules, so where a rule can be checked in code it now is: `leadership_change` signals that mention a board are dropped. The rest is a documented limitation (§12).
+14. **A software company scored 4** from its own product release. It was already flagged `not_a_nonprofit?`, but the flag didn't stop scoring. Fix: flagged sites aren't scored and aren't marked `ok`.
+
 ---
 
 ## 12. Limitations
@@ -365,7 +377,12 @@ Found in the live LLM runs (the debug folder shows whether each was a crawl or a
 - The size band for non-USD revenue uses **approximate** FX rates.
 - **About 35 s per org**, mostly the politeness delay. That's fine in bulk, since sites are crawled in parallel, but slow for one interactive lookup.
 - **Only 5 hand-labelled orgs.** The eval catches regressions; it doesn't prove accuracy at 500k.
-- **Personal data.** Contacts are limited to named executives, senior staff and board members listed by the org itself. Emails and phones are kept only if they appear verbatim on a fetched page (the grounding check removes the rest), and addresses are never guessed from naming patterns. There is no opt-out or deletion process, and EU/UK orgs (GDPR) would need a proper legal basis before this data is resold.
+- **Buyer-signal precision is the weakest part.** In the final batch, 2 of the 6 scoring signals are false positives (a service RSPB sells labelled `technology_investment`; a programme cfwesternva runs for others labelled `strategic_plan`) and 2 more are loosely typed. The grounding check proves the evidence is on the page, not that the type is right. Next steps: a stronger model only for the signal list (a few hundred output tokens), or a second cheap check per signal.
+- **Buyer signals aren't in the eval yet.** The gold labels predate them, so their accuracy rests on the grounding check and on spot-reading the outputs, as in §8.
+- **The `plans` keyword "strategy" also matches long news slugs** (e.g. an RSPB article ending in `-strategy`). The long-slug penalty lowers them but doesn't always exclude them.
+- **Score weights are judgment, not data.** Whether a strategic plan is worth +2 or +1 should be fitted against which leads actually converted, which needs a customer's CRM outcomes.
+- **Signal types are the LLM's call** within a fixed list, so the line between, say, `expansion` and `strategic_plan` can vary between orgs.
+- **Personal data.** Contacts are limited to up to 8 named leaders listed by the org itself. Emails and phones are kept only if they appear verbatim on a fetched page (the grounding check removes the rest), and addresses are never guessed from naming patterns. There is no opt-out or deletion process, and EU/UK orgs (GDPR) would need a proper legal basis before this data is resold.
 - **Prompt injection.** Scraped text goes into the prompt, so a page could try to instruct the model. The damage is limited: output is a fixed schema, values not found on the fetched pages are dropped or downgraded, and registry data overrides EIN and revenue. The prompt doesn't yet explicitly tell the model to treat page text as untrusted data.
 
 ---
@@ -377,7 +394,8 @@ Found in the live LLM runs (the debug folder shows whether each was a crawl or a
 3. More registries: UK Charity Commission, Canada CRA, and IRS e-file data for websites and officer names.
 4. A `sponsor_view` for corporate sponsorship teams, with events and audience size.
 5. CRM push (HubSpot / Salesforce) straight from `to_csv_row`, with dedupe on `registration_id` then domain.
-6. Linking affiliates to parents; a larger gold set with confidence calibration.
+6. Linking affiliates to parents; a larger gold set with confidence calibration, including buyer-signal labels.
+7. Fit the lead-score weights to real outcomes (which signals preceded a won deal), and let gap-fill hunt for a missing annual report or strategic plan, not only for contacts and revenue.
 
 ---
 
@@ -412,4 +430,4 @@ python run.py -v https://www.charitywater.org
 
 ## 15. What I spent
 
-**$0.12 in total** (`python run.py --spend`): 32 runs, 24 real LLM calls, 252k input and 24k output tokens, on gpt-4.1-mini. That includes every development run. The final 10-input batch cost about **$0.03**. Re-running anything unchanged costs $0, thanks to the local LLM response cache (`.cache/llm/`).
+**$0.24 in total** (`python run.py --spend`): 63 runs, 51 real LLM calls, 492k input and 48k output tokens, on gpt-4.1-mini. That includes every development run and three batch runs while adding buyer signals. The final 10-input batch cost about **$0.04**. Re-running anything unchanged costs $0, thanks to the local LLM response cache (`.cache/llm/`).

@@ -33,7 +33,7 @@
   "programs": [
     {
       "name": "Water Project Sponsorship",
-      "description": "By sponsoring a project, you can provide clean water for a community, school, or health clinic. 100% of your donation will fund clean water."
+      "description": "By sponsoring a project, you can provide clean water for a community, school, or health clinic."
     }
   ],
   "cause_area": {
@@ -75,7 +75,12 @@
       "confidence": "high"
     },
     {
-      "value": "In fiscal year 2025, clean water brought to 1.41 million people for the very first time",
+      "value": "Over 22,000 water projects across 20 countries in FY 2025",
+      "source_url": "https://www.charitywater.org/about/financials",
+      "confidence": "high"
+    },
+    {
+      "value": "1.41 million people gained clean water for the first time in FY 2025",
       "source_url": "https://www.charitywater.org/about/financials",
       "confidence": "high"
     }
@@ -87,8 +92,7 @@
       "email": null,
       "linkedin": null,
       "source_url": "https://www.charitywater.org/about/executive-team",
-      "confidence": "high",
-      "evidence": "Founder & Chief executive officer Scott Harrison"
+      "confidence": "high"
     },
     {
       "name": "Melissa Russell",
@@ -96,8 +100,7 @@
       "email": null,
       "linkedin": null,
       "source_url": "https://www.charitywater.org/about/executive-team",
-      "confidence": "high",
-      "evidence": "President Melissa Russell"
+      "confidence": "high"
     },
     {
       "name": "Ben Greene",
@@ -105,8 +108,7 @@
       "email": null,
       "linkedin": null,
       "source_url": "https://www.charitywater.org/about/executive-team",
-      "confidence": "high",
-      "evidence": "Chief Revenue Officer Ben Greene"
+      "confidence": "high"
     },
     {
       "name": "Brian Hoyer",
@@ -114,8 +116,7 @@
       "email": null,
       "linkedin": null,
       "source_url": "https://www.charitywater.org/about/executive-team",
-      "confidence": "high",
-      "evidence": "Chief Water Programs Officer Brian Hoyer"
+      "confidence": "high"
     },
     {
       "name": "Christa Stelzmuller",
@@ -123,8 +124,7 @@
       "email": null,
       "linkedin": null,
       "source_url": "https://www.charitywater.org/about/executive-team",
-      "confidence": "high",
-      "evidence": "Chief Technology Officer Christa Stelzmuller"
+      "confidence": "high"
     },
     {
       "name": "John Passauer",
@@ -132,8 +132,7 @@
       "email": null,
       "linkedin": null,
       "source_url": "https://www.charitywater.org/about/executive-team",
-      "confidence": "high",
-      "evidence": "Chief Financial Officer John Passauer"
+      "confidence": "high"
     },
     {
       "name": "Ceena Johnson",
@@ -141,8 +140,15 @@
       "email": null,
       "linkedin": null,
       "source_url": "https://www.charitywater.org/about/executive-team",
-      "confidence": "high",
-      "evidence": "General Counsel Ceena Johnson"
+      "confidence": "high"
+    },
+    {
+      "name": "Brook Hazelton",
+      "title": "Board Chair",
+      "email": null,
+      "linkedin": null,
+      "source_url": "https://www.charitywater.org/about/executive-team",
+      "confidence": "high"
     }
   ],
   "general_contact": {
@@ -151,17 +157,10 @@
     "contact_page_url": "https://www.charitywater.org/contact",
     "source_url": "https://www.charitywater.org/contact"
   },
+  "buyer_signals": [],
   "open_rfps": [],
   "open_roles": [],
-  "recent_news": [
-    {
-      "headline": "Bringing you alongside one specific local partner team, GOAL Sierra Leone, for real-time impact updates",
-      "date": null,
-      "url": "https://www.charitywater.org/updates/sierra-leone",
-      "summary": "Live updates from local partner GOAL Sierra Leone and stories from the field.",
-      "source_url": "https://www.charitywater.org/updates/sierra-leone"
-    }
-  ],
+  "recent_news": [],
   "funders_and_partners": [],
   "looks_like_nonprofit": true,
   "not_nonprofit_reason": null

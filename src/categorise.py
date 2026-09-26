@@ -1,14 +1,15 @@
 """Deterministic rules applied after extraction: size band, buyer role, buying-signal
-roles, NTEE -> cause area, and date filters. Same input -> same output across 500k orgs.
+roles, NTEE -> cause area, and date filters (news, buyer signals, RFPs). Same input -> same output across 500k orgs.
 """
 from __future__ import annotations
 
 import re
 from datetime import date, datetime
 
-from src.schema import BuyerRole, CauseArea, NewsItem, NonprofitProfile, RFP, SizeBand
+from src.schema import BuyerRole, BuyerSignal, CauseArea, NewsItem, NonprofitProfile, RFP, SizeBand
 
 NEWS_MAX_AGE_DAYS = 365
+SIGNAL_MAX_AGE_DAYS = 730
 
 # Approximate FX to USD, only used to pick a size band. Refresh yearly.
 FX_TO_USD = {"USD": 1.0, "GBP": 1.27, "EUR": 1.08, "CAD": 0.73, "AUD": 0.66, "NZD": 0.60,
@@ -111,6 +112,26 @@ def filter_recent_news(items: list[NewsItem], today: date) -> tuple[list[NewsIte
     return kept, len(items) - len(kept)
 
 
+def filter_buyer_signals(items: list[BuyerSignal], today: date) -> tuple[list[BuyerSignal], int]:
+    """Drop signals dated more than ~2 years ago (a plan or campaign runs for years, so the
+    window is longer than for news). Undated ones are kept: annual reports older than
+    3 years are already skipped at crawl time."""
+    kept = [s for s in items
+            if (d := parse_date(s.date)) is None or (today - d).days <= SIGNAL_MAX_AGE_DAYS]
+    return kept, len(items) - len(kept)
+
+
+BOARD_WORDS = re.compile(r"\b(board|trustees?|governors?|directors? emerit)", re.I)
+
+
+def drop_board_appointments(items: list[BuyerSignal]) -> tuple[list[BuyerSignal], int]:
+    """A new board member isn't a new decision-maker for a purchase. The prompt says so,
+    but small models don't always follow it, so the rule enforces it."""
+    kept = [s for s in items
+            if not (s.type == "leadership_change" and BOARD_WORDS.search(f"{s.description} {s.evidence or ''}"))]
+    return kept, len(items) - len(kept)
+
+
 def filter_open_rfps(items: list[RFP], today: date) -> tuple[list[RFP], int]:
     """Drop RFPs whose due date has passed; keep undated ones (often 'rolling')."""
     kept = [r for r in items if (d := parse_date(r.due_date)) is None or d >= today]
@@ -127,6 +148,12 @@ def apply_rules(p: NonprofitProfile, today: date) -> None:
     p.signals.recent_news, dropped_news = filter_recent_news(p.signals.recent_news, today)
     if dropped_news:
         p.errors.append(f"news filter: dropped {dropped_news} item(s) older than 12 months or undated")
+    p.signals.buyer_signals, dropped_signals = filter_buyer_signals(p.signals.buyer_signals, today)
+    if dropped_signals:
+        p.errors.append(f"signal filter: dropped {dropped_signals} buyer signal(s) older than 2 years")
+    p.signals.buyer_signals, dropped_board = drop_board_appointments(p.signals.buyer_signals)
+    if dropped_board:
+        p.errors.append(f"signal filter: dropped {dropped_board} board appointment(s) labelled leadership_change")
     p.signals.open_rfps, dropped_rfps = filter_open_rfps(p.signals.open_rfps, today)
     if dropped_rfps:
         p.errors.append(f"rfp filter: dropped {dropped_rfps} RFP(s) past their due date")

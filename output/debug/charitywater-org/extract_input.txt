@@ -9,8 +9,9 @@ Rules:
 - Dates in ISO 8601 (YYYY-MM-DD; YYYY-MM or YYYY if that is all the page gives). Money as a plain number plus ISO 4217 currency code ("$12.5 million" -> 12500000, USD).
 - annual_revenue: total revenue or income for one fiscal year. Not a single gift, campaign goal, program budget or cumulative total.
 - registration_id: the number only, as printed (e.g. "12-3456789" or "207076"). If several are shown, the main one (US EIN, or the first charity number).
-- leadership: named executives, senior staff and board members (max 15). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Board Member", "Trustee"). Add email or LinkedIn only if shown next to that person.
+- leadership: up to 8 named leaders, most senior first: the chief executive, then heads of fundraising/development, finance and operations/IT, then at most 2 board officers (e.g. chair, treasurer). When a person is listed under a board or trustees heading, their title must say so (e.g. "Board Chair", "Trustee"). Add email or LinkedIn only if shown next to that person.
 - general_contact: the organisation's general email, phone and contact page.
+- buyer_signals: up to 8 recent or planned events that suggest the organisation will spend on new tools, systems or services. Look hardest in annual reports, strategic plans, news and CEO/board letters. Types: technology_investment (the organisation is adopting, replacing or building its own CRM, database, website, digital or data systems); capital_campaign (a named campaign to raise capital or endowment for the organisation); strategic_plan (the organisation has adopted or is developing its own new multi-year strategic plan; an annual report, policy, code of practice, programme or event is not a strategic plan); leadership_change (a new chief executive, or a new head of development/fundraising, finance, operations or IT; board appointments do not count); merger (merger, acquisition or affiliation); expansion (new sites, regions or services of its own, or significant staff growth); major_grant (a large grant or gift to the organisation, e.g. $1M+ or a large share of its budget, especially for capacity building); funding_growth (stated growth in the organisation's own revenue, donors or budget); other. Only events the documents state, each with evidence. A signal must be about the organisation itself: its own systems, leadership, strategy, structure or funding. Not programmes, events, products or services it delivers to others (e.g. a workshop it hosts for other nonprofits, a directory or app it launches for the public, a product release), and not fundraising events or donation appeals. date: when it was announced or starts.
 - open_roles: current paid job openings only (no volunteer roles). open_rfps: current requests for proposals, tenders or procurement notices only.
 - recent_news: up to 8 of the newest dated news, press or blog items with their dates. Do not filter by age.
 - funders_and_partners: organisations named as funders, sponsors or partners (max 15).
@@ -390,247 +391,6 @@ Get our emails
 
 © 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
 </document>
-<document url="https://www.charitywater.org/about/executive-team" type="html" page="team">
-Meet The Executive Team | charity: water
-
-Meet the Executive Team
-
-charity: water’s executive team brings together decades of experience in global development, nonprofit leadership, and strategic partnerships — all united by a shared commitment to ending the global water crisis. With integrity, vision, and a deep sense of responsibility, they guide our mission to bring clean and safe water to every person on the planet.
-
-Founder & Chief executive officer
-Scott Harrison
-Scott spent almost 10 years as a nightclub promoter in New York City before leaving to volunteer on a hospital ship off the coast of Liberia, West Africa as a photojournalist. Returning home to New York City two years later, he founded the nonprofit organization charity: water in 2006. In 18 years, with the help of more than 1 million donors worldwide, charity: water has raised $1 billion and funded over 186,000 water projects in 29 countries.
-HEAR SCOTT'S STORY
-President
-Melissa Russell
-Melissa Russell is the President of charity: water and a globally respected nonprofit executive with over 20 years of experience leading and scaling mission-driven organizations. She has helped drive more than $1.5 billion in philanthropic capital and led global teams around the world. Melissa is known for aligning bold vision with measurable outcomes, cultivating trusted partnerships, and building high-performing teams committed to solving the global water crisis in our lifetime.
-
-Chief Revenue Officer
-Ben Greene
-Ben Greene is the Chief Revenue Officer at charity: water, driving the brand, marketing, and fundraising teams. With over 20 years in the nonprofit sector, including leadership roles at World Vision, Feed the Children, and Food for the Hungry, he is known for driving sustainable impact and leading multi-million dollar campaigns. Ben lives in Nashville, Tennessee, with his wife, Melissa, and their two children, Hutch and Haven.
-Chief Water Programs Officer
-Brian Hoyer
-Brian Hoyer is the Chief Programs Officer at charity: water, leading its programmatic work across 58 local partners in 22 countries. His experience in global health, emergency response and recovery, and rural WASH over the past 20 years informs his current work at charity: water. He has specialized in convening strong and locally led teams to work on a range of public health issues, from large-scale cholera response to ebola treatment and prevention.
-
-Chief Technology Officer
-Christa Stelzmuller
-Christa Stelzmuller is the Chief Technology Officer at charity: water where she is focused on building innovative and impactful digital experiences, driven by the organization’s mission. Throughout her career, she has consistently taken a multidisciplinary approach to leveraging data and technology, which has enabled better decisions, stronger products, and more effective delivery. Christa is known for her ability to translate vision into strategy and turn that strategy into action. Her strengths in communication and team leadership are key to her success, fostering a culture of productivity and collaboration through a service-oriented, participative leadership style.
-
-Chief Financial Officer
-John Passauer
-John Passauer is the Chief Financial Officer at charity: water, bringing decades of financial leadership across the nonprofit, alternative energy, software, and telecommunications sectors. His career has taken him around the world, with leadership roles and board service spanning Brazil, the UK, South Africa, Chile, Kenya, Malaysia, India, and China, giving him a uniquely global perspective on building finance teams and systems that support growing organizations. Known for navigating complex financial challenges, John is equally passionate about the people side of the work, developing strong teams and implementing the infrastructure that allows mission-driven organizations to thrive.
-
-General Counsel
-Ceena Johnson
-Ceena Johnson is the General Counsel at charity: water, providing practical, solution-oriented legal counsel that enables partnerships, protects trust, and helps teams move with clarity and confidence. With a career shaped by a commitment to law in service of global impact, she brings experience advising on the legal and operational work that allows mission-driven organizations to scale. At charity: water, she leads across data privacy, enterprise risk, and governance, integrating legal judgment into decision-making in a way that strengthens both momentum and trust.
-
-Stay connected to the team
-
-Our leadership team is actively engaged in shaping the global conversation around clean water access, sustainability, and nonprofit innovation. Explore the latest insights and media featuring our team — and see how their voices are helping to drive change on a global scale.
-
-ARTICLE
-Data to Connect Donors
-Learn how charity: water is engaging donors through empathy, data, and immersive experiences to inspire deeper connection and enduring results.
-
-READ NOW
-
-PODCAST
-
-Leading with Purpose
-Melissa Russell shares how her faith, purpose, and compassion shape her leadership in the fight against the global water crisis.
-LISTEN NOW
-
-ARTICLE
-The Future of Fundraising
-Uncover the future of fundraising through charity: water's immersive experiences that forge connections between donors and the communities impacted.
-
-READ NOW
-
-PODCAST
-
-Data, Tech, and Impact
-Christa Stelzmuller reflects on her journey, highlighting the evolution of technology and the vital role of thoughtful data collection and governance.
-
-LISTEN NOW
-
-ARTICLE
-Startups for Social Good
-Discover how charity: water uses social media, visual storytelling, and donor accountability to build a movement that resonates with a digital world.
-READ NOW
-
-ARTICLE
-Mission, Impact, and Clean Water
-Melissa Russell shares how she found her calling in the nonprofit sector, embracing imperfection while championing purpose-driven leadership and lasting impact.
-READ NOW
-
-ARTICLE
-Data to Connect Donors
-Learn how charity: water is engaging donors through empathy, data, and immersive experiences to inspire deeper connection and enduring results.
-
-READ NOW
-
-PODCAST
-
-Leading with Purpose
-Melissa Russell shares how her faith, purpose, and compassion shape her leadership in the fight against the global water crisis.
-LISTEN NOW
-
-ARTICLE
-The Future of Fundraising
-Uncover the future of fundraising through charity: water's immersive experiences that forge connections between donors and the communities impacted.
-
-READ NOW
-
-PODCAST
-
-Data, Tech, and Impact
-Christa Stelzmuller reflects on her journey, highlighting the evolution of technology and the vital role of thoughtful data collection and governance.
-
-LISTEN NOW
-
-ARTICLE
-Startups for Social Good
-Discover how charity: water uses social media, visual storytelling, and donor accountability to build a movement that resonates with a digital world.
-READ NOW
-
-ARTICLE
-Mission, Impact, and Clean Water
-Melissa Russell shares how she found her calling in the nonprofit sector, embracing imperfection while championing purpose-driven leadership and lasting impact.
-READ NOW
-
-ARTICLE
-Data to Connect Donors
-Learn how charity: water is engaging donors through empathy, data, and immersive experiences to inspire deeper connection and enduring results.
-
-READ NOW
-
-1
-2
-3
-4
-5
-6
-
-Board of Directors
-
-Brook Hazelton
-
-Ije Nwokorie
-
-Michael Wilkerson
-
-Angela Ahrendts
-
-Brant Cryder
-
-Chi-Hua Chien
-
-Chidi Achara
-
-Ryan Graves
-
-Shannon Sedgwick Davis
-
-Valerie Donati 
-
-Nancy Duarte
-
-Eniola Aluko
-
-Luke Beauchamp
-
-Rachel Thompson Manktelow
-
-Sam Lawson Johnston
-
-Pierre Mercier
-
-Brook Hazelton
-
-Brook Hazelton is the president and co-CEO of Digital Reasoning, an artificial intelligence company. Previously, he served as the president for North and South America of the world's leading art company, Christie's. Hazelton began his career in finance while working internationally with Goldman Sachs and The Carlyle Group, and he remains a private investor and co-founder of St. James Partners, an investment business.
-
-Add Impact To Your Inbox
-
-Get our emails to stay in the know.
-
-Take Action
-
-Give
-
-Join the Spring
-
-Give to a Fundraiser
-
-Give in Someone's Honor
-
-Sponsor a community
-
- Legacy & Asset Giving
-
-Get Involved
-
-Create an account
-
-Fundraise
-
-Tiny Heroes
-
- Students & Teachers
-
-Advisors
-
-Experience Lab
-
-Get to know us
-
-Our Work
-
-100% Model
-
-See Our Financials
-
-Meet the founder
-
-Meet the executive team
-
-Careers
-
-Connect
-
-Contact Us
-
-Help center
-
-Request a Speaker
-
-Brand Partnerships
-
-Shop our store
-
-Twitter
-
-Facebook
-
-Instagram
-
-Snapchat
-
-Youtube
-
-Linkedin
-
-Privacy policy
-
-responsible disclosure process
-
-charity: water is a 501(c)(3) nonprofit organization.
-
-100% of public donations go directly to fund clean water projects.
-
-Get our emails
-
-© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
-</document>
 <document url="https://www.charitywater.org/about/financials" type="html" page="financials">
 Financials | charity: water
 
@@ -905,27 +665,96 @@ Get our emails
 
 © 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
 </document>
-<document url="https://www.charitywater.org/contact" type="html" page="contact">
-Contact Us | charity: water
+<document url="https://www.charitywater.org/updates/sierra-leone" type="html" page="news">
+This year, we’re bringing you alongside one specific local partner team, GOAL Sierra Leone, so you can get to know some of the people you’re investing in, go deeper into their work, and see the impact of your monthly donation in real-time. Speaking of real-time... scroll down for live updates!
+In April, our creative team traveled to Sierra Leone to gather the stories, photos, and videos that we’ll share with you throughout the year. Senior copywriter Bailey Jurgens also kept a daily journal so that supporters like you could come along for the ride.
+by Bailey Jurgens
+I am not, by nature, a procrastinator. But if there’s one thing that I will delay, drag out, and dread for days, it’s packing.
+It doesn’t matter where I’m going, how long I’m gone, or who I’ll see — packing has always been my kryptonite...
+Lack of control. I think that’s what bothers people the most about traveling. There’s only so much you can do — you are ultimately at the mercy of the weather, the gate agent, the pilot, the kindness of your fellow passengers, the inner workings of the mechanical bits of the airplane that...
+I am on flight 4 of 4 and just 45 minutes from the final destination.
+I’ll admit, the four-flight marathon that didn’t sound so bad at first is starting to catch up to me. And no matter how many methods I try, I can’t seem to get real sleep while...
+The boat rocks enthusiastically in the waves as two men try to offer stability. They stand on either side of the ferry’s entry — a hinged half-door that is currently swung open. A relay of people and luggage makes its way aboard. We arrived here from the...
+After four flights, a ferry, and two car rides, I will admit that my thoughts currently mirror the view I had from the passenger seat of today’s Land Cruiser: swirling, whirling, and a blurry blend of colors, language, and names. I would detail it all for you, but...
+I love when a group of women get together. You can sense the camaraderie and the understanding. When it comes to collecting water, they all know exactly what one another is going through. You can also tell how strong they are. How smart. How...
+The boat rocks enthusiastically in the waves as two men try and offer stability. They stand on either side of the ferry’s entry — a hinged half-door that is currently swung open. A relay of people and luggage makes its way aboard. As I step off of...
+On most days, we arrive relatively early to the communities. (Tomorrow’s call-time is 6:30 a.m., for example.) But today, we opted to arrive later than usual — and for good reason. This morning, our local partner...
+When Mamie gets access to clean water, she will no longer have to let the water settle before drinking it. She and her son will have water free from sediment, germs, critters, and disease. When Kadie gets clean water, she will take a long drink...
+There’s something about the horn honking as the rig pulls into town that makes us all start crying. The sound is joyous, rhythmic — an announcement that things are about to change. With only the horn, the rig’s...
+“The solution to any problem is not to run away from it.” - James Riak, Country Director for GOAL Sierra Leone
+One day with GOAL and you’ll see that they’re living and breathing this advice...
+As we make our way north, jungle starts to give way to farmland. The lush greenery fades into brown, baked earth and dehydrated palms fall limp in the harsh sunshine. It feels like a fitting scene for a...
+Friends (if you’ve read this far, we’re friends now), I’m going to be honest with you …Due to a combination of cockroaches, 90+ degree heat, a bug net that turned into a personal sauna, and thin walls, I got very...
+Solving the water crisis starts with building new water points. But let me emphasize the word starts. Building is only the beginning. Maintaining and rehabbing water points is how we’ll solve the problem long-term...
+Were we here for two weeks, two seconds, or two years? Somehow, it seems appropriate to answer “yes” to all of the above. There’s a part of me that isn’t ready — I don’t want to say any more goodbyes...
+Did you miss previous updates? You can check out the blog Field Notes: Volume 1 to read Mercy's interview with Water Programs Manager, Megan Renfro, or Field Notes: Volume 3 to read Mercy's interview with Content Lead, Cubby Graham, and Senior Copywriter, Bailey Jurgens.
+</document>
+<document url="https://www.charitywater.org/donate" type="html" page="donate">
+Donate for Clean Water | charity: water
 
-Contact Us
+696 million people need their Day One of clean water. 
+Give now, matched 2x →
 
- Get in touch with us. We'd love to hear from you.
+Help bring clean and safe water to every person on the planet.
 
- Please note, charity: water does not accept unsolicited requests for funding.
+You deserve to give with confidence
 
-Tel: 1 (646) 688-2323
-Fax: 1 (929) 367-4827
+All of our operational expenses are funded by a private community of donors, so you can trust 100% of your donation will go directly to water solutions, every cent, every time. But we don’t stop there. We’re setting new standards for transparency and innovation. These companies and organizations agree.
 
-Donation Processing Center
-230 Franklin Rd., Ste. 11-II
-Franklin, TN
-37064
+Join The Spring to invest in clean water and sustainability
 
-Need assistance? Check out our 
-Help Center
- or send us an 
-email
+Give monthly, and you’ll become a part of The Spring, a passionate community invested in a world where everyone has clean water.
+
+JOIN TODAY
+Sponsor a water project
+Transform a community, school, or health clinic with a gift of $10,000 or more.
+Learn more
+
+More ways to give
+
+Honor someone special
+Honor or remember someone special by making a gift in their name.
+give in honor of someone
+
+Legacy giving
+Join us in shaping the future and making clean water a part of your lasting legacy.
+learn more
+
+Donate with cryptocurrency
+We currently accept bitcoin, ether, litecoin, bitcoin cash, Zcash, filecoin, and dogecoin.
+GIVE CRYPTO
+
+Give by check or stock
+We also accept donations by check, stock, money order, and wire transfer.
+GET THE DETAILS
+
+Other Ways to Give
+Donate by Check
+Make checks payable to charity: water. If you're donating in honor of someone, sponsoring a water project or want to direct your donation to our operating costs, please write that in the memo of your check.
+Unfortunately, we cannot accept donations to The Spring via check.
+Tax receipts will be mailed within four to six weeks after the donation has been processed.
+International Giving
+charity: water is a registered charity in the UK. To make a tax-efficient donation in GBP, visit 
+charitywateruk.org
+. For other international donations, we accept bank issued money orders in USD. Money orders should be made payable to charity: water and can be mailed to the address below. For donations over $6,000, we also accept wire transfers; email 
+info@charitywater.org
+ for more information.
+Please note, only donations made by eligible US taxpayers may be tax-deductible.
+Donate Stock
+We're able to accept donations in the form of stock, government (including municipal) debt and corporate debt through the Depository Trust Company (DTC). For security, settlement and reduced paperwork, electronic transfer through the DTC is preferred. This can be arranged from most brokerage accounts.
+Unfortunately, we cannot accept donations to The Spring via stock.
+Please contact 
+info@charitywater.org
+ for more information on making a stock donation.
+charity: water
+
+Donation Processing Center, 230 Franklin Rd., Ste. 11-II
+
+Franklin, TN 37064
+
+EIN: 22-3936753
+
+charity: water is a 501 (c)(3)
 
 Add Impact To Your Inbox
 
@@ -1010,7 +839,248 @@ Get our emails
 © 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
 
 [Contact links in page HTML]
-email: team@charitywater.org
+email: info@charitywater.org
+</document>
+<document url="https://www.charitywater.org/about/executive-team" type="html" page="team">
+Meet The Executive Team | charity: water
+
+Meet the Executive Team
+
+charity: water’s executive team brings together decades of experience in global development, nonprofit leadership, and strategic partnerships — all united by a shared commitment to ending the global water crisis. With integrity, vision, and a deep sense of responsibility, they guide our mission to bring clean and safe water to every person on the planet.
+
+Founder & Chief executive officer
+Scott Harrison
+Scott spent almost 10 years as a nightclub promoter in New York City before leaving to volunteer on a hospital ship off the coast of Liberia, West Africa as a photojournalist. Returning home to New York City two years later, he founded the nonprofit organization charity: water in 2006. In 18 years, with the help of more than 1 million donors worldwide, charity: water has raised $1 billion and funded over 186,000 water projects in 29 countries.
+HEAR SCOTT'S STORY
+President
+Melissa Russell
+Melissa Russell is the President of charity: water and a globally respected nonprofit executive with over 20 years of experience leading and scaling mission-driven organizations. She has helped drive more than $1.5 billion in philanthropic capital and led global teams around the world. Melissa is known for aligning bold vision with measurable outcomes, cultivating trusted partnerships, and building high-performing teams committed to solving the global water crisis in our lifetime.
+
+Chief Revenue Officer
+Ben Greene
+Ben Greene is the Chief Revenue Officer at charity: water, driving the brand, marketing, and fundraising teams. With over 20 years in the nonprofit sector, including leadership roles at World Vision, Feed the Children, and Food for the Hungry, he is known for driving sustainable impact and leading multi-million dollar campaigns. Ben lives in Nashville, Tennessee, with his wife, Melissa, and their two children, Hutch and Haven.
+Chief Water Programs Officer
+Brian Hoyer
+Brian Hoyer is the Chief Programs Officer at charity: water, leading its programmatic work across 58 local partners in 22 countries. His experience in global health, emergency response and recovery, and rural WASH over the past 20 years informs his current work at charity: water. He has specialized in convening strong and locally led teams to work on a range of public health issues, from large-scale cholera response to ebola treatment and prevention.
+
+Chief Technology Officer
+Christa Stelzmuller
+Christa Stelzmuller is the Chief Technology Officer at charity: water where she is focused on building innovative and impactful digital experiences, driven by the organization’s mission. Throughout her career, she has consistently taken a multidisciplinary approach to leveraging data and technology, which has enabled better decisions, stronger products, and more effective delivery. Christa is known for her ability to translate vision into strategy and turn that strategy into action. Her strengths in communication and team leadership are key to her success, fostering a culture of productivity and collaboration through a service-oriented, participative leadership style.
+
+Chief Financial Officer
+John Passauer
+John Passauer is the Chief Financial Officer at charity: water, bringing decades of financial leadership across the nonprofit, alternative energy, software, and telecommunications sectors. His career has taken him around the world, with leadership roles and board service spanning Brazil, the UK, South Africa, Chile, Kenya, Malaysia, India, and China, giving him a uniquely global perspective on building finance teams and systems that support growing organizations. Known for navigating complex financial challenges, John is equally passionate about the people side of the work, developing strong teams and implementing the infrastructure that allows mission-driven organizations to thrive.
+
+General Counsel
+Ceena Johnson
+Ceena Johnson is the General Counsel at charity: water, providing practical, solution-oriented legal counsel that enables partnerships, protects trust, and helps teams move with clarity and confidence. With a career shaped by a commitment to law in service of global impact, she brings experience advising on the legal and operational work that allows mission-driven organizations to scale. At charity: water, she leads across data privacy, enterprise risk, and governance, integrating legal judgment into decision-making in a way that strengthens both momentum and trust.
+
+Stay connected to the team
+
+Our leadership team is actively engaged in shaping the global conversation around clean water access, sustainability, and nonprofit innovation. Explore the latest insights and media featuring our team — and see how their voices are helping to drive change on a global scale.
+
+ARTICLE
+Data to Connect Donors
+Learn how charity: water is engaging donors through empathy, data, and immersive experiences to inspire deeper connection and enduring results.
+
+READ NOW
+
+PODCAST
+
+Leading with Purpose
+Melissa Russell shares how her faith, purpose, and compassion shape her leadership in the fight against the global water crisis.
+LISTEN NOW
+
+ARTICLE
+The Future of Fundraising
+Uncover the future of fundraising through charity: water's immersive experiences that forge connections between donors and the communities impacted.
+
+READ NOW
+
+PODCAST
+
+Data, Tech, and Impact
+Christa Stelzmuller reflects on her journey, highlighting the evolution of technology and the vital role of thoughtful data collection and governance.
+
+LISTEN NOW
+
+ARTICLE
+Startups for Social Good
+Discover how charity: water uses social media, visual storytelling, and donor accountability to build a movement that resonates with a digital world.
+READ NOW
+
+ARTICLE
+Mission, Impact, and Clean Water
+Melissa Russell shares how she found her calling in the nonprofit sector, embracing imperfection while championing purpose-driven leadership and lasting impact.
+READ NOW
+
+ARTICLE
+Data to Connect Donors
+Learn how charity: water is engaging donors through empathy, data, and immersive experiences to inspire deeper connection and enduring results.
+
+READ NOW
+
+PODCAST
+
+Leading with Purpose
+Melissa Russell shares how her faith, purpose, and compassion shape her leadership in the fight against the global water crisis.
+LISTEN NOW
+
+ARTICLE
+The Future of Fundraising
+Uncover the future of fundraising through charity: water's immersive experiences that forge connections between donors and the communities impacted.
+
+READ NOW
+
+PODCAST
+
+Data, Tech, and Impact
+Christa Stelzmuller reflects on her journey, highlighting the evolution of technology and the vital role of thoughtful data collection and governance.
+
+LISTEN NOW
+
+ARTICLE
+Startups for Social Good
+Discover how charity: water uses social media, visual storytelling, and donor accountability to build a movement that resonates with a digital world.
+READ NOW
+
+ARTICLE
+Mission, Impact, and Clean Water
+Melissa Russell shares how she found her calling in the nonprofit sector, embracing imperfection while championing purpose-driven leadership and lasting impact.
+READ NOW
+
+ARTICLE
+Data to Connect Donors
+Learn how charity: water is engaging donors through empathy, data, and immersive experiences to inspire deeper connection and enduring results.
+
+READ NOW
+
+1
+2
+3
+4
+5
+6
+
+Board of Directors
+
+Brook Hazelton
+
+Ije Nwokorie
+
+Michael Wilkerson
+
+Angela Ahrendts
+
+Brant Cryder
+
+Chi-Hua Chien
+
+Chidi Achara
+
+Ryan Graves
+
+Shannon Sedgwick Davis
+
+Valerie Donati 
+
+Nancy Duarte
+
+Eniola Aluko
+
+Luke Beauchamp
+
+Rachel Thompson Manktelow
+
+Sam Lawson Johnston
+
+Pierre Mercier
+
+Brook Hazelton
+
+Brook Hazelton is the president and co-CEO of Digital Reasoning, an artificial intelligence company. Previously, he served as the president for North and South America of the world's leading art company, Christie's. Hazelton began his career in finance while working internationally with Goldman Sachs and The Carlyle Group, and he remains a private investor and co-founder of St. James Partners, an investment business.
+
+Add Impact To Your Inbox
+
+Get our emails to stay in the know.
+
+Take Action
+
+Give
+
+Join the Spring
+
+Give to a Fundraiser
+
+Give in Someone's Honor
+
+Sponsor a community
+
+ Legacy & Asset Giving
+
+Get Involved
+
+Create an account
+
+Fundraise
+
+Tiny Heroes
+
+ Students & Teachers
+
+Advisors
+
+Experience Lab
+
+Get to know us
+
+Our Work
+
+100% Model
+
+See Our Financials
+
+Meet the founder
+
+Meet the executive team
+
+Careers
+
+Connect
+
+Contact Us
+
+Help center
+
+Request a Speaker
+
+Brand Partnerships
+
+Shop our store
+
+Twitter
+
+Facebook
+
+Instagram
+
+Snapchat
+
+Youtube
+
+Linkedin
+
+Privacy policy
+
+responsible disclosure process
+
+charity: water is a 501(c)(3) nonprofit organization.
+
+100% of public donations go directly to fund clean water projects.
+
+Get our emails
+
+© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
 </document>
 <document url="https://www.charitywater.org/our-work" type="html" page="programs">
 Our Work | charity: water
@@ -1121,29 +1191,112 @@ Get our emails
 
 © 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
 </document>
-<document url="https://www.charitywater.org/updates/sierra-leone" type="html" page="news">
-This year, we’re bringing you alongside one specific local partner team, GOAL Sierra Leone, so you can get to know some of the people you’re investing in, go deeper into their work, and see the impact of your monthly donation in real-time. Speaking of real-time... scroll down for live updates!
-In April, our creative team traveled to Sierra Leone to gather the stories, photos, and videos that we’ll share with you throughout the year. Senior copywriter Bailey Jurgens also kept a daily journal so that supporters like you could come along for the ride.
-by Bailey Jurgens
-I am not, by nature, a procrastinator. But if there’s one thing that I will delay, drag out, and dread for days, it’s packing.
-It doesn’t matter where I’m going, how long I’m gone, or who I’ll see — packing has always been my kryptonite...
-Lack of control. I think that’s what bothers people the most about traveling. There’s only so much you can do — you are ultimately at the mercy of the weather, the gate agent, the pilot, the kindness of your fellow passengers, the inner workings of the mechanical bits of the airplane that...
-I am on flight 4 of 4 and just 45 minutes from the final destination.
-I’ll admit, the four-flight marathon that didn’t sound so bad at first is starting to catch up to me. And no matter how many methods I try, I can’t seem to get real sleep while...
-The boat rocks enthusiastically in the waves as two men try to offer stability. They stand on either side of the ferry’s entry — a hinged half-door that is currently swung open. A relay of people and luggage makes its way aboard. We arrived here from the...
-After four flights, a ferry, and two car rides, I will admit that my thoughts currently mirror the view I had from the passenger seat of today’s Land Cruiser: swirling, whirling, and a blurry blend of colors, language, and names. I would detail it all for you, but...
-I love when a group of women get together. You can sense the camaraderie and the understanding. When it comes to collecting water, they all know exactly what one another is going through. You can also tell how strong they are. How smart. How...
-The boat rocks enthusiastically in the waves as two men try and offer stability. They stand on either side of the ferry’s entry — a hinged half-door that is currently swung open. A relay of people and luggage makes its way aboard. As I step off of...
-On most days, we arrive relatively early to the communities. (Tomorrow’s call-time is 6:30 a.m., for example.) But today, we opted to arrive later than usual — and for good reason. This morning, our local partner...
-When Mamie gets access to clean water, she will no longer have to let the water settle before drinking it. She and her son will have water free from sediment, germs, critters, and disease. When Kadie gets clean water, she will take a long drink...
-There’s something about the horn honking as the rig pulls into town that makes us all start crying. The sound is joyous, rhythmic — an announcement that things are about to change. With only the horn, the rig’s...
-“The solution to any problem is not to run away from it.” - James Riak, Country Director for GOAL Sierra Leone
-One day with GOAL and you’ll see that they’re living and breathing this advice...
-As we make our way north, jungle starts to give way to farmland. The lush greenery fades into brown, baked earth and dehydrated palms fall limp in the harsh sunshine. It feels like a fitting scene for a...
-Friends (if you’ve read this far, we’re friends now), I’m going to be honest with you …Due to a combination of cockroaches, 90+ degree heat, a bug net that turned into a personal sauna, and thin walls, I got very...
-Solving the water crisis starts with building new water points. But let me emphasize the word starts. Building is only the beginning. Maintaining and rehabbing water points is how we’ll solve the problem long-term...
-Were we here for two weeks, two seconds, or two years? Somehow, it seems appropriate to answer “yes” to all of the above. There’s a part of me that isn’t ready — I don’t want to say any more goodbyes...
-Did you miss previous updates? You can check out the blog Field Notes: Volume 1 to read Mercy's interview with Water Programs Manager, Megan Renfro, or Field Notes: Volume 3 to read Mercy's interview with Content Lead, Cubby Graham, and Senior Copywriter, Bailey Jurgens.
+<document url="https://www.charitywater.org/contact" type="html" page="contact">
+Contact Us | charity: water
+
+Contact Us
+
+ Get in touch with us. We'd love to hear from you.
+
+ Please note, charity: water does not accept unsolicited requests for funding.
+
+Tel: 1 (646) 688-2323
+Fax: 1 (929) 367-4827
+
+Donation Processing Center
+230 Franklin Rd., Ste. 11-II
+Franklin, TN
+37064
+
+Need assistance? Check out our 
+Help Center
+ or send us an 
+email
+
+Add Impact To Your Inbox
+
+Get our emails to stay in the know.
+
+Take Action
+
+Give
+
+Join the Spring
+
+Give to a Fundraiser
+
+Give in Someone's Honor
+
+Sponsor a community
+
+ Legacy & Asset Giving
+
+Get Involved
+
+Create an account
+
+Fundraise
+
+Tiny Heroes
+
+ Students & Teachers
+
+Advisors
+
+Experience Lab
+
+Get to know us
+
+Our Work
+
+100% Model
+
+See Our Financials
+
+Meet the founder
+
+Meet the executive team
+
+Careers
+
+Connect
+
+Contact Us
+
+Help center
+
+Request a Speaker
+
+Brand Partnerships
+
+Shop our store
+
+Twitter
+
+Facebook
+
+Instagram
+
+Snapchat
+
+Youtube
+
+Linkedin
+
+Privacy policy
+
+responsible disclosure process
+
+charity: water is a 501(c)(3) nonprofit organization.
+
+100% of public donations go directly to fund clean water projects.
+
+Get our emails
+
+© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
+
+[Contact links in page HTML]
+email: team@charitywater.org
 </document>
 <document url="https://www.charitywater.org/donate/water-project-sponsorship" type="html" page="partners">
 Sponsor a Water Project | charity: water
@@ -1466,158 +1619,6 @@ Get our emails
 
 [Contact links in page HTML]
 email: sponsoraproject@charitywater.org
-</document>
-<document url="https://www.charitywater.org/donate" type="html" page="donate">
-Donate for Clean Water | charity: water
-
-696 million people need their Day One of clean water. 
-Give now, matched 2x →
-
-Help bring clean and safe water to every person on the planet.
-
-You deserve to give with confidence
-
-All of our operational expenses are funded by a private community of donors, so you can trust 100% of your donation will go directly to water solutions, every cent, every time. But we don’t stop there. We’re setting new standards for transparency and innovation. These companies and organizations agree.
-
-Join The Spring to invest in clean water and sustainability
-
-Give monthly, and you’ll become a part of The Spring, a passionate community invested in a world where everyone has clean water.
-
-JOIN TODAY
-Sponsor a water project
-Transform a community, school, or health clinic with a gift of $10,000 or more.
-Learn more
-
-More ways to give
-
-Honor someone special
-Honor or remember someone special by making a gift in their name.
-give in honor of someone
-
-Legacy giving
-Join us in shaping the future and making clean water a part of your lasting legacy.
-learn more
-
-Donate with cryptocurrency
-We currently accept bitcoin, ether, litecoin, bitcoin cash, Zcash, filecoin, and dogecoin.
-GIVE CRYPTO
-
-Give by check or stock
-We also accept donations by check, stock, money order, and wire transfer.
-GET THE DETAILS
-
-Other Ways to Give
-Donate by Check
-Make checks payable to charity: water. If you're donating in honor of someone, sponsoring a water project or want to direct your donation to our operating costs, please write that in the memo of your check.
-Unfortunately, we cannot accept donations to The Spring via check.
-Tax receipts will be mailed within four to six weeks after the donation has been processed.
-International Giving
-charity: water is a registered charity in the UK. To make a tax-efficient donation in GBP, visit 
-charitywateruk.org
-. For other international donations, we accept bank issued money orders in USD. Money orders should be made payable to charity: water and can be mailed to the address below. For donations over $6,000, we also accept wire transfers; email 
-info@charitywater.org
- for more information.
-Please note, only donations made by eligible US taxpayers may be tax-deductible.
-Donate Stock
-We're able to accept donations in the form of stock, government (including municipal) debt and corporate debt through the Depository Trust Company (DTC). For security, settlement and reduced paperwork, electronic transfer through the DTC is preferred. This can be arranged from most brokerage accounts.
-Unfortunately, we cannot accept donations to The Spring via stock.
-Please contact 
-info@charitywater.org
- for more information on making a stock donation.
-charity: water
-
-Donation Processing Center, 230 Franklin Rd., Ste. 11-II
-
-Franklin, TN 37064
-
-EIN: 22-3936753
-
-charity: water is a 501 (c)(3)
-
-Add Impact To Your Inbox
-
-Get our emails to stay in the know.
-
-Take Action
-
-Give
-
-Join the Spring
-
-Give to a Fundraiser
-
-Give in Someone's Honor
-
-Sponsor a community
-
- Legacy & Asset Giving
-
-Get Involved
-
-Create an account
-
-Fundraise
-
-Tiny Heroes
-
- Students & Teachers
-
-Advisors
-
-Experience Lab
-
-Get to know us
-
-Our Work
-
-100% Model
-
-See Our Financials
-
-Meet the founder
-
-Meet the executive team
-
-Careers
-
-Connect
-
-Contact Us
-
-Help center
-
-Request a Speaker
-
-Brand Partnerships
-
-Shop our store
-
-Twitter
-
-Facebook
-
-Instagram
-
-Snapchat
-
-Youtube
-
-Linkedin
-
-Privacy policy
-
-responsible disclosure process
-
-charity: water is a 501(c)(3) nonprofit organization.
-
-100% of public donations go directly to fund clean water projects.
-
-Get our emails
-
-© 2026 | charity: water Donation Processing Center, 230 Franklin Rd., Ste. 11-II, Franklin, TN 37064 | c/o TC Citroen Wells Limited, 5th Floor, 3 Dorset Rise, London EC4Y 8EN | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656. Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.
-
-[Contact links in page HTML]
-email: info@charitywater.org
 </document>
 </documents>
 

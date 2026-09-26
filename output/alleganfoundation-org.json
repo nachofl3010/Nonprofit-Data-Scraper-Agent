@@ -1,10 +1,10 @@
 {
   "profile": {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "taxonomy_version": "ntee-major-v1",
     "input": "https://alleganfoundation.org",
     "resolved_url": "https://alleganfoundation.org/",
-    "extracted_at": "2026-09-25T15:03:41.777778Z",
+    "extracted_at": "2026-09-25T22:02:50.658313Z",
     "status": "failed",
     "flags": [],
     "identity": {
@@ -37,6 +37,7 @@
     },
     "signals": {
       "last_checked": null,
+      "buyer_signals": [],
       "open_rfps": [],
       "open_roles": [],
       "recent_news": [],
@@ -88,6 +89,8 @@
       "lead_score": 0,
       "score_breakdown": [],
       "why_now": "No active timing signals; nurture.",
+      "buyer_signals": [],
+      "revenue_trend": "unknown",
       "tech_stack": [],
       "contacts_by_role": {},
       "general_contact": null,

@@ -1,16 +1,16 @@
 {
   "profile": {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "taxonomy_version": "ntee-major-v1",
     "input": "https://www.communityoutreachgroupinc.com/",
     "resolved_url": "https://www.communityoutreachgroupinc.com/",
-    "extracted_at": "2026-09-25T15:01:26.572700Z",
+    "extracted_at": "2026-09-25T22:00:01.430302Z",
     "status": "ok",
     "flags": [
       "registry_match:name"
     ],
     "identity": {
-      "last_checked": "2026-09-25T15:01:26.572700Z",
+      "last_checked": "2026-09-25T22:00:01.430302Z",
       "name": {
         "value": "Community Outreach Group, Inc.",
         "source_url": "https://www.communityoutreachgroupinc.com/",
@@ -34,12 +34,12 @@
         "confidence": "high"
       },
       "hq_location": {
-        "value": "Middletown Township, NJ",
+        "value": "Middletown, NJ",
         "source_url": "https://www.communityoutreachgroupinc.com/",
         "confidence": "high"
       },
       "mission": {
-        "value": "Our mission is to help people in need by providing clothing, food, housing, and utility assistance to those who may not have the means to provide for themselves and their families.",
+        "value": "Community Outreach Group, Inc. is a nonprofit that provides basic needs assistance to low-income families and individuals in the community. Our mission is to help people in need by providing clothing, food, housing, and utility assistance to those who may not have the means to provide for themselves and their families.",
         "source_url": "https://www.communityoutreachgroupinc.com/",
         "confidence": "high"
       },
@@ -49,12 +49,12 @@
           "description": "Provides emergency food, personal care, and cleaning products to those in need."
         },
         {
-          "name": "Emergency Assistance Fund",
-          "description": "Provides one-time assistance to low-income households with utility and rent/mortgage assistance."
+          "name": "Calico Cat Thrift Shop",
+          "description": "Sells new and gently used merchandise to support the Emergency Assistance Fund, Food Pantry, and other non-profits."
         },
         {
-          "name": "Calico Cat Thrift Shop",
-          "description": "Sells new and gently used merchandise to support the Emergency Assistance Fund, Food Pantry, and other nonprofits."
+          "name": "Emergency Assistance Fund",
+          "description": "Provides one-time assistance for utility and rent/mortgage aid to low-income households."
         }
       ],
       "cause_area": {
@@ -66,7 +66,6 @@
         "value": {
           "scope": "regional",
           "places": [
-            "Middletown Township",
             "Aberdeen",
             "Atlantic Highlands",
             "Belford",
@@ -79,6 +78,7 @@
             "Leonardo",
             "Lincroft",
             "Matawan",
+            "Middletown",
             "Port Monmouth",
             "Red Bank",
             "Union Beach"
@@ -89,7 +89,12 @@
       },
       "impact_metrics": [
         {
-          "value": "Food Pantry open first and third Wednesday each month providing food and essentials",
+          "value": "Food Pantry is open the first and third Wednesday of each month from 9:00 until 3:00",
+          "source_url": "https://www.communityoutreachgroupinc.com/",
+          "confidence": "high"
+        },
+        {
+          "value": "Emergency Assistance Fund provides one-time aid to residents in multiple towns",
           "source_url": "https://www.communityoutreachgroupinc.com/",
           "confidence": "high"
         }
@@ -97,7 +102,7 @@
       "looks_like_nonprofit": true
     },
     "financials": {
-      "last_checked": "2026-09-25T15:01:26.572700Z",
+      "last_checked": "2026-09-25T22:00:01.430302Z",
       "annual_revenue": {
         "value": {
           "amount": 242847.0,
@@ -167,7 +172,7 @@
       }
     },
     "contacts": {
-      "last_checked": "2026-09-25T15:01:26.572700Z",
+      "last_checked": "2026-09-25T22:00:01.430302Z",
       "leadership": [
         {
           "name": "Christine Stockhausen",
@@ -176,7 +181,6 @@
           "linkedin": null,
           "source_url": "https://www.communityoutreachgroupinc.com/",
           "confidence": "high",
-          "evidence": "Contact \\n Christine Stockhausen, Vice President \\n Christinecalicocat@gmail.com",
           "buyer_role": "other"
         },
         {
@@ -185,8 +189,7 @@
           "email": null,
           "linkedin": null,
           "source_url": "https://www.communityoutreachgroupinc.com/",
-          "confidence": "low",
-          "evidence": "Contact \\n Ms. Jane Chou \\n EAF Coordinator",
+          "confidence": "high",
           "buyer_role": "other"
         }
       ],
@@ -198,75 +201,91 @@
       }
     },
     "signals": {
-      "last_checked": "2026-09-25T15:01:26.572700Z",
+      "last_checked": "2026-09-25T22:00:01.430302Z",
+      "buyer_signals": [],
       "open_rfps": [],
       "open_roles": [],
       "recent_news": [],
       "funders_and_partners": [
         {
-          "name": "Christ Episcopal Church-Middletown",
+          "name": "Aslan Youth",
           "type": "other",
           "source_url": "https://www.communityoutreachgroupinc.com/"
         },
         {
-          "name": "Middletown Reformed Church",
+          "name": "Backpack Crew",
           "type": "other",
           "source_url": "https://www.communityoutreachgroupinc.com/"
         },
         {
-          "name": "Old First Church-Middletown",
+          "name": "Bayshore Lunch Program",
           "type": "other",
           "source_url": "https://www.communityoutreachgroupinc.com/"
         },
         {
-          "name": "Westminster Presbyterian Church-Middletown",
+          "name": "Blessing Bag Brigade",
           "type": "other",
           "source_url": "https://www.communityoutreachgroupinc.com/"
         },
         {
-          "name": "Middletown United Methodist Church",
+          "name": "HABcore",
           "type": "other",
           "source_url": "https://www.communityoutreachgroupinc.com/"
         },
         {
-          "name": "Lincroft Presbyterian Church",
+          "name": "Habitat for Humanity",
           "type": "other",
           "source_url": "https://www.communityoutreachgroupinc.com/"
         },
         {
-          "name": "St. Leo the Great R.C. Church-Lincroft",
+          "name": "Keyport Food Pantry",
           "type": "other",
           "source_url": "https://www.communityoutreachgroupinc.com/"
         },
         {
-          "name": "Ecumenical Missionaries-St. Augustine’s Monastery, Belford",
+          "name": "Love Thy Neighbor",
           "type": "other",
           "source_url": "https://www.communityoutreachgroupinc.com/"
         },
         {
-          "name": "Masjid Al Aman Mosque, Middletown",
+          "name": "Monmouth Day Care",
           "type": "other",
           "source_url": "https://www.communityoutreachgroupinc.com/"
         },
         {
-          "name": "Holmdel Community United Church of Christ",
+          "name": "No Limits Café",
           "type": "other",
           "source_url": "https://www.communityoutreachgroupinc.com/"
         },
         {
-          "name": "Good Shepherd Lutheran Church, Holmdel",
+          "name": "St. Marks Center for Renewal",
           "type": "other",
           "source_url": "https://www.communityoutreachgroupinc.com/"
         },
         {
-          "name": "St. Catharine R.C. Church, Holmdel",
+          "name": "St. Ann’s Day Care",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "Stephy’s Place",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "Family Promise of Monmouth County",
+          "type": "other",
+          "source_url": "https://www.communityoutreachgroupinc.com/"
+        },
+        {
+          "name": "Parker Family Health Clinic",
           "type": "other",
           "source_url": "https://www.communityoutreachgroupinc.com/"
         }
       ]
     },
     "technology": {
-      "last_checked": "2026-09-25T15:01:26.572700Z",
+      "last_checked": "2026-09-25T22:00:01.430302Z",
       "tech_stack": [
         {
           "tool": "PayPal Giving",
@@ -287,9 +306,7 @@
         "via": "crawl"
       }
     ],
-    "errors": [
-      "grounding: leadership evidence not found in source, confidence set to low"
-    ],
+    "errors": [],
     "gapfill": {
       "triggered": false,
       "missing": [],
@@ -302,19 +319,19 @@
         {
           "purpose": "extract",
           "model": "gpt-4.1-mini",
-          "input_tokens": 3267,
-          "output_tokens": 1033,
-          "cache_read_tokens": 1920,
+          "input_tokens": 2777,
+          "output_tokens": 1086,
+          "cache_read_tokens": 2944,
           "cache_write_tokens": 0,
-          "cached_locally": true,
-          "usd": 0.0,
-          "usd_list": 0.003152
+          "cached_locally": false,
+          "usd": 0.003143,
+          "usd_list": 0.003143
         }
       ],
-      "input_tokens": 5187,
-      "output_tokens": 1033,
-      "usd": 0.0,
-      "usd_list": 0.003152
+      "input_tokens": 5721,
+      "output_tokens": 1086,
+      "usd": 0.003143,
+      "usd_list": 0.003143
     }
   },
   "views": {
@@ -332,7 +349,7 @@
         "currency": "USD",
         "fiscal_year": 2025
       },
-      "hq_location": "Middletown Township, NJ",
+      "hq_location": "Middletown, NJ",
       "lead_score": -1,
       "score_breakdown": [
         {
@@ -343,6 +360,8 @@
         }
       ],
       "why_now": "No active timing signals; nurture. Fit: revenue under $500k (limited budget).",
+      "buyer_signals": [],
+      "revenue_trend": "stable (+4% 2022->2025)",
       "tech_stack": [
         "PayPal Giving (donation_platform)"
       ],
@@ -375,12 +394,11 @@
     "funder": {
       "name": "Community Outreach Group, Inc.",
       "website": "https://www.communityoutreachgroupinc.com/",
-      "mission": "Our mission is to help people in need by providing clothing, food, housing, and utility assistance to those who may not have the means to provide for themselves and their families.",
+      "mission": "Community Outreach Group, Inc. is a nonprofit that provides basic needs assistance to low-income families and individuals in the community. Our mission is to help people in need by providing clothing, food, housing, and utility assistance to those who may not have the means to provide for themselves and their families.",
       "cause_area": "human_services",
       "geography_served": {
         "scope": "regional",
         "places": [
-          "Middletown Township",
           "Aberdeen",
           "Atlantic Highlands",
           "Belford",
@@ -393,6 +411,7 @@
           "Leonardo",
           "Lincroft",
           "Matawan",
+          "Middletown",
           "Port Monmouth",
           "Red Bank",
           "Union Beach"
@@ -404,12 +423,12 @@
           "description": "Provides emergency food, personal care, and cleaning products to those in need."
         },
         {
-          "name": "Emergency Assistance Fund",
-          "description": "Provides one-time assistance to low-income households with utility and rent/mortgage assistance."
+          "name": "Calico Cat Thrift Shop",
+          "description": "Sells new and gently used merchandise to support the Emergency Assistance Fund, Food Pantry, and other non-profits."
         },
         {
-          "name": "Calico Cat Thrift Shop",
-          "description": "Sells new and gently used merchandise to support the Emergency Assistance Fund, Food Pantry, and other nonprofits."
+          "name": "Emergency Assistance Fund",
+          "description": "Provides one-time assistance for utility and rent/mortgage aid to low-income households."
         }
       ],
       "registration_id": "22-3689974",
@@ -466,21 +485,25 @@
         ]
       },
       "impact_metrics": [
-        "Food Pantry open first and third Wednesday each month providing food and essentials"
+        "Food Pantry is open the first and third Wednesday of each month from 9:00 until 3:00",
+        "Emergency Assistance Fund provides one-time aid to residents in multiple towns"
       ],
       "existing_funders": [
-        "Christ Episcopal Church-Middletown (other)",
-        "Middletown Reformed Church (other)",
-        "Old First Church-Middletown (other)",
-        "Westminster Presbyterian Church-Middletown (other)",
-        "Middletown United Methodist Church (other)",
-        "Lincroft Presbyterian Church (other)",
-        "St. Leo the Great R.C. Church-Lincroft (other)",
-        "Ecumenical Missionaries-St. Augustine’s Monastery, Belford (other)",
-        "Masjid Al Aman Mosque, Middletown (other)",
-        "Holmdel Community United Church of Christ (other)",
-        "Good Shepherd Lutheran Church, Holmdel (other)",
-        "St. Catharine R.C. Church, Holmdel (other)"
+        "Aslan Youth (other)",
+        "Backpack Crew (other)",
+        "Bayshore Lunch Program (other)",
+        "Blessing Bag Brigade (other)",
+        "HABcore (other)",
+        "Habitat for Humanity (other)",
+        "Keyport Food Pantry (other)",
+        "Love Thy Neighbor (other)",
+        "Monmouth Day Care (other)",
+        "No Limits Café (other)",
+        "St. Marks Center for Renewal (other)",
+        "St. Ann’s Day Care (other)",
+        "Stephy’s Place (other)",
+        "Family Promise of Monmouth County (other)",
+        "Parker Family Health Clinic (other)"
       ]
     }
   }

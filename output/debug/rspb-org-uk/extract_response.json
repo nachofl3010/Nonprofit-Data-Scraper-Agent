@@ -9,7 +9,7 @@
     "value": "207076",
     "source_url": "https://www.rspb.org.uk/",
     "confidence": "high",
-    "evidence": "The Royal Society for the Protection of Birds (RSPB) is a registered charity: England and Wales no. 207076"
+    "evidence": "© The Royal Society for the Protection of Birds (RSPB) is a registered charity: England and Wales no. 207076"
   },
   "country": {
     "value": "GB",
@@ -22,33 +22,48 @@
     "confidence": "high"
   },
   "mission": {
-    "value": "The RSPB is a charity for the conservation of birds and nature. We bring people together who love birds and other wildlife, and who want to take action to restore the health and diversity of the natural world.",
-    "source_url": "https://www.rspb.org.uk/about-us/who-we-are",
+    "value": "Help us save birds and nature. Together, we can protect more vital habitats, give nature a future, and help more wildlife thrive.",
+    "source_url": "https://www.rspb.org.uk/",
     "confidence": "high"
   },
   "programs": [
     {
-      "name": "Nature Prescriptions",
-      "description": "Connecting with nature to improve health and wellbeing."
+      "name": "Science and nature",
+      "description": "Find out why science is essential to the work we do and how we use it to guide our conservation efforts."
+    },
+    {
+      "name": "Influencing government and business",
+      "description": "Find out more about the RSPB’s work across the UK and beyond to advocate for policies that protect and restore nature."
+    },
+    {
+      "name": "Protecting species and habitats",
+      "description": "Helping species and habitats since 1889, the core focus of the RSPB's work."
+    },
+    {
+      "name": "Education and wellbeing",
+      "description": "Supporting teachers, schools, and people of all ages to connect with nature, including RSPB Nature Prescriptions."
     }
   ],
   "cause_area": {
     "value": "environment",
-    "source_url": "https://www.rspb.org.uk/about-us/who-we-are",
+    "source_url": "https://www.rspb.org.uk/",
     "confidence": "high"
   },
   "geography_served": {
     "value": {
       "scope": "national",
       "places": [
-        "United Kingdom"
+        "England",
+        "Scotland",
+        "Wales",
+        "Northern Ireland"
       ]
     },
-    "source_url": "https://www.rspb.org.uk/about-us/who-we-are",
+    "source_url": "https://www.rspb.org.uk/",
     "confidence": "high"
   },
   "tax_status": {
-    "value": "registered charity: England and Wales no. 207076, Scotland no. SC037654",
+    "value": "Registered charity: England and Wales no. 207076, Scotland no. SC037654",
     "source_url": "https://www.rspb.org.uk/",
     "confidence": "high"
   },
@@ -56,8 +71,18 @@
   "staff_count": null,
   "impact_metrics": [
     {
+      "value": "Manage 116 nature reserves in England covering 62,600 hectares",
+      "source_url": "https://www.rspb.org.uk/whats-happening/news/work-with-the-rspb-to-plan-and-implement-your-biodiversity-net-gain-bng-strategy",
+      "confidence": "high"
+    },
+    {
       "value": "Nearly 1.2 million members helping to protect wildlife and wild places",
-      "source_url": "https://www.rspb.org.uk/",
+      "source_url": "https://www.rspb.org.uk/whats-happening/news",
+      "confidence": "high"
+    },
+    {
+      "value": "Received a £1m award from People’s Postcode Lottery for nature access projects",
+      "source_url": "https://www.rspb.org.uk/whats-happening/news/peoples-postcode-lottery",
       "confidence": "high"
     }
   ],
@@ -68,63 +93,81 @@
     "contact_page_url": "https://www.rspb.org.uk/contact-us",
     "source_url": "https://www.rspb.org.uk/contact-us"
   },
+  "buyer_signals": [
+    {
+      "type": "major_grant",
+      "description": "Received a £1m award from People’s Postcode Lottery to connect more people with nature",
+      "date": "2024-05-30",
+      "source_url": "https://www.rspb.org.uk/whats-happening/news/peoples-postcode-lottery",
+      "confidence": "high",
+      "evidence": "Thanks to funding raised by players of the People’s Postcode Lottery, we’ve just received a £1m award."
+    },
+    {
+      "type": "technology_investment",
+      "description": "Developed new Biodiversity Net Gain projects and biodiversity units for sale to developers",
+      "date": "2026-09-25",
+      "source_url": "https://www.rspb.org.uk/whats-happening/news/work-with-the-rspb-to-plan-and-implement-your-biodiversity-net-gain-bng-strategy",
+      "confidence": "high",
+      "evidence": "The RSPB manages 116 nature reserves in England ... we have high quality biodiversity units available for sale."
+    }
+  ],
   "open_rfps": [],
   "open_roles": [],
   "recent_news": [
     {
+      "headline": "Celebrating 20 years of restoring chalk wildlife in Wiltshire",
+      "date": "2026-09-25",
+      "url": "https://www.rspb.org.uk/whats-happening/news",
+      "summary": "The reserve was purchased in 2006 to safeguard the local Stone-curlew population.",
+      "source_url": "https://www.rspb.org.uk/whats-happening/news"
+    },
+    {
       "headline": "Hen Harriers celebrate successful breeding season in Wales",
       "date": "2026-09-23",
       "url": "https://www.rspb.org.uk/whats-happening/news",
-      "summary": null,
+      "summary": "Encouraging news for one of Wales’ most threatened birds of prey.",
       "source_url": "https://www.rspb.org.uk/whats-happening/news"
     },
     {
       "headline": "How can our love of nature influence the political landscape?",
       "date": "2026-09-21",
       "url": "https://www.rspb.org.uk/whats-happening/news",
-      "summary": null,
+      "summary": "New research shows nature is now a defining political issue.",
       "source_url": "https://www.rspb.org.uk/whats-happening/news"
     },
     {
       "headline": "Cautious optimism as record year for Hen Harrier chicks at RSPB Geltsdale",
       "date": "2026-09-18",
       "url": "https://www.rspb.org.uk/whats-happening/news",
-      "summary": null,
-      "source_url": "https://www.rspb.org.uk/whats-happening/news"
-    },
-    {
-      "headline": "Feeding garden birds – how to keep our feathered friends healthy",
-      "date": "2026-09-17",
-      "url": "https://www.rspb.org.uk/whats-happening/news",
-      "summary": null,
+      "summary": "A record-breaking 13 Hen Harrier chicks fledge at RSPB Geltsdale in Cumbria.",
       "source_url": "https://www.rspb.org.uk/whats-happening/news"
     },
     {
       "headline": "The ‘The Book of Birds’ wins the 2026 Wainwright Prize Book of the Year!",
       "date": "2026-09-17",
       "url": "https://www.rspb.org.uk/whats-happening/news",
-      "summary": null,
+      "summary": "Announcement of winners of the UK’s leading nature writing competition.",
       "source_url": "https://www.rspb.org.uk/whats-happening/news"
     },
     {
       "headline": "Operation Orchid: giving 200 wild orchids a new home at RSPB Saltholme",
       "date": "2026-09-15",
       "url": "https://www.rspb.org.uk/whats-happening/news",
-      "summary": null,
+      "summary": "Carefully relocating 200 wild orchids.",
       "source_url": "https://www.rspb.org.uk/whats-happening/news"
     },
     {
       "headline": "Visitor centre work starts ahead of nature park opening",
       "date": "2026-09-14",
       "url": "https://www.rspb.org.uk/whats-happening/news",
-      "summary": null,
+      "summary": "Work on new visitor centre for planned Kingsbrook Meadows nature park.",
       "source_url": "https://www.rspb.org.uk/whats-happening/news"
     },
     {
       "headline": "New drone images show hope for Dove Stone after unprecedented wildfires",
       "date": "2026-09-10",
       "url": "https://www.rspb.org.uk/whats-happening/news",
-      "summary": null,
+      "summary": "Peatland restoration helped reduce wildfire severity, retaining patches of wet vegetation.",
       "source_url": "https://www.rspb.org.uk/whats-happening/news"
     }
   ],

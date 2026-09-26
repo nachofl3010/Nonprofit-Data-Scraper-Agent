@@ -5,7 +5,7 @@ import pytest
 from src import extract
 from src.cost import CostTracker
 from src.parse import Document
-from src.schema import Evidenced, Extraction, GeneralContact, LinkPick, LLMOpenRole, LLMPerson, Revenue
+from src.schema import BuyerSignal, Evidenced, Extraction, GeneralContact, LinkPick, LLMOpenRole, LLMPerson, Revenue
 
 U = "https://www.riverbendfoodbank.org/about/"
 DOCS = [Document(url=U, kind="html", text="Our team: Ana Ruiz, Executive Director (ana@riverbend.org). "
@@ -15,7 +15,7 @@ DOCS = [Document(url=U, kind="html", text="Our team: Ana Ruiz, Executive Directo
 def empty_extraction(**kw) -> Extraction:
     base = dict(name=None, legal_name=None, registration_id=None, country=None, hq_location=None, mission=None,
                 programs=[], cause_area=None, geography_served=None, tax_status=None, annual_revenue=None,
-                staff_count=None, impact_metrics=[], leadership=[], general_contact=None, open_rfps=[],
+                staff_count=None, impact_metrics=[], leadership=[], general_contact=None, buyer_signals=[], open_rfps=[],
                 open_roles=[], recent_news=[], funders_and_partners=[], looks_like_nonprofit=True,
                 not_nonprofit_reason=None)
     return Extraction(**{**base, **kw})
@@ -63,6 +63,17 @@ def test_grounding_downgrades_unsupported_evidence_and_unknown_sources():
     extract.ground_check(ex, DOCS)
     assert ex.annual_revenue.confidence == "low"
     assert ex.leadership[0].confidence == "low"
+
+
+def test_grounding_downgrades_buyer_signals_without_evidence():
+    ex = empty_extraction(buyer_signals=[
+        BuyerSignal(type="funding_growth", description="Revenue reached $4.6M", date="2025", source_url=U,
+                    confidence="high", evidence="Total revenue for fiscal year 2025 was $4.6 million."),
+        BuyerSignal(type="technology_investment", description="New CRM planned", date=None, source_url=U,
+                    confidence="high", evidence="We will migrate to a new donor CRM next year"),
+    ])
+    extract.ground_check(ex, DOCS)
+    assert [b.confidence for b in ex.buyer_signals] == ["high", "low"]
 
 
 class FakeAnthropic:

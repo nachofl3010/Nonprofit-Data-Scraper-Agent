@@ -1,0 +1,47 @@
+=== SYSTEM ===
+You help a web crawler decide which pages to fetch next. You get the fields still missing from a nonprofit's profile and a list of unfetched links from its site. Choose at most 3 URLs most likely to contain those fields, copied exactly from the list. If none look promising, return an empty list.
+
+=== USER ===
+Missing fields: leadership
+
+Unfetched links (url | anchor | guess):
+- https://www.habitat.org/about/mission-and-vision | Mission and vision | about
+- https://www.habitat.org/about/who-we-are | Who we are | about
+- https://www.habitat.org/about/history | History | about
+- https://www.habitat.org/about/habitat-for-humanity-leadership | Leadership | team
+- https://www.habitat.org/volunteer/group-opportunities | Group opportunities | careers
+- https://www.habitat.org/our-work | Overview | about
+- https://www.habitat.org/housing-help | Housing help overview | about
+- https://www.habitat.org/about/careers | Careers | careers
+- https://www.habitat.org/about/what-we-do | What we do | programs
+- https://www.habitat.org/open-door?keyword=brand-button | Join us in celebrating 50 years | careers
+- https://www.habitat.org/volunteer/near-you/youth-programs | Youth Programs | programs
+- https://www.habitat.org/about/partners | Partners | partners
+- https://secure.habitat.org/site/Donation2?df_id=8896&8896.donation=form1&s_src=DNAW26083167500&keyword=promo1-home&s_subsrc=promo1-home | Double your impact until Sept. 30! | programs
+- https://www.habitat.org/volunteer/group-opportunities/business-partners | Business partners | partners
+- https://www.habitat.org/volunteer/group-opportunities/faith-partners | Faith partners | partners
+- https://www.habitat.org/about/advocacy | Advocate | about
+- https://www.habitat.org/donate/?keyword=menu-top | Donate now | donate
+- https://www.habitat.org/donate/?keyword=menu-one-time | One time donations | donate
+- https://www.habitat.org/support/monthly-recurring-donation | Monthly donations | donate
+- https://www.habitat.org/support/donate-items | Donate items | donate
+- https://www.habitat.org/restores/donate-goods | Goods and materials | donate
+- https://www.habitat.org/support/donate-your-car | Donate your car | donate
+- https://www.habitat.org/support/workplace-giving | Workplace giving | donate
+- https://www.habitat.org/support/corporate-giving | Corporate giving | donate
+- https://www.habitat.org/support/planned-giving | Planned giving | donate
+- https://www.habitat.org/support/donate-stock | Stock donations | donate
+- https://www.habitat.org/about/faq | Frequently asked questions | about
+- https://www.habitat.org/about/resources | Resources | about
+- https://www.habitat.org/about/habitat-learns | Habitat Learns | about
+- https://www.habitat.org/about/state-support-organizations | State support organizations | about
+- https://www.habitat.org/about/raising-concerns | Raising concerns | about
+- https://secure.habitat.org/site/Donation2?df_id=7753&mfc_pref=T&7753.donation=form1&keyword=button-header-single&s_subsrc=button-header-single | Donate Now | donate
+- https://secure.habitat.org/site/Donation2?df_id=7754&mfc_pref=T&7754.donation=form1&keyword=button-header-hopebuilder&s_subsrc=button-header-hopebuilder | Donate Monthly | donate
+- https://secure.habitat.org/site/Donation2?df_id=8896&8896.donation=form1&s_src=DNAW26083167400&keyword=hero-homepage&s_subsrc=hero-homepage | - | donate
+- https://secure.habitat.org/site/Donation2?df_id=8134&mfc_pref=T&7753.donation=form1&keyword=promo-homepage&s_subsrc=promo-homepage | Donate | donate
+- https://secure.habitat.org/site/Donation2?df_id=7753&mfc_pref=T&7753.donation=form1&keyword=button-footer-menu-single&s_subsrc=button-footer-menu-single | donate | donate
+- https://secure.habitat.org/site/Donation2?df_id=7753&mfc_pref=T&7753.donation=form1&keyword=footer-menu-single-text&s_subsrc=footer-menu-single-text | Donate one time | donate
+- https://secure.habitat.org/site/Donation2?df_id=7754&mfc_pref=T&7754.donation=form1&keyword=footer-menu-monthly-text&s_subsrc=footer-menu-monthly-text | Donate monthly | donate
+- https://www.habitat.org/in/richmond/good-news-habitat-humanity | - | news
+- https://www.habitat.org/support/gifts-in-kind | Gifts-in-kind partnerships | partners

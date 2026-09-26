@@ -62,12 +62,14 @@ def filled_fields(ex: Extraction) -> tuple[list[str], list[str]]:
 
 
 def compute_status(p: NonprofitProfile, extracted: bool, js_empty: bool) -> Status:
-    """ok = usable for outreach: extraction worked, a contact route exists, >=6 of 8 core fields."""
+    """ok = usable for outreach: extraction worked, looks like a nonprofit, a contact route exists,
+    >=6 of 8 core fields."""
     ident, fin, con = p.identity, p.financials, p.contacts
     core = [ident.name, ident.mission, ident.cause_area, ident.programs, ident.hq_location,
             con.leadership, con.general_contact, fin.annual_revenue]
     has_contact = bool(con.leadership or con.general_contact)
-    if not extracted or js_empty or not has_contact or sum(bool(x) for x in core) < 6:
+    if not extracted or js_empty or not has_contact or ident.looks_like_nonprofit is False \
+            or sum(bool(x) for x in core) < 6:
         return "partial"
     return "ok"
 
